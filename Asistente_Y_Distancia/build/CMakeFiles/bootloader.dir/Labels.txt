@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/valentin/workspace/WavToServer/build/CMakeFiles/bootloader
+/home/valentin/workspace/WavToServer/build/CMakeFiles/bootloader.rule
+/home/valentin/workspace/WavToServer/build/CMakeFiles/bootloader-complete.rule
+/home/valentin/workspace/WavToServer/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/valentin/workspace/WavToServer/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/valentin/workspace/WavToServer/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/valentin/workspace/WavToServer/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/valentin/workspace/WavToServer/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/valentin/workspace/WavToServer/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/valentin/workspace/WavToServer/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
