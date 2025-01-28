@@ -1,0 +1,3228 @@
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jan  8 2025 13:10:15[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=25c30h (154672) map[0m
+[0;32mI (158) esp_image: segment 1: paddr=00035c58 vaddr=3ffb0000 size=03f58h ( 16216) load[0m
+[0;32mI (164) esp_image: segment 2: paddr=00039bb8 vaddr=40080000 size=06460h ( 25696) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a4a00h (674304) map[0m
+[0;32mI (406) esp_image: segment 4: paddr=000e4a28 vaddr=40086460 size=10eech ( 69356) load[0m
+[0;32mI (445) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (445) boot: Disabling RNG early entropy source...[0m
+[0;32mI (457) cpu_start: Multicore app[0m
+[0;32mI (465) cpu_start: Pro cpu start user code[0m
+[0;32mI (465) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (465) app_init: Application information:[0m
+[0;32mI (468) app_init: Project name:     Hito-4[0m
+[0;32mI (473) app_init: App version:      1[0m
+[0;32mI (477) app_init: Compile time:     Jan  8 2025 13:09:44[0m
+[0;32mI (483) app_init: ELF file SHA256:  b69a050ace046ce2...[0m
+[0;32mI (489) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (494) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (499) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (504) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (509) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (516) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (522) heap_init: At 3FFB8788 len 00027878 (158 KiB): DRAM[0m
+[0;32mI (529) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (535) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (541) heap_init: At 4009734C len 00008CB4 (35 KiB): IRAM[0m
+[0;32mI (549) spi_flash: detected chip: generic[0m
+[0;32mI (552) spi_flash: flash io: dio[0m
+[0;33mW (556) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (569) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (578) main_task: Started on CPU0[0m
+[0;32mI (588) main_task: Calling app_main()[0m
+[0;32mI (588) ECG: [APP] Startup..[0m
+[0;32mI (588) ECG: [APP] Free memory: 277052 bytes[0m
+[0;32mI (588) ECG: [APP] IDF version: v5.3.1-dirty[0m
+[0;32mI (618) example_connect: Start example_connect.[0m
+[0;32mI (628) wifi:wifi driver task: 3ffc0390, prio:23, stack:6656, core=0[0m
+[0;32mI (638) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (638) wifi:wifi certification version: v7.0[0m
+[0;32mI (638) wifi:config NVS flash: enabled[0m
+[0;32mI (638) wifi:config nano formating: disabled[0m
+[0;32mI (638) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (648) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (648) wifi:Init management short buffer num: 32[0m
+[0;32mI (658) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (658) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (658) wifi:Init static rx buffer num: 10[0m
+[0;32mI (668) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (668) wifi_init: rx ba win: 6[0m
+[0;32mI (678) wifi_init: accept mbox: 6[0m
+[0;32mI (678) wifi_init: tcpip mbox: 32[0m
+[0;32mI (678) wifi_init: udp mbox: 6[0m
+[0;32mI (688) wifi_init: tcp mbox: 6[0m
+[0;32mI (688) wifi_init: tcp tx win: 5744[0m
+[0;32mI (698) wifi_init: tcp rx win: 5744[0m
+[0;32mI (698) wifi_init: tcp mss: 1440[0m
+[0;32mI (698) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (708) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (718) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;32mI (798) wifi:mode : sta (f0:24:f9:f7:96:18)[0m
+[0;32mI (808) wifi:enable tsf[0m
+[0;32mI (808) example_connect: Connecting to iPhone nacho...[0m
+[0;33mW (808) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (818) example_connect: Waiting for IP(s)[0m
+[0;32mI (3478) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3478) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3488) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3498) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (13498) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (13508) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (13508) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (15928) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (18338) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (18338) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (18348) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (18358) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (20438) wifi:<ba-add>idx:0 (ifx:0, 3e:64:70:a3:b8:8a), tid:0, ssn:0, winSize:64[0m
+[0;32mI (28358) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (28358) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (28358) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (28358) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (30778) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (33198) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (33198) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (34198) wifi:state: auth -> init (0x200)[0m
+[0;32mI (34198) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (34198) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (36628) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (36628) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (36628) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (36638) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (36678) wifi:connected with iPhone nacho, aid = 1, channel 6, BW20, bssid = e2:70:14:de:1e:38[0m
+[0;32mI (36678) wifi:security: WPA2-PSK, phy: bgn, rssi: -31[0m
+[0;32mI (36688) wifi:pm start, type: 1[0m
+
+[0;32mI (36688) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (36698) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (37698) esp_netif_handlers: example_netif_sta ip: 172.20.10.2, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (37698) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 172.20.10.2[0m
+[0;32mI (38618) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:f224:f9ff:fef7:9618, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (38618) example_common: Connected to example_netif_sta[0m
+[0;32mI (38628) example_common: - IPv4 address: 172.20.10.2,[0m
+[0;32mI (38628) example_common: - IPv6 address: fe80:0000:0000:0000:f224:f9ff:fef7:9618, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (38638) ECG: Connected to AP: iPhone nacho[0m
+[0;32mI (38648) ECG: LDR Reading 1: 3942[0m
+[0;32mI (38658) ECG: LDR Reading 2: 3971[0m
+[0;32mI (38668) ECG: LDR Reading 3: 3902[0m
+[0;32mI (38678) ECG: LDR Reading 4: 3845[0m
+[0;32mI (38688) ECG: LDR Reading 5: 3875[0m
+[0;32mI (38698) ECG: LDR Reading 6: 3952[0m
+[0;32mI (38708) ECG: LDR Reading 7: 3927[0m
+[0;32mI (38718) ECG: LDR Reading 8: 3997[0m
+[0;32mI (38728) ECG: LDR Reading 9: 3953[0m
+[0;32mI (38738) ECG: LDR Reading 10: 4004[0m
+[0;32mI (38748) ECG: Payload: {"LDR":[3942,3971,3902,3845,3875,3952,3927,3997,3953,4004]}[0m
+[0;32mI (38758) wifi:<ba-add>idx:0 (ifx:0, e2:70:14:de:1e:38), tid:0, ssn:2, winSize:64[0m
+[0;32mI (39398) ECG: Data sent successfully[0m
+[0;32mI (39498) ECG: LDR Reading 1: 3688[0m
+[0;32mI (39508) ECG: LDR Reading 2: 3695[0m
+[0;32mI (39518) ECG: LDR Reading 3: 3600[0m
+[0;32mI (39528) ECG: LDR Reading 4: 3611[0m
+[0;32mI (39538) ECG: LDR Reading 5: 3555[0m
+[0;32mI (39548) ECG: LDR Reading 6: 3243[0m
+[0;32mI (39558) ECG: LDR Reading 7: 3559[0m
+[0;32mI (39568) ECG: LDR Reading 8: 4095[0m
+[0;32mI (39578) ECG: LDR Reading 9: 4095[0m
+[0;32mI (39588) ECG: LDR Reading 10: 4095[0m
+[0;32mI (39598) ECG: Payload: {"LDR":[3688,3695,3600,3611,3555,3243,3559,4095,4095,4095]}[0m
+[0;32mI (39988) ECG: Data sent successfully[0m
+[0;32mI (40088) ECG: LDR Reading 1: 3158[0m
+[0;32mI (40098) ECG: LDR Reading 2: 3219[0m
+[0;32mI (40108) ECG: LDR Reading 3: 3263[0m
+[0;32mI (40118) ECG: LDR Reading 4: 3208[0m
+[0;32mI (40128) ECG: LDR Reading 5: 3215[0m
+[0;32mI (40138) ECG: LDR Reading 6: 3230[0m
+[0;32mI (40148) ECG: LDR Reading 7: 3286[0m
+[0;32mI (40158) ECG: LDR Reading 8: 3273[0m
+[0;32mI (40168) ECG: LDR Reading 9: 3271[0m
+[0;32mI (40178) ECG: LDR Reading 10: 3227[0m
+[0;32mI (40188) ECG: Payload: {"LDR":[3158,3219,3263,3208,3215,3230,3286,3273,3271,3227]}[0m
+[0;32mI (40598) ECG: Data sent successfully[0m
+[0;32mI (40698) ECG: LDR Reading 1: 3165[0m
+[0;32mI (40708) ECG: LDR Reading 2: 3158[0m
+[0;32mI (40718) ECG: LDR Reading 3: 3225[0m
+[0;32mI (40728) ECG: LDR Reading 4: 3267[0m
+[0;32mI (40738) ECG: LDR Reading 5: 3216[0m
+[0;32mI (40748) ECG: LDR Reading 6: 3184[0m
+[0;32mI (40758) ECG: LDR Reading 7: 3103[0m
+[0;32mI (40768) ECG: LDR Reading 8: 3185[0m
+[0;32mI (40778) ECG: LDR Reading 9: 3134[0m
+[0;32mI (40788) ECG: LDR Reading 10: 3137[0m
+[0;32mI (40798) ECG: Payload: {"LDR":[3165,3158,3225,3267,3216,3184,3103,3185,3134,3137]}[0m
+[0;32mI (41218) ECG: Data sent successfully[0m
+[0;32mI (41318) ECG: LDR Reading 1: 3403[0m
+[0;32mI (41328) ECG: LDR Reading 2: 3467[0m
+[0;32mI (41338) ECG: LDR Reading 3: 3581[0m
+[0;32mI (41348) ECG: LDR Reading 4: 3613[0m
+[0;32mI (41358) ECG: LDR Reading 5: 3664[0m
+[0;32mI (41368) ECG: LDR Reading 6: 3725[0m
+[0;32mI (41378) ECG: LDR Reading 7: 3735[0m
+[0;32mI (41388) ECG: LDR Reading 8: 3762[0m
+[0;32mI (41398) ECG: LDR Reading 9: 3792[0m
+[0;32mI (41408) ECG: LDR Reading 10: 3712[0m
+[0;32mI (41418) ECG: Payload: {"LDR":[3403,3467,3581,3613,3664,3725,3735,3762,3792,3712]}[0m
+[0;32mI (41828) ECG: Data sent successfully[0m
+[0;32mI (41928) ECG: LDR Reading 1: 3614[0m
+[0;32mI (41938) ECG: LDR Reading 2: 3527[0m
+[0;32mI (41948) ECG: LDR Reading 3: 3277[0m
+[0;32mI (41958) ECG: LDR Reading 4: 3563[0m
+[0;32mI (41968) ECG: LDR Reading 5: 4095[0m
+[0;32mI (41978) ECG: LDR Reading 6: 4095[0m
+[0;32mI (41988) ECG: LDR Reading 7: 4095[0m
+[0;32mI (41998) ECG: LDR Reading 8: 4095[0m
+[0;32mI (42008) ECG: LDR Reading 9: 4095[0m
+[0;32mI (42018) ECG: LDR Reading 10: 3867[0m
+[0;32mI (42028) ECG: Payload: {"LDR":[3614,3527,3277,3563,4095,4095,4095,4095,4095,3867]}[0m
+[0;32mI (42438) ECG: Data sent successfully[0m
+[0;32mI (42538) ECG: LDR Reading 1: 3504[0m
+[0;32mI (42548) ECG: LDR Reading 2: 3451[0m
+[0;32mI (42558) ECG: LDR Reading 3: 3508[0m
+[0;32mI (42568) ECG: LDR Reading 4: 3490[0m
+[0;32mI (42578) ECG: LDR Reading 5: 3536[0m
+[0;32mI (42588) ECG: LDR Reading 6: 3523[0m
+[0;32mI (42598) ECG: LDR Reading 7: 3537[0m
+[0;32mI (42608) ECG: LDR Reading 8: 3520[0m
+[0;32mI (42618) ECG: LDR Reading 9: 3607[0m
+[0;32mI (42628) ECG: LDR Reading 10: 3583[0m
+[0;32mI (42638) ECG: Payload: {"LDR":[3504,3451,3508,3490,3536,3523,3537,3520,3607,3583]}[0m
+[0;32mI (43058) ECG: Data sent successfully[0m
+[0;32mI (43158) ECG: LDR Reading 1: 3350[0m
+[0;32mI (43168) ECG: LDR Reading 2: 3344[0m
+[0;32mI (43178) ECG: LDR Reading 3: 3357[0m
+[0;32mI (43188) ECG: LDR Reading 4: 3375[0m
+[0;32mI (43198) ECG: LDR Reading 5: 3411[0m
+[0;32mI (43208) ECG: LDR Reading 6: 3415[0m
+[0;32mI (43218) ECG: LDR Reading 7: 3332[0m
+[0;32mI (43228) ECG: LDR Reading 8: 3407[0m
+[0;32mI (43238) ECG: LDR Reading 9: 3423[0m
+[0;32mI (43248) ECG: LDR Reading 10: 3376[0m
+[0;32mI (43258) ECG: Payload: {"LDR":[3350,3344,3357,3375,3411,3415,3332,3407,3423,3376]}[0m
+[0;32mI (43668) ECG: Data sent successfully[0m
+[0;32mI (43768) ECG: LDR Reading 1: 3555[0m
+[0;32mI (43778) ECG: LDR Reading 2: 3576[0m
+[0;32mI (43788) ECG: LDR Reading 3: 3634[0m
+[0;32mI (43798) ECG: LDR Reading 4: 3634[0m
+[0;32mI (43808) ECG: LDR Reading 5: 3622[0m
+[0;32mI (43818) ECG: LDR Reading 6: 3760[0m
+[0;32mI (43828) ECG: LDR Reading 7: 3799[0m
+[0;32mI (43838) ECG: LDR Reading 8: 3921[0m
+[0;32mI (43848) ECG: LDR Reading 9: 3977[0m
+[0;32mI (43858) ECG: LDR Reading 10: 4059[0m
+[0;32mI (43868) ECG: Payload: {"LDR":[3555,3576,3634,3634,3622,3760,3799,3921,3977,4059]}[0m
+[0;32mI (44288) ECG: Data sent successfully[0m
+[0;32mI (44388) ECG: LDR Reading 1: 3690[0m
+[0;32mI (44398) ECG: LDR Reading 2: 3758[0m
+[0;32mI (44408) ECG: LDR Reading 3: 3709[0m
+[0;32mI (44418) ECG: LDR Reading 4: 3650[0m
+[0;32mI (44428) ECG: LDR Reading 5: 3665[0m
+[0;32mI (44438) ECG: LDR Reading 6: 3705[0m
+[0;32mI (44448) ECG: LDR Reading 7: 3514[0m
+[0;32mI (44458) ECG: LDR Reading 8: 3224[0m
+[0;32mI (44468) ECG: LDR Reading 9: 3871[0m
+[0;32mI (44478) ECG: LDR Reading 10: 4095[0m
+[0;32mI (44488) ECG: Payload: {"LDR":[3690,3758,3709,3650,3665,3705,3514,3224,3871,4095]}[0m
+[0;32mI (44898) ECG: Data sent successfully[0m
+[0;32mI (44998) ECG: LDR Reading 1: 3350[0m
+[0;32mI (45008) ECG: LDR Reading 2: 3334[0m
+[0;32mI (45018) ECG: LDR Reading 3: 3385[0m
+[0;32mI (45028) ECG: LDR Reading 4: 3344[0m
+[0;32mI (45038) ECG: LDR Reading 5: 3399[0m
+[0;32mI (45048) ECG: LDR Reading 6: 3422[0m
+[0;32mI (45058) ECG: LDR Reading 7: 3401[0m
+[0;32mI (45068) ECG: LDR Reading 8: 3312[0m
+[0;32mI (45078) ECG: LDR Reading 9: 3330[0m
+[0;32mI (45088) ECG: LDR Reading 10: 3395[0m
+[0;32mI (45098) ECG: Payload: {"LDR":[3350,3334,3385,3344,3399,3422,3401,3312,3330,3395]}[0m
+[0;32mI (45518) ECG: Data sent successfully[0m
+[0;32mI (45618) ECG: LDR Reading 1: 3347[0m
+[0;32mI (45628) ECG: LDR Reading 2: 3289[0m
+[0;32mI (45638) ECG: LDR Reading 3: 3279[0m
+[0;32mI (45648) ECG: LDR Reading 4: 3285[0m
+[0;32mI (45658) ECG: LDR Reading 5: 3218[0m
+[0;32mI (45668) ECG: LDR Reading 6: 3319[0m
+[0;32mI (45678) ECG: LDR Reading 7: 3299[0m
+[0;32mI (45688) ECG: LDR Reading 8: 3280[0m
+[0;32mI (45698) ECG: LDR Reading 9: 3298[0m
+[0;32mI (45708) ECG: LDR Reading 10: 3243[0m
+[0;32mI (45718) ECG: Payload: {"LDR":[3347,3289,3279,3285,3218,3319,3299,3280,3298,3243]}[0m
+[0;32mI (46128) ECG: Data sent successfully[0m
+[0;32mI (46228) ECG: LDR Reading 1: 3307[0m
+[0;32mI (46238) ECG: LDR Reading 2: 3376[0m
+[0;32mI (46248) ECG: LDR Reading 3: 3331[0m
+[0;32mI (46258) ECG: LDR Reading 4: 3391[0m
+[0;32mI (46268) ECG: LDR Reading 5: 3427[0m
+[0;32mI (46278) ECG: LDR Reading 6: 3383[0m
+[0;32mI (46288) ECG: LDR Reading 7: 3391[0m
+[0;32mI (46298) ECG: LDR Reading 8: 3520[0m
+[0;32mI (46308) ECG: LDR Reading 9: 3598[0m
+[0;32mI (46318) ECG: LDR Reading 10: 3627[0m
+[0;32mI (46328) ECG: Payload: {"LDR":[3307,3376,3331,3391,3427,3383,3391,3520,3598,3627]}[0m
+[0;32mI (46748) ECG: Data sent successfully[0m
+[0;32mI (46848) ECG: LDR Reading 1: 4095[0m
+[0;32mI (46858) ECG: LDR Reading 2: 4095[0m
+[0;32mI (46868) ECG: LDR Reading 3: 3988[0m
+[0;32mI (46878) ECG: LDR Reading 4: 4095[0m
+[0;32mI (46888) ECG: LDR Reading 5: 4095[0m
+[0;32mI (46898) ECG: LDR Reading 6: 3617[0m
+[0;32mI (46908) ECG: LDR Reading 7: 3229[0m
+[0;32mI (46918) ECG: LDR Reading 8: 3216[0m
+[0;32mI (46928) ECG: LDR Reading 9: 3250[0m
+[0;32mI (46938) ECG: LDR Reading 10: 3255[0m
+[0;32mI (46948) ECG: Payload: {"LDR":[4095,4095,3988,4095,4095,3617,3229,3216,3250,3255]}[0m
+[0;32mI (47358) ECG: Data sent successfully[0m
+[0;32mI (47458) ECG: LDR Reading 1: 3614[0m
+[0;32mI (47468) ECG: LDR Reading 2: 3440[0m
+[0;32mI (47478) ECG: LDR Reading 3: 3453[0m
+[0;32mI (47488) ECG: LDR Reading 4: 3441[0m
+[0;32mI (47498) ECG: LDR Reading 5: 3483[0m
+[0;32mI (47508) ECG: LDR Reading 6: 3459[0m
+[0;32mI (47518) ECG: LDR Reading 7: 3409[0m
+[0;32mI (47528) ECG: LDR Reading 8: 3385[0m
+[0;32mI (47538) ECG: LDR Reading 9: 3398[0m
+[0;32mI (47548) ECG: LDR Reading 10: 3442[0m
+[0;32mI (47558) ECG: Payload: {"LDR":[3614,3440,3453,3441,3483,3459,3409,3385,3398,3442]}[0m
+[0;32mI (47978) ECG: Data sent successfully[0m
+[0;32mI (48078) ECG: LDR Reading 1: 3537[0m
+[0;32mI (48088) ECG: LDR Reading 2: 3394[0m
+[0;32mI (48098) ECG: LDR Reading 3: 3519[0m
+[0;32mI (48108) ECG: LDR Reading 4: 3460[0m
+[0;32mI (48118) ECG: LDR Reading 5: 3441[0m
+[0;32mI (48128) ECG: LDR Reading 6: 3414[0m
+[0;32mI (48138) ECG: LDR Reading 7: 3365[0m
+[0;32mI (48148) ECG: LDR Reading 8: 3363[0m
+[0;32mI (48158) ECG: LDR Reading 9: 3582[0m
+[0;32mI (48168) ECG: LDR Reading 10: 3682[0m
+[0;32mI (48178) ECG: Payload: {"LDR":[3537,3394,3519,3460,3441,3414,3365,3363,3582,3682]}[0m
+[0;32mI (48588) ECG: Data sent successfully[0m
+[0;32mI (48688) ECG: LDR Reading 1: 3662[0m
+[0;32mI (48698) ECG: LDR Reading 2: 3696[0m
+[0;32mI (48708) ECG: LDR Reading 3: 3665[0m
+[0;32mI (48718) ECG: LDR Reading 4: 3699[0m
+[0;32mI (48728) ECG: LDR Reading 5: 3739[0m
+[0;32mI (48738) ECG: LDR Reading 6: 3761[0m
+[0;32mI (48748) ECG: LDR Reading 7: 3786[0m
+[0;32mI (48758) ECG: LDR Reading 8: 3759[0m
+[0;32mI (48768) ECG: LDR Reading 9: 3728[0m
+[0;32mI (48778) ECG: LDR Reading 10: 3706[0m
+[0;32mI (48788) ECG: Payload: {"LDR":[3662,3696,3665,3699,3739,3761,3786,3759,3728,3706]}[0m
+[0;32mI (49198) ECG: Data sent successfully[0m
+[0;32mI (49298) ECG: LDR Reading 1: 3807[0m
+[0;32mI (49308) ECG: LDR Reading 2: 3697[0m
+[0;32mI (49318) ECG: LDR Reading 3: 3664[0m
+[0;32mI (49328) ECG: LDR Reading 4: 3568[0m
+[0;32mI (49338) ECG: LDR Reading 5: 3575[0m
+[0;32mI (49348) ECG: LDR Reading 6: 3530[0m
+[0;32mI (49358) ECG: LDR Reading 7: 3570[0m
+[0;32mI (49368) ECG: LDR Reading 8: 3490[0m
+[0;32mI (49378) ECG: LDR Reading 9: 3551[0m
+[0;32mI (49388) ECG: LDR Reading 10: 3522[0m
+[0;32mI (49398) ECG: Payload: {"LDR":[3807,3697,3664,3568,3575,3530,3570,3490,3551,3522]}[0m
+[0;32mI (49818) ECG: Data sent successfully[0m
+[0;32mI (49918) ECG: LDR Reading 1: 3258[0m
+[0;32mI (49928) ECG: LDR Reading 2: 3312[0m
+[0;32mI (49938) ECG: LDR Reading 3: 3301[0m
+[0;32mI (49948) ECG: LDR Reading 4: 3350[0m
+[0;32mI (49958) ECG: LDR Reading 5: 3403[0m
+[0;32mI (49968) ECG: LDR Reading 6: 3568[0m
+[0;32mI (49978) ECG: LDR Reading 7: 3549[0m
+[0;32mI (49988) ECG: LDR Reading 8: 3580[0m
+[0;32mI (49998) ECG: LDR Reading 9: 3603[0m
+[0;32mI (50008) ECG: LDR Reading 10: 3527[0m
+[0;32mI (50018) ECG: Payload: {"LDR":[3258,3312,3301,3350,3403,3568,3549,3580,3603,3527]}[0m
+[0;32mI (50428) ECG: Data sent successfully[0m
+[0;32mI (50528) ECG: LDR Reading 1: 4017[0m
+[0;32mI (50538) ECG: LDR Reading 2: 3387[0m
+[0;32mI (50548) ECG: LDR Reading 3: 3120[0m
+[0;32mI (50558) ECG: LDR Reading 4: 3117[0m
+[0;32mI (50568) ECG: LDR Reading 5: 3128[0m
+[0;32mI (50578) ECG: LDR Reading 6: 3159[0m
+[0;32mI (50588) ECG: LDR Reading 7: 3189[0m
+[0;32mI (50598) ECG: LDR Reading 8: 3183[0m
+[0;32mI (50608) ECG: LDR Reading 9: 3199[0m
+[0;32mI (50618) ECG: LDR Reading 10: 3235[0m
+[0;32mI (50628) ECG: Payload: {"LDR":[4017,3387,3120,3117,3128,3159,3189,3183,3199,3235]}[0m
+[0;32mI (51048) ECG: Data sent successfully[0m
+[0;32mI (51148) ECG: LDR Reading 1: 3401[0m
+[0;32mI (51158) ECG: LDR Reading 2: 3418[0m
+[0;32mI (51168) ECG: LDR Reading 3: 3366[0m
+[0;32mI (51178) ECG: LDR Reading 4: 3070[0m
+[0;32mI (51188) ECG: LDR Reading 5: 3479[0m
+[0;32mI (51198) ECG: LDR Reading 6: 4095[0m
+[0;32mI (51208) ECG: LDR Reading 7: 4095[0m
+[0;32mI (51218) ECG: LDR Reading 8: 4095[0m
+[0;32mI (51228) ECG: LDR Reading 9: 4095[0m
+[0;32mI (51238) ECG: LDR Reading 10: 4095[0m
+[0;32mI (51248) ECG: Payload: {"LDR":[3401,3418,3366,3070,3479,4095,4095,4095,4095,4095]}[0m
+[0;32mI (51658) ECG: Data sent successfully[0m
+[0;32mI (51758) ECG: LDR Reading 1: 3312[0m
+[0;32mI (51768) ECG: LDR Reading 2: 3539[0m
+[0;32mI (51778) ECG: LDR Reading 3: 3601[0m
+[0;32mI (51788) ECG: LDR Reading 4: 3566[0m
+[0;32mI (51798) ECG: LDR Reading 5: 3523[0m
+[0;32mI (51808) ECG: LDR Reading 6: 3450[0m
+[0;32mI (51818) ECG: LDR Reading 7: 3504[0m
+[0;32mI (51828) ECG: LDR Reading 8: 3489[0m
+[0;32mI (51838) ECG: LDR Reading 9: 3440[0m
+[0;32mI (51848) ECG: LDR Reading 10: 3574[0m
+[0;32mI (51858) ECG: Payload: {"LDR":[3312,3539,3601,3566,3523,3450,3504,3489,3440,3574]}[0m
+[0;32mI (52298) ECG: Data sent successfully[0m
+[0;32mI (52398) ECG: LDR Reading 1: 3354[0m
+[0;32mI (52408) ECG: LDR Reading 2: 3342[0m
+[0;32mI (52418) ECG: LDR Reading 3: 3398[0m
+[0;32mI (52428) ECG: LDR Reading 4: 3474[0m
+[0;32mI (52438) ECG: LDR Reading 5: 3477[0m
+[0;32mI (52448) ECG: LDR Reading 6: 3473[0m
+[0;32mI (52458) ECG: LDR Reading 7: 3450[0m
+[0;32mI (52468) ECG: LDR Reading 8: 3507[0m
+[0;32mI (52478) ECG: LDR Reading 9: 3500[0m
+[0;32mI (52488) ECG: LDR Reading 10: 3520[0m
+[0;32mI (52498) ECG: Payload: {"LDR":[3354,3342,3398,3474,3477,3473,3450,3507,3500,3520]}[0m
+[0;32mI (52888) ECG: Data sent successfully[0m
+[0;32mI (52988) ECG: LDR Reading 1: 3408[0m
+[0;32mI (52998) ECG: LDR Reading 2: 3421[0m
+[0;32mI (53008) ECG: LDR Reading 3: 3420[0m
+[0;32mI (53018) ECG: LDR Reading 4: 3439[0m
+[0;32mI (53028) ECG: LDR Reading 5: 3332[0m
+[0;32mI (53038) ECG: LDR Reading 6: 3401[0m
+[0;32mI (53048) ECG: LDR Reading 7: 3358[0m
+[0;32mI (53058) ECG: LDR Reading 8: 3355[0m
+[0;32mI (53068) ECG: LDR Reading 9: 3330[0m
+[0;32mI (53078) ECG: LDR Reading 10: 3328[0m
+[0;32mI (53088) ECG: Payload: {"LDR":[3408,3421,3420,3439,3332,3401,3358,3355,3330,3328]}[0m
+[0;32mI (53498) ECG: Data sent successfully[0m
+[0;32mI (53598) ECG: LDR Reading 1: 3481[0m
+[0;32mI (53608) ECG: LDR Reading 2: 3457[0m
+[0;32mI (53618) ECG: LDR Reading 3: 3401[0m
+[0;32mI (53628) ECG: LDR Reading 4: 3404[0m
+[0;32mI (53638) ECG: LDR Reading 5: 3392[0m
+[0;32mI (53648) ECG: LDR Reading 6: 3451[0m
+[0;32mI (53658) ECG: LDR Reading 7: 3511[0m
+[0;32mI (53668) ECG: LDR Reading 8: 3531[0m
+[0;32mI (53678) ECG: LDR Reading 9: 3566[0m
+[0;32mI (53688) ECG: LDR Reading 10: 3583[0m
+[0;32mI (53698) ECG: Payload: {"LDR":[3481,3457,3401,3404,3392,3451,3511,3531,3566,3583]}[0m
+[0;32mI (54118) ECG: Data sent successfully[0m
+[0;32mI (54218) ECG: LDR Reading 1: 3344[0m
+[0;32mI (54228) ECG: LDR Reading 2: 3371[0m
+[0;32mI (54238) ECG: LDR Reading 3: 3303[0m
+[0;32mI (54248) ECG: LDR Reading 4: 3347[0m
+[0;32mI (54258) ECG: LDR Reading 5: 3163[0m
+[0;32mI (54268) ECG: LDR Reading 6: 2972[0m
+[0;32mI (54278) ECG: LDR Reading 7: 3739[0m
+[0;32mI (54288) ECG: LDR Reading 8: 4095[0m
+[0;32mI (54298) ECG: LDR Reading 9: 4095[0m
+[0;32mI (54308) ECG: LDR Reading 10: 4017[0m
+[0;32mI (54318) ECG: Payload: {"LDR":[3344,3371,3303,3347,3163,2972,3739,4095,4095,4017]}[0m
+[0;32mI (54728) ECG: Data sent successfully[0m
+[0;32mI (54838) ECG: LDR Reading 1: 3455[0m
+[0;32mI (54848) ECG: LDR Reading 2: 3473[0m
+[0;32mI (54858) ECG: LDR Reading 3: 3536[0m
+[0;32mI (54868) ECG: LDR Reading 4: 3519[0m
+[0;32mI (54878) ECG: LDR Reading 5: 3601[0m
+[0;32mI (54888) ECG: LDR Reading 6: 3503[0m
+[0;32mI (54898) ECG: LDR Reading 7: 3577[0m
+[0;32mI (54908) ECG: LDR Reading 8: 3722[0m
+[0;32mI (54918) ECG: LDR Reading 9: 3888[0m
+[0;32mI (54928) ECG: LDR Reading 10: 3836[0m
+[0;32mI (54938) ECG: Payload: {"LDR":[3455,3473,3536,3519,3601,3503,3577,3722,3888,3836]}[0m
+[0;32mI (55348) ECG: Data sent successfully[0m
+[0;32mI (55448) ECG: LDR Reading 1: 3472[0m
+[0;32mI (55458) ECG: LDR Reading 2: 3419[0m
+[0;32mI (55468) ECG: LDR Reading 3: 3426[0m
+[0;32mI (55478) ECG: LDR Reading 4: 3476[0m
+[0;32mI (55488) ECG: LDR Reading 5: 3511[0m
+[0;32mI (55498) ECG: LDR Reading 6: 3475[0m
+[0;32mI (55508) ECG: LDR Reading 7: 3514[0m
+[0;32mI (55518) ECG: LDR Reading 8: 3443[0m
+[0;32mI (55528) ECG: LDR Reading 9: 3407[0m
+[0;32mI (55538) ECG: LDR Reading 10: 3473[0m
+[0;32mI (55548) ECG: Payload: {"LDR":[3472,3419,3426,3476,3511,3475,3514,3443,3407,3473]}[0m
+[0;32mI (55958) ECG: Data sent successfully[0m
+[0;32mI (56058) ECG: LDR Reading 1: 3478[0m
+[0;32mI (56068) ECG: LDR Reading 2: 3472[0m
+[0;32mI (56078) ECG: LDR Reading 3: 3547[0m
+[0;32mI (56088) ECG: LDR Reading 4: 3580[0m
+[0;32mI (56098) ECG: LDR Reading 5: 3712[0m
+[0;32mI (56108) ECG: LDR Reading 6: 3749[0m
+[0;32mI (56118) ECG: LDR Reading 7: 3759[0m
+[0;32mI (56128) ECG: LDR Reading 8: 3820[0m
+[0;32mI (56138) ECG: LDR Reading 9: 3737[0m
+[0;32mI (56148) ECG: LDR Reading 10: 3636[0m
+[0;32mI (56158) ECG: Payload: {"LDR":[3478,3472,3547,3580,3712,3749,3759,3820,3737,3636]}[0m
+[0;32mI (56578) ECG: Data sent successfully[0m
+[0;32mI (56678) ECG: LDR Reading 1: 3462[0m
+[0;32mI (56688) ECG: LDR Reading 2: 3523[0m
+[0;32mI (56698) ECG: LDR Reading 3: 3471[0m
+[0;32mI (56708) ECG: LDR Reading 4: 3087[0m
+[0;32mI (56718) ECG: LDR Reading 5: 3583[0m
+[0;32mI (56728) ECG: LDR Reading 6: 4095[0m
+[0;32mI (56738) ECG: LDR Reading 7: 4095[0m
+[0;32mI (56748) ECG: LDR Reading 8: 4095[0m
+[0;32mI (56758) ECG: LDR Reading 9: 4095[0m
+[0;32mI (56768) ECG: LDR Reading 10: 4006[0m
+[0;32mI (56778) ECG: Payload: {"LDR":[3462,3523,3471,3087,3583,4095,4095,4095,4095,4006]}[0m
+[0;32mI (57208) ECG: Data sent successfully[0m
+[0;32mI (57308) ECG: LDR Reading 1: 3527[0m
+[0;32mI (57318) ECG: LDR Reading 2: 3501[0m
+[0;32mI (57328) ECG: LDR Reading 3: 3490[0m
+[0;32mI (57338) ECG: LDR Reading 4: 3460[0m
+[0;32mI (57348) ECG: LDR Reading 5: 3504[0m
+[0;32mI (57358) ECG: LDR Reading 6: 3465[0m
+[0;32mI (57368) ECG: LDR Reading 7: 3430[0m
+[0;32mI (57378) ECG: LDR Reading 8: 3504[0m
+[0;32mI (57388) ECG: LDR Reading 9: 3418[0m
+[0;32mI (57398) ECG: LDR Reading 10: 3387[0m
+[0;32mI (57408) ECG: Payload: {"LDR":[3527,3501,3490,3460,3504,3465,3430,3504,3418,3387]}[0m
+[0;32mI (57798) ECG: Data sent successfully[0m
+[0;32mI (57898) ECG: LDR Reading 1: 3353[0m
+[0;32mI (57908) ECG: LDR Reading 2: 3418[0m
+[0;32mI (57918) ECG: LDR Reading 3: 3418[0m
+[0;32mI (57928) ECG: LDR Reading 4: 3472[0m
+[0;32mI (57938) ECG: LDR Reading 5: 3378[0m
+[0;32mI (57948) ECG: LDR Reading 6: 3382[0m
+[0;32mI (57958) ECG: LDR Reading 7: 3472[0m
+[0;32mI (57968) ECG: LDR Reading 8: 3455[0m
+[0;32mI (57978) ECG: LDR Reading 9: 3374[0m
+[0;32mI (57988) ECG: LDR Reading 10: 3386[0m
+[0;32mI (57998) ECG: Payload: {"LDR":[3353,3418,3418,3472,3378,3382,3472,3455,3374,3386]}[0m
+[0;32mI (58418) ECG: Data sent successfully[0m
+[0;32mI (58518) ECG: LDR Reading 1: 3312[0m
+[0;32mI (58528) ECG: LDR Reading 2: 3381[0m
+[0;32mI (58538) ECG: LDR Reading 3: 3371[0m
+[0;32mI (58548) ECG: LDR Reading 4: 3373[0m
+[0;32mI (58558) ECG: LDR Reading 5: 3430[0m
+[0;32mI (58568) ECG: LDR Reading 6: 3525[0m
+[0;32mI (58578) ECG: LDR Reading 7: 3551[0m
+[0;32mI (58588) ECG: LDR Reading 8: 3627[0m
+[0;32mI (58598) ECG: LDR Reading 9: 3702[0m
+[0;32mI (58608) ECG: LDR Reading 10: 3700[0m
+[0;32mI (58618) ECG: Payload: {"LDR":[3312,3381,3371,3373,3430,3525,3551,3627,3702,3700]}[0m
+[0;32mI (59038) ECG: Data sent successfully[0m
+[0;32mI (59138) ECG: LDR Reading 1: 3575[0m
+[0;32mI (59148) ECG: LDR Reading 2: 3565[0m
+[0;32mI (59158) ECG: LDR Reading 3: 3605[0m
+[0;32mI (59168) ECG: LDR Reading 4: 3520[0m
+[0;32mI (59178) ECG: LDR Reading 5: 3379[0m
+[0;32mI (59188) ECG: LDR Reading 6: 3100[0m
+[0;32mI (59198) ECG: LDR Reading 7: 3906[0m
+[0;32mI (59208) ECG: LDR Reading 8: 4095[0m
+[0;32mI (59218) ECG: LDR Reading 9: 4095[0m
+[0;32mI (59228) ECG: LDR Reading 10: 4095[0m
+[0;32mI (59238) ECG: Payload: {"LDR":[3575,3565,3605,3520,3379,3100,3906,4095,4095,4095]}[0m
+[0;32mI (59648) ECG: Data sent successfully[0m
+[0;32mI (59748) ECG: LDR Reading 1: 3497[0m
+[0;32mI (59758) ECG: LDR Reading 2: 3475[0m
+[0;32mI (59768) ECG: LDR Reading 3: 3434[0m
+[0;32mI (59778) ECG: LDR Reading 4: 3438[0m
+[0;32mI (59788) ECG: LDR Reading 5: 3424[0m
+[0;32mI (59798) ECG: LDR Reading 6: 3424[0m
+[0;32mI (59808) ECG: LDR Reading 7: 3474[0m
+[0;32mI (59818) ECG: LDR Reading 8: 3495[0m
+[0;32mI (59828) ECG: LDR Reading 9: 3489[0m
+[0;32mI (59838) ECG: LDR Reading 10: 3563[0m
+[0;32mI (59848) ECG: Payload: {"LDR":[3497,3475,3434,3438,3424,3424,3474,3495,3489,3563]}[0m
+[0;32mI (60288) ECG: Data sent successfully[0m
+[0;32mI (60388) ECG: LDR Reading 1: 3254[0m
+[0;32mI (60398) ECG: LDR Reading 2: 3353[0m
+[0;32mI (60408) ECG: LDR Reading 3: 3371[0m
+[0;32mI (60418) ECG: LDR Reading 4: 3371[0m
+[0;32mI (60428) ECG: LDR Reading 5: 3310[0m
+[0;32mI (60438) ECG: LDR Reading 6: 3347[0m
+[0;32mI (60448) ECG: LDR Reading 7: 3346[0m
+[0;32mI (60458) ECG: LDR Reading 8: 3378[0m
+[0;32mI (60468) ECG: LDR Reading 9: 3312[0m
+[0;32mI (60478) ECG: LDR Reading 10: 3382[0m
+[0;32mI (60488) ECG: Payload: {"LDR":[3254,3353,3371,3371,3310,3347,3346,3378,3312,3382]}[0m
+[0;32mI (60808) ECG: Data sent successfully[0m
+[0;32mI (60908) ECG: LDR Reading 1: 3651[0m
+[0;32mI (60918) ECG: LDR Reading 2: 3319[0m
+[0;32mI (60928) ECG: LDR Reading 3: 3353[0m
+[0;32mI (60938) ECG: LDR Reading 4: 3348[0m
+[0;32mI (60948) ECG: LDR Reading 5: 3344[0m
+[0;32mI (60958) ECG: LDR Reading 6: 3375[0m
+[0;32mI (60968) ECG: LDR Reading 7: 3392[0m
+[0;32mI (60978) ECG: LDR Reading 8: 3377[0m
+[0;32mI (60988) ECG: LDR Reading 9: 3438[0m
+[0;32mI (60998) ECG: LDR Reading 10: 3376[0m
+[0;32mI (61008) ECG: Payload: {"LDR":[3651,3319,3353,3348,3344,3375,3392,3377,3438,3376]}[0m
+[0;32mI (61388) ECG: Data sent successfully[0m
+[0;32mI (61488) ECG: LDR Reading 1: 3390[0m
+[0;32mI (61498) ECG: LDR Reading 2: 3455[0m
+[0;32mI (61508) ECG: LDR Reading 3: 3567[0m
+[0;32mI (61518) ECG: LDR Reading 4: 3758[0m
+[0;32mI (61528) ECG: LDR Reading 5: 3713[0m
+[0;32mI (61538) ECG: LDR Reading 6: 3631[0m
+[0;32mI (61548) ECG: LDR Reading 7: 3565[0m
+[0;32mI (61558) ECG: LDR Reading 8: 3520[0m
+[0;32mI (61568) ECG: LDR Reading 9: 3523[0m
+[0;32mI (61578) ECG: LDR Reading 10: 3504[0m
+[0;32mI (61588) ECG: Payload: {"LDR":[3390,3455,3567,3758,3713,3631,3565,3520,3523,3504]}[0m
+[0;32mI (61998) ECG: Data sent successfully[0m
+[0;32mI (62098) ECG: LDR Reading 1: 3488[0m
+[0;32mI (62108) ECG: LDR Reading 2: 3475[0m
+[0;32mI (62118) ECG: LDR Reading 3: 3504[0m
+[0;32mI (62128) ECG: LDR Reading 4: 3520[0m
+[0;32mI (62138) ECG: LDR Reading 5: 3531[0m
+[0;32mI (62148) ECG: LDR Reading 6: 3486[0m
+[0;32mI (62158) ECG: LDR Reading 7: 3427[0m
+[0;32mI (62168) ECG: LDR Reading 8: 3501[0m
+[0;32mI (62178) ECG: LDR Reading 9: 3536[0m
+[0;32mI (62188) ECG: LDR Reading 10: 3504[0m
+[0;32mI (62198) ECG: Payload: {"LDR":[3488,3475,3504,3520,3531,3486,3427,3501,3536,3504]}[0m
+[0;32mI (62618) ECG: Data sent successfully[0m
+[0;32mI (62718) ECG: LDR Reading 1: 3839[0m
+[0;32mI (62728) ECG: LDR Reading 2: 3679[0m
+[0;32mI (62738) ECG: LDR Reading 3: 3702[0m
+[0;32mI (62748) ECG: LDR Reading 4: 3458[0m
+[0;32mI (62758) ECG: LDR Reading 5: 3500[0m
+[0;32mI (62768) ECG: LDR Reading 6: 3426[0m
+[0;32mI (62778) ECG: LDR Reading 7: 3403[0m
+[0;32mI (62788) ECG: LDR Reading 8: 3339[0m
+[0;32mI (62798) ECG: LDR Reading 9: 3376[0m
+[0;32mI (62808) ECG: LDR Reading 10: 3354[0m
+[0;32mI (62818) ECG: Payload: {"LDR":[3839,3679,3702,3458,3500,3426,3403,3339,3376,3354]}[0m
+[0;32mI (63228) ECG: Data sent successfully[0m
+[0;32mI (63328) ECG: LDR Reading 1: 3423[0m
+[0;32mI (63338) ECG: LDR Reading 2: 3327[0m
+[0;32mI (63348) ECG: LDR Reading 3: 3354[0m
+[0;32mI (63358) ECG: LDR Reading 4: 3366[0m
+[0;32mI (63368) ECG: LDR Reading 5: 3332[0m
+[0;32mI (63378) ECG: LDR Reading 6: 3344[0m
+[0;32mI (63388) ECG: LDR Reading 7: 3424[0m
+[0;32mI (63398) ECG: LDR Reading 8: 3396[0m
+[0;32mI (63408) ECG: LDR Reading 9: 3355[0m
+[0;32mI (63418) ECG: LDR Reading 10: 3427[0m
+[0;32mI (63428) ECG: Payload: {"LDR":[3423,3327,3354,3366,3332,3344,3424,3396,3355,3427]}[0m
+[0;32mI (63878) ECG: Data sent successfully[0m
+[0;32mI (63978) ECG: LDR Reading 1: 3600[0m
+[0;32mI (63988) ECG: LDR Reading 2: 3571[0m
+[0;32mI (63998) ECG: LDR Reading 3: 3536[0m
+[0;32mI (64008) ECG: LDR Reading 4: 3531[0m
+[0;32mI (64018) ECG: LDR Reading 5: 3490[0m
+[0;32mI (64028) ECG: LDR Reading 6: 3514[0m
+[0;32mI (64038) ECG: LDR Reading 7: 3454[0m
+[0;32mI (64048) ECG: LDR Reading 8: 3439[0m
+[0;32mI (64058) ECG: LDR Reading 9: 3456[0m
+[0;32mI (64068) ECG: LDR Reading 10: 3333[0m
+[0;32mI (64078) ECG: Payload: {"LDR":[3600,3571,3536,3531,3490,3514,3454,3439,3456,3333]}[0m
+[0;32mI (64458) ECG: Data sent successfully[0m
+[0;32mI (64558) ECG: LDR Reading 1: 3424[0m
+[0;32mI (64568) ECG: LDR Reading 2: 3396[0m
+[0;32mI (64578) ECG: LDR Reading 3: 3427[0m
+[0;32mI (64588) ECG: LDR Reading 4: 3457[0m
+[0;32mI (64598) ECG: LDR Reading 5: 3431[0m
+[0;32mI (64608) ECG: LDR Reading 6: 3479[0m
+[0;32mI (64618) ECG: LDR Reading 7: 3454[0m
+[0;32mI (64628) ECG: LDR Reading 8: 3504[0m
+[0;32mI (64638) ECG: LDR Reading 9: 3504[0m
+[0;32mI (64648) ECG: LDR Reading 10: 3418[0m
+[0;32mI (64658) ECG: Payload: {"LDR":[3424,3396,3427,3457,3431,3479,3454,3504,3504,3418]}[0m
+[0;32mI (65068) ECG: Data sent successfully[0m
+[0;32mI (65178) ECG: LDR Reading 1: 3758[0m
+[0;32mI (65188) ECG: LDR Reading 2: 3696[0m
+[0;32mI (65198) ECG: LDR Reading 3: 3538[0m
+[0;32mI (65208) ECG: LDR Reading 4: 3541[0m
+[0;32mI (65218) ECG: LDR Reading 5: 3495[0m
+[0;32mI (65228) ECG: LDR Reading 6: 3393[0m
+[0;32mI (65238) ECG: LDR Reading 7: 3406[0m
+[0;32mI (65248) ECG: LDR Reading 8: 3392[0m
+[0;32mI (65258) ECG: LDR Reading 9: 3433[0m
+[0;32mI (65268) ECG: LDR Reading 10: 3353[0m
+[0;32mI (65278) ECG: Payload: {"LDR":[3758,3696,3538,3541,3495,3393,3406,3392,3433,3353]}[0m
+[0;32mI (65688) ECG: Data sent successfully[0m
+[0;32mI (65788) ECG: LDR Reading 1: 3261[0m
+[0;32mI (65798) ECG: LDR Reading 2: 3353[0m
+[0;32mI (65808) ECG: LDR Reading 3: 3266[0m
+[0;32mI (65818) ECG: LDR Reading 4: 3385[0m
+[0;32mI (65828) ECG: LDR Reading 5: 3419[0m
+[0;32mI (65838) ECG: LDR Reading 6: 3417[0m
+[0;32mI (65848) ECG: LDR Reading 7: 3392[0m
+[0;32mI (65858) ECG: LDR Reading 8: 3370[0m
+[0;32mI (65868) ECG: LDR Reading 9: 3517[0m
+[0;32mI (65878) ECG: LDR Reading 10: 3491[0m
+[0;32mI (65888) ECG: Payload: {"LDR":[3261,3353,3266,3385,3419,3417,3392,3370,3517,3491]}[0m
+[0;32mI (66308) ECG: Data sent successfully[0m
+[0;32mI (66408) ECG: LDR Reading 1: 3555[0m
+[0;32mI (66418) ECG: LDR Reading 2: 3562[0m
+[0;32mI (66428) ECG: LDR Reading 3: 3567[0m
+[0;32mI (66438) ECG: LDR Reading 4: 3474[0m
+[0;32mI (66448) ECG: LDR Reading 5: 3600[0m
+[0;32mI (66458) ECG: LDR Reading 6: 3503[0m
+[0;32mI (66468) ECG: LDR Reading 7: 3567[0m
+[0;32mI (66478) ECG: LDR Reading 8: 3468[0m
+[0;32mI (66488) ECG: LDR Reading 9: 3536[0m
+[0;32mI (66498) ECG: LDR Reading 10: 3500[0m
+[0;32mI (66508) ECG: Payload: {"LDR":[3555,3562,3567,3474,3600,3503,3567,3468,3536,3500]}[0m
+[0;32mI (66918) ECG: Data sent successfully[0m
+[0;32mI (67018) ECG: LDR Reading 1: 3370[0m
+[0;32mI (67028) ECG: LDR Reading 2: 3370[0m
+[0;32mI (67038) ECG: LDR Reading 3: 3395[0m
+[0;32mI (67048) ECG: LDR Reading 4: 3360[0m
+[0;32mI (67058) ECG: LDR Reading 5: 3423[0m
+[0;32mI (67068) ECG: LDR Reading 6: 3431[0m
+[0;32mI (67078) ECG: LDR Reading 7: 3482[0m
+[0;32mI (67088) ECG: LDR Reading 8: 3425[0m
+[0;32mI (67098) ECG: LDR Reading 9: 3521[0m
+[0;32mI (67108) ECG: LDR Reading 10: 3472[0m
+[0;32mI (67118) ECG: Payload: {"LDR":[3370,3370,3395,3360,3423,3431,3482,3425,3521,3472]}[0m
+[0;32mI (67528) ECG: Data sent successfully[0m
+[0;32mI (67628) ECG: LDR Reading 1: 3667[0m
+[0;32mI (67638) ECG: LDR Reading 2: 3575[0m
+[0;32mI (67648) ECG: LDR Reading 3: 3493[0m
+[0;32mI (67658) ECG: LDR Reading 4: 3439[0m
+[0;32mI (67668) ECG: LDR Reading 5: 3536[0m
+[0;32mI (67678) ECG: LDR Reading 6: 3420[0m
+[0;32mI (67688) ECG: LDR Reading 7: 3415[0m
+[0;32mI (67698) ECG: LDR Reading 8: 3463[0m
+[0;32mI (67708) ECG: LDR Reading 9: 3423[0m
+[0;32mI (67718) ECG: LDR Reading 10: 3456[0m
+[0;32mI (67728) ECG: Payload: {"LDR":[3667,3575,3493,3439,3536,3420,3415,3463,3423,3456]}[0m
+[0;32mI (68158) ECG: Data sent successfully[0m
+[0;32mI (68258) ECG: LDR Reading 1: 3418[0m
+[0;32mI (68268) ECG: LDR Reading 2: 3442[0m
+[0;32mI (68278) ECG: LDR Reading 3: 3434[0m
+[0;32mI (68288) ECG: LDR Reading 4: 3425[0m
+[0;32mI (68298) ECG: LDR Reading 5: 3497[0m
+[0;32mI (68308) ECG: LDR Reading 6: 3483[0m
+[0;32mI (68318) ECG: LDR Reading 7: 3562[0m
+[0;32mI (68328) ECG: LDR Reading 8: 3566[0m
+[0;32mI (68338) ECG: LDR Reading 9: 3600[0m
+[0;32mI (68348) ECG: LDR Reading 10: 3675[0m
+[0;32mI (68358) ECG: Payload: {"LDR":[3418,3442,3434,3425,3497,3483,3562,3566,3600,3675]}[0m
+[0;32mI (68758) ECG: Data sent successfully[0m
+[0;32mI (68858) ECG: LDR Reading 1: 4095[0m
+[0;32mI (68868) ECG: LDR Reading 2: 4019[0m
+[0;32mI (68878) ECG: LDR Reading 3: 4042[0m
+[0;32mI (68888) ECG: LDR Reading 4: 4095[0m
+[0;32mI (68898) ECG: LDR Reading 5: 4095[0m
+[0;32mI (68908) ECG: LDR Reading 6: 4095[0m
+[0;32mI (68918) ECG: LDR Reading 7: 4095[0m
+[0;32mI (68928) ECG: LDR Reading 8: 4095[0m
+[0;32mI (68938) ECG: LDR Reading 9: 4095[0m
+[0;32mI (68948) ECG: LDR Reading 10: 4071[0m
+[0;32mI (68958) ECG: Payload: {"LDR":[4095,4019,4042,4095,4095,4095,4095,4095,4095,4071]}[0m
+[0;32mI (69378) ECG: Data sent successfully[0m
+[0;32mI (69478) ECG: LDR Reading 1: 3385[0m
+[0;32mI (69488) ECG: LDR Reading 2: 3358[0m
+[0;32mI (69498) ECG: LDR Reading 3: 3380[0m
+[0;32mI (69508) ECG: LDR Reading 4: 3458[0m
+[0;32mI (69518) ECG: LDR Reading 5: 3462[0m
+[0;32mI (69528) ECG: LDR Reading 6: 3440[0m
+[0;32mI (69538) ECG: LDR Reading 7: 3383[0m
+[0;32mI (69548) ECG: LDR Reading 8: 3364[0m
+[0;32mI (69558) ECG: LDR Reading 9: 3380[0m
+[0;32mI (69568) ECG: LDR Reading 10: 3426[0m
+[0;32mI (69578) ECG: Payload: {"LDR":[3385,3358,3380,3458,3462,3440,3383,3364,3380,3426]}[0m
+[0;32mI (69988) ECG: Data sent successfully[0m
+[0;32mI (70088) ECG: LDR Reading 1: 3670[0m
+[0;32mI (70098) ECG: LDR Reading 2: 3680[0m
+[0;32mI (70108) ECG: LDR Reading 3: 3642[0m
+[0;32mI (70118) ECG: LDR Reading 4: 3606[0m
+[0;32mI (70128) ECG: LDR Reading 5: 3499[0m
+[0;32mI (70138) ECG: LDR Reading 6: 3421[0m
+[0;32mI (70148) ECG: LDR Reading 7: 3344[0m
+[0;32mI (70158) ECG: LDR Reading 8: 3285[0m
+[0;32mI (70168) ECG: LDR Reading 9: 3248[0m
+[0;32mI (70178) ECG: LDR Reading 10: 3239[0m
+[0;32mI (70188) ECG: Payload: {"LDR":[3670,3680,3642,3606,3499,3421,3344,3285,3248,3239]}[0m
+[0;32mI (70608) ECG: Data sent successfully[0m
+[0;32mI (70708) ECG: LDR Reading 1: 4095[0m
+[0;32mI (70718) ECG: LDR Reading 2: 3918[0m
+[0;32mI (70728) ECG: LDR Reading 3: 3248[0m
+[0;32mI (70738) ECG: LDR Reading 4: 3120[0m
+[0;32mI (70748) ECG: LDR Reading 5: 3181[0m
+[0;32mI (70758) ECG: LDR Reading 6: 3120[0m
+[0;32mI (70768) ECG: LDR Reading 7: 3099[0m
+[0;32mI (70778) ECG: LDR Reading 8: 3120[0m
+[0;32mI (70788) ECG: LDR Reading 9: 3099[0m
+[0;32mI (70798) ECG: LDR Reading 10: 3099[0m
+[0;32mI (70808) ECG: Payload: {"LDR":[4095,3918,3248,3120,3181,3120,3099,3120,3099,3099]}[0m
+[0;32mI (71218) ECG: Data sent successfully[0m
+[0;32mI (71318) ECG: LDR Reading 1: 3215[0m
+[0;32mI (71328) ECG: LDR Reading 2: 3440[0m
+[0;32mI (71338) ECG: LDR Reading 3: 3540[0m
+[0;32mI (71348) ECG: LDR Reading 4: 3412[0m
+[0;32mI (71358) ECG: LDR Reading 5: 3410[0m
+[0;32mI (71368) ECG: LDR Reading 6: 3439[0m
+[0;32mI (71378) ECG: LDR Reading 7: 3379[0m
+[0;32mI (71388) ECG: LDR Reading 8: 3403[0m
+[0;32mI (71398) ECG: LDR Reading 9: 3312[0m
+[0;32mI (71408) ECG: LDR Reading 10: 3338[0m
+[0;32mI (71418) ECG: Payload: {"LDR":[3215,3440,3540,3412,3410,3439,3379,3403,3312,3338]}[0m
+[0;32mI (71828) ECG: Data sent successfully[0m
+[0;32mI (71928) ECG: LDR Reading 1: 3195[0m
+[0;32mI (71938) ECG: LDR Reading 2: 3248[0m
+[0;32mI (71948) ECG: LDR Reading 3: 3312[0m
+[0;32mI (71958) ECG: LDR Reading 4: 3242[0m
+[0;32mI (71968) ECG: LDR Reading 5: 3248[0m
+[0;32mI (71978) ECG: LDR Reading 6: 3261[0m
+[0;32mI (71988) ECG: LDR Reading 7: 3218[0m
+[0;32mI (71998) ECG: LDR Reading 8: 3301[0m
+[0;32mI (72008) ECG: LDR Reading 9: 3245[0m
+[0;32mI (72018) ECG: LDR Reading 10: 3268[0m
+[0;32mI (72028) ECG: Payload: {"LDR":[3195,3248,3312,3242,3248,3261,3218,3301,3245,3268]}[0m
+[0;32mI (72448) ECG: Data sent successfully[0m
+[0;32mI (72548) ECG: LDR Reading 1: 3685[0m
+[0;32mI (72558) ECG: LDR Reading 2: 3599[0m
+[0;32mI (72568) ECG: LDR Reading 3: 3489[0m
+[0;32mI (72578) ECG: LDR Reading 4: 3439[0m
+[0;32mI (72588) ECG: LDR Reading 5: 3383[0m
+[0;32mI (72598) ECG: LDR Reading 6: 3446[0m
+[0;32mI (72608) ECG: LDR Reading 7: 3360[0m
+[0;32mI (72618) ECG: LDR Reading 8: 3465[0m
+[0;32mI (72628) ECG: LDR Reading 9: 3438[0m
+[0;32mI (72638) ECG: LDR Reading 10: 3481[0m
+[0;32mI (72648) ECG: Payload: {"LDR":[3685,3599,3489,3439,3383,3446,3360,3465,3438,3481]}[0m
+[0;32mI (73058) ECG: Data sent successfully[0m
+[0;32mI (73158) ECG: LDR Reading 1: 3438[0m
+[0;32mI (73168) ECG: LDR Reading 2: 3406[0m
+[0;32mI (73178) ECG: LDR Reading 3: 3444[0m
+[0;32mI (73188) ECG: LDR Reading 4: 3499[0m
+[0;32mI (73198) ECG: LDR Reading 5: 3493[0m
+[0;32mI (73208) ECG: LDR Reading 6: 3504[0m
+[0;32mI (73218) ECG: LDR Reading 7: 3536[0m
+[0;32mI (73228) ECG: LDR Reading 8: 3519[0m
+[0;32mI (73238) ECG: LDR Reading 9: 3569[0m
+[0;32mI (73248) ECG: LDR Reading 10: 3619[0m
+[0;32mI (73258) ECG: Payload: {"LDR":[3438,3406,3444,3499,3493,3504,3536,3519,3569,3619]}[0m
+[0;32mI (73698) ECG: Data sent successfully[0m
+[0;32mI (73798) ECG: LDR Reading 1: 3463[0m
+[0;32mI (73808) ECG: LDR Reading 2: 3361[0m
+[0;32mI (73818) ECG: LDR Reading 3: 3107[0m
+[0;32mI (73828) ECG: LDR Reading 4: 3435[0m
+[0;32mI (73838) ECG: LDR Reading 5: 4095[0m
+[0;32mI (73848) ECG: LDR Reading 6: 4095[0m
+[0;32mI (73858) ECG: LDR Reading 7: 4095[0m
+[0;32mI (73868) ECG: LDR Reading 8: 4095[0m
+[0;32mI (73878) ECG: LDR Reading 9: 4095[0m
+[0;32mI (73888) ECG: LDR Reading 10: 3681[0m
+[0;32mI (73898) ECG: Payload: {"LDR":[3463,3361,3107,3435,4095,4095,4095,4095,4095,3681]}[0m
+[0;32mI (74288) ECG: Data sent successfully[0m
+[0;32mI (74388) ECG: LDR Reading 1: 3429[0m
+[0;32mI (74398) ECG: LDR Reading 2: 3536[0m
+[0;32mI (74408) ECG: LDR Reading 3: 3520[0m
+[0;32mI (74418) ECG: LDR Reading 4: 3429[0m
+[0;32mI (74428) ECG: LDR Reading 5: 3513[0m
+[0;32mI (74438) ECG: LDR Reading 6: 3490[0m
+[0;32mI (74448) ECG: LDR Reading 7: 3412[0m
+[0;32mI (74458) ECG: LDR Reading 8: 3536[0m
+[0;32mI (74468) ECG: LDR Reading 9: 3739[0m
+[0;32mI (74478) ECG: LDR Reading 10: 3773[0m
+[0;32mI (74488) ECG: Payload: {"LDR":[3429,3536,3520,3429,3513,3490,3412,3536,3739,3773]}[0m
+[0;32mI (74898) ECG: Data sent successfully[0m
+[0;32mI (75008) ECG: LDR Reading 1: 3376[0m
+[0;32mI (75018) ECG: LDR Reading 2: 3377[0m
+[0;32mI (75028) ECG: LDR Reading 3: 3319[0m
+[0;32mI (75038) ECG: LDR Reading 4: 3385[0m
+[0;32mI (75048) ECG: LDR Reading 5: 3295[0m
+[0;32mI (75058) ECG: LDR Reading 6: 3322[0m
+[0;32mI (75068) ECG: LDR Reading 7: 3417[0m
+[0;32mI (75078) ECG: LDR Reading 8: 3395[0m
+[0;32mI (75088) ECG: LDR Reading 9: 3417[0m
+[0;32mI (75098) ECG: LDR Reading 10: 3434[0m
+[0;32mI (75108) ECG: Payload: {"LDR":[3376,3377,3319,3385,3295,3322,3417,3395,3417,3434]}[0m
+[0;32mI (75518) ECG: Data sent successfully[0m
+[0;32mI (75618) ECG: LDR Reading 1: 3675[0m
+[0;32mI (75628) ECG: LDR Reading 2: 3794[0m
+[0;32mI (75638) ECG: LDR Reading 3: 3888[0m
+[0;32mI (75648) ECG: LDR Reading 4: 3920[0m
+[0;32mI (75658) ECG: LDR Reading 5: 4005[0m
+[0;32mI (75668) ECG: LDR Reading 6: 3951[0m
+[0;32mI (75678) ECG: LDR Reading 7: 3863[0m
+[0;32mI (75688) ECG: LDR Reading 8: 3838[0m
+[0;32mI (75698) ECG: LDR Reading 9: 3730[0m
+[0;32mI (75708) ECG: LDR Reading 10: 3677[0m
+[0;32mI (75718) ECG: Payload: {"LDR":[3675,3794,3888,3920,4005,3951,3863,3838,3730,3677]}[0m
+[0;32mI (76128) ECG: Data sent successfully[0m
+[0;32mI (76238) ECG: LDR Reading 1: 4095[0m
+[0;32mI (76248) ECG: LDR Reading 2: 4095[0m
+[0;32mI (76258) ECG: LDR Reading 3: 4095[0m
+[0;32mI (76268) ECG: LDR Reading 4: 3805[0m
+[0;32mI (76278) ECG: LDR Reading 5: 3614[0m
+[0;32mI (76288) ECG: LDR Reading 6: 3627[0m
+[0;32mI (76298) ECG: LDR Reading 7: 3619[0m
+[0;32mI (76308) ECG: LDR Reading 8: 3566[0m
+[0;32mI (76318) ECG: LDR Reading 9: 3606[0m
+[0;32mI (76328) ECG: LDR Reading 10: 3595[0m
+[0;32mI (76338) ECG: Payload: {"LDR":[4095,4095,4095,3805,3614,3627,3619,3566,3606,3595]}[0m
+[0;32mI (76748) ECG: Data sent successfully[0m
+[0;32mI (76848) ECG: LDR Reading 1: 3641[0m
+[0;32mI (76858) ECG: LDR Reading 2: 3565[0m
+[0;32mI (76868) ECG: LDR Reading 3: 3511[0m
+[0;32mI (76878) ECG: LDR Reading 4: 3440[0m
+[0;32mI (76888) ECG: LDR Reading 5: 3376[0m
+[0;32mI (76898) ECG: LDR Reading 6: 3431[0m
+[0;32mI (76908) ECG: LDR Reading 7: 3389[0m
+[0;32mI (76918) ECG: LDR Reading 8: 3457[0m
+[0;32mI (76928) ECG: LDR Reading 9: 3445[0m
+[0;32mI (76938) ECG: LDR Reading 10: 3430[0m
+[0;32mI (76948) ECG: Payload: {"LDR":[3641,3565,3511,3440,3376,3431,3389,3457,3445,3430]}[0m
+[0;32mI (77388) ECG: Data sent successfully[0m
+[0;32mI (77488) ECG: LDR Reading 1: 3233[0m
+[0;32mI (77498) ECG: LDR Reading 2: 3281[0m
+[0;32mI (77508) ECG: LDR Reading 3: 3167[0m
+[0;32mI (77518) ECG: LDR Reading 4: 3200[0m
+[0;32mI (77528) ECG: LDR Reading 5: 3231[0m
+[0;32mI (77538) ECG: LDR Reading 6: 3166[0m
+[0;32mI (77548) ECG: LDR Reading 7: 3241[0m
+[0;32mI (77558) ECG: LDR Reading 8: 3175[0m
+[0;32mI (77568) ECG: LDR Reading 9: 3183[0m
+[0;32mI (77578) ECG: LDR Reading 10: 3345[0m
+[0;32mI (77588) ECG: Payload: {"LDR":[3233,3281,3167,3200,3231,3166,3241,3175,3183,3345]}[0m
+[0;32mI (77978) ECG: Data sent successfully[0m
+[0;32mI (78078) ECG: LDR Reading 1: 3343[0m
+[0;32mI (78088) ECG: LDR Reading 2: 3264[0m
+[0;32mI (78098) ECG: LDR Reading 3: 3280[0m
+[0;32mI (78108) ECG: LDR Reading 4: 3321[0m
+[0;32mI (78118) ECG: LDR Reading 5: 3281[0m
+[0;32mI (78128) ECG: LDR Reading 6: 3278[0m
+[0;32mI (78138) ECG: LDR Reading 7: 3282[0m
+[0;32mI (78148) ECG: LDR Reading 8: 3249[0m
+[0;32mI (78158) ECG: LDR Reading 9: 3317[0m
+[0;32mI (78168) ECG: LDR Reading 10: 3274[0m
+[0;32mI (78178) ECG: Payload: {"LDR":[3343,3264,3280,3321,3281,3278,3282,3249,3317,3274]}[0m
+[0;32mI (78588) ECG: Data sent successfully[0m
+[0;32mI (78688) ECG: LDR Reading 1: 3392[0m
+[0;32mI (78698) ECG: LDR Reading 2: 3390[0m
+[0;32mI (78708) ECG: LDR Reading 3: 3386[0m
+[0;32mI (78718) ECG: LDR Reading 4: 3319[0m
+[0;32mI (78728) ECG: LDR Reading 5: 3437[0m
+[0;32mI (78738) ECG: LDR Reading 6: 3502[0m
+[0;32mI (78748) ECG: LDR Reading 7: 3489[0m
+[0;32mI (78758) ECG: LDR Reading 8: 3530[0m
+[0;32mI (78768) ECG: LDR Reading 9: 3649[0m
+[0;32mI (78778) ECG: LDR Reading 10: 3670[0m
+[0;32mI (78788) ECG: Payload: {"LDR":[3392,3390,3386,3319,3437,3502,3489,3530,3649,3670]}[0m
+[0;32mI (79208) ECG: Data sent successfully[0m
+[0;32mI (79308) ECG: LDR Reading 1: 3984[0m
+[0;32mI (79318) ECG: LDR Reading 2: 3734[0m
+[0;32mI (79328) ECG: LDR Reading 3: 4095[0m
+[0;32mI (79338) ECG: LDR Reading 4: 4095[0m
+[0;32mI (79348) ECG: LDR Reading 5: 4095[0m
+[0;32mI (79358) ECG: LDR Reading 6: 4095[0m
+[0;32mI (79368) ECG: LDR Reading 7: 4095[0m
+[0;32mI (79378) ECG: LDR Reading 8: 4095[0m
+[0;32mI (79388) ECG: LDR Reading 9: 4095[0m
+[0;32mI (79398) ECG: LDR Reading 10: 4095[0m
+[0;32mI (79408) ECG: Payload: {"LDR":[3984,3734,4095,4095,4095,4095,4095,4095,4095,4095]}[0m
+[0;32mI (79818) ECG: Data sent successfully[0m
+[0;32mI (79928) ECG: LDR Reading 1: 3881[0m
+[0;32mI (79938) ECG: LDR Reading 2: 4082[0m
+[0;32mI (79948) ECG: LDR Reading 3: 4021[0m
+[0;32mI (79958) ECG: LDR Reading 4: 3885[0m
+[0;32mI (79968) ECG: LDR Reading 5: 3865[0m
+[0;32mI (79978) ECG: LDR Reading 6: 3783[0m
+[0;32mI (79988) ECG: LDR Reading 7: 3796[0m
+[0;32mI (79998) ECG: LDR Reading 8: 3655[0m
+[0;32mI (80008) ECG: LDR Reading 9: 3697[0m
+[0;32mI (80018) ECG: LDR Reading 10: 3600[0m
+[0;32mI (80028) ECG: Payload: {"LDR":[3881,4082,4021,3885,3865,3783,3796,3655,3697,3600]}[0m
+[0;32mI (80428) ECG: Data sent successfully[0m
+[0;32mI (80528) ECG: LDR Reading 1: 2714[0m
+[0;32mI (80538) ECG: LDR Reading 2: 2725[0m
+[0;32mI (80548) ECG: LDR Reading 3: 2768[0m
+[0;32mI (80558) ECG: LDR Reading 4: 2710[0m
+[0;32mI (80568) ECG: LDR Reading 5: 2746[0m
+[0;32mI (80578) ECG: LDR Reading 6: 2793[0m
+[0;32mI (80588) ECG: LDR Reading 7: 2848[0m
+[0;32mI (80598) ECG: LDR Reading 8: 2827[0m
+[0;32mI (80608) ECG: LDR Reading 9: 2828[0m
+[0;32mI (80618) ECG: LDR Reading 10: 2800[0m
+[0;32mI (80628) ECG: Payload: {"LDR":[2714,2725,2768,2710,2746,2793,2848,2827,2828,2800]}[0m
+[0;32mI (81048) ECG: Data sent successfully[0m
+[0;32mI (81148) ECG: LDR Reading 1: 3263[0m
+[0;32mI (81158) ECG: LDR Reading 2: 3131[0m
+[0;32mI (81168) ECG: LDR Reading 3: 3143[0m
+[0;32mI (81178) ECG: LDR Reading 4: 3185[0m
+[0;32mI (81188) ECG: LDR Reading 5: 3173[0m
+[0;32mI (81198) ECG: LDR Reading 6: 3194[0m
+[0;32mI (81208) ECG: LDR Reading 7: 3214[0m
+[0;32mI (81218) ECG: LDR Reading 8: 3251[0m
+[0;32mI (81228) ECG: LDR Reading 9: 3213[0m
+[0;32mI (81238) ECG: LDR Reading 10: 3156[0m
+[0;32mI (81248) ECG: Payload: {"LDR":[3263,3131,3143,3185,3173,3194,3214,3251,3213,3156]}[0m
+[0;32mI (81778) ECG: Data sent successfully[0m
+[0;32mI (81878) ECG: LDR Reading 1: 3719[0m
+[0;32mI (81888) ECG: LDR Reading 2: 3728[0m
+[0;32mI (81898) ECG: LDR Reading 3: 3737[0m
+[0;32mI (81908) ECG: LDR Reading 4: 3630[0m
+[0;32mI (81918) ECG: LDR Reading 5: 3611[0m
+[0;32mI (81928) ECG: LDR Reading 6: 3507[0m
+[0;32mI (81938) ECG: LDR Reading 7: 3472[0m
+[0;32mI (81948) ECG: LDR Reading 8: 3434[0m
+[0;32mI (81958) ECG: LDR Reading 9: 3430[0m
+[0;32mI (81968) ECG: LDR Reading 10: 3393[0m
+[0;32mI (81978) ECG: Payload: {"LDR":[3719,3728,3737,3630,3611,3507,3472,3434,3430,3393]}[0m
+[0;32mI (82378) ECG: Data sent successfully[0m
+[0;32mI (82478) ECG: LDR Reading 1: 4095[0m
+[0;32mI (82488) ECG: LDR Reading 2: 3665[0m
+[0;32mI (82498) ECG: LDR Reading 3: 3429[0m
+[0;32mI (82508) ECG: LDR Reading 4: 3445[0m
+[0;32mI (82518) ECG: LDR Reading 5: 3389[0m
+[0;32mI (82528) ECG: LDR Reading 6: 3425[0m
+[0;32mI (82538) ECG: LDR Reading 7: 3347[0m
+[0;32mI (82548) ECG: LDR Reading 8: 3433[0m
+[0;32mI (82558) ECG: LDR Reading 9: 3409[0m
+[0;32mI (82568) ECG: LDR Reading 10: 3492[0m
+[0;32mI (82578) ECG: Payload: {"LDR":[4095,3665,3429,3445,3389,3425,3347,3433,3409,3492]}[0m
+[0;32mI (82988) ECG: Data sent successfully[0m
+[0;32mI (83098) ECG: LDR Reading 1: 3632[0m
+[0;32mI (83108) ECG: LDR Reading 2: 3610[0m
+[0;32mI (83118) ECG: LDR Reading 3: 3625[0m
+[0;32mI (83128) ECG: LDR Reading 4: 3569[0m
+[0;32mI (83138) ECG: LDR Reading 5: 3633[0m
+[0;32mI (83148) ECG: LDR Reading 6: 3568[0m
+[0;32mI (83158) ECG: LDR Reading 7: 3557[0m
+[0;32mI (83168) ECG: LDR Reading 8: 3208[0m
+[0;32mI (83178) ECG: LDR Reading 9: 3717[0m
+[0;32mI (83188) ECG: LDR Reading 10: 4095[0m
+[0;32mI (83198) ECG: Payload: {"LDR":[3632,3610,3625,3569,3633,3568,3557,3208,3717,4095]}[0m
+[0;32mI (83608) ECG: Data sent successfully[0m
+[0;32mI (83708) ECG: LDR Reading 1: 3315[0m
+[0;32mI (83718) ECG: LDR Reading 2: 3297[0m
+[0;32mI (83728) ECG: LDR Reading 3: 3408[0m
+[0;32mI (83738) ECG: LDR Reading 4: 3396[0m
+[0;32mI (83748) ECG: LDR Reading 5: 3395[0m
+[0;32mI (83758) ECG: LDR Reading 6: 3334[0m
+[0;32mI (83768) ECG: LDR Reading 7: 3349[0m
+[0;32mI (83778) ECG: LDR Reading 8: 3551[0m
+[0;32mI (83788) ECG: LDR Reading 9: 3600[0m
+[0;32mI (83798) ECG: LDR Reading 10: 3485[0m
+[0;32mI (83808) ECG: Payload: {"LDR":[3315,3297,3408,3396,3395,3334,3349,3551,3600,3485]}[0m
+[0;32mI (84218) ECG: Data sent successfully[0m
+[0;32mI (84318) ECG: LDR Reading 1: 3324[0m
+[0;32mI (84328) ECG: LDR Reading 2: 3328[0m
+[0;32mI (84338) ECG: LDR Reading 3: 3254[0m
+[0;32mI (84348) ECG: LDR Reading 4: 3278[0m
+[0;32mI (84358) ECG: LDR Reading 5: 3376[0m
+[0;32mI (84368) ECG: LDR Reading 6: 3369[0m
+[0;32mI (84378) ECG: LDR Reading 7: 3322[0m
+[0;32mI (84388) ECG: LDR Reading 8: 3306[0m
+[0;32mI (84398) ECG: LDR Reading 9: 3373[0m
+[0;32mI (84408) ECG: LDR Reading 10: 3298[0m
+[0;32mI (84418) ECG: Payload: {"LDR":[3324,3328,3254,3278,3376,3369,3322,3306,3373,3298]}[0m
+[0;32mI (84838) ECG: Data sent successfully[0m
+[0;32mI (84938) ECG: LDR Reading 1: 3648[0m
+[0;32mI (84948) ECG: LDR Reading 2: 3568[0m
+[0;32mI (84958) ECG: LDR Reading 3: 3453[0m
+[0;32mI (84968) ECG: LDR Reading 4: 3406[0m
+[0;32mI (84978) ECG: LDR Reading 5: 3406[0m
+[0;32mI (84988) ECG: LDR Reading 6: 3438[0m
+[0;32mI (84998) ECG: LDR Reading 7: 3419[0m
+[0;32mI (85008) ECG: LDR Reading 8: 3378[0m
+[0;32mI (85018) ECG: LDR Reading 9: 3355[0m
+[0;32mI (85028) ECG: LDR Reading 10: 3376[0m
+[0;32mI (85038) ECG: Payload: {"LDR":[3648,3568,3453,3406,3406,3438,3419,3378,3355,3376]}[0m
+[0;32mI (85448) ECG: Data sent successfully[0m
+[0;32mI (85548) ECG: LDR Reading 1: 3261[0m
+[0;32mI (85558) ECG: LDR Reading 2: 3331[0m
+[0;32mI (85568) ECG: LDR Reading 3: 3295[0m
+[0;32mI (85578) ECG: LDR Reading 4: 3426[0m
+[0;32mI (85588) ECG: LDR Reading 5: 3482[0m
+[0;32mI (85598) ECG: LDR Reading 6: 3450[0m
+[0;32mI (85608) ECG: LDR Reading 7: 3557[0m
+[0;32mI (85618) ECG: LDR Reading 8: 3498[0m
+[0;32mI (85628) ECG: LDR Reading 9: 3566[0m
+[0;32mI (85638) ECG: LDR Reading 10: 3583[0m
+[0;32mI (85648) ECG: Payload: {"LDR":[3261,3331,3295,3426,3482,3450,3557,3498,3566,3583]}[0m
+[0;32mI (86068) ECG: Data sent successfully[0m
+[0;32mI (86168) ECG: LDR Reading 1: 3524[0m
+[0;32mI (86178) ECG: LDR Reading 2: 3543[0m
+[0;32mI (86188) ECG: LDR Reading 3: 3479[0m
+[0;32mI (86198) ECG: LDR Reading 4: 3147[0m
+[0;32mI (86208) ECG: LDR Reading 5: 3281[0m
+[0;32mI (86218) ECG: LDR Reading 6: 4095[0m
+[0;32mI (86228) ECG: LDR Reading 7: 4095[0m
+[0;32mI (86238) ECG: LDR Reading 8: 4095[0m
+[0;32mI (86248) ECG: LDR Reading 9: 4095[0m
+[0;32mI (86258) ECG: LDR Reading 10: 4095[0m
+[0;32mI (86268) ECG: Payload: {"LDR":[3524,3543,3479,3147,3281,4095,4095,4095,4095,4095]}[0m
+[0;32mI (86678) ECG: Data sent successfully[0m
+[0;32mI (86778) ECG: LDR Reading 1: 3312[0m
+[0;32mI (86788) ECG: LDR Reading 2: 3332[0m
+[0;32mI (86798) ECG: LDR Reading 3: 3388[0m
+[0;32mI (86808) ECG: LDR Reading 4: 3338[0m
+[0;32mI (86818) ECG: LDR Reading 5: 3374[0m
+[0;32mI (86828) ECG: LDR Reading 6: 3364[0m
+[0;32mI (86838) ECG: LDR Reading 7: 3419[0m
+[0;32mI (86848) ECG: LDR Reading 8: 3483[0m
+[0;32mI (86858) ECG: LDR Reading 9: 3665[0m
+[0;32mI (86868) ECG: LDR Reading 10: 3678[0m
+[0;32mI (86878) ECG: Payload: {"LDR":[3312,3332,3388,3338,3374,3364,3419,3483,3665,3678]}[0m
+[0;32mI (87328) ECG: Data sent successfully[0m
+[0;32mI (87428) ECG: LDR Reading 1: 3403[0m
+[0;32mI (87438) ECG: LDR Reading 2: 3403[0m
+[0;32mI (87448) ECG: LDR Reading 3: 3415[0m
+[0;32mI (87458) ECG: LDR Reading 4: 3463[0m
+[0;32mI (87468) ECG: LDR Reading 5: 3517[0m
+[0;32mI (87478) ECG: LDR Reading 6: 3469[0m
+[0;32mI (87488) ECG: LDR Reading 7: 3422[0m
+[0;32mI (87498) ECG: LDR Reading 8: 3407[0m
+[0;32mI (87508) ECG: LDR Reading 9: 3360[0m
+[0;32mI (87518) ECG: LDR Reading 10: 3429[0m
+[0;32mI (87528) ECG: Payload: {"LDR":[3403,3403,3415,3463,3517,3469,3422,3407,3360,3429]}[0m
+[0;32mI (87908) ECG: Data sent successfully[0m
+[0;32mI (88008) ECG: LDR Reading 1: 3774[0m
+[0;32mI (88018) ECG: LDR Reading 2: 3814[0m
+[0;32mI (88028) ECG: LDR Reading 3: 3849[0m
+[0;32mI (88038) ECG: LDR Reading 4: 3707[0m
+[0;32mI (88048) ECG: LDR Reading 5: 3647[0m
+[0;32mI (88058) ECG: LDR Reading 6: 3617[0m
+[0;32mI (88068) ECG: LDR Reading 7: 3539[0m
+[0;32mI (88078) ECG: LDR Reading 8: 3426[0m
+[0;32mI (88088) ECG: LDR Reading 9: 3408[0m
+[0;32mI (88098) ECG: LDR Reading 10: 3429[0m
+[0;32mI (88108) ECG: Payload: {"LDR":[3774,3814,3849,3707,3647,3617,3539,3426,3408,3429]}[0m
+[0;32mI (88518) ECG: Data sent successfully[0m
+[0;32mI (88628) ECG: LDR Reading 1: 3360[0m
+[0;32mI (88638) ECG: LDR Reading 2: 3373[0m
+[0;32mI (88648) ECG: LDR Reading 3: 3303[0m
+[0;32mI (88658) ECG: LDR Reading 4: 3408[0m
+[0;32mI (88668) ECG: LDR Reading 5: 3392[0m
+[0;32mI (88678) ECG: LDR Reading 6: 3463[0m
+[0;32mI (88688) ECG: LDR Reading 7: 3422[0m
+[0;32mI (88698) ECG: LDR Reading 8: 3450[0m
+[0;32mI (88708) ECG: LDR Reading 9: 3429[0m
+[0;32mI (88718) ECG: LDR Reading 10: 3472[0m
+[0;32mI (88728) ECG: Payload: {"LDR":[3360,3373,3303,3408,3392,3463,3422,3450,3429,3472]}[0m
+[0;32mI (89138) ECG: Data sent successfully[0m
+[0;32mI (89238) ECG: LDR Reading 1: 3536[0m
+[0;32mI (89248) ECG: LDR Reading 2: 3521[0m
+[0;32mI (89258) ECG: LDR Reading 3: 3579[0m
+[0;32mI (89268) ECG: LDR Reading 4: 3470[0m
+[0;32mI (89278) ECG: LDR Reading 5: 3503[0m
+[0;32mI (89288) ECG: LDR Reading 6: 3283[0m
+[0;32mI (89298) ECG: LDR Reading 7: 3088[0m
+[0;32mI (89308) ECG: LDR Reading 8: 3682[0m
+[0;32mI (89318) ECG: LDR Reading 9: 4095[0m
+[0;32mI (89328) ECG: LDR Reading 10: 4095[0m
+[0;32mI (89338) ECG: Payload: {"LDR":[3536,3521,3579,3470,3503,3283,3088,3682,4095,4095]}[0m
+[0;32mI (89748) ECG: Data sent successfully[0m
+[0;32mI (89848) ECG: LDR Reading 1: 3414[0m
+[0;32mI (89858) ECG: LDR Reading 2: 3403[0m
+[0;32mI (89868) ECG: LDR Reading 3: 3357[0m
+[0;32mI (89878) ECG: LDR Reading 4: 3503[0m
+[0;32mI (89888) ECG: LDR Reading 5: 3379[0m
+[0;32mI (89898) ECG: LDR Reading 6: 3398[0m
+[0;32mI (89908) ECG: LDR Reading 7: 3446[0m
+[0;32mI (89918) ECG: LDR Reading 8: 3503[0m
+[0;32mI (89928) ECG: LDR Reading 9: 3462[0m
+[0;32mI (89938) ECG: LDR Reading 10: 3637[0m
+[0;32mI (89948) ECG: Payload: {"LDR":[3414,3403,3357,3503,3379,3398,3446,3503,3462,3637]}[0m
+[0;32mI (90398) ECG: Data sent successfully[0m
+[0;32mI (90498) ECG: LDR Reading 1: 3347[0m
+[0;32mI (90508) ECG: LDR Reading 2: 3430[0m
+[0;32mI (90518) ECG: LDR Reading 3: 3379[0m
+[0;32mI (90528) ECG: LDR Reading 4: 3440[0m
+[0;32mI (90538) ECG: LDR Reading 5: 3387[0m
+[0;32mI (90548) ECG: LDR Reading 6: 3405[0m
+[0;32mI (90558) ECG: LDR Reading 7: 3393[0m
+[0;32mI (90568) ECG: LDR Reading 8: 3361[0m
+[0;32mI (90578) ECG: LDR Reading 9: 3353[0m
+[0;32mI (90588) ECG: LDR Reading 10: 3410[0m
+[0;32mI (90598) ECG: Payload: {"LDR":[3347,3430,3379,3440,3387,3405,3393,3361,3353,3410]}[0m
+[0;32mI (90978) ECG: Data sent successfully[0m
+[0;32mI (91078) ECG: LDR Reading 1: 3540[0m
+[0;32mI (91088) ECG: LDR Reading 2: 3520[0m
+[0;32mI (91098) ECG: LDR Reading 3: 3638[0m
+[0;32mI (91108) ECG: LDR Reading 4: 3719[0m
+[0;32mI (91118) ECG: LDR Reading 5: 3760[0m
+[0;32mI (91128) ECG: LDR Reading 6: 3785[0m
+[0;32mI (91138) ECG: LDR Reading 7: 3795[0m
+[0;32mI (91148) ECG: LDR Reading 8: 3779[0m
+[0;32mI (91158) ECG: LDR Reading 9: 3742[0m
+[0;32mI (91168) ECG: LDR Reading 10: 3645[0m
+[0;32mI (91178) ECG: Payload: {"LDR":[3540,3520,3638,3719,3760,3785,3795,3779,3742,3645]}[0m
+[0;32mI (91618) ECG: Data sent successfully[0m
+[0;32mI (91718) ECG: LDR Reading 1: 4095[0m
+[0;32mI (91728) ECG: LDR Reading 2: 4095[0m
+[0;32mI (91738) ECG: LDR Reading 3: 4095[0m
+[0;32mI (91748) ECG: LDR Reading 4: 3767[0m
+[0;32mI (91758) ECG: LDR Reading 5: 3378[0m
+[0;32mI (91768) ECG: LDR Reading 6: 3328[0m
+[0;32mI (91778) ECG: LDR Reading 7: 3326[0m
+[0;32mI (91788) ECG: LDR Reading 8: 3218[0m
+[0;32mI (91798) ECG: LDR Reading 9: 3269[0m
+[0;32mI (91808) ECG: LDR Reading 10: 3266[0m
+[0;32mI (91818) ECG: Payload: {"LDR":[4095,4095,4095,3767,3378,3328,3326,3218,3269,3266]}[0m
+[0;32mI (92208) ECG: Data sent successfully[0m
+[0;32mI (92308) ECG: LDR Reading 1: 3456[0m
+[0;32mI (92318) ECG: LDR Reading 2: 3507[0m
+[0;32mI (92328) ECG: LDR Reading 3: 3774[0m
+[0;32mI (92338) ECG: LDR Reading 4: 3824[0m
+[0;32mI (92348) ECG: LDR Reading 5: 3723[0m
+[0;32mI (92358) ECG: LDR Reading 6: 3639[0m
+[0;32mI (92368) ECG: LDR Reading 7: 3514[0m
+[0;32mI (92378) ECG: LDR Reading 8: 3569[0m
+[0;32mI (92388) ECG: LDR Reading 9: 3528[0m
+[0;32mI (92398) ECG: LDR Reading 10: 3498[0m
+[0;32mI (92408) ECG: Payload: {"LDR":[3456,3507,3774,3824,3723,3639,3514,3569,3528,3498]}[0m
+[0;32mI (92828) ECG: Data sent successfully[0m
+[0;32mI (92928) ECG: LDR Reading 1: 3514[0m
+[0;32mI (92938) ECG: LDR Reading 2: 3503[0m
+[0;32mI (92948) ECG: LDR Reading 3: 3421[0m
+[0;32mI (92958) ECG: LDR Reading 4: 3425[0m
+[0;32mI (92968) ECG: LDR Reading 5: 3446[0m
+[0;32mI (92978) ECG: LDR Reading 6: 3475[0m
+[0;32mI (92988) ECG: LDR Reading 7: 3456[0m
+[0;32mI (92998) ECG: LDR Reading 8: 3458[0m
+[0;32mI (93008) ECG: LDR Reading 9: 3504[0m
+[0;32mI (93018) ECG: LDR Reading 10: 3483[0m
+[0;32mI (93028) ECG: Payload: {"LDR":[3514,3503,3421,3425,3446,3475,3456,3458,3504,3483]}[0m
+[0;32mI (93438) ECG: Data sent successfully[0m
+[0;32mI (93538) ECG: LDR Reading 1: 3422[0m
+[0;32mI (93548) ECG: LDR Reading 2: 3342[0m
+[0;32mI (93558) ECG: LDR Reading 3: 3376[0m
+[0;32mI (93568) ECG: LDR Reading 4: 3408[0m
+[0;32mI (93578) ECG: LDR Reading 5: 3428[0m
+[0;32mI (93588) ECG: LDR Reading 6: 3408[0m
+[0;32mI (93598) ECG: LDR Reading 7: 3392[0m
+[0;32mI (93608) ECG: LDR Reading 8: 3427[0m
+[0;32mI (93618) ECG: LDR Reading 9: 3448[0m
+[0;32mI (93628) ECG: LDR Reading 10: 3398[0m
+[0;32mI (93638) ECG: Payload: {"LDR":[3422,3342,3376,3408,3428,3408,3392,3427,3448,3398]}[0m
+[0;32mI (94068) ECG: Data sent successfully[0m
+[0;32mI (94168) ECG: LDR Reading 1: 3388[0m
+[0;32mI (94178) ECG: LDR Reading 2: 3472[0m
+[0;32mI (94188) ECG: LDR Reading 3: 3520[0m
+[0;32mI (94198) ECG: LDR Reading 4: 3535[0m
+[0;32mI (94208) ECG: LDR Reading 5: 3558[0m
+[0;32mI (94218) ECG: LDR Reading 6: 3633[0m
+[0;32mI (94228) ECG: LDR Reading 7: 3721[0m
+[0;32mI (94238) ECG: LDR Reading 8: 3740[0m
+[0;32mI (94248) ECG: LDR Reading 9: 3824[0m
+[0;32mI (94258) ECG: LDR Reading 10: 3761[0m
+[0;32mI (94268) ECG: Payload: {"LDR":[3388,3472,3520,3535,3558,3633,3721,3740,3824,3761]}[0m
+[0;32mI (94668) ECG: Data sent successfully[0m
+[0;32mI (94768) ECG: LDR Reading 1: 3234[0m
+[0;32mI (94778) ECG: LDR Reading 2: 4095[0m
+[0;32mI (94788) ECG: LDR Reading 3: 4095[0m
+[0;32mI (94798) ECG: LDR Reading 4: 4095[0m
+[0;32mI (94808) ECG: LDR Reading 5: 4095[0m
+[0;32mI (94818) ECG: LDR Reading 6: 4095[0m
+[0;32mI (94828) ECG: LDR Reading 7: 3654[0m
+[0;32mI (94838) ECG: LDR Reading 8: 3329[0m
+[0;32mI (94848) ECG: LDR Reading 9: 3349[0m
+[0;32mI (94858) ECG: LDR Reading 10: 3327[0m
+[0;32mI (94868) ECG: Payload: {"LDR":[3234,4095,4095,4095,4095,4095,3654,3329,3349,3327]}[0m
+[0;32mI (95278) ECG: Data sent successfully[0m
+[0;32mI (95378) ECG: LDR Reading 1: 3441[0m
+[0;32mI (95388) ECG: LDR Reading 2: 3421[0m
+[0;32mI (95398) ECG: LDR Reading 3: 3520[0m
+[0;32mI (95408) ECG: LDR Reading 4: 3767[0m
+[0;32mI (95418) ECG: LDR Reading 5: 3770[0m
+[0;32mI (95428) ECG: LDR Reading 6: 3694[0m
+[0;32mI (95438) ECG: LDR Reading 7: 3574[0m
+[0;32mI (95448) ECG: LDR Reading 8: 3536[0m
+[0;32mI (95458) ECG: LDR Reading 9: 3507[0m
+[0;32mI (95468) ECG: LDR Reading 10: 3543[0m
+[0;32mI (95478) ECG: Payload: {"LDR":[3441,3421,3520,3767,3770,3694,3574,3536,3507,3543]}[0m
+[0;32mI (95898) ECG: Data sent successfully[0m
+[0;32mI (95998) ECG: LDR Reading 1: 3396[0m
+[0;32mI (96008) ECG: LDR Reading 2: 3425[0m
+[0;32mI (96018) ECG: LDR Reading 3: 3450[0m
+[0;32mI (96028) ECG: LDR Reading 4: 3433[0m
+[0;32mI (96038) ECG: LDR Reading 5: 3351[0m
+[0;32mI (96048) ECG: LDR Reading 6: 3378[0m
+[0;32mI (96058) ECG: LDR Reading 7: 3456[0m
+[0;32mI (96068) ECG: LDR Reading 8: 3360[0m
+[0;32mI (96078) ECG: LDR Reading 9: 3393[0m
+[0;32mI (96088) ECG: LDR Reading 10: 3415[0m
+[0;32mI (96098) ECG: Payload: {"LDR":[3396,3425,3450,3433,3351,3378,3456,3360,3393,3415]}[0m
+[0;32mI (96508) ECG: Data sent successfully[0m
+[0;32mI (96608) ECG: LDR Reading 1: 3774[0m
+[0;32mI (96618) ECG: LDR Reading 2: 3697[0m
+[0;32mI (96628) ECG: LDR Reading 3: 3532[0m
+[0;32mI (96638) ECG: LDR Reading 4: 3509[0m
+[0;32mI (96648) ECG: LDR Reading 5: 3505[0m
+[0;32mI (96658) ECG: LDR Reading 6: 3503[0m
+[0;32mI (96668) ECG: LDR Reading 7: 3455[0m
+[0;32mI (96678) ECG: LDR Reading 8: 3504[0m
+[0;32mI (96688) ECG: LDR Reading 9: 3473[0m
+[0;32mI (96698) ECG: LDR Reading 10: 3393[0m
+[0;32mI (96708) ECG: Payload: {"LDR":[3774,3697,3532,3509,3505,3503,3455,3504,3473,3393]}[0m
+[0;32mI (97128) ECG: Data sent successfully[0m
+[0;32mI (97228) ECG: LDR Reading 1: 3414[0m
+[0;32mI (97238) ECG: LDR Reading 2: 3411[0m
+[0;32mI (97248) ECG: LDR Reading 3: 3399[0m
+[0;32mI (97258) ECG: LDR Reading 4: 3509[0m
+[0;32mI (97268) ECG: LDR Reading 5: 3482[0m
+[0;32mI (97278) ECG: LDR Reading 6: 3524[0m
+[0;32mI (97288) ECG: LDR Reading 7: 3567[0m
+[0;32mI (97298) ECG: LDR Reading 8: 3454[0m
+[0;32mI (97308) ECG: LDR Reading 9: 3582[0m
+[0;32mI (97318) ECG: LDR Reading 10: 3715[0m
+[0;32mI (97328) ECG: Payload: {"LDR":[3414,3411,3399,3509,3482,3524,3567,3454,3582,3715]}[0m
+[0;32mI (97748) ECG: Data sent successfully[0m
+[0;32mI (97848) ECG: LDR Reading 1: 3530[0m
+[0;32mI (97858) ECG: LDR Reading 2: 3277[0m
+[0;32mI (97868) ECG: LDR Reading 3: 3252[0m
+[0;32mI (97878) ECG: LDR Reading 4: 4071[0m
+[0;32mI (97888) ECG: LDR Reading 5: 4095[0m
+[0;32mI (97898) ECG: LDR Reading 6: 4095[0m
+[0;32mI (97908) ECG: LDR Reading 7: 4095[0m
+[0;32mI (97918) ECG: LDR Reading 8: 4095[0m
+[0;32mI (97928) ECG: LDR Reading 9: 4075[0m
+[0;32mI (97938) ECG: LDR Reading 10: 3467[0m
+[0;32mI (97948) ECG: Payload: {"LDR":[3530,3277,3252,4071,4095,4095,4095,4095,4075,3467]}[0m
+[0;32mI (98458) ECG: Data sent successfully[0m
+[0;32mI (98558) ECG: LDR Reading 1: 3493[0m
+[0;32mI (98568) ECG: LDR Reading 2: 3446[0m
+[0;32mI (98578) ECG: LDR Reading 3: 3465[0m
+[0;32mI (98588) ECG: LDR Reading 4: 3504[0m
+[0;32mI (98598) ECG: LDR Reading 5: 3497[0m
+[0;32mI (98608) ECG: LDR Reading 6: 3505[0m
+[0;32mI (98618) ECG: LDR Reading 7: 3503[0m
+[0;32mI (98628) ECG: LDR Reading 8: 3493[0m
+[0;32mI (98638) ECG: LDR Reading 9: 3267[0m
+[0;32mI (98648) ECG: LDR Reading 10: 3111[0m
+[0;32mI (98658) ECG: Payload: {"LDR":[3493,3446,3465,3504,3497,3505,3503,3493,3267,3111]}[0m
+[0;32mI (99068) ECG: Data sent successfully[0m
+[0;32mI (99168) ECG: LDR Reading 1: 3403[0m
+[0;32mI (99178) ECG: LDR Reading 2: 3448[0m
+[0;32mI (99188) ECG: LDR Reading 3: 3485[0m
+[0;32mI (99198) ECG: LDR Reading 4: 3472[0m
+[0;32mI (99208) ECG: LDR Reading 5: 3475[0m
+[0;32mI (99218) ECG: LDR Reading 6: 3489[0m
+[0;32mI (99228) ECG: LDR Reading 7: 3507[0m
+[0;32mI (99238) ECG: LDR Reading 8: 3519[0m
+[0;32mI (99248) ECG: LDR Reading 9: 3505[0m
+[0;32mI (99258) ECG: LDR Reading 10: 3481[0m
+[0;32mI (99268) ECG: Payload: {"LDR":[3403,3448,3485,3472,3475,3489,3507,3519,3505,3481]}[0m
+[0;32mI (99688) ECG: Data sent successfully[0m
+[0;32mI (99788) ECG: LDR Reading 1: 3351[0m
+[0;32mI (99798) ECG: LDR Reading 2: 3400[0m
+[0;32mI (99808) ECG: LDR Reading 3: 3455[0m
+[0;32mI (99818) ECG: LDR Reading 4: 3359[0m
+[0;32mI (99828) ECG: LDR Reading 5: 3447[0m
+[0;32mI (99838) ECG: LDR Reading 6: 3443[0m
+[0;32mI (99848) ECG: LDR Reading 7: 3434[0m
+[0;32mI (99858) ECG: LDR Reading 8: 3511[0m
+[0;32mI (99868) ECG: LDR Reading 9: 3523[0m
+[0;32mI (99878) ECG: LDR Reading 10: 3459[0m
+[0;32mI (99888) ECG: Payload: {"LDR":[3351,3400,3455,3359,3447,3443,3434,3511,3523,3459]}[0m
+[0;32mI (100298) ECG: Data sent successfully[0m
+[0;32mI (100398) ECG: LDR Reading 1: 3408[0m
+[0;32mI (100408) ECG: LDR Reading 2: 3472[0m
+[0;32mI (100418) ECG: LDR Reading 3: 3489[0m
+[0;32mI (100428) ECG: LDR Reading 4: 3469[0m
+[0;32mI (100438) ECG: LDR Reading 5: 3492[0m
+[0;32mI (100448) ECG: LDR Reading 6: 3530[0m
+[0;32mI (100458) ECG: LDR Reading 7: 3501[0m
+[0;32mI (100468) ECG: LDR Reading 8: 3565[0m
+[0;32mI (100478) ECG: LDR Reading 9: 3602[0m
+[0;32mI (100488) ECG: LDR Reading 10: 3621[0m
+[0;32mI (100498) ECG: Payload: {"LDR":[3408,3472,3489,3469,3492,3530,3501,3565,3602,3621]}[0m
+[0;32mI (100918) ECG: Data sent successfully[0m
+[0;32mI (101018) ECG: LDR Reading 1: 3447[0m
+[0;32mI (101028) ECG: LDR Reading 2: 3440[0m
+[0;32mI (101038) ECG: LDR Reading 3: 3407[0m
+[0;32mI (101048) ECG: LDR Reading 4: 3446[0m
+[0;32mI (101058) ECG: LDR Reading 5: 3418[0m
+[0;32mI (101068) ECG: LDR Reading 6: 3347[0m
+[0;32mI (101078) ECG: LDR Reading 7: 3057[0m
+[0;32mI (101088) ECG: LDR Reading 8: 3281[0m
+[0;32mI (101098) ECG: LDR Reading 9: 4095[0m
+[0;32mI (101108) ECG: LDR Reading 10: 4095[0m
+[0;32mI (101118) ECG: Payload: {"LDR":[3447,3440,3407,3446,3418,3347,3057,3281,4095,4095]}[0m
+[0;32mI (101528) ECG: Data sent successfully[0m
+[0;32mI (101628) ECG: LDR Reading 1: 3440[0m
+[0;32mI (101638) ECG: LDR Reading 2: 3511[0m
+[0;32mI (101648) ECG: LDR Reading 3: 3457[0m
+[0;32mI (101658) ECG: LDR Reading 4: 3501[0m
+[0;32mI (101668) ECG: LDR Reading 5: 3505[0m
+[0;32mI (101678) ECG: LDR Reading 6: 3466[0m
+[0;32mI (101688) ECG: LDR Reading 7: 3472[0m
+[0;32mI (101698) ECG: LDR Reading 8: 3426[0m
+[0;32mI (101708) ECG: LDR Reading 9: 3489[0m
+[0;32mI (101718) ECG: LDR Reading 10: 3583[0m
+[0;32mI (101728) ECG: Payload: {"LDR":[3440,3511,3457,3501,3505,3466,3472,3426,3489,3583]}[0m
+[0;32mI (102138) ECG: Data sent successfully[0m
+[0;32mI (102238) ECG: LDR Reading 1: 3441[0m
+[0;32mI (102248) ECG: LDR Reading 2: 3456[0m
+[0;32mI (102258) ECG: LDR Reading 3: 3489[0m
+[0;32mI (102268) ECG: LDR Reading 4: 3345[0m
+[0;32mI (102278) ECG: LDR Reading 5: 3360[0m
+[0;32mI (102288) ECG: LDR Reading 6: 3389[0m
+[0;32mI (102298) ECG: LDR Reading 7: 3403[0m
+[0;32mI (102308) ECG: LDR Reading 8: 3394[0m
+[0;32mI (102318) ECG: LDR Reading 9: 3418[0m
+[0;32mI (102328) ECG: LDR Reading 10: 3371[0m
+[0;32mI (102338) ECG: Payload: {"LDR":[3441,3456,3489,3345,3360,3389,3403,3394,3418,3371]}[0m
+[0;32mI (102758) ECG: Data sent successfully[0m
+[0;32mI (102858) ECG: LDR Reading 1: 3749[0m
+[0;32mI (102868) ECG: LDR Reading 2: 3785[0m
+[0;32mI (102878) ECG: LDR Reading 3: 3861[0m
+[0;32mI (102888) ECG: LDR Reading 4: 3821[0m
+[0;32mI (102898) ECG: LDR Reading 5: 3760[0m
+[0;32mI (102908) ECG: LDR Reading 6: 3701[0m
+[0;32mI (102918) ECG: LDR Reading 7: 3627[0m
+[0;32mI (102928) ECG: LDR Reading 8: 3600[0m
+[0;32mI (102938) ECG: LDR Reading 9: 3463[0m
+[0;32mI (102948) ECG: LDR Reading 10: 3504[0m
+[0;32mI (102958) ECG: Payload: {"LDR":[3749,3785,3861,3821,3760,3701,3627,3600,3463,3504]}[0m
+[0;32mI (103368) ECG: Data sent successfully[0m
+[0;32mI (103468) ECG: LDR Reading 1: 3407[0m
+[0;32mI (103478) ECG: LDR Reading 2: 3381[0m
+[0;32mI (103488) ECG: LDR Reading 3: 3344[0m
+[0;32mI (103498) ECG: LDR Reading 4: 3367[0m
+[0;32mI (103508) ECG: LDR Reading 5: 3315[0m
+[0;32mI (103518) ECG: LDR Reading 6: 3491[0m
+[0;32mI (103528) ECG: LDR Reading 7: 3479[0m
+[0;32mI (103538) ECG: LDR Reading 8: 3494[0m
+[0;32mI (103548) ECG: LDR Reading 9: 3461[0m
+[0;32mI (103558) ECG: LDR Reading 10: 3549[0m
+[0;32mI (103568) ECG: Payload: {"LDR":[3407,3381,3344,3367,3315,3491,3479,3494,3461,3549]}[0m
+[0;32mI (103988) ECG: Data sent successfully[0m
+[0;32mI (104088) ECG: LDR Reading 1: 3505[0m
+[0;32mI (104098) ECG: LDR Reading 2: 3435[0m
+[0;32mI (104108) ECG: LDR Reading 3: 3430[0m
+[0;32mI (104118) ECG: LDR Reading 4: 3510[0m
+[0;32mI (104128) ECG: LDR Reading 5: 3583[0m
+[0;32mI (104138) ECG: LDR Reading 6: 3504[0m
+[0;32mI (104148) ECG: LDR Reading 7: 3067[0m
+[0;32mI (104158) ECG: LDR Reading 8: 3145[0m
+[0;32mI (104168) ECG: LDR Reading 9: 4095[0m
+[0;32mI (104178) ECG: LDR Reading 10: 4095[0m
+[0;32mI (104188) ECG: Payload: {"LDR":[3505,3435,3430,3510,3583,3504,3067,3145,4095,4095]}[0m
+[0;32mI (104608) ECG: Data sent successfully[0m
+[0;32mI (104708) ECG: LDR Reading 1: 3489[0m
+[0;32mI (104718) ECG: LDR Reading 2: 3493[0m
+[0;32mI (104728) ECG: LDR Reading 3: 3531[0m
+[0;32mI (104738) ECG: LDR Reading 4: 3536[0m
+[0;32mI (104748) ECG: LDR Reading 5: 3568[0m
+[0;32mI (104758) ECG: LDR Reading 6: 3499[0m
+[0;32mI (104768) ECG: LDR Reading 7: 3488[0m
+[0;32mI (104778) ECG: LDR Reading 8: 3408[0m
+[0;32mI (104788) ECG: LDR Reading 9: 3443[0m
+[0;32mI (104798) ECG: LDR Reading 10: 3579[0m
+[0;32mI (104808) ECG: Payload: {"LDR":[3489,3493,3531,3536,3568,3499,3488,3408,3443,3579]}[0m
+[0;32mI (105218) ECG: Data sent successfully[0m
+[0;32mI (105318) ECG: LDR Reading 1: 3312[0m
+[0;32mI (105328) ECG: LDR Reading 2: 3345[0m
+[0;32mI (105338) ECG: LDR Reading 3: 3376[0m
+[0;32mI (105348) ECG: LDR Reading 4: 3382[0m
+[0;32mI (105358) ECG: LDR Reading 5: 3382[0m
+[0;32mI (105368) ECG: LDR Reading 6: 3461[0m
+[0;32mI (105378) ECG: LDR Reading 7: 3437[0m
+[0;32mI (105388) ECG: LDR Reading 8: 3472[0m
+[0;32mI (105398) ECG: LDR Reading 9: 3475[0m
+[0;32mI (105408) ECG: LDR Reading 10: 3451[0m
+[0;32mI (105418) ECG: Payload: {"LDR":[3312,3345,3376,3382,3382,3461,3437,3472,3475,3451]}[0m
+[0;32mI (105828) ECG: Data sent successfully[0m
+[0;32mI (105928) ECG: LDR Reading 1: 3728[0m
+[0;32mI (105938) ECG: LDR Reading 2: 3711[0m
+[0;32mI (105948) ECG: LDR Reading 3: 3794[0m
+[0;32mI (105958) ECG: LDR Reading 4: 3847[0m
+[0;32mI (105968) ECG: LDR Reading 5: 3813[0m
+[0;32mI (105978) ECG: LDR Reading 6: 3686[0m
+[0;32mI (105988) ECG: LDR Reading 7: 3648[0m
+[0;32mI (105998) ECG: LDR Reading 8: 3527[0m
+[0;32mI (106008) ECG: LDR Reading 9: 3445[0m
+[0;32mI (106018) ECG: LDR Reading 10: 3343[0m
+[0;32mI (106028) ECG: Payload: {"LDR":[3728,3711,3794,3847,3813,3686,3648,3527,3445,3343]}[0m
+[0;32mI (106448) ECG: Data sent successfully[0m
+[0;32mI (106548) ECG: LDR Reading 1: 3229[0m
+[0;32mI (106558) ECG: LDR Reading 2: 3053[0m
+[0;32mI (106568) ECG: LDR Reading 3: 3003[0m
+[0;32mI (106578) ECG: LDR Reading 4: 2909[0m
+[0;32mI (106588) ECG: LDR Reading 5: 2863[0m
+[0;32mI (106598) ECG: LDR Reading 6: 2878[0m
+[0;32mI (106608) ECG: LDR Reading 7: 2928[0m
+[0;32mI (106618) ECG: LDR Reading 8: 2837[0m
+[0;32mI (106628) ECG: LDR Reading 9: 2907[0m
+[0;32mI (106638) ECG: LDR Reading 10: 2949[0m
+[0;32mI (106648) ECG: Payload: {"LDR":[3229,3053,3003,2909,2863,2878,2928,2837,2907,2949]}[0m
+[0;32mI (107058) ECG: Data sent successfully[0m
+[0;32mI (107158) ECG: LDR Reading 1: 3503[0m
+[0;32mI (107168) ECG: LDR Reading 2: 3536[0m
+[0;32mI (107178) ECG: LDR Reading 3: 3551[0m
+[0;32mI (107188) ECG: LDR Reading 4: 3485[0m
+[0;32mI (107198) ECG: LDR Reading 5: 3341[0m
+[0;32mI (107208) ECG: LDR Reading 6: 3115[0m
+[0;32mI (107218) ECG: LDR Reading 7: 3638[0m
+[0;32mI (107228) ECG: LDR Reading 8: 4095[0m
+[0;32mI (107238) ECG: LDR Reading 9: 4095[0m
+[0;32mI (107248) ECG: LDR Reading 10: 4095[0m
+[0;32mI (107258) ECG: Payload: {"LDR":[3503,3536,3551,3485,3341,3115,3638,4095,4095,4095]}[0m
+[0;32mI (107678) ECG: Data sent successfully[0m
+[0;32mI (107778) ECG: LDR Reading 1: 3406[0m
+[0;32mI (107788) ECG: LDR Reading 2: 3398[0m
+[0;32mI (107798) ECG: LDR Reading 3: 3351[0m
+[0;32mI (107808) ECG: LDR Reading 4: 3499[0m
+[0;32mI (107818) ECG: LDR Reading 5: 3739[0m
+[0;32mI (107828) ECG: LDR Reading 6: 3613[0m
+[0;32mI (107838) ECG: LDR Reading 7: 3647[0m
+[0;32mI (107848) ECG: LDR Reading 8: 3583[0m
+[0;32mI (107858) ECG: LDR Reading 9: 3561[0m
+[0;32mI (107868) ECG: LDR Reading 10: 3579[0m
+[0;32mI (107878) ECG: Payload: {"LDR":[3406,3398,3351,3499,3739,3613,3647,3583,3561,3579]}[0m
+[0;32mI (108288) ECG: Data sent successfully[0m
+[0;32mI (108388) ECG: LDR Reading 1: 3419[0m
+[0;32mI (108398) ECG: LDR Reading 2: 3478[0m
+[0;32mI (108408) ECG: LDR Reading 3: 3457[0m
+[0;32mI (108418) ECG: LDR Reading 4: 3463[0m
+[0;32mI (108428) ECG: LDR Reading 5: 3441[0m
+[0;32mI (108438) ECG: LDR Reading 6: 3474[0m
+[0;32mI (108448) ECG: LDR Reading 7: 3477[0m
+[0;32mI (108458) ECG: LDR Reading 8: 3481[0m
+[0;32mI (108468) ECG: LDR Reading 9: 3501[0m
+[0;32mI (108478) ECG: LDR Reading 10: 3451[0m
+[0;32mI (108488) ECG: Payload: {"LDR":[3419,3478,3457,3463,3441,3474,3477,3481,3501,3451]}[0m
+[0;32mI (108898) ECG: Data sent successfully[0m
+[0;32mI (108998) ECG: LDR Reading 1: 3408[0m
+[0;32mI (109008) ECG: LDR Reading 2: 3344[0m
+[0;32mI (109018) ECG: LDR Reading 3: 3357[0m
+[0;32mI (109028) ECG: LDR Reading 4: 3296[0m
+[0;32mI (109038) ECG: LDR Reading 5: 3312[0m
+[0;32mI (109048) ECG: LDR Reading 6: 3299[0m
+[0;32mI (109058) ECG: LDR Reading 7: 3350[0m
+[0;32mI (109068) ECG: LDR Reading 8: 3283[0m
+[0;32mI (109078) ECG: LDR Reading 9: 3325[0m
+[0;32mI (109088) ECG: LDR Reading 10: 3391[0m
+[0;32mI (109098) ECG: Payload: {"LDR":[3408,3344,3357,3296,3312,3299,3350,3283,3325,3391]}[0m
+[0;32mI (109518) ECG: Data sent successfully[0m
+[0;32mI (109618) ECG: LDR Reading 1: 3840[0m
+[0;32mI (109628) ECG: LDR Reading 2: 3907[0m
+[0;32mI (109638) ECG: LDR Reading 3: 3980[0m
+[0;32mI (109648) ECG: LDR Reading 4: 3984[0m
+[0;32mI (109658) ECG: LDR Reading 5: 4033[0m
+[0;32mI (109668) ECG: LDR Reading 6: 3969[0m
+[0;32mI (109678) ECG: LDR Reading 7: 3943[0m
+[0;32mI (109688) ECG: LDR Reading 8: 3851[0m
+[0;32mI (109698) ECG: LDR Reading 9: 3785[0m
+[0;32mI (109708) ECG: LDR Reading 10: 3739[0m
+[0;32mI (109718) ECG: Payload: {"LDR":[3840,3907,3980,3984,4033,3969,3943,3851,3785,3739]}[0m
+[0;32mI (110128) ECG: Data sent successfully[0m
+[0;32mI (110228) ECG: LDR Reading 1: 3959[0m
+[0;32mI (110238) ECG: LDR Reading 2: 3973[0m
+[0;32mI (110248) ECG: LDR Reading 3: 3991[0m
+[0;32mI (110258) ECG: LDR Reading 4: 3967[0m
+[0;32mI (110268) ECG: LDR Reading 5: 3986[0m
+[0;32mI (110278) ECG: LDR Reading 6: 4009[0m
+[0;32mI (110288) ECG: LDR Reading 7: 3996[0m
+[0;32mI (110298) ECG: LDR Reading 8: 4032[0m
+[0;32mI (110308) ECG: LDR Reading 9: 4091[0m
+[0;32mI (110318) ECG: LDR Reading 10: 4085[0m
+[0;32mI (110328) ECG: Payload: {"LDR":[3959,3973,3991,3967,3986,4009,3996,4032,4091,4085]}[0m
+[0;32mI (110738) ECG: Data sent successfully[0m
+[0;32mI (110848) ECG: LDR Reading 1: 3451[0m
+[0;32mI (110858) ECG: LDR Reading 2: 3295[0m
+[0;32mI (110868) ECG: LDR Reading 3: 3363[0m
+[0;32mI (110878) ECG: LDR Reading 4: 3351[0m
+[0;32mI (110888) ECG: LDR Reading 5: 3353[0m
+[0;32mI (110898) ECG: LDR Reading 6: 3341[0m
+[0;32mI (110908) ECG: LDR Reading 7: 3370[0m
+[0;32mI (110918) ECG: LDR Reading 8: 3344[0m
+[0;32mI (110928) ECG: LDR Reading 9: 3387[0m
+[0;32mI (110938) ECG: LDR Reading 10: 3415[0m
+[0;32mI (110948) ECG: Payload: {"LDR":[3451,3295,3363,3351,3353,3341,3370,3344,3387,3415]}[0m
+[0;32mI (111358) ECG: Data sent successfully[0m
+[0;32mI (111458) ECG: LDR Reading 1: 2926[0m
+[0;32mI (111468) ECG: LDR Reading 2: 3015[0m
+[0;32mI (111478) ECG: LDR Reading 3: 3850[0m
+[0;32mI (111488) ECG: LDR Reading 4: 4095[0m
+[0;32mI (111498) ECG: LDR Reading 5: 4095[0m
+[0;32mI (111508) ECG: LDR Reading 6: 4095[0m
+[0;32mI (111518) ECG: LDR Reading 7: 4095[0m
+[0;32mI (111528) ECG: LDR Reading 8: 3699[0m
+[0;32mI (111538) ECG: LDR Reading 9: 3131[0m
+[0;32mI (111548) ECG: LDR Reading 10: 3065[0m
+[0;32mI (111558) ECG: Payload: {"LDR":[2926,3015,3850,4095,4095,4095,4095,3699,3131,3065]}[0m
+[0;32mI (111968) ECG: Data sent successfully[0m
+[0;32mI (112078) ECG: LDR Reading 1: 3338[0m
+[0;32mI (112088) ECG: LDR Reading 2: 3344[0m
+[0;32mI (112098) ECG: LDR Reading 3: 3377[0m
+[0;32mI (112108) ECG: LDR Reading 4: 3459[0m
+[0;32mI (112118) ECG: LDR Reading 5: 3382[0m
+[0;32mI (112128) ECG: LDR Reading 6: 3374[0m
+[0;32mI (112138) ECG: LDR Reading 7: 3395[0m
+[0;32mI (112148) ECG: LDR Reading 8: 3410[0m
+[0;32mI (112158) ECG: LDR Reading 9: 3020[0m
+[0;32mI (112168) ECG: LDR Reading 10: 3115[0m
+[0;32mI (112178) ECG: Payload: {"LDR":[3338,3344,3377,3459,3382,3374,3395,3410,3020,3115]}[0m
+[0;32mI (112588) ECG: Data sent successfully[0m
+[0;32mI (112688) ECG: LDR Reading 1: 3311[0m
+[0;32mI (112698) ECG: LDR Reading 2: 3297[0m
+[0;32mI (112708) ECG: LDR Reading 3: 3341[0m
+[0;32mI (112718) ECG: LDR Reading 4: 3229[0m
+[0;32mI (112728) ECG: LDR Reading 5: 3255[0m
+[0;32mI (112738) ECG: LDR Reading 6: 3393[0m
+[0;32mI (112748) ECG: LDR Reading 7: 3578[0m
+[0;32mI (112758) ECG: LDR Reading 8: 3493[0m
+[0;32mI (112768) ECG: LDR Reading 9: 3504[0m
+[0;32mI (112778) ECG: LDR Reading 10: 3453[0m
+[0;32mI (112788) ECG: Payload: {"LDR":[3311,3297,3341,3229,3255,3393,3578,3493,3504,3453]}[0m
+[0;32mI (113198) ECG: Data sent successfully[0m
+[0;32mI (113298) ECG: LDR Reading 1: 3177[0m
+[0;32mI (113308) ECG: LDR Reading 2: 3255[0m
+[0;32mI (113318) ECG: LDR Reading 3: 3201[0m
+[0;32mI (113328) ECG: LDR Reading 4: 3267[0m
+[0;32mI (113338) ECG: LDR Reading 5: 3214[0m
+[0;32mI (113348) ECG: LDR Reading 6: 3251[0m
+[0;32mI (113358) ECG: LDR Reading 7: 3285[0m
+[0;32mI (113368) ECG: LDR Reading 8: 3295[0m
+[0;32mI (113378) ECG: LDR Reading 9: 3301[0m
+[0;32mI (113388) ECG: LDR Reading 10: 3344[0m
+[0;32mI (113398) ECG: Payload: {"LDR":[3177,3255,3201,3267,3214,3251,3285,3295,3301,3344]}[0m
+[0;32mI (113818) ECG: Data sent successfully[0m
+[0;32mI (113918) ECG: LDR Reading 1: 3439[0m
+[0;32mI (113928) ECG: LDR Reading 2: 3466[0m
+[0;32mI (113938) ECG: LDR Reading 3: 3403[0m
+[0;32mI (113948) ECG: LDR Reading 4: 3433[0m
+[0;32mI (113958) ECG: LDR Reading 5: 3391[0m
+[0;32mI (113968) ECG: LDR Reading 6: 3463[0m
+[0;32mI (113978) ECG: LDR Reading 7: 3398[0m
+[0;32mI (113988) ECG: LDR Reading 8: 3440[0m
+[0;32mI (113998) ECG: LDR Reading 9: 3445[0m
+[0;32mI (114008) ECG: LDR Reading 10: 3532[0m
+[0;32mI (114018) ECG: Payload: {"LDR":[3439,3466,3403,3433,3391,3463,3398,3440,3445,3532]}[0m
+[0;32mI (114428) ECG: Data sent successfully[0m
+[0;32mI (114528) ECG: LDR Reading 1: 3568[0m
+[0;32mI (114538) ECG: LDR Reading 2: 3611[0m
+[0;32mI (114548) ECG: LDR Reading 3: 3669[0m
+[0;32mI (114558) ECG: LDR Reading 4: 3674[0m
+[0;32mI (114568) ECG: LDR Reading 5: 3761[0m
+[0;32mI (114578) ECG: LDR Reading 6: 3791[0m
+[0;32mI (114588) ECG: LDR Reading 7: 3809[0m
+[0;32mI (114598) ECG: LDR Reading 8: 3829[0m
+[0;32mI (114608) ECG: LDR Reading 9: 3841[0m
+[0;32mI (114618) ECG: LDR Reading 10: 3699[0m
+[0;32mI (114628) ECG: Payload: {"LDR":[3568,3611,3669,3674,3761,3791,3809,3829,3841,3699]}[0m
+[0;32mI (115048) ECG: Data sent successfully[0m
+[0;32mI (115148) ECG: LDR Reading 1: 3367[0m
+[0;32mI (115158) ECG: LDR Reading 2: 3377[0m
+[0;32mI (115168) ECG: LDR Reading 3: 3408[0m
+[0;32mI (115178) ECG: LDR Reading 4: 3376[0m
+[0;32mI (115188) ECG: LDR Reading 5: 3451[0m
+[0;32mI (115198) ECG: LDR Reading 6: 3350[0m
+[0;32mI (115208) ECG: LDR Reading 7: 3453[0m
+[0;32mI (115218) ECG: LDR Reading 8: 3442[0m
+[0;32mI (115228) ECG: LDR Reading 9: 3520[0m
+[0;32mI (115238) ECG: LDR Reading 10: 3495[0m
+[0;32mI (115248) ECG: Payload: {"LDR":[3367,3377,3408,3376,3451,3350,3453,3442,3520,3495]}[0m
+[0;32mI (115658) ECG: Data sent successfully[0m
+[0;32mI (115758) ECG: LDR Reading 1: 3446[0m
+[0;32mI (115768) ECG: LDR Reading 2: 3506[0m
+[0;32mI (115778) ECG: LDR Reading 3: 3471[0m
+[0;32mI (115788) ECG: LDR Reading 4: 3334[0m
+[0;32mI (115798) ECG: LDR Reading 5: 3044[0m
+[0;32mI (115808) ECG: LDR Reading 6: 3765[0m
+[0;32mI (115818) ECG: LDR Reading 7: 4095[0m
+[0;32mI (115828) ECG: LDR Reading 8: 4095[0m
+[0;32mI (115838) ECG: LDR Reading 9: 4095[0m
+[0;32mI (115848) ECG: LDR Reading 10: 4095[0m
+[0;32mI (115858) ECG: Payload: {"LDR":[3446,3506,3471,3334,3044,3765,4095,4095,4095,4095]}[0m
+[0;32mI (116278) ECG: Data sent successfully[0m
+[0;32mI (116378) ECG: LDR Reading 1: 3269[0m
+[0;32mI (116388) ECG: LDR Reading 2: 3423[0m
+[0;32mI (116398) ECG: LDR Reading 3: 3559[0m
+[0;32mI (116408) ECG: LDR Reading 4: 3723[0m
+[0;32mI (116418) ECG: LDR Reading 5: 3543[0m
+[0;32mI (116428) ECG: LDR Reading 6: 3566[0m
+[0;32mI (116438) ECG: LDR Reading 7: 3501[0m
+[0;32mI (116448) ECG: LDR Reading 8: 3520[0m
+[0;32mI (116458) ECG: LDR Reading 9: 3402[0m
+[0;32mI (116468) ECG: LDR Reading 10: 3509[0m
+[0;32mI (116478) ECG: Payload: {"LDR":[3269,3423,3559,3723,3543,3566,3501,3520,3402,3509]}[0m
+[0;32mI (116888) ECG: Data sent successfully[0m
+[0;32mI (116988) ECG: LDR Reading 1: 3343[0m
+[0;32mI (116998) ECG: LDR Reading 2: 3385[0m
+[0;32mI (117008) ECG: LDR Reading 3: 3351[0m
+[0;32mI (117018) ECG: LDR Reading 4: 3425[0m
+[0;32mI (117028) ECG: LDR Reading 5: 3425[0m
+[0;32mI (117038) ECG: LDR Reading 6: 3344[0m
+[0;32mI (117048) ECG: LDR Reading 7: 3395[0m
+[0;32mI (117058) ECG: LDR Reading 8: 3370[0m
+[0;32mI (117068) ECG: LDR Reading 9: 3424[0m
+[0;32mI (117078) ECG: LDR Reading 10: 3379[0m
+[0;32mI (117088) ECG: Payload: {"LDR":[3343,3385,3351,3425,3425,3344,3395,3370,3424,3379]}[0m
+[0;32mI (117498) ECG: Data sent successfully[0m
+[0;32mI (117598) ECG: LDR Reading 1: 3392[0m
+[0;32mI (117608) ECG: LDR Reading 2: 3506[0m
+[0;32mI (117618) ECG: LDR Reading 3: 3496[0m
+[0;32mI (117628) ECG: LDR Reading 4: 3526[0m
+[0;32mI (117638) ECG: LDR Reading 5: 3483[0m
+[0;32mI (117648) ECG: LDR Reading 6: 3504[0m
+[0;32mI (117658) ECG: LDR Reading 7: 3470[0m
+[0;32mI (117668) ECG: LDR Reading 8: 3545[0m
+[0;32mI (117678) ECG: LDR Reading 9: 3537[0m
+[0;32mI (117688) ECG: LDR Reading 10: 3569[0m
+[0;32mI (117698) ECG: Payload: {"LDR":[3392,3506,3496,3526,3483,3504,3470,3545,3537,3569]}[0m
+[0;32mI (118118) ECG: Data sent successfully[0m
+[0;32mI (118218) ECG: LDR Reading 1: 4095[0m
+[0;32mI (118228) ECG: LDR Reading 2: 4095[0m
+[0;32mI (118238) ECG: LDR Reading 3: 4095[0m
+[0;32mI (118248) ECG: LDR Reading 4: 4095[0m
+[0;32mI (118258) ECG: LDR Reading 5: 4095[0m
+[0;32mI (118268) ECG: LDR Reading 6: 4067[0m
+[0;32mI (118278) ECG: LDR Reading 7: 3967[0m
+[0;32mI (118288) ECG: LDR Reading 8: 3888[0m
+[0;32mI (118298) ECG: LDR Reading 9: 3874[0m
+[0;32mI (118308) ECG: LDR Reading 10: 3871[0m
+[0;32mI (118318) ECG: Payload: {"LDR":[4095,4095,4095,4095,4095,4067,3967,3888,3874,3871]}[0m
+[0;32mI (118728) ECG: Data sent successfully[0m
+[0;32mI (118828) ECG: LDR Reading 1: 3474[0m
+[0;32mI (118838) ECG: LDR Reading 2: 3427[0m
+[0;32mI (118848) ECG: LDR Reading 3: 3519[0m
+[0;32mI (118858) ECG: LDR Reading 4: 3521[0m
+[0;32mI (118868) ECG: LDR Reading 5: 3475[0m
+[0;32mI (118878) ECG: LDR Reading 6: 3467[0m
+[0;32mI (118888) ECG: LDR Reading 7: 3472[0m
+[0;32mI (118898) ECG: LDR Reading 8: 3519[0m
+[0;32mI (118908) ECG: LDR Reading 9: 3568[0m
+[0;32mI (118918) ECG: LDR Reading 10: 3526[0m
+[0;32mI (118928) ECG: Payload: {"LDR":[3474,3427,3519,3521,3475,3467,3472,3519,3568,3526]}[0m
+[0;32mI (119348) ECG: Data sent successfully[0m
+[0;32mI (119448) ECG: LDR Reading 1: 3554[0m
+[0;32mI (119458) ECG: LDR Reading 2: 4095[0m
+[0;32mI (119468) ECG: LDR Reading 3: 4095[0m
+[0;32mI (119478) ECG: LDR Reading 4: 4095[0m
+[0;32mI (119488) ECG: LDR Reading 5: 4095[0m
+[0;32mI (119498) ECG: LDR Reading 6: 3823[0m
+[0;32mI (119508) ECG: LDR Reading 7: 3239[0m
+[0;32mI (119518) ECG: LDR Reading 8: 3071[0m
+[0;32mI (119528) ECG: LDR Reading 9: 3025[0m
+[0;32mI (119538) ECG: LDR Reading 10: 3088[0m
+[0;32mI (119548) ECG: Payload: {"LDR":[3554,4095,4095,4095,4095,3823,3239,3071,3025,3088]}[0m
+[0;32mI (119958) ECG: Data sent successfully[0m
+[0;32mI (120058) ECG: LDR Reading 1: 3200[0m
+[0;32mI (120068) ECG: LDR Reading 2: 3158[0m
+[0;32mI (120078) ECG: LDR Reading 3: 3172[0m
+[0;32mI (120088) ECG: LDR Reading 4: 3089[0m
+[0;32mI (120098) ECG: LDR Reading 5: 3216[0m
+[0;32mI (120108) ECG: LDR Reading 6: 3243[0m
+[0;32mI (120118) ECG: LDR Reading 7: 3260[0m
+[0;32mI (120128) ECG: LDR Reading 8: 3276[0m
+[0;32mI (120138) ECG: LDR Reading 9: 3147[0m
+[0;32mI (120148) ECG: LDR Reading 10: 2817[0m
+[0;32mI (120158) ECG: Payload: {"LDR":[3200,3158,3172,3089,3216,3243,3260,3276,3147,2817]}[0m
+[0;32mI (120578) ECG: Data sent successfully[0m
+[0;32mI (120678) ECG: LDR Reading 1: 3275[0m
+[0;32mI (120688) ECG: LDR Reading 2: 3408[0m
+[0;32mI (120698) ECG: LDR Reading 3: 3537[0m
+[0;32mI (120708) ECG: LDR Reading 4: 3600[0m
+[0;32mI (120718) ECG: LDR Reading 5: 3474[0m
+[0;32mI (120728) ECG: LDR Reading 6: 3472[0m
+[0;32mI (120738) ECG: LDR Reading 7: 3450[0m
+[0;32mI (120748) ECG: LDR Reading 8: 3402[0m
+[0;32mI (120758) ECG: LDR Reading 9: 3411[0m
+[0;32mI (120768) ECG: LDR Reading 10: 3471[0m
+[0;32mI (120778) ECG: Payload: {"LDR":[3275,3408,3537,3600,3474,3472,3450,3402,3411,3471]}[0m
+[0;32mI (121188) ECG: Data sent successfully[0m
+[0;32mI (121288) ECG: LDR Reading 1: 3418[0m
+[0;32mI (121298) ECG: LDR Reading 2: 3359[0m
+[0;32mI (121308) ECG: LDR Reading 3: 3388[0m
+[0;32mI (121318) ECG: LDR Reading 4: 3445[0m
+[0;32mI (121328) ECG: LDR Reading 5: 3392[0m
+[0;32mI (121338) ECG: LDR Reading 6: 3413[0m
+[0;32mI (121348) ECG: LDR Reading 7: 3410[0m
+[0;32mI (121358) ECG: LDR Reading 8: 3486[0m
+[0;32mI (121368) ECG: LDR Reading 9: 3498[0m
+[0;32mI (121378) ECG: LDR Reading 10: 3659[0m
+[0;32mI (121388) ECG: Payload: {"LDR":[3418,3359,3388,3445,3392,3413,3410,3486,3498,3659]}[0m
+[0;32mI (121818) ECG: Data sent successfully[0m
+[0;32mI (121918) ECG: LDR Reading 1: 3494[0m
+[0;32mI (121928) ECG: LDR Reading 2: 3491[0m
+[0;32mI (121938) ECG: LDR Reading 3: 3419[0m
+[0;32mI (121948) ECG: LDR Reading 4: 3472[0m
+[0;32mI (121958) ECG: LDR Reading 5: 3520[0m
+[0;32mI (121968) ECG: LDR Reading 6: 3463[0m
+[0;32mI (121978) ECG: LDR Reading 7: 3509[0m
+[0;32mI (121988) ECG: LDR Reading 8: 3461[0m
+[0;32mI (121998) ECG: LDR Reading 9: 3472[0m
+[0;32mI (122008) ECG: LDR Reading 10: 3505[0m
+[0;32mI (122018) ECG: Payload: {"LDR":[3494,3491,3419,3472,3520,3463,3509,3461,3472,3505]}[0m
+[0;32mI (122418) ECG: Data sent successfully[0m
+[0;32mI (122528) ECG: LDR Reading 1: 3311[0m
+[0;32mI (122538) ECG: LDR Reading 2: 3290[0m
+[0;32mI (122548) ECG: LDR Reading 3: 3312[0m
+[0;32mI (122558) ECG: LDR Reading 4: 3341[0m
+[0;32mI (122568) ECG: LDR Reading 5: 3359[0m
+[0;32mI (122578) ECG: LDR Reading 6: 3386[0m
+[0;32mI (122588) ECG: LDR Reading 7: 3425[0m
+[0;32mI (122598) ECG: LDR Reading 8: 3404[0m
+[0;32mI (122608) ECG: LDR Reading 9: 3376[0m
+[0;32mI (122618) ECG: LDR Reading 10: 3442[0m
+[0;32mI (122628) ECG: Payload: {"LDR":[3311,3290,3312,3341,3359,3386,3425,3404,3376,3442]}[0m
+[0;32mI (123028) ECG: Data sent successfully[0m
+[0;32mI (123128) ECG: LDR Reading 1: 3675[0m
+[0;32mI (123138) ECG: LDR Reading 2: 3617[0m
+[0;32mI (123148) ECG: LDR Reading 3: 3510[0m
+[0;32mI (123158) ECG: LDR Reading 4: 3461[0m
+[0;32mI (123168) ECG: LDR Reading 5: 3408[0m
+[0;32mI (123178) ECG: LDR Reading 6: 3425[0m
+[0;32mI (123188) ECG: LDR Reading 7: 3413[0m
+[0;32mI (123198) ECG: LDR Reading 8: 3376[0m
+[0;32mI (123208) ECG: LDR Reading 9: 3440[0m
+[0;32mI (123218) ECG: LDR Reading 10: 3437[0m
+[0;32mI (123228) ECG: Payload: {"LDR":[3675,3617,3510,3461,3408,3425,3413,3376,3440,3437]}[0m
+[0;32mI (123678) ECG: Data sent successfully[0m
+[0;32mI (123778) ECG: LDR Reading 1: 3501[0m
+[0;32mI (123788) ECG: LDR Reading 2: 3524[0m
+[0;32mI (123798) ECG: LDR Reading 3: 3617[0m
+[0;32mI (123808) ECG: LDR Reading 4: 3661[0m
+[0;32mI (123818) ECG: LDR Reading 5: 3670[0m
+[0;32mI (123828) ECG: LDR Reading 6: 3746[0m
+[0;32mI (123838) ECG: LDR Reading 7: 3669[0m
+[0;32mI (123848) ECG: LDR Reading 8: 3650[0m
+[0;32mI (123858) ECG: LDR Reading 9: 3603[0m
+[0;32mI (123868) ECG: LDR Reading 10: 3477[0m
+[0;32mI (123878) ECG: Payload: {"LDR":[3501,3524,3617,3661,3670,3746,3669,3650,3603,3477]}[0m
+[0;32mI (124268) ECG: Data sent successfully[0m
+[0;32mI (124368) ECG: LDR Reading 1: 4095[0m
+[0;32mI (124378) ECG: LDR Reading 2: 3905[0m
+[0;32mI (124388) ECG: LDR Reading 3: 3427[0m
+[0;32mI (124398) ECG: LDR Reading 4: 3337[0m
+[0;32mI (124408) ECG: LDR Reading 5: 3330[0m
+[0;32mI (124418) ECG: LDR Reading 6: 3431[0m
+[0;32mI (124428) ECG: LDR Reading 7: 3344[0m
+[0;32mI (124438) ECG: LDR Reading 8: 3350[0m
+[0;32mI (124448) ECG: LDR Reading 9: 3427[0m
+[0;32mI (124458) ECG: LDR Reading 10: 3440[0m
+[0;32mI (124468) ECG: Payload: {"LDR":[4095,3905,3427,3337,3330,3431,3344,3350,3427,3440]}[0m
+[0;32mI (124878) ECG: Data sent successfully[0m
+[0;32mI (124978) ECG: LDR Reading 1: 3631[0m
+[0;32mI (124988) ECG: LDR Reading 2: 3599[0m
+[0;32mI (124998) ECG: LDR Reading 3: 3600[0m
+[0;32mI (125008) ECG: LDR Reading 4: 3541[0m
+[0;32mI (125018) ECG: LDR Reading 5: 3536[0m
+[0;32mI (125028) ECG: LDR Reading 6: 3504[0m
+[0;32mI (125038) ECG: LDR Reading 7: 3565[0m
+[0;32mI (125048) ECG: LDR Reading 8: 3481[0m
+[0;32mI (125058) ECG: LDR Reading 9: 3540[0m
+[0;32mI (125068) ECG: LDR Reading 10: 3548[0m
+[0;32mI (125078) ECG: Payload: {"LDR":[3631,3599,3600,3541,3536,3504,3565,3481,3540,3548]}[0m
+[0;32mI (125488) ECG: Data sent successfully[0m
+[0;32mI (125588) ECG: LDR Reading 1: 3426[0m
+[0;32mI (125598) ECG: LDR Reading 2: 3474[0m
+[0;32mI (125608) ECG: LDR Reading 3: 3470[0m
+[0;32mI (125618) ECG: LDR Reading 4: 3507[0m
+[0;32mI (125628) ECG: LDR Reading 5: 3517[0m
+[0;32mI (125638) ECG: LDR Reading 6: 3487[0m
+[0;32mI (125648) ECG: LDR Reading 7: 3533[0m
+[0;32mI (125658) ECG: LDR Reading 8: 3541[0m
+[0;32mI (125668) ECG: LDR Reading 9: 3557[0m
+[0;32mI (125678) ECG: LDR Reading 10: 3550[0m
+[0;32mI (125688) ECG: Payload: {"LDR":[3426,3474,3470,3507,3517,3487,3533,3541,3557,3550]}[0m
+[0;32mI (126108) ECG: Data sent successfully[0m
+[0;32mI (126208) ECG: LDR Reading 1: 3472[0m
+[0;32mI (126218) ECG: LDR Reading 2: 3470[0m
+[0;32mI (126228) ECG: LDR Reading 3: 3415[0m
+[0;32mI (126238) ECG: LDR Reading 4: 3441[0m
+[0;32mI (126248) ECG: LDR Reading 5: 3478[0m
+[0;32mI (126258) ECG: LDR Reading 6: 3423[0m
+[0;32mI (126268) ECG: LDR Reading 7: 3418[0m
+[0;32mI (126278) ECG: LDR Reading 8: 3417[0m
+[0;32mI (126288) ECG: LDR Reading 9: 3358[0m
+[0;32mI (126298) ECG: LDR Reading 10: 3343[0m
+[0;32mI (126308) ECG: Payload: {"LDR":[3472,3470,3415,3441,3478,3423,3418,3417,3358,3343]}[0m
+[0;32mI (126718) ECG: Data sent successfully[0m
+[0;32mI (126818) ECG: LDR Reading 1: 3309[0m
+[0;32mI (126828) ECG: LDR Reading 2: 3343[0m
+[0;32mI (126838) ECG: LDR Reading 3: 3355[0m
+[0;32mI (126848) ECG: LDR Reading 4: 3387[0m
+[0;32mI (126858) ECG: LDR Reading 5: 3390[0m
+[0;32mI (126868) ECG: LDR Reading 6: 3440[0m
+[0;32mI (126878) ECG: LDR Reading 7: 3472[0m
+[0;32mI (126888) ECG: LDR Reading 8: 3469[0m
+[0;32mI (126898) ECG: LDR Reading 9: 3483[0m
+[0;32mI (126908) ECG: LDR Reading 10: 3467[0m
+[0;32mI (126918) ECG: Payload: {"LDR":[3309,3343,3355,3387,3390,3440,3472,3469,3483,3467]}[0m
+[0;32mI (127338) ECG: Data sent successfully[0m
+[0;32mI (127438) ECG: LDR Reading 1: 3643[0m
+[0;32mI (127448) ECG: LDR Reading 2: 3555[0m
+[0;32mI (127458) ECG: LDR Reading 3: 3543[0m
+[0;32mI (127468) ECG: LDR Reading 4: 3601[0m
+[0;32mI (127478) ECG: LDR Reading 5: 3536[0m
+[0;32mI (127488) ECG: LDR Reading 6: 3561[0m
+[0;32mI (127498) ECG: LDR Reading 7: 3556[0m
+[0;32mI (127508) ECG: LDR Reading 8: 3558[0m
+[0;32mI (127518) ECG: LDR Reading 9: 3499[0m
+[0;32mI (127528) ECG: LDR Reading 10: 3486[0m
+[0;32mI (127538) ECG: Payload: {"LDR":[3643,3555,3543,3601,3536,3561,3556,3558,3499,3486]}[0m
+[0;32mI (127948) ECG: Data sent successfully[0m
+[0;32mI (128048) ECG: LDR Reading 1: 3471[0m
+[0;32mI (128058) ECG: LDR Reading 2: 3472[0m
+[0;32mI (128068) ECG: LDR Reading 3: 3479[0m
+[0;32mI (128078) ECG: LDR Reading 4: 3513[0m
+[0;32mI (128088) ECG: LDR Reading 5: 3476[0m
+[0;32mI (128098) ECG: LDR Reading 6: 3467[0m
+[0;32mI (128108) ECG: LDR Reading 7: 3531[0m
+[0;32mI (128118) ECG: LDR Reading 8: 3534[0m
+[0;32mI (128128) ECG: LDR Reading 9: 3504[0m
+[0;32mI (128138) ECG: LDR Reading 10: 3421[0m
+[0;32mI (128148) ECG: Payload: {"LDR":[3471,3472,3479,3513,3476,3467,3531,3534,3504,3421]}[0m
+[0;32mI (128558) ECG: Data sent successfully[0m
+[0;32mI (128658) ECG: LDR Reading 1: 3632[0m
+[0;32mI (128668) ECG: LDR Reading 2: 3525[0m
+[0;32mI (128678) ECG: LDR Reading 3: 3440[0m
+[0;32mI (128688) ECG: LDR Reading 4: 3472[0m
+[0;32mI (128698) ECG: LDR Reading 5: 3407[0m
+[0;32mI (128708) ECG: LDR Reading 6: 3447[0m
+[0;32mI (128718) ECG: LDR Reading 7: 3451[0m
+[0;32mI (128728) ECG: LDR Reading 8: 3387[0m
+[0;32mI (128738) ECG: LDR Reading 9: 3462[0m
+[0;32mI (128748) ECG: LDR Reading 10: 3432[0m
+[0;32mI (128758) ECG: Payload: {"LDR":[3632,3525,3440,3472,3407,3447,3451,3387,3462,3432]}[0m
+[0;32mI (129178) ECG: Data sent successfully[0m
+[0;32mI (129278) ECG: LDR Reading 1: 3346[0m
+[0;32mI (129288) ECG: LDR Reading 2: 3331[0m
+[0;32mI (129298) ECG: LDR Reading 3: 3290[0m
+[0;32mI (129308) ECG: LDR Reading 4: 3361[0m
+[0;32mI (129318) ECG: LDR Reading 5: 3327[0m
+[0;32mI (129328) ECG: LDR Reading 6: 3382[0m
+[0;32mI (129338) ECG: LDR Reading 7: 3427[0m
+[0;32mI (129348) ECG: LDR Reading 8: 3469[0m
+[0;32mI (129358) ECG: LDR Reading 9: 3536[0m
+[0;32mI (129368) ECG: LDR Reading 10: 3490[0m
+[0;32mI (129378) ECG: Payload: {"LDR":[3346,3331,3290,3361,3327,3382,3427,3469,3536,3490]}[0m
+[0;32mI (129788) ECG: Data sent successfully[0m
+[0;32mI (129888) ECG: LDR Reading 1: 3567[0m
+[0;32mI (129898) ECG: LDR Reading 2: 3583[0m
+[0;32mI (129908) ECG: LDR Reading 3: 3511[0m
+[0;32mI (129918) ECG: LDR Reading 4: 3511[0m
+[0;32mI (129928) ECG: LDR Reading 5: 3551[0m
+[0;32mI (129938) ECG: LDR Reading 6: 3557[0m
+[0;32mI (129948) ECG: LDR Reading 7: 3523[0m
+[0;32mI (129958) ECG: LDR Reading 8: 3600[0m
+[0;32mI (129968) ECG: LDR Reading 9: 3440[0m
+[0;32mI (129978) ECG: LDR Reading 10: 3151[0m
+[0;32mI (129988) ECG: Payload: {"LDR":[3567,3583,3511,3511,3551,3557,3523,3600,3440,3151]}[0m
+[0;32mI (130408) ECG: Data sent successfully[0m
+[0;32mI (130508) ECG: LDR Reading 1: 3443[0m
+[0;32mI (130518) ECG: LDR Reading 2: 3456[0m
+[0;32mI (130528) ECG: LDR Reading 3: 3483[0m
+[0;32mI (130538) ECG: LDR Reading 4: 3457[0m
+[0;32mI (130548) ECG: LDR Reading 5: 3350[0m
+[0;32mI (130558) ECG: LDR Reading 6: 3417[0m
+[0;32mI (130568) ECG: LDR Reading 7: 3406[0m
+[0;32mI (130578) ECG: LDR Reading 8: 3436[0m
+[0;32mI (130588) ECG: LDR Reading 9: 3433[0m
+[0;32mI (130598) ECG: LDR Reading 10: 3504[0m
+[0;32mI (130608) ECG: Payload: {"LDR":[3443,3456,3483,3457,3350,3417,3406,3436,3433,3504]}[0m
+[0;32mI (131018) ECG: Data sent successfully[0m
+[0;32mI (131118) ECG: LDR Reading 1: 3438[0m
+[0;32mI (131128) ECG: LDR Reading 2: 3397[0m
+[0;32mI (131138) ECG: LDR Reading 3: 3403[0m
+[0;32mI (131148) ECG: LDR Reading 4: 3467[0m
+[0;32mI (131158) ECG: LDR Reading 5: 3461[0m
+[0;32mI (131168) ECG: LDR Reading 6: 3391[0m
+[0;32mI (131178) ECG: LDR Reading 7: 3440[0m
+[0;32mI (131188) ECG: LDR Reading 8: 3403[0m
+[0;32mI (131198) ECG: LDR Reading 9: 3414[0m
+[0;32mI (131208) ECG: LDR Reading 10: 3492[0m
+[0;32mI (131218) ECG: Payload: {"LDR":[3438,3397,3403,3467,3461,3391,3440,3403,3414,3492]}[0m
+[0;32mI (131638) ECG: Data sent successfully[0m
+[0;32mI (131738) ECG: LDR Reading 1: 3583[0m
+[0;32mI (131748) ECG: LDR Reading 2: 3633[0m
+[0;32mI (131758) ECG: LDR Reading 3: 3696[0m
+[0;32mI (131768) ECG: LDR Reading 4: 3730[0m
+[0;32mI (131778) ECG: LDR Reading 5: 3828[0m
+[0;32mI (131788) ECG: LDR Reading 6: 3798[0m
+[0;32mI (131798) ECG: LDR Reading 7: 3753[0m
+[0;32mI (131808) ECG: LDR Reading 8: 3712[0m
+[0;32mI (131818) ECG: LDR Reading 9: 3568[0m
+[0;32mI (131828) ECG: LDR Reading 10: 3472[0m
+[0;32mI (131838) ECG: Payload: {"LDR":[3583,3633,3696,3730,3828,3798,3753,3712,3568,3472]}[0m
+[0;32mI (132248) ECG: Data sent successfully[0m
+[0;32mI (132348) ECG: LDR Reading 1: 3767[0m
+[0;32mI (132358) ECG: LDR Reading 2: 3331[0m
+[0;32mI (132368) ECG: LDR Reading 3: 3383[0m
+[0;32mI (132378) ECG: LDR Reading 4: 3413[0m
+[0;32mI (132388) ECG: LDR Reading 5: 3397[0m
+[0;32mI (132398) ECG: LDR Reading 6: 3455[0m
+[0;32mI (132408) ECG: LDR Reading 7: 3329[0m
+[0;32mI (132418) ECG: LDR Reading 8: 3461[0m
+[0;32mI (132428) ECG: LDR Reading 9: 3425[0m
+[0;32mI (132438) ECG: LDR Reading 10: 3472[0m
+[0;32mI (132448) ECG: Payload: {"LDR":[3767,3331,3383,3413,3397,3455,3329,3461,3425,3472]}[0m
+[0;32mI (132868) ECG: Data sent successfully[0m
+[0;32mI (132968) ECG: LDR Reading 1: 3491[0m
+[0;32mI (132978) ECG: LDR Reading 2: 3459[0m
+[0;32mI (132988) ECG: LDR Reading 3: 3504[0m
+[0;32mI (132998) ECG: LDR Reading 4: 3485[0m
+[0;32mI (133008) ECG: LDR Reading 5: 3483[0m
+[0;32mI (133018) ECG: LDR Reading 6: 3106[0m
+[0;32mI (133028) ECG: LDR Reading 7: 3101[0m
+[0;32mI (133038) ECG: LDR Reading 8: 3977[0m
+[0;32mI (133048) ECG: LDR Reading 9: 4095[0m
+[0;32mI (133058) ECG: LDR Reading 10: 4095[0m
+[0;32mI (133068) ECG: Payload: {"LDR":[3491,3459,3504,3485,3483,3106,3101,3977,4095,4095]}[0m
+[0;32mI (133498) ECG: Data sent successfully[0m
+[0;32mI (133598) ECG: LDR Reading 1: 3462[0m
+[0;32mI (133608) ECG: LDR Reading 2: 3703[0m
+[0;32mI (133618) ECG: LDR Reading 3: 3635[0m
+[0;32mI (133628) ECG: LDR Reading 4: 3575[0m
+[0;32mI (133638) ECG: LDR Reading 5: 3524[0m
+[0;32mI (133648) ECG: LDR Reading 6: 3450[0m
+[0;32mI (133658) ECG: LDR Reading 7: 3523[0m
+[0;32mI (133668) ECG: LDR Reading 8: 3418[0m
+[0;32mI (133678) ECG: LDR Reading 9: 3401[0m
+[0;32mI (133688) ECG: LDR Reading 10: 3423[0m
+[0;32mI (133698) ECG: Payload: {"LDR":[3462,3703,3635,3575,3524,3450,3523,3418,3401,3423]}[0m
+[0;32mI (134098) ECG: Data sent successfully[0m
+[0;32mI (134198) ECG: LDR Reading 1: 3415[0m
+[0;32mI (134208) ECG: LDR Reading 2: 3463[0m
+[0;32mI (134218) ECG: LDR Reading 3: 3433[0m
+[0;32mI (134228) ECG: LDR Reading 4: 3475[0m
+[0;32mI (134238) ECG: LDR Reading 5: 3502[0m
+[0;32mI (134248) ECG: LDR Reading 6: 3471[0m
+[0;32mI (134258) ECG: LDR Reading 7: 3456[0m
+[0;32mI (134268) ECG: LDR Reading 8: 3457[0m
+[0;32mI (134278) ECG: LDR Reading 9: 3472[0m
+[0;32mI (134288) ECG: LDR Reading 10: 3378[0m
+[0;32mI (134298) ECG: Payload: {"LDR":[3415,3463,3433,3475,3502,3471,3456,3457,3472,3378]}[0m
+[0;32mI (134708) ECG: Data sent successfully[0m
+[0;32mI (134808) ECG: LDR Reading 1: 3479[0m
+[0;32mI (134818) ECG: LDR Reading 2: 3517[0m
+[0;32mI (134828) ECG: LDR Reading 3: 3472[0m
+[0;32mI (134838) ECG: LDR Reading 4: 3498[0m
+[0;32mI (134848) ECG: LDR Reading 5: 3563[0m
+[0;32mI (134858) ECG: LDR Reading 6: 3556[0m
+[0;32mI (134868) ECG: LDR Reading 7: 3641[0m
+[0;32mI (134878) ECG: LDR Reading 8: 3563[0m
+[0;32mI (134888) ECG: LDR Reading 9: 3609[0m
+[0;32mI (134898) ECG: LDR Reading 10: 3639[0m
+[0;32mI (134908) ECG: Payload: {"LDR":[3479,3517,3472,3498,3563,3556,3641,3563,3609,3639]}[0m
+[0;32mI (135318) ECG: Data sent successfully[0m
+[0;32mI (135418) ECG: LDR Reading 1: 3775[0m
+[0;32mI (135428) ECG: LDR Reading 2: 3728[0m
+[0;32mI (135438) ECG: LDR Reading 3: 3696[0m
+[0;32mI (135448) ECG: LDR Reading 4: 3539[0m
+[0;32mI (135458) ECG: LDR Reading 5: 3520[0m
+[0;32mI (135468) ECG: LDR Reading 6: 3505[0m
+[0;32mI (135478) ECG: LDR Reading 7: 3527[0m
+[0;32mI (135488) ECG: LDR Reading 8: 3449[0m
+[0;32mI (135498) ECG: LDR Reading 9: 3422[0m
+[0;32mI (135508) ECG: LDR Reading 10: 3474[0m
+[0;32mI (135518) ECG: Payload: {"LDR":[3775,3728,3696,3539,3520,3505,3527,3449,3422,3474]}[0m
+[0;32mI (135938) ECG: Data sent successfully[0m
+[0;32mI (136038) ECG: LDR Reading 1: 3323[0m
+[0;32mI (136048) ECG: LDR Reading 2: 3345[0m
+[0;32mI (136058) ECG: LDR Reading 3: 3342[0m
+[0;32mI (136068) ECG: LDR Reading 4: 3403[0m
+[0;32mI (136078) ECG: LDR Reading 5: 3440[0m
+[0;32mI (136088) ECG: LDR Reading 6: 3485[0m
+[0;32mI (136098) ECG: LDR Reading 7: 3583[0m
+[0;32mI (136108) ECG: LDR Reading 8: 3664[0m
+[0;32mI (136118) ECG: LDR Reading 9: 3724[0m
+[0;32mI (136128) ECG: LDR Reading 10: 3664[0m
+[0;32mI (136138) ECG: Payload: {"LDR":[3323,3345,3342,3403,3440,3485,3583,3664,3724,3664]}[0m
+[0;32mI (136548) ECG: Data sent successfully[0m
+[0;32mI (136648) ECG: LDR Reading 1: 4095[0m
+[0;32mI (136658) ECG: LDR Reading 2: 3850[0m
+[0;32mI (136668) ECG: LDR Reading 3: 4095[0m
+[0;32mI (136678) ECG: LDR Reading 4: 3986[0m
+[0;32mI (136688) ECG: LDR Reading 5: 3476[0m
+[0;32mI (136698) ECG: LDR Reading 6: 3124[0m
+[0;32mI (136708) ECG: LDR Reading 7: 3165[0m
+[0;32mI (136718) ECG: LDR Reading 8: 3258[0m
+[0;32mI (136728) ECG: LDR Reading 9: 3115[0m
+[0;32mI (136738) ECG: LDR Reading 10: 3141[0m
+[0;32mI (136748) ECG: Payload: {"LDR":[4095,3850,4095,3986,3476,3124,3165,3258,3115,3141]}[0m
+[0;32mI (137168) ECG: Data sent successfully[0m
+[0;32mI (137268) ECG: LDR Reading 1: 3484[0m
+[0;32mI (137278) ECG: LDR Reading 2: 3474[0m
+[0;32mI (137288) ECG: LDR Reading 3: 3451[0m
+[0;32mI (137298) ECG: LDR Reading 4: 3406[0m
+[0;32mI (137308) ECG: LDR Reading 5: 3332[0m
+[0;32mI (137318) ECG: LDR Reading 6: 3247[0m
+[0;32mI (137328) ECG: LDR Reading 7: 3363[0m
+[0;32mI (137338) ECG: LDR Reading 8: 3421[0m
+[0;32mI (137348) ECG: LDR Reading 9: 3189[0m
+[0;32mI (137358) ECG: LDR Reading 10: 3219[0m
+[0;32mI (137368) ECG: Payload: {"LDR":[3484,3474,3451,3406,3332,3247,3363,3421,3189,3219]}[0m
+[0;32mI (137778) ECG: Data sent successfully[0m
+[0;32mI (137878) ECG: LDR Reading 1: 3973[0m
+[0;32mI (137888) ECG: LDR Reading 2: 3913[0m
+[0;32mI (137898) ECG: LDR Reading 3: 3931[0m
+[0;32mI (137908) ECG: LDR Reading 4: 4059[0m
+[0;32mI (137918) ECG: LDR Reading 5: 4055[0m
+[0;32mI (137928) ECG: LDR Reading 6: 4074[0m
+[0;32mI (137938) ECG: LDR Reading 7: 4095[0m
+[0;32mI (137948) ECG: LDR Reading 8: 4095[0m
+[0;32mI (137958) ECG: LDR Reading 9: 4016[0m
+[0;32mI (137968) ECG: LDR Reading 10: 4095[0m
+[0;32mI (137978) ECG: Payload: {"LDR":[3973,3913,3931,4059,4055,4074,4095,4095,4016,4095]}[0m
+[0;32mI (138398) ECG: Data sent successfully[0m
+[0;32mI (138498) ECG: LDR Reading 1: 4095[0m
+[0;32mI (138508) ECG: LDR Reading 2: 4095[0m
+[0;32mI (138518) ECG: LDR Reading 3: 4095[0m
+[0;32mI (138528) ECG: LDR Reading 4: 4095[0m
+[0;32mI (138538) ECG: LDR Reading 5: 4095[0m
+[0;32mI (138548) ECG: LDR Reading 6: 4095[0m
+[0;32mI (138558) ECG: LDR Reading 7: 4095[0m
+[0;32mI (138568) ECG: LDR Reading 8: 4095[0m
+[0;32mI (138578) ECG: LDR Reading 9: 4095[0m
+[0;32mI (138588) ECG: LDR Reading 10: 4095[0m
+[0;32mI (138598) ECG: Payload: {"LDR":[4095,4095,4095,4095,4095,4095,4095,4095,4095,4095]}[0m
+[0;32mI (139008) ECG: Data sent successfully[0m
+[0;32mI (139108) ECG: LDR Reading 1: 4095[0m
+[0;32mI (139118) ECG: LDR Reading 2: 3986[0m
+[0;32mI (139128) ECG: LDR Reading 3: 3929[0m
+[0;32mI (139138) ECG: LDR Reading 4: 3795[0m
+[0;32mI (139148) ECG: LDR Reading 5: 3822[0m
+[0;32mI (139158) ECG: LDR Reading 6: 3725[0m
+[0;32mI (139168) ECG: LDR Reading 7: 3695[0m
+[0;32mI (139178) ECG: LDR Reading 8: 3642[0m
+[0;32mI (139188) ECG: LDR Reading 9: 3690[0m
+[0;32mI (139198) ECG: LDR Reading 10: 3647[0m
+[0;32mI (139208) ECG: Payload: {"LDR":[4095,3986,3929,3795,3822,3725,3695,3642,3690,3647]}[0m
+[0;32mI (139618) ECG: Data sent successfully[0m
+[0;32mI (139718) ECG: LDR Reading 1: 2859[0m
+[0;32mI (139728) ECG: LDR Reading 2: 2902[0m
+[0;32mI (139738) ECG: LDR Reading 3: 2958[0m
+[0;32mI (139748) ECG: LDR Reading 4: 3056[0m
+[0;32mI (139758) ECG: LDR Reading 5: 3058[0m
+[0;32mI (139768) ECG: LDR Reading 6: 3056[0m
+[0;32mI (139778) ECG: LDR Reading 7: 3009[0m
+[0;32mI (139788) ECG: LDR Reading 8: 2864[0m
+[0;32mI (139798) ECG: LDR Reading 9: 2712[0m
+[0;32mI (139808) ECG: LDR Reading 10: 2656[0m
+[0;32mI (139818) ECG: Payload: {"LDR":[2859,2902,2958,3056,3058,3056,3009,2864,2712,2656]}[0m
+[0;32mI (140238) ECG: Data sent successfully[0m
+[0;32mI (140338) ECG: LDR Reading 1: 2864[0m
+[0;32mI (140348) ECG: LDR Reading 2: 2860[0m
+[0;32mI (140358) ECG: LDR Reading 3: 2919[0m
+[0;32mI (140368) ECG: LDR Reading 4: 2905[0m
+[0;32mI (140378) ECG: LDR Reading 5: 2998[0m
+[0;32mI (140388) ECG: LDR Reading 6: 3008[0m
+[0;32mI (140398) ECG: LDR Reading 7: 3071[0m
+[0;32mI (140408) ECG: LDR Reading 8: 3153[0m
+[0;32mI (140418) ECG: LDR Reading 9: 3158[0m
+[0;32mI (140428) ECG: LDR Reading 10: 3258[0m
+[0;32mI (140438) ECG: Payload: {"LDR":[2864,2860,2919,2905,2998,3008,3071,3153,3158,3258]}[0m
+[0;32mI (140848) ECG: Data sent successfully[0m
+[0;32mI (140948) ECG: LDR Reading 1: 3139[0m
+[0;32mI (140958) ECG: LDR Reading 2: 3181[0m
+[0;32mI (140968) ECG: LDR Reading 3: 3146[0m
+[0;32mI (140978) ECG: LDR Reading 4: 3180[0m
+[0;32mI (140988) ECG: LDR Reading 5: 3200[0m
+[0;32mI (140998) ECG: LDR Reading 6: 3191[0m
+[0;32mI (141008) ECG: LDR Reading 7: 3220[0m
+[0;32mI (141018) ECG: LDR Reading 8: 3204[0m
+[0;32mI (141028) ECG: LDR Reading 9: 3158[0m
+[0;32mI (141038) ECG: LDR Reading 10: 3141[0m
+[0;32mI (141048) ECG: Payload: {"LDR":[3139,3181,3146,3180,3200,3191,3220,3204,3158,3141]}[0m
+[0;32mI (141468) ECG: Data sent successfully[0m
+[0;32mI (141568) ECG: LDR Reading 1: 4095[0m
+[0;32mI (141578) ECG: LDR Reading 2: 4095[0m
+[0;32mI (141588) ECG: LDR Reading 3: 4095[0m
+[0;32mI (141598) ECG: LDR Reading 4: 3734[0m
+[0;32mI (141608) ECG: LDR Reading 5: 3326[0m
+[0;32mI (141618) ECG: LDR Reading 6: 3309[0m
+[0;32mI (141628) ECG: LDR Reading 7: 3292[0m
+[0;32mI (141638) ECG: LDR Reading 8: 3313[0m
+[0;32mI (141648) ECG: LDR Reading 9: 3357[0m
+[0;32mI (141658) ECG: LDR Reading 10: 3376[0m
+[0;32mI (141668) ECG: Payload: {"LDR":[4095,4095,4095,3734,3326,3309,3292,3313,3357,3376]}[0m
+[0;32mI (142078) ECG: Data sent successfully[0m
+[0;32mI (142178) ECG: LDR Reading 1: 3503[0m
+[0;32mI (142188) ECG: LDR Reading 2: 3521[0m
+[0;32mI (142198) ECG: LDR Reading 3: 3562[0m
+[0;32mI (142208) ECG: LDR Reading 4: 3440[0m
+[0;32mI (142218) ECG: LDR Reading 5: 3071[0m
+[0;32mI (142228) ECG: LDR Reading 6: 3501[0m
+[0;32mI (142238) ECG: LDR Reading 7: 4095[0m
+[0;32mI (142248) ECG: LDR Reading 8: 4095[0m
+[0;32mI (142258) ECG: LDR Reading 9: 4095[0m
+[0;32mI (142268) ECG: LDR Reading 10: 4095[0m
+[0;32mI (142278) ECG: Payload: {"LDR":[3503,3521,3562,3440,3071,3501,4095,4095,4095,4095]}[0m
+[0;32mI (142688) ECG: Data sent successfully[0m
+[0;32mI (142788) ECG: LDR Reading 1: 3663[0m
+[0;32mI (142798) ECG: LDR Reading 2: 3563[0m
+[0;32mI (142808) ECG: LDR Reading 3: 3469[0m
+[0;32mI (142818) ECG: LDR Reading 4: 3489[0m
+[0;32mI (142828) ECG: LDR Reading 5: 3455[0m
+[0;32mI (142838) ECG: LDR Reading 6: 3479[0m
+[0;32mI (142848) ECG: LDR Reading 7: 3440[0m
+[0;32mI (142858) ECG: LDR Reading 8: 3474[0m
+[0;32mI (142868) ECG: LDR Reading 9: 3503[0m
+[0;32mI (142878) ECG: LDR Reading 10: 3495[0m
+[0;32mI (142888) ECG: Payload: {"LDR":[3663,3563,3469,3489,3455,3479,3440,3474,3503,3495]}[0m
+[0;32mI (143308) ECG: Data sent successfully[0m
+[0;32mI (143408) ECG: LDR Reading 1: 3423[0m
+[0;32mI (143418) ECG: LDR Reading 2: 3393[0m
+[0;32mI (143428) ECG: LDR Reading 3: 3430[0m
+[0;32mI (143438) ECG: LDR Reading 4: 3427[0m
+[0;32mI (143448) ECG: LDR Reading 5: 3418[0m
+[0;32mI (143458) ECG: LDR Reading 6: 3382[0m
+[0;32mI (143468) ECG: LDR Reading 7: 3453[0m
+[0;32mI (143478) ECG: LDR Reading 8: 3597[0m
+[0;32mI (143488) ECG: LDR Reading 9: 3719[0m
+[0;32mI (143498) ECG: LDR Reading 10: 3541[0m
+[0;32mI (143508) ECG: Payload: {"LDR":[3423,3393,3430,3427,3418,3382,3453,3597,3719,3541]}[0m
+[0;32mI (143928) ECG: Data sent successfully[0m
+[0;32mI (144028) ECG: LDR Reading 1: 3392[0m
+[0;32mI (144038) ECG: LDR Reading 2: 3383[0m
+[0;32mI (144048) ECG: LDR Reading 3: 3361[0m
+[0;32mI (144058) ECG: LDR Reading 4: 3361[0m
+[0;32mI (144068) ECG: LDR Reading 5: 3370[0m
+[0;32mI (144078) ECG: LDR Reading 6: 3383[0m
+[0;32mI (144088) ECG: LDR Reading 7: 3383[0m
+[0;32mI (144098) ECG: LDR Reading 8: 3379[0m
+[0;32mI (144108) ECG: LDR Reading 9: 3428[0m
+[0;32mI (144118) ECG: LDR Reading 10: 3426[0m
+[0;32mI (144128) ECG: Payload: {"LDR":[3392,3383,3361,3361,3370,3383,3383,3379,3428,3426]}[0m
+[0;32mI (144538) ECG: Data sent successfully[0m
+[0;32mI (144638) ECG: LDR Reading 1: 3391[0m
+[0;32mI (144648) ECG: LDR Reading 2: 3328[0m
+[0;32mI (144658) ECG: LDR Reading 3: 3371[0m
+[0;32mI (144668) ECG: LDR Reading 4: 3448[0m
+[0;32mI (144678) ECG: LDR Reading 5: 3413[0m
+[0;32mI (144688) ECG: LDR Reading 6: 3361[0m
+[0;32mI (144698) ECG: LDR Reading 7: 3392[0m
+[0;32mI (144708) ECG: LDR Reading 8: 3421[0m
+[0;32mI (144718) ECG: LDR Reading 9: 3406[0m
+[0;32mI (144728) ECG: LDR Reading 10: 3411[0m
+[0;32mI (144738) ECG: Payload: {"LDR":[3391,3328,3371,3448,3413,3361,3392,3421,3406,3411]}[0m
+[0;32mI (145148) ECG: Data sent successfully[0m
+[0;32mI (145248) ECG: LDR Reading 1: 3711[0m
+[0;32mI (145258) ECG: LDR Reading 2: 3691[0m
+[0;32mI (145268) ECG: LDR Reading 3: 3677[0m
+[0;32mI (145278) ECG: LDR Reading 4: 3583[0m
+[0;32mI (145288) ECG: LDR Reading 5: 3583[0m
+[0;32mI (145298) ECG: LDR Reading 6: 3505[0m
+[0;32mI (145308) ECG: LDR Reading 7: 3395[0m
+[0;32mI (145318) ECG: LDR Reading 8: 3366[0m
+[0;32mI (145328) ECG: LDR Reading 9: 3283[0m
+[0;32mI (145338) ECG: LDR Reading 10: 3331[0m
+[0;32mI (145348) ECG: Payload: {"LDR":[3711,3691,3677,3583,3583,3505,3395,3366,3283,3331]}[0m
+[0;32mI (145768) ECG: Data sent successfully[0m
+[0;32mI (145868) ECG: LDR Reading 1: 3408[0m
+[0;32mI (145878) ECG: LDR Reading 2: 3438[0m
+[0;32mI (145888) ECG: LDR Reading 3: 3456[0m
+[0;32mI (145898) ECG: LDR Reading 4: 3475[0m
+[0;32mI (145908) ECG: LDR Reading 5: 3511[0m
+[0;32mI (145918) ECG: LDR Reading 6: 3543[0m
+[0;32mI (145928) ECG: LDR Reading 7: 3615[0m
+[0;32mI (145938) ECG: LDR Reading 8: 3680[0m
+[0;32mI (145948) ECG: LDR Reading 9: 3757[0m
+[0;32mI (145958) ECG: LDR Reading 10: 3754[0m
+[0;32mI (145968) ECG: Payload: {"LDR":[3408,3438,3456,3475,3511,3543,3615,3680,3757,3754]}[0m
+[0;32mI (146378) ECG: Data sent successfully[0m
+[0;32mI (146478) ECG: LDR Reading 1: 3824[0m
+[0;32mI (146488) ECG: LDR Reading 2: 3353[0m
+[0;32mI (146498) ECG: LDR Reading 3: 3395[0m
+[0;32mI (146508) ECG: LDR Reading 4: 3419[0m
+[0;32mI (146518) ECG: LDR Reading 5: 3375[0m
+[0;32mI (146528) ECG: LDR Reading 6: 3370[0m
+[0;32mI (146538) ECG: LDR Reading 7: 3445[0m
+[0;32mI (146548) ECG: LDR Reading 8: 3442[0m
+[0;32mI (146558) ECG: LDR Reading 9: 3440[0m
+[0;32mI (146568) ECG: LDR Reading 10: 3475[0m
+[0;32mI (146578) ECG: Payload: {"LDR":[3824,3353,3395,3419,3375,3370,3445,3442,3440,3475]}[0m
+[0;32mI (147008) ECG: Data sent successfully[0m
+[0;32mI (147108) ECG: LDR Reading 1: 3477[0m
+[0;32mI (147118) ECG: LDR Reading 2: 3088[0m
+[0;32mI (147128) ECG: LDR Reading 3: 3355[0m
+[0;32mI (147138) ECG: LDR Reading 4: 4095[0m
+[0;32mI (147148) ECG: LDR Reading 5: 4095[0m
+[0;32mI (147158) ECG: LDR Reading 6: 4095[0m
+[0;32mI (147168) ECG: LDR Reading 7: 4095[0m
+[0;32mI (147178) ECG: LDR Reading 8: 4095[0m
+[0;32mI (147188) ECG: LDR Reading 9: 3582[0m
+[0;32mI (147198) ECG: LDR Reading 10: 3311[0m
+[0;32mI (147208) ECG: Payload: {"LDR":[3477,3088,3355,4095,4095,4095,4095,4095,3582,3311]}[0m
+[0;32mI (147708) ECG: Data sent successfully[0m
+[0;32mI (147808) ECG: LDR Reading 1: 3435[0m
+[0;32mI (147818) ECG: LDR Reading 2: 3451[0m
+[0;32mI (147828) ECG: LDR Reading 3: 3181[0m
+[0;32mI (147838) ECG: LDR Reading 4: 3136[0m
+[0;32mI (147848) ECG: LDR Reading 5: 4023[0m
+[0;32mI (147858) ECG: LDR Reading 6: 4095[0m
+[0;32mI (147868) ECG: LDR Reading 7: 4095[0m
+[0;32mI (147878) ECG: LDR Reading 8: 4095[0m
+[0;32mI (147888) ECG: LDR Reading 9: 4095[0m
+[0;32mI (147898) ECG: LDR Reading 10: 3911[0m
+[0;32mI (147908) ECG: Payload: {"LDR":[3435,3451,3181,3136,4023,4095,4095,4095,4095,3911]}[0m
+[0;32mI (148328) ECG: Data sent successfully[0m
+[0;32mI (148428) ECG: LDR Reading 1: 3674[0m
+[0;32mI (148438) ECG: LDR Reading 2: 3650[0m
+[0;32mI (148448) ECG: LDR Reading 3: 3583[0m
+[0;32mI (148458) ECG: LDR Reading 4: 3536[0m
+[0;32mI (148468) ECG: LDR Reading 5: 3564[0m
+[0;32mI (148478) ECG: LDR Reading 6: 3515[0m
+[0;32mI (148488) ECG: LDR Reading 7: 3503[0m
+[0;32mI (148498) ECG: LDR Reading 8: 3490[0m
+[0;32mI (148508) ECG: LDR Reading 9: 3509[0m
+[0;32mI (148518) ECG: LDR Reading 10: 3503[0m
+[0;32mI (148528) ECG: Payload: {"LDR":[3674,3650,3583,3536,3564,3515,3503,3490,3509,3503]}[0m
+[0;32mI (148938) ECG: Data sent successfully[0m
+[0;32mI (149038) ECG: LDR Reading 1: 3339[0m
+[0;32mI (149048) ECG: LDR Reading 2: 3394[0m
+[0;32mI (149058) ECG: LDR Reading 3: 3355[0m
+[0;32mI (149068) ECG: LDR Reading 4: 3392[0m
+[0;32mI (149078) ECG: LDR Reading 5: 3395[0m
+[0;32mI (149088) ECG: LDR Reading 6: 3439[0m
+[0;32mI (149098) ECG: LDR Reading 7: 3433[0m
+[0;32mI (149108) ECG: LDR Reading 8: 3433[0m
+[0;32mI (149118) ECG: LDR Reading 9: 3456[0m
+[0;32mI (149128) ECG: LDR Reading 10: 3408[0m
+[0;32mI (149138) ECG: Payload: {"LDR":[3339,3394,3355,3392,3395,3439,3433,3433,3456,3408]}[0m
+[0;32mI (149558) ECG: Data sent successfully[0m
+[0;32mI (149658) ECG: LDR Reading 1: 3458[0m
+[0;32mI (149668) ECG: LDR Reading 2: 3454[0m
+[0;32mI (149678) ECG: LDR Reading 3: 3491[0m
+[0;32mI (149688) ECG: LDR Reading 4: 3447[0m
+[0;32mI (149698) ECG: LDR Reading 5: 3450[0m
+[0;32mI (149708) ECG: LDR Reading 6: 3477[0m
+[0;32mI (149718) ECG: LDR Reading 7: 3440[0m
+[0;32mI (149728) ECG: LDR Reading 8: 3477[0m
+[0;32mI (149738) ECG: LDR Reading 9: 3507[0m
+[0;32mI (149748) ECG: LDR Reading 10: 3504[0m
+[0;32mI (149758) ECG: Payload: {"LDR":[3458,3454,3491,3447,3450,3477,3440,3477,3507,3504]}[0m
+[0;32mI (150168) ECG: Data sent successfully[0m
+[0;32mI (150268) ECG: LDR Reading 1: 3762[0m
+[0;32mI (150278) ECG: LDR Reading 2: 3792[0m
+[0;32mI (150288) ECG: LDR Reading 3: 3790[0m
+[0;32mI (150298) ECG: LDR Reading 4: 3675[0m
+[0;32mI (150308) ECG: LDR Reading 5: 3562[0m
+[0;32mI (150318) ECG: LDR Reading 6: 3490[0m
+[0;32mI (150328) ECG: LDR Reading 7: 3493[0m
+[0;32mI (150338) ECG: LDR Reading 8: 3485[0m
+[0;32mI (150348) ECG: LDR Reading 9: 3549[0m
+[0;32mI (150358) ECG: LDR Reading 10: 3504[0m
+[0;32mI (150368) ECG: Payload: {"LDR":[3762,3792,3790,3675,3562,3490,3493,3485,3549,3504]}[0m
+[0;32mI (150778) ECG: Data sent successfully[0m
+[0;32mI (150878) ECG: LDR Reading 1: 3772[0m
+[0;32mI (150888) ECG: LDR Reading 2: 3582[0m
+[0;32mI (150898) ECG: LDR Reading 3: 3571[0m
+[0;32mI (150908) ECG: LDR Reading 4: 3638[0m
+[0;32mI (150918) ECG: LDR Reading 5: 3712[0m
+[0;32mI (150928) ECG: LDR Reading 6: 3744[0m
+[0;32mI (150938) ECG: LDR Reading 7: 3682[0m
+[0;32mI (150948) ECG: LDR Reading 8: 3742[0m
+[0;32mI (150958) ECG: LDR Reading 9: 3745[0m
+[0;32mI (150968) ECG: LDR Reading 10: 3759[0m
+[0;32mI (150978) ECG: Payload: {"LDR":[3772,3582,3571,3638,3712,3744,3682,3742,3745,3759]}[0m
+[0;32mI (151398) ECG: Data sent successfully[0m
+[0;32mI (151498) ECG: LDR Reading 1: 3221[0m
+[0;32mI (151508) ECG: LDR Reading 2: 3498[0m
+[0;32mI (151518) ECG: LDR Reading 3: 2959[0m
+[0;32mI (151528) ECG: LDR Reading 4: 2887[0m
+[0;32mI (151538) ECG: LDR Reading 5: 2482[0m
+[0;32mI (151548) ECG: LDR Reading 6: 2451[0m
+[0;32mI (151558) ECG: LDR Reading 7: 2670[0m
+[0;32mI (151568) ECG: LDR Reading 8: 2637[0m
+[0;32mI (151578) ECG: LDR Reading 9: 2696[0m
+[0;32mI (151588) ECG: LDR Reading 10: 2639[0m
+[0;32mI (151598) ECG: Payload: {"LDR":[3221,3498,2959,2887,2482,2451,2670,2637,2696,2639]}[0m
+[0;32mI (152008) ECG: Data sent successfully[0m
+[0;32mI (152118) ECG: LDR Reading 1: 4095[0m
+[0;32mI (152128) ECG: LDR Reading 2: 4095[0m
+[0;32mI (152138) ECG: LDR Reading 3: 4095[0m
+[0;32mI (152148) ECG: LDR Reading 4: 4095[0m
+[0;32mI (152158) ECG: LDR Reading 5: 4095[0m
+[0;32mI (152168) ECG: LDR Reading 6: 4095[0m
+[0;32mI (152178) ECG: LDR Reading 7: 4095[0m
+[0;32mI (152188) ECG: LDR Reading 8: 4095[0m
+[0;32mI (152198) ECG: LDR Reading 9: 4095[0m
+[0;32mI (152208) ECG: LDR Reading 10: 4095[0m
+[0;32mI (152218) ECG: Payload: {"LDR":[4095,4095,4095,4095,4095,4095,4095,4095,4095,4095]}[0m
+[0;32mI (152628) ECG: Data sent successfully[0m
+[0;32mI (152728) ECG: LDR Reading 1: 3927[0m
+[0;32mI (152738) ECG: LDR Reading 2: 3858[0m
+[0;32mI (152748) ECG: LDR Reading 3: 3813[0m
+[0;32mI (152758) ECG: LDR Reading 4: 3775[0m
+[0;32mI (152768) ECG: LDR Reading 5: 3739[0m
+[0;32mI (152778) ECG: LDR Reading 6: 3708[0m
+[0;32mI (152788) ECG: LDR Reading 7: 3661[0m
+[0;32mI (152798) ECG: LDR Reading 8: 3662[0m
+[0;32mI (152808) ECG: LDR Reading 9: 3330[0m
+[0;32mI (152818) ECG: LDR Reading 10: 3191[0m
+[0;32mI (152828) ECG: Payload: {"LDR":[3927,3858,3813,3775,3739,3708,3661,3662,3330,3191]}[0m
+[0;32mI (153238) ECG: Data sent successfully[0m
+[0;32mI (153338) ECG: LDR Reading 1: 3054[0m
+[0;32mI (153348) ECG: LDR Reading 2: 3071[0m
+[0;32mI (153358) ECG: LDR Reading 3: 3238[0m
+[0;32mI (153368) ECG: LDR Reading 4: 3040[0m
+[0;32mI (153378) ECG: LDR Reading 5: 2943[0m
+[0;32mI (153388) ECG: LDR Reading 6: 2896[0m
+[0;32mI (153398) ECG: LDR Reading 7: 3263[0m
+[0;32mI (153408) ECG: LDR Reading 8: 3359[0m
+[0;32mI (153418) ECG: LDR Reading 9: 3504[0m
+[0;32mI (153428) ECG: LDR Reading 10: 3951[0m
+[0;32mI (153438) ECG: Payload: {"LDR":[3054,3071,3238,3040,2943,2896,3263,3359,3504,3951]}[0m
+[0;32mI (153858) ECG: Data sent successfully[0m
+[0;32mI (153958) ECG: LDR Reading 1: 3498[0m
+[0;32mI (153968) ECG: LDR Reading 2: 3489[0m
+[0;32mI (153978) ECG: LDR Reading 3: 3471[0m
+[0;32mI (153988) ECG: LDR Reading 4: 3353[0m
+[0;32mI (153998) ECG: LDR Reading 5: 3344[0m
+[0;32mI (154008) ECG: LDR Reading 6: 3303[0m
+[0;32mI (154018) ECG: LDR Reading 7: 3248[0m
+[0;32mI (154028) ECG: LDR Reading 8: 3361[0m
+[0;32mI (154038) ECG: LDR Reading 9: 3471[0m
+[0;32mI (154048) ECG: LDR Reading 10: 3280[0m
+[0;32mI (154058) ECG: Payload: {"LDR":[3498,3489,3471,3353,3344,3303,3248,3361,3471,3280]}[0m
+[0;32mI (154468) ECG: Data sent successfully[0m
+[0;32mI (154568) ECG: LDR Reading 1: 4095[0m
+[0;32mI (154578) ECG: LDR Reading 2: 4095[0m
+[0;32mI (154588) ECG: LDR Reading 3: 4095[0m
+[0;32mI (154598) ECG: LDR Reading 4: 3995[0m
+[0;32mI (154608) ECG: LDR Reading 5: 4095[0m
+[0;32mI (154618) ECG: LDR Reading 6: 4095[0m
+[0;32mI (154628) ECG: LDR Reading 7: 4095[0m
+[0;32mI (154638) ECG: LDR Reading 8: 4095[0m
+[0;32mI (154648) ECG: LDR Reading 9: 4095[0m
+[0;32mI (154658) ECG: LDR Reading 10: 4095[0m
+[0;32mI (154668) ECG: Payload: {"LDR":[4095,4095,4095,3995,4095,4095,4095,4095,4095,4095]}[0m
+[0;32mI (155088) ECG: Data sent successfully[0m
+[0;32mI (155188) ECG: LDR Reading 1: 3083[0m
+[0;32mI (155198) ECG: LDR Reading 2: 3355[0m
+[0;32mI (155208) ECG: LDR Reading 3: 3538[0m
+[0;32mI (155218) ECG: LDR Reading 4: 3652[0m
+[0;32mI (155228) ECG: LDR Reading 5: 3951[0m
+[0;32mI (155238) ECG: LDR Reading 6: 4095[0m
+[0;32mI (155248) ECG: LDR Reading 7: 4095[0m
+[0;32mI (155258) ECG: LDR Reading 8: 4095[0m
+[0;32mI (155268) ECG: LDR Reading 9: 4095[0m
+[0;32mI (155278) ECG: LDR Reading 10: 4095[0m
+[0;32mI (155288) ECG: Payload: {"LDR":[3083,3355,3538,3652,3951,4095,4095,4095,4095,4095]}[0m
+[0;32mI (155698) ECG: Data sent successfully[0m
+[0;32mI (155798) ECG: LDR Reading 1: 1102[0m
+[0;32mI (155808) ECG: LDR Reading 2: 1056[0m
+[0;32mI (155818) ECG: LDR Reading 3: 1152[0m
+[0;32mI (155828) ECG: LDR Reading 4: 1153[0m
+[0;32mI (155838) ECG: LDR Reading 5: 985[0m
+[0;32mI (155848) ECG: LDR Reading 6: 816[0m
+[0;32mI (155858) ECG: LDR Reading 7: 725[0m
+[0;32mI (155868) ECG: LDR Reading 8: 634[0m
+[0;32mI (155878) ECG: LDR Reading 9: 656[0m
+[0;32mI (155888) ECG: LDR Reading 10: 560[0m
+[0;32mI (155898) ECG: Payload: {"LDR":[1102,1056,1152,1153,985,816,725,634,656,560]}[0m
+[0;32mI (156318) ECG: Data sent successfully[0m
+[0;32mI (156418) ECG: LDR Reading 1: 2526[0m
+[0;32mI (156428) ECG: LDR Reading 2: 2736[0m
+[0;32mI (156438) ECG: LDR Reading 3: 2768[0m
+[0;32mI (156448) ECG: LDR Reading 4: 2960[0m
+[0;32mI (156458) ECG: LDR Reading 5: 3056[0m
+[0;32mI (156468) ECG: LDR Reading 6: 3248[0m
+[0;32mI (156478) ECG: LDR Reading 7: 3312[0m
+[0;32mI (156488) ECG: LDR Reading 8: 3442[0m
+[0;32mI (156498) ECG: LDR Reading 9: 3564[0m
+[0;32mI (156508) ECG: LDR Reading 10: 3686[0m
+[0;32mI (156518) ECG: Payload: {"LDR":[2526,2736,2768,2960,3056,3248,3312,3442,3564,3686]}[0m
+[0;32mI (156928) ECG: Data sent successfully[0m
+[0;32mI (157028) ECG: LDR Reading 1: 4095[0m
+[0;32mI (157038) ECG: LDR Reading 2: 4095[0m
+[0;32mI (157048) ECG: LDR Reading 3: 4095[0m
+[0;32mI (157058) ECG: LDR Reading 4: 4095[0m
+[0;32mI (157068) ECG: LDR Reading 5: 4095[0m
+[0;32mI (157078) ECG: LDR Reading 6: 4095[0m
+[0;32mI (157088) ECG: LDR Reading 7: 4095[0m
+[0;32mI (157098) ECG: LDR Reading 8: 4095[0m
+[0;32mI (157108) ECG: LDR Reading 9: 4095[0m
+[0;32mI (157118) ECG: LDR Reading 10: 4095[0m
+[0;32mI (157128) ECG: Payload: {"LDR":[4095,4095,4095,4095,4095,4095,4095,4095,4095,4095]}[0m
+[0;32mI (157538) ECG: Data sent successfully[0m
+[0;32mI (157638) ECG: LDR Reading 1: 4095[0m
+[0;32mI (157648) ECG: LDR Reading 2: 4095[0m
+[0;32mI (157658) ECG: LDR Reading 3: 4095[0m
+[0;32mI (157668) ECG: LDR Reading 4: 4095[0m
+[0;32mI (157678) ECG: LDR Reading 5: 4095[0m
+[0;32mI (157688) ECG: LDR Reading 6: 4095[0m
+[0;32mI (157698) ECG: LDR Reading 7: 4095[0m
+[0;32mI (157708) ECG: LDR Reading 8: 4095[0m
+[0;32mI (157718) ECG: LDR Reading 9: 4095[0m
+[0;32mI (157728) ECG: LDR Reading 10: 4095[0m
+[0;32mI (157738) ECG: Payload: {"LDR":[4095,4095,4095,4095,4095,4095,4095,4095,4095,4095]}[0m
+[0;32mI (158158) ECG: Data sent successfully[0m
+[0;32mI (158258) ECG: LDR Reading 1: 3559[0m
+[0;32mI (158268) ECG: LDR Reading 2: 3520[0m
+[0;32mI (158278) ECG: LDR Reading 3: 3467[0m
+[0;32mI (158288) ECG: LDR Reading 4: 3435[0m
+[0;32mI (158298) ECG: LDR Reading 5: 3393[0m
+[0;32mI (158308) ECG: LDR Reading 6: 3374[0m
+[0;32mI (158318) ECG: LDR Reading 7: 3362[0m
+[0;32mI (158328) ECG: LDR Reading 8: 3440[0m
+[0;32mI (158338) ECG: LDR Reading 9: 3413[0m
+[0;32mI (158348) ECG: LDR Reading 10: 3447[0m
+[0;32mI (158358) ECG: Payload: {"LDR":[3559,3520,3467,3435,3393,3374,3362,3440,3413,3447]}[0m
+[0;32mI (158768) ECG: Data sent successfully[0m
+[0;32mI (158868) ECG: LDR Reading 1: 3303[0m
+[0;32mI (158878) ECG: LDR Reading 2: 3248[0m
+[0;32mI (158888) ECG: LDR Reading 3: 3263[0m
+[0;32mI (158898) ECG: LDR Reading 4: 3166[0m
+[0;32mI (158908) ECG: LDR Reading 5: 3291[0m
+[0;32mI (158918) ECG: LDR Reading 6: 3371[0m
+[0;32mI (158928) ECG: LDR Reading 7: 3486[0m
+[0;32mI (158938) ECG: LDR Reading 8: 3417[0m
+[0;32mI (158948) ECG: LDR Reading 9: 3386[0m
+[0;32mI (158958) ECG: LDR Reading 10: 3259[0m
+[0;32mI (158968) ECG: Payload: {"LDR":[3303,3248,3263,3166,3291,3371,3486,3417,3386,3259]}[0m
+[0;32mI (159388) ECG: Data sent successfully[0m
+[0;32mI (159488) ECG: LDR Reading 1: 2818[0m
+[0;32mI (159498) ECG: LDR Reading 2: 2831[0m
+[0;32mI (159508) ECG: LDR Reading 3: 2768[0m
+[0;32mI (159518) ECG: LDR Reading 4: 2790[0m
+[0;32mI (159528) ECG: LDR Reading 5: 2752[0m
+[0;32mI (159538) ECG: LDR Reading 6: 2714[0m
+[0;32mI (159548) ECG: LDR Reading 7: 2234[0m
+[0;32mI (159558) ECG: LDR Reading 8: 2850[0m
+[0;32mI (159568) ECG: LDR Reading 9: 4095[0m
+[0;32mI (159578) ECG: LDR Reading 10: 4095[0m
+[0;32mI (159588) ECG: Payload: {"LDR":[2818,2831,2768,2790,2752,2714,2234,2850,4095,4095]}[0m
+[0;32mI (159998) ECG: Data sent successfully[0m
+[0;32mI (160098) ECG: LDR Reading 1: 3680[0m
+[0;32mI (160108) ECG: LDR Reading 2: 3676[0m
+[0;32mI (160118) ECG: LDR Reading 3: 3664[0m
+[0;32mI (160128) ECG: LDR Reading 4: 3718[0m
+[0;32mI (160138) ECG: LDR Reading 5: 3726[0m
+[0;32mI (160148) ECG: LDR Reading 6: 3649[0m
+[0;32mI (160158) ECG: LDR Reading 7: 3654[0m
+[0;32mI (160168) ECG: LDR Reading 8: 3674[0m
+[0;32mI (160178) ECG: LDR Reading 9: 3610[0m
+[0;32mI (160188) ECG: LDR Reading 10: 3533[0m
+[0;32mI (160198) ECG: Payload: {"LDR":[3680,3676,3664,3718,3726,3649,3654,3674,3610,3533]}[0m
+[0;32mI (160608) ECG: Data sent successfully[0m
+[0;32mI (160718) ECG: LDR Reading 1: 3631[0m
+[0;32mI (160728) ECG: LDR Reading 2: 3644[0m
+[0;32mI (160738) ECG: LDR Reading 3: 3598[0m
+[0;32mI (160748) ECG: LDR Reading 4: 3583[0m
+[0;32mI (160758) ECG: LDR Reading 5: 3599[0m
+[0;32mI (160768) ECG: LDR Reading 6: 3559[0m
+[0;32mI (160778) ECG: LDR Reading 7: 3581[0m
+[0;32mI (160788) ECG: LDR Reading 8: 3601[0m
+[0;32mI (160798) ECG: LDR Reading 9: 3517[0m
+[0;32mI (160808) ECG: LDR Reading 10: 3645[0m
+[0;32mI (160818) ECG: Payload: {"LDR":[3631,3644,3598,3583,3599,3559,3581,3601,3517,3645]}[0m
+[0;32mI (161228) ECG: Data sent successfully[0m
+[0;32mI (161328) ECG: LDR Reading 1: 3994[0m
+[0;32mI (161338) ECG: LDR Reading 2: 3957[0m
+[0;32mI (161348) ECG: LDR Reading 3: 3376[0m
+[0;32mI (161358) ECG: LDR Reading 4: 2763[0m
+[0;32mI (161368) ECG: LDR Reading 5: 2559[0m
+[0;32mI (161378) ECG: LDR Reading 6: 2544[0m
+[0;32mI (161388) ECG: LDR Reading 7: 2592[0m
+[0;32mI (161398) ECG: LDR Reading 8: 2559[0m
+[0;32mI (161408) ECG: LDR Reading 9: 2487[0m
+[0;32mI (161418) ECG: LDR Reading 10: 2449[0m
+[0;32mI (161428) ECG: Payload: {"LDR":[3994,3957,3376,2763,2559,2544,2592,2559,2487,2449]}[0m
+[0;32mI (161838) ECG: Data sent successfully[0m
+[0;32mI (161948) ECG: LDR Reading 1: 4013[0m
+[0;32mI (161958) ECG: LDR Reading 2: 4019[0m
+[0;32mI (161968) ECG: LDR Reading 3: 3977[0m
+[0;32mI (161978) ECG: LDR Reading 4: 3925[0m
+[0;32mI (161988) ECG: LDR Reading 5: 3920[0m
+[0;32mI (161998) ECG: LDR Reading 6: 4000[0m
+[0;32mI (162008) ECG: LDR Reading 7: 4090[0m
+[0;32mI (162018) ECG: LDR Reading 8: 4095[0m
+[0;32mI (162028) ECG: LDR Reading 9: 4061[0m
+[0;32mI (162038) ECG: LDR Reading 10: 4002[0m
+[0;32mI (162048) ECG: Payload: {"LDR":[4013,4019,3977,3925,3920,4000,4090,4095,4061,4002]}[0m
+[0;32mI (162478) ECG: Data sent successfully[0m
+[0;32mI (162588) ECG: LDR Reading 1: 3206[0m
+[0;32mI (162598) ECG: LDR Reading 2: 3216[0m
+[0;32mI (162608) ECG: LDR Reading 3: 3325[0m
+[0;32mI (162618) ECG: LDR Reading 4: 3262[0m
+[0;32mI (162628) ECG: LDR Reading 5: 3275[0m
+[0;32mI (162638) ECG: LDR Reading 6: 3227[0m
+[0;32mI (162648) ECG: LDR Reading 7: 3216[0m
+[0;32mI (162658) ECG: LDR Reading 8: 3309[0m
+[0;32mI (162668) ECG: LDR Reading 9: 3280[0m
+[0;32mI (162678) ECG: LDR Reading 10: 3200[0m
+[0;32mI (162688) ECG: Payload: {"LDR":[3206,3216,3325,3262,3275,3227,3216,3309,3280,3200]}[0m
+[0;32mI (163068) ECG: Data sent successfully[0m
+[0;32mI (163168) ECG: LDR Reading 1: 3747[0m
+[0;32mI (163178) ECG: LDR Reading 2: 3696[0m
+[0;32mI (163188) ECG: LDR Reading 3: 3844[0m
+[0;32mI (163198) ECG: LDR Reading 4: 3927[0m
+[0;32mI (163208) ECG: LDR Reading 5: 3825[0m
+[0;32mI (163218) ECG: LDR Reading 6: 3739[0m
+[0;32mI (163228) ECG: LDR Reading 7: 3718[0m
+[0;32mI (163238) ECG: LDR Reading 8: 3469[0m
+[0;32mI (163248) ECG: LDR Reading 9: 3505[0m
+[0;32mI (163258) ECG: LDR Reading 10: 3445[0m
+[0;32mI (163268) ECG: Payload: {"LDR":[3747,3696,3844,3927,3825,3739,3718,3469,3505,3445]}[0m
+[0;32mI (163688) ECG: Data sent successfully[0m
+[0;32mI (163788) ECG: LDR Reading 1: 3277[0m
+[0;32mI (163798) ECG: LDR Reading 2: 3243[0m
+[0;32mI (163808) ECG: LDR Reading 3: 3281[0m
+[0;32mI (163818) ECG: LDR Reading 4: 3322[0m
+[0;32mI (163828) ECG: LDR Reading 5: 3283[0m
+[0;32mI (163838) ECG: LDR Reading 6: 3209[0m
+[0;32mI (163848) ECG: LDR Reading 7: 3375[0m
+[0;32mI (163858) ECG: LDR Reading 8: 3362[0m
+[0;32mI (163868) ECG: LDR Reading 9: 3459[0m
+[0;32mI (163878) ECG: LDR Reading 10: 3405[0m
+[0;32mI (163888) ECG: Payload: {"LDR":[3277,3243,3281,3322,3283,3209,3375,3362,3459,3405]}[0m
+[0;32mI (164298) ECG: Data sent successfully[0m
+[0;32mI (164398) ECG: LDR Reading 1: 3467[0m
+[0;32mI (164408) ECG: LDR Reading 2: 3450[0m
+[0;32mI (164418) ECG: LDR Reading 3: 3425[0m
+[0;32mI (164428) ECG: LDR Reading 4: 3484[0m
+[0;32mI (164438) ECG: LDR Reading 5: 3179[0m
+[0;32mI (164448) ECG: LDR Reading 6: 3127[0m
+[0;32mI (164458) ECG: LDR Reading 7: 3888[0m
+[0;32mI (164468) ECG: LDR Reading 8: 4095[0m
+[0;32mI (164478) ECG: LDR Reading 9: 4095[0m
+[0;32mI (164488) ECG: LDR Reading 10: 4095[0m
+[0;32mI (164498) ECG: Payload: {"LDR":[3467,3450,3425,3484,3179,3127,3888,4095,4095,4095]}[0m
+[0;32mI (164918) ECG: Data sent successfully[0m
+[0;32mI (165018) ECG: LDR Reading 1: 3341[0m
+[0;32mI (165028) ECG: LDR Reading 2: 3490[0m
+[0;32mI (165038) ECG: LDR Reading 3: 3651[0m
+[0;32mI (165048) ECG: LDR Reading 4: 3671[0m
+[0;32mI (165058) ECG: LDR Reading 5: 3487[0m
+[0;32mI (165068) ECG: LDR Reading 6: 3456[0m
+[0;32mI (165078) ECG: LDR Reading 7: 3471[0m
+[0;32mI (165088) ECG: LDR Reading 8: 3458[0m
+[0;32mI (165098) ECG: LDR Reading 9: 3449[0m
+[0;32mI (165108) ECG: LDR Reading 10: 3439[0m
+[0;32mI (165118) ECG: Payload: {"LDR":[3341,3490,3651,3671,3487,3456,3471,3458,3449,3439]}[0m
+[0;32mI (165528) ECG: Data sent successfully[0m
+[0;32mI (165628) ECG: LDR Reading 1: 3389[0m
+[0;32mI (165638) ECG: LDR Reading 2: 3346[0m
+[0;32mI (165648) ECG: LDR Reading 3: 3381[0m
+[0;32mI (165658) ECG: LDR Reading 4: 3440[0m
+[0;32mI (165668) ECG: LDR Reading 5: 3478[0m
+[0;32mI (165678) ECG: LDR Reading 6: 3354[0m
+[0;32mI (165688) ECG: LDR Reading 7: 3505[0m
+[0;32mI (165698) ECG: LDR Reading 8: 3366[0m
+[0;32mI (165708) ECG: LDR Reading 9: 3411[0m
+[0;32mI (165718) ECG: LDR Reading 10: 3518[0m
+[0;32mI (165728) ECG: Payload: {"LDR":[3389,3346,3381,3440,3478,3354,3505,3366,3411,3518]}[0m
+[0;32mI (166148) ECG: Data sent successfully[0m
+[0;32mI (166248) ECG: LDR Reading 1: 3411[0m
+[0;32mI (166258) ECG: LDR Reading 2: 3434[0m
+[0;32mI (166268) ECG: LDR Reading 3: 3426[0m
+[0;32mI (166278) ECG: LDR Reading 4: 3394[0m
+[0;32mI (166288) ECG: LDR Reading 5: 3401[0m
+[0;32mI (166298) ECG: LDR Reading 6: 3378[0m
+[0;32mI (166308) ECG: LDR Reading 7: 3305[0m
+[0;32mI (166318) ECG: LDR Reading 8: 3340[0m
+[0;32mI (166328) ECG: LDR Reading 9: 3314[0m
+[0;32mI (166338) ECG: LDR Reading 10: 3391[0m
+[0;32mI (166348) ECG: Payload: {"LDR":[3411,3434,3426,3394,3401,3378,3305,3340,3314,3391]}[0m
+[0;32mI (166758) ECG: Data sent successfully[0m
+[0;32mI (166858) ECG: LDR Reading 1: 3489[0m
+[0;32mI (166868) ECG: LDR Reading 2: 3559[0m
+[0;32mI (166878) ECG: LDR Reading 3: 3632[0m
+[0;32mI (166888) ECG: LDR Reading 4: 3758[0m
+[0;32mI (166898) ECG: LDR Reading 5: 3728[0m
+[0;32mI (166908) ECG: LDR Reading 6: 3797[0m
+[0;32mI (166918) ECG: LDR Reading 7: 3848[0m
+[0;32mI (166928) ECG: LDR Reading 8: 3758[0m
+[0;32mI (166938) ECG: LDR Reading 9: 3695[0m
+[0;32mI (166948) ECG: LDR Reading 10: 3667[0m
+[0;32mI (166958) ECG: Payload: {"LDR":[3489,3559,3632,3758,3728,3797,3848,3758,3695,3667]}[0m
+[0;32mI (167368) ECG: Data sent successfully[0m
+[0;32mI (167468) ECG: LDR Reading 1: 3085[0m
+[0;32mI (167478) ECG: LDR Reading 2: 3979[0m
+[0;32mI (167488) ECG: LDR Reading 3: 4095[0m
+[0;32mI (167498) ECG: LDR Reading 4: 4095[0m
+[0;32mI (167508) ECG: LDR Reading 5: 4095[0m
+[0;32mI (167518) ECG: LDR Reading 6: 4095[0m
+[0;32mI (167528) ECG: LDR Reading 7: 3775[0m
+[0;32mI (167538) ECG: LDR Reading 8: 3346[0m
+[0;32mI (167548) ECG: LDR Reading 9: 3297[0m
+[0;32mI (167558) ECG: LDR Reading 10: 3277[0m
+[0;32mI (167568) ECG: Payload: {"LDR":[3085,3979,4095,4095,4095,4095,3775,3346,3297,3277]}[0m
+[0;32mI (167988) ECG: Data sent successfully[0m
+[0;32mI (168088) ECG: LDR Reading 1: 3408[0m
+[0;32mI (168098) ECG: LDR Reading 2: 3423[0m
+[0;32mI (168108) ECG: LDR Reading 3: 3485[0m
+[0;32mI (168118) ECG: LDR Reading 4: 3418[0m
+[0;32mI (168128) ECG: LDR Reading 5: 3409[0m
+[0;32mI (168138) ECG: LDR Reading 6: 3406[0m
+[0;32mI (168148) ECG: LDR Reading 7: 3637[0m
+[0;32mI (168158) ECG: LDR Reading 8: 3674[0m
+[0;32mI (168168) ECG: LDR Reading 9: 3701[0m
+[0;32mI (168178) ECG: LDR Reading 10: 3648[0m
+[0;32mI (168188) ECG: Payload: {"LDR":[3408,3423,3485,3418,3409,3406,3637,3674,3701,3648]}[0m
+[0;32mI (168598) ECG: Data sent successfully[0m
+[0;32mI (168698) ECG: LDR Reading 1: 3376[0m
+[0;32mI (168708) ECG: LDR Reading 2: 3378[0m
+[0;32mI (168718) ECG: LDR Reading 3: 3414[0m
+[0;32mI (168728) ECG: LDR Reading 4: 3440[0m
+[0;32mI (168738) ECG: LDR Reading 5: 3442[0m
+[0;32mI (168748) ECG: LDR Reading 6: 3472[0m
+[0;32mI (168758) ECG: LDR Reading 7: 3392[0m
+[0;32mI (168768) ECG: LDR Reading 8: 3444[0m
+[0;32mI (168778) ECG: LDR Reading 9: 3440[0m
+[0;32mI (168788) ECG: LDR Reading 10: 3434[0m
+[0;32mI (168798) ECG: Payload: {"LDR":[3376,3378,3414,3440,3442,3472,3392,3444,3440,3434]}[0m
+[0;32mI (169218) ECG: Data sent successfully[0m
+[0;32mI (169318) ECG: LDR Reading 1: 3760[0m
+[0;32mI (169328) ECG: LDR Reading 2: 3871[0m
+[0;32mI (169338) ECG: LDR Reading 3: 3923[0m
+[0;32mI (169348) ECG: LDR Reading 4: 3855[0m
+[0;32mI (169358) ECG: LDR Reading 5: 3824[0m
+[0;32mI (169368) ECG: LDR Reading 6: 3730[0m
+[0;32mI (169378) ECG: LDR Reading 7: 3711[0m
+[0;32mI (169388) ECG: LDR Reading 8: 3607[0m
+[0;32mI (169398) ECG: LDR Reading 9: 3529[0m
+[0;32mI (169408) ECG: LDR Reading 10: 3529[0m
+[0;32mI (169418) ECG: Payload: {"LDR":[3760,3871,3923,3855,3824,3730,3711,3607,3529,3529]}[0m
+[0;32mI (169868) ECG: Data sent successfully[0m
+[0;32mI (169968) ECG: LDR Reading 1: 3409[0m
+[0;32mI (169978) ECG: LDR Reading 2: 3489[0m
+[0;32mI (169988) ECG: LDR Reading 3: 3457[0m
+[0;32mI (169998) ECG: LDR Reading 4: 3398[0m
+[0;32mI (170008) ECG: LDR Reading 5: 3459[0m
+[0;32mI (170018) ECG: LDR Reading 6: 3435[0m
+[0;32mI (170028) ECG: LDR Reading 7: 3526[0m
+[0;32mI (170038) ECG: LDR Reading 8: 3409[0m
+[0;32mI (170048) ECG: LDR Reading 9: 3519[0m
+[0;32mI (170058) ECG: LDR Reading 10: 3510[0m
+[0;32mI (170068) ECG: Payload: {"LDR":[3409,3489,3457,3398,3459,3435,3526,3409,3519,3510]}[0m
+[0;32mI (170448) ECG: Data sent successfully[0m
+[0;32mI (170548) ECG: LDR Reading 1: 3513[0m
+[0;32mI (170558) ECG: LDR Reading 2: 3472[0m
+[0;32mI (170568) ECG: LDR Reading 3: 3498[0m
+[0;32mI (170578) ECG: LDR Reading 4: 3547[0m
+[0;32mI (170588) ECG: LDR Reading 5: 3541[0m
+[0;32mI (170598) ECG: LDR Reading 6: 3487[0m
+[0;32mI (170608) ECG: LDR Reading 7: 3583[0m
+[0;32mI (170618) ECG: LDR Reading 8: 3535[0m
+[0;32mI (170628) ECG: LDR Reading 9: 3167[0m
+[0;32mI (170638) ECG: LDR Reading 10: 3431[0m
+[0;32mI (170648) ECG: Payload: {"LDR":[3513,3472,3498,3547,3541,3487,3583,3535,3167,3431]}[0m
+[0;32mI (171058) ECG: Data sent successfully[0m
+[0;32mI (171158) ECG: LDR Reading 1: 3408[0m
+[0;32mI (171168) ECG: LDR Reading 2: 3409[0m
+[0;32mI (171178) ECG: LDR Reading 3: 3394[0m
+[0;32mI (171188) ECG: LDR Reading 4: 3427[0m
+[0;32mI (171198) ECG: LDR Reading 5: 3479[0m
+[0;32mI (171208) ECG: LDR Reading 6: 3431[0m
+[0;32mI (171218) ECG: LDR Reading 7: 3441[0m
+[0;32mI (171228) ECG: LDR Reading 8: 3536[0m
+[0;32mI (171238) ECG: LDR Reading 9: 3482[0m
+[0;32mI (171248) ECG: LDR Reading 10: 3472[0m
+[0;32mI (171258) ECG: Payload: {"LDR":[3408,3409,3394,3427,3479,3431,3441,3536,3482,3472]}[0m
+[0;32mI (171668) ECG: Data sent successfully[0m
+[0;32mI (171768) ECG: LDR Reading 1: 3438[0m
+[0;32mI (171778) ECG: LDR Reading 2: 3328[0m
+[0;32mI (171788) ECG: LDR Reading 3: 3340[0m
+[0;32mI (171798) ECG: LDR Reading 4: 3411[0m
+[0;32mI (171808) ECG: LDR Reading 5: 3417[0m
+[0;32mI (171818) ECG: LDR Reading 6: 3356[0m
+[0;32mI (171828) ECG: LDR Reading 7: 3411[0m
+[0;32mI (171838) ECG: LDR Reading 8: 3440[0m
+[0;32mI (171848) ECG: LDR Reading 9: 3440[0m
+[0;32mI (171858) ECG: LDR Reading 10: 3426[0m
+[0;32mI (171868) ECG: Payload: {"LDR":[3438,3328,3340,3411,3417,3356,3411,3440,3440,3426]}[0m
+[0;32mI (172288) ECG: Data sent successfully[0m
+[0;32mI (172388) ECG: LDR Reading 1: 3493[0m
+[0;32mI (172398) ECG: LDR Reading 2: 3539[0m
+[0;32mI (172408) ECG: LDR Reading 3: 3664[0m
+[0;32mI (172418) ECG: LDR Reading 4: 3630[0m
+[0;32mI (172428) ECG: LDR Reading 5: 3792[0m
+[0;32mI (172438) ECG: LDR Reading 6: 3712[0m
+[0;32mI (172448) ECG: LDR Reading 7: 3767[0m
+[0;32mI (172458) ECG: LDR Reading 8: 3763[0m
+[0;32mI (172468) ECG: LDR Reading 9: 3694[0m
+[0;32mI (172478) ECG: LDR Reading 10: 3631[0m
+[0;32mI (172488) ECG: Payload: {"LDR":[3493,3539,3664,3630,3792,3712,3767,3763,3694,3631]}[0m
+[0;32mI (172898) ECG: Data sent successfully[0m
+[0;32mI (172998) ECG: LDR Reading 1: 4095[0m
+[0;32mI (173008) ECG: LDR Reading 2: 4095[0m
+[0;32mI (173018) ECG: LDR Reading 3: 4095[0m
+[0;32mI (173028) ECG: LDR Reading 4: 4095[0m
+[0;32mI (173038) ECG: LDR Reading 5: 4095[0m
+[0;32mI (173048) ECG: LDR Reading 6: 3535[0m
+[0;32mI (173058) ECG: LDR Reading 7: 3251[0m
+[0;32mI (173068) ECG: LDR Reading 8: 3421[0m
+[0;32mI (173078) ECG: LDR Reading 9: 3344[0m
+[0;32mI (173088) ECG: LDR Reading 10: 3335[0m
+[0;32mI (173098) ECG: Payload: {"LDR":[4095,4095,4095,4095,4095,3535,3251,3421,3344,3335]}[0m
+[0;32mI (173518) ECG: Data sent successfully[0m
+[0;32mI (173618) ECG: LDR Reading 1: 3411[0m
+[0;32mI (173628) ECG: LDR Reading 2: 3655[0m
+[0;32mI (173638) ECG: LDR Reading 3: 3788[0m
+[0;32mI (173648) ECG: LDR Reading 4: 3705[0m
+[0;32mI (173658) ECG: LDR Reading 5: 3669[0m
+[0;32mI (173668) ECG: LDR Reading 6: 3555[0m
+[0;32mI (173678) ECG: LDR Reading 7: 3553[0m
+[0;32mI (173688) ECG: LDR Reading 8: 3504[0m
+[0;32mI (173698) ECG: LDR Reading 9: 3574[0m
+[0;32mI (173708) ECG: LDR Reading 10: 3583[0m
+[0;32mI (173718) ECG: Payload: {"LDR":[3411,3655,3788,3705,3669,3555,3553,3504,3574,3583]}[0m
+[0;32mI (174228) ECG: Data sent successfully[0m
+[0;32mI (174338) ECG: LDR Reading 1: 3568[0m
+[0;32mI (174348) ECG: LDR Reading 2: 3646[0m
+[0;32mI (174358) ECG: LDR Reading 3: 3549[0m
+[0;32mI (174368) ECG: LDR Reading 4: 3546[0m
+[0;32mI (174378) ECG: LDR Reading 5: 3664[0m
+[0;32mI (174388) ECG: LDR Reading 6: 3871[0m
+[0;32mI (174398) ECG: LDR Reading 7: 3792[0m
+[0;32mI (174408) ECG: LDR Reading 8: 3760[0m
+[0;32mI (174418) ECG: LDR Reading 9: 3603[0m
+[0;32mI (174428) ECG: LDR Reading 10: 3651[0m
+[0;32mI (174438) ECG: Payload: {"LDR":[3568,3646,3549,3546,3664,3871,3792,3760,3603,3651]}[0m
+[0;32mI (174848) ECG: Data sent successfully[0m
+[0;32mI (174948) ECG: LDR Reading 1: 3511[0m
+[0;32mI (174958) ECG: LDR Reading 2: 3509[0m
+[0;32mI (174968) ECG: LDR Reading 3: 3502[0m
+[0;32mI (174978) ECG: LDR Reading 4: 3523[0m
+[0;32mI (174988) ECG: LDR Reading 5: 3493[0m
+[0;32mI (174998) ECG: LDR Reading 6: 3582[0m
+[0;32mI (175008) ECG: LDR Reading 7: 3517[0m
+[0;32mI (175018) ECG: LDR Reading 8: 3427[0m
+[0;32mI (175028) ECG: LDR Reading 9: 3579[0m
+[0;32mI (175038) ECG: LDR Reading 10: 3520[0m
+[0;32mI (175048) ECG: Payload: {"LDR":[3511,3509,3502,3523,3493,3582,3517,3427,3579,3520]}[0m
+[0;32mI (175458) ECG: Data sent successfully[0m
+[0;32mI (175558) ECG: LDR Reading 1: 3462[0m
+[0;32mI (175568) ECG: LDR Reading 2: 3359[0m
+[0;32mI (175578) ECG: LDR Reading 3: 3349[0m
+[0;32mI (175588) ECG: LDR Reading 4: 3312[0m
+[0;32mI (175598) ECG: LDR Reading 5: 3344[0m
+[0;32mI (175608) ECG: LDR Reading 6: 3440[0m
+[0;32mI (175618) ECG: LDR Reading 7: 3359[0m
+[0;32mI (175628) ECG: LDR Reading 8: 3413[0m
+[0;32mI (175638) ECG: LDR Reading 9: 3326[0m
+[0;32mI (175648) ECG: LDR Reading 10: 3353[0m
+[0;32mI (175658) ECG: Payload: {"LDR":[3462,3359,3349,3312,3344,3440,3359,3413,3326,3353]}[0m
+[0;32mI (176078) ECG: Data sent successfully[0m
+[0;32mI (176178) ECG: LDR Reading 1: 3341[0m
+[0;32mI (176188) ECG: LDR Reading 2: 3487[0m
+[0;32mI (176198) ECG: LDR Reading 3: 3526[0m
+[0;32mI (176208) ECG: LDR Reading 4: 3618[0m
+[0;32mI (176218) ECG: LDR Reading 5: 3651[0m
+[0;32mI (176228) ECG: LDR Reading 6: 3737[0m
+[0;32mI (176238) ECG: LDR Reading 7: 3717[0m
+[0;32mI (176248) ECG: LDR Reading 8: 3669[0m
+[0;32mI (176258) ECG: LDR Reading 9: 3648[0m
+[0;32mI (176268) ECG: LDR Reading 10: 3481[0m
+[0;32mI (176278) ECG: Payload: {"LDR":[3341,3487,3526,3618,3651,3737,3717,3669,3648,3481]}[0m
+[0;32mI (176688) ECG: Data sent successfully[0m
+[0;32mI (176788) ECG: LDR Reading 1: 3381[0m
+[0;32mI (176798) ECG: LDR Reading 2: 3293[0m
+[0;32mI (176808) ECG: LDR Reading 3: 3309[0m
+[0;32mI (176818) ECG: LDR Reading 4: 3321[0m
+[0;32mI (176828) ECG: LDR Reading 5: 3360[0m
+[0;32mI (176838) ECG: LDR Reading 6: 3292[0m
+[0;32mI (176848) ECG: LDR Reading 7: 3410[0m
+[0;32mI (176858) ECG: LDR Reading 8: 3378[0m
+[0;32mI (176868) ECG: LDR Reading 9: 3454[0m
+[0;32mI (176878) ECG: LDR Reading 10: 3425[0m
+[0;32mI (176888) ECG: Payload: {"LDR":[3381,3293,3309,3321,3360,3292,3410,3378,3454,3425]}[0m
+[0;32mI (177338) ECG: Data sent successfully[0m
+[0;32mI (177438) ECG: LDR Reading 1: 3725[0m
+[0;32mI (177448) ECG: LDR Reading 2: 3696[0m
+[0;32mI (177458) ECG: LDR Reading 3: 3627[0m
+[0;32mI (177468) ECG: LDR Reading 4: 3274[0m
+[0;32mI (177478) ECG: LDR Reading 5: 3597[0m
+[0;32mI (177488) ECG: LDR Reading 6: 4095[0m
+[0;32mI (177498) ECG: LDR Reading 7: 4095[0m
+[0;32mI (177508) ECG: LDR Reading 8: 4095[0m
+[0;32mI (177518) ECG: LDR Reading 9: 4095[0m
+[0;32mI (177528) ECG: LDR Reading 10: 4095[0m
+[0;32mI (177538) ECG: Payload: {"LDR":[3725,3696,3627,3274,3597,4095,4095,4095,4095,4095]}[0m
+[0;32mI (177918) ECG: Data sent successfully[0m
+[0;32mI (178018) ECG: LDR Reading 1: 3750[0m
+[0;32mI (178028) ECG: LDR Reading 2: 3792[0m
+[0;32mI (178038) ECG: LDR Reading 3: 3779[0m
+[0;32mI (178048) ECG: LDR Reading 4: 3717[0m
+[0;32mI (178058) ECG: LDR Reading 5: 3698[0m
+[0;32mI (178068) ECG: LDR Reading 6: 3734[0m
+[0;32mI (178078) ECG: LDR Reading 7: 3763[0m
+[0;32mI (178088) ECG: LDR Reading 8: 3753[0m
+[0;32mI (178098) ECG: LDR Reading 9: 3685[0m
+[0;32mI (178108) ECG: LDR Reading 10: 3770[0m
+[0;32mI (178118) ECG: Payload: {"LDR":[3750,3792,3779,3717,3698,3734,3763,3753,3685,3770]}[0m
+[0;32mI (178638) ECG: Data sent successfully[0m
+[0;32mI (178738) ECG: LDR Reading 1: 3275[0m
+[0;32mI (178748) ECG: LDR Reading 2: 3335[0m
+[0;32mI (178758) ECG: LDR Reading 3: 3270[0m
+[0;32mI (178768) ECG: LDR Reading 4: 3335[0m
+[0;32mI (178778) ECG: LDR Reading 5: 3331[0m
+[0;32mI (178788) ECG: LDR Reading 6: 3269[0m
+[0;32mI (178798) ECG: LDR Reading 7: 3282[0m
+[0;32mI (178808) ECG: LDR Reading 8: 3262[0m
+[0;32mI (178818) ECG: LDR Reading 9: 3234[0m
+[0;32mI (178828) ECG: LDR Reading 10: 3223[0m
+[0;32mI (178838) ECG: Payload: {"LDR":[3275,3335,3270,3335,3331,3269,3282,3262,3234,3223]}[0m
+[0;32mI (179248) ECG: Data sent successfully[0m
+[0;32mI (179348) ECG: LDR Reading 1: 3328[0m
+[0;32mI (179358) ECG: LDR Reading 2: 3280[0m
+[0;32mI (179368) ECG: LDR Reading 3: 3271[0m
+[0;32mI (179378) ECG: LDR Reading 4: 3263[0m
+[0;32mI (179388) ECG: LDR Reading 5: 3229[0m
+[0;32mI (179398) ECG: LDR Reading 6: 3225[0m
+[0;32mI (179408) ECG: LDR Reading 7: 3237[0m
+[0;32mI (179418) ECG: LDR Reading 8: 3248[0m
+[0;32mI (179428) ECG: LDR Reading 9: 3216[0m
+[0;32mI (179438) ECG: LDR Reading 10: 3168[0m
+[0;32mI (179448) ECG: Payload: {"LDR":[3328,3280,3271,3263,3229,3225,3237,3248,3216,3168]}[0m
+[0;32mI (179858) ECG: Data sent successfully[0m
+[0;32mI (179958) ECG: LDR Reading 1: 3262[0m
+[0;32mI (179968) ECG: LDR Reading 2: 3282[0m
+[0;32mI (179978) ECG: LDR Reading 3: 3277[0m
+[0;32mI (179988) ECG: LDR Reading 4: 3237[0m
+[0;32mI (179998) ECG: LDR Reading 5: 3248[0m
+[0;32mI (180008) ECG: LDR Reading 6: 3269[0m
+[0;32mI (180018) ECG: LDR Reading 7: 3355[0m
+[0;32mI (180028) ECG: LDR Reading 8: 3360[0m
+[0;32mI (180038) ECG: LDR Reading 9: 3321[0m
+[0;32mI (180048) ECG: LDR Reading 10: 3415[0m
+[0;32mI (180058) ECG: Payload: {"LDR":[3262,3282,3277,3237,3248,3269,3355,3360,3321,3415]}[0m
+[0;32mI (180478) ECG: Data sent successfully[0m
+[0;32mI (180578) ECG: LDR Reading 1: 3163[0m
+[0;32mI (180588) ECG: LDR Reading 2: 3448[0m
+[0;32mI (180598) ECG: LDR Reading 3: 4095[0m
+[0;32mI (180608) ECG: LDR Reading 4: 4095[0m
+[0;32mI (180618) ECG: LDR Reading 5: 4095[0m
+[0;32mI (180628) ECG: LDR Reading 6: 4095[0m
+[0;32mI (180638) ECG: LDR Reading 7: 4095[0m
+[0;32mI (180648) ECG: LDR Reading 8: 3686[0m
+[0;32mI (180658) ECG: LDR Reading 9: 3349[0m
+[0;32mI (180668) ECG: LDR Reading 10: 3306[0m
+[0;32mI (180678) ECG: Payload: {"LDR":[3163,3448,4095,4095,4095,4095,4095,3686,3349,3306]}[0m
+[0;32mI (180988) ECG: Data sent successfully[0m
+[0;32mI (181088) ECG: LDR Reading 1: 3440[0m
+[0;32mI (181098) ECG: LDR Reading 2: 3408[0m
+[0;32mI (181108) ECG: LDR Reading 3: 3437[0m
+[0;32mI (181118) ECG: LDR Reading 4: 3461[0m
+[0;32mI (181128) ECG: LDR Reading 5: 3552[0m
+[0;32mI (181138) ECG: LDR Reading 6: 3495[0m
+[0;32mI (181148) ECG: LDR Reading 7: 3509[0m
+[0;32mI (181158) ECG: LDR Reading 8: 3483[0m
+[0;32mI (181168) ECG: LDR Reading 9: 3489[0m
+[0;32mI (181178) ECG: LDR Reading 10: 3647[0m
+[0;32mI (181188) ECG: Payload: {"LDR":[3440,3408,3437,3461,3552,3495,3509,3483,3489,3647]}[0m
+[0;32mI (181608) ECG: Data sent successfully[0m
+[0;32mI (181708) ECG: LDR Reading 1: 3518[0m
+[0;32mI (181718) ECG: LDR Reading 2: 3536[0m
+[0;32mI (181728) ECG: LDR Reading 3: 3555[0m
+[0;32mI (181738) ECG: LDR Reading 4: 3542[0m
+[0;32mI (181748) ECG: LDR Reading 5: 3536[0m
+[0;32mI (181758) ECG: LDR Reading 6: 3615[0m
+[0;32mI (181768) ECG: LDR Reading 7: 3661[0m
+[0;32mI (181778) ECG: LDR Reading 8: 3601[0m
+[0;32mI (181788) ECG: LDR Reading 9: 3539[0m
+[0;32mI (181798) ECG: LDR Reading 10: 3580[0m
+[0;32mI (181808) ECG: Payload: {"LDR":[3518,3536,3555,3542,3536,3615,3661,3601,3539,3580]}[0m
+[0;32mI (182218) ECG: Data sent successfully[0m
+[0;32mI (182318) ECG: LDR Reading 1: 3824[0m
+[0;32mI (182328) ECG: LDR Reading 2: 3728[0m
+[0;32mI (182338) ECG: LDR Reading 3: 3723[0m
+[0;32mI (182348) ECG: LDR Reading 4: 3731[0m
+[0;32mI (182358) ECG: LDR Reading 5: 3632[0m
+[0;32mI (182368) ECG: LDR Reading 6: 3659[0m
+[0;32mI (182378) ECG: LDR Reading 7: 3664[0m
+[0;32mI (182388) ECG: LDR Reading 8: 3626[0m
+[0;32mI (182398) ECG: LDR Reading 9: 3623[0m
+[0;32mI (182408) ECG: LDR Reading 10: 3629[0m
+[0;32mI (182418) ECG: Payload: {"LDR":[3824,3728,3723,3731,3632,3659,3664,3626,3623,3629]}[0m
+[0;32mI (182838) ECG: Data sent successfully[0m
+[0;32mI (182938) ECG: LDR Reading 1: 3249[0m
+[0;32mI (182948) ECG: LDR Reading 2: 3287[0m
+[0;32mI (182958) ECG: LDR Reading 3: 3339[0m
+[0;32mI (182968) ECG: LDR Reading 4: 3339[0m
+[0;32mI (182978) ECG: LDR Reading 5: 3342[0m
+[0;32mI (182988) ECG: LDR Reading 6: 3351[0m
+[0;32mI (182998) ECG: LDR Reading 7: 3387[0m
+[0;32mI (183008) ECG: LDR Reading 8: 3490[0m
+[0;32mI (183018) ECG: LDR Reading 9: 3494[0m
+[0;32mI (183028) ECG: LDR Reading 10: 3489[0m
+[0;32mI (183038) ECG: Payload: {"LDR":[3249,3287,3339,3339,3342,3351,3387,3490,3494,3489]}[0m
+[0;32mI (183448) ECG: Data sent successfully[0m
+[0;32mI (183548) ECG: LDR Reading 1: 4095[0m
+[0;32mI (183558) ECG: LDR Reading 2: 4095[0m
+[0;32mI (183568) ECG: LDR Reading 3: 4095[0m
+[0;32mI (183578) ECG: LDR Reading 4: 4095[0m
+[0;32mI (183588) ECG: LDR Reading 5: 4095[0m
+[0;32mI (183598) ECG: LDR Reading 6: 3494[0m
+[0;32mI (183608) ECG: LDR Reading 7: 3291[0m
+[0;32mI (183618) ECG: LDR Reading 8: 3325[0m
+[0;32mI (183628) ECG: LDR Reading 9: 3249[0m
+[0;32mI (183638) ECG: LDR Reading 10: 3217[0m
+[0;32mI (183648) ECG: Payload: {"LDR":[4095,4095,4095,4095,4095,3494,3291,3325,3249,3217]}[0m
+[0;32mI (184058) ECG: Data sent successfully[0m
+[0;32mI (184158) ECG: LDR Reading 1: 3583[0m
+[0;32mI (184168) ECG: LDR Reading 2: 3469[0m
+[0;32mI (184178) ECG: LDR Reading 3: 3485[0m
+[0;32mI (184188) ECG: LDR Reading 4: 3506[0m
+[0;32mI (184198) ECG: LDR Reading 5: 3470[0m
+[0;32mI (184208) ECG: LDR Reading 6: 3469[0m
+[0;32mI (184218) ECG: LDR Reading 7: 3455[0m
+[0;32mI (184228) ECG: LDR Reading 8: 3504[0m
+[0;32mI (184238) ECG: LDR Reading 9: 3491[0m
+[0;32mI (184248) ECG: LDR Reading 10: 3504[0m
+[0;32mI (184258) ECG: Payload: {"LDR":[3583,3469,3485,3506,3470,3469,3455,3504,3491,3504]}[0m
+[0;32mI (184678) ECG: Data sent successfully[0m
+[0;32mI (184778) ECG: LDR Reading 1: 4091[0m
+[0;32mI (184788) ECG: LDR Reading 2: 4070[0m
+[0;32mI (184798) ECG: LDR Reading 3: 4095[0m
+[0;32mI (184808) ECG: LDR Reading 4: 4095[0m
+[0;32mI (184818) ECG: LDR Reading 5: 4074[0m
+[0;32mI (184828) ECG: LDR Reading 6: 4088[0m
+[0;32mI (184838) ECG: LDR Reading 7: 4080[0m
+[0;32mI (184848) ECG: LDR Reading 8: 4095[0m
+[0;32mI (184858) ECG: LDR Reading 9: 4075[0m
+[0;32mI (184868) ECG: LDR Reading 10: 4095[0m
+[0;32mI (184878) ECG: Payload: {"LDR":[4091,4070,4095,4095,4074,4088,4080,4095,4075,4095]}[0m
+[0;32mI (185288) ECG: Data sent successfully[0m
+[0;32mI (185398) ECG: LDR Reading 1: 3513[0m
+[0;32mI (185408) ECG: LDR Reading 2: 3536[0m
+[0;32mI (185418) ECG: LDR Reading 3: 3497[0m
+[0;32mI (185428) ECG: LDR Reading 4: 3490[0m
+[0;32mI (185438) ECG: LDR Reading 5: 3484[0m
+[0;32mI (185448) ECG: LDR Reading 6: 3447[0m
+[0;32mI (185458) ECG: LDR Reading 7: 3395[0m
+[0;32mI (185468) ECG: LDR Reading 8: 3410[0m
+[0;32mI (185478) ECG: LDR Reading 9: 3386[0m
+[0;32mI (185488) ECG: LDR Reading 10: 3381[0m
+[0;32mI (185498) ECG: Payload: {"LDR":[3513,3536,3497,3490,3484,3447,3395,3410,3386,3381]}[0m
+[0;32mI (185918) ECG: Data sent successfully[0m
+[0;32mI (186018) ECG: LDR Reading 1: 3184[0m
+[0;32mI (186028) ECG: LDR Reading 2: 3162[0m
+[0;32mI (186038) ECG: LDR Reading 3: 3007[0m
+[0;32mI (186048) ECG: LDR Reading 4: 2976[0m
+[0;32mI (186058) ECG: LDR Reading 5: 2874[0m
+[0;32mI (186068) ECG: LDR Reading 6: 2903[0m
+[0;32mI (186078) ECG: LDR Reading 7: 2834[0m
+[0;32mI (186088) ECG: LDR Reading 8: 2869[0m
+[0;32mI (186098) ECG: LDR Reading 9: 2878[0m
+[0;32mI (186108) ECG: LDR Reading 10: 2950[0m
+[0;32mI (186118) ECG: Payload: {"LDR":[3184,3162,3007,2976,2874,2903,2834,2869,2878,2950]}[0m
+[0;32mI (186528) ECG: Data sent successfully[0m
+[0;32mI (186628) ECG: LDR Reading 1: 3211[0m
+[0;32mI (186638) ECG: LDR Reading 2: 3194[0m
+[0;32mI (186648) ECG: LDR Reading 3: 3280[0m
+[0;32mI (186658) ECG: LDR Reading 4: 3312[0m
+[0;32mI (186668) ECG: LDR Reading 5: 3409[0m
+[0;32mI (186678) ECG: LDR Reading 6: 3373[0m
+[0;32mI (186688) ECG: LDR Reading 7: 3487[0m
+[0;32mI (186698) ECG: LDR Reading 8: 3508[0m
+[0;32mI (186708) ECG: LDR Reading 9: 3558[0m
+[0;32mI (186718) ECG: LDR Reading 10: 3489[0m
+[0;32mI (186728) ECG: Payload: {"LDR":[3211,3194,3280,3312,3409,3373,3487,3508,3558,3489]}[0m
+[0;32mI (187138) ECG: Data sent successfully[0m
+[0;32mI (187238) ECG: LDR Reading 1: 3281[0m
+[0;32mI (187248) ECG: LDR Reading 2: 3351[0m
+[0;32mI (187258) ECG: LDR Reading 3: 3344[0m
+[0;32mI (187268) ECG: LDR Reading 4: 3333[0m
+[0;32mI (187278) ECG: LDR Reading 5: 3270[0m
+[0;32mI (187288) ECG: LDR Reading 6: 3291[0m
+[0;32mI (187298) ECG: LDR Reading 7: 3277[0m
+[0;32mI (187308) ECG: LDR Reading 8: 3294[0m
+[0;32mI (187318) ECG: LDR Reading 9: 3312[0m
+[0;32mI (187328) ECG: LDR Reading 10: 3322[0m
+[0;32mI (187338) ECG: Payload: {"LDR":[3281,3351,3344,3333,3270,3291,3277,3294,3312,3322]}[0m
+[0;32mI (187748) ECG: Data sent successfully[0m
+[0;32mI (187848) ECG: LDR Reading 1: 3377[0m
+[0;32mI (187858) ECG: LDR Reading 2: 3029[0m
+[0;32mI (187868) ECG: LDR Reading 3: 3605[0m
+[0;32mI (187878) ECG: LDR Reading 4: 4095[0m
+[0;32mI (187888) ECG: LDR Reading 5: 4095[0m
+[0;32mI (187898) ECG: LDR Reading 6: 4095[0m
+[0;32mI (187908) ECG: LDR Reading 7: 4095[0m
+[0;32mI (187918) ECG: LDR Reading 8: 4095[0m
+[0;32mI (187928) ECG: LDR Reading 9: 3579[0m
+[0;32mI (187938) ECG: LDR Reading 10: 3328[0m
+[0;32mI (187948) ECG: Payload: {"LDR":[3377,3029,3605,4095,4095,4095,4095,4095,3579,3328]}[0m
+[0;32mI (188368) ECG: Data sent successfully[0m
+[0;32mI (188468) ECG: LDR Reading 1: 3530[0m
+[0;32mI (188478) ECG: LDR Reading 2: 3483[0m
+[0;32mI (188488) ECG: LDR Reading 3: 3501[0m
+[0;32mI (188498) ECG: LDR Reading 4: 3530[0m
+[0;32mI (188508) ECG: LDR Reading 5: 3429[0m
+[0;32mI (188518) ECG: LDR Reading 6: 3441[0m
+[0;32mI (188528) ECG: LDR Reading 7: 3482[0m
+[0;32mI (188538) ECG: LDR Reading 8: 3394[0m
+[0;32mI (188548) ECG: LDR Reading 9: 3451[0m
+[0;32mI (188558) ECG: LDR Reading 10: 3113[0m
+[0;32mI (188568) ECG: Payload: {"LDR":[3530,3483,3501,3530,3429,3441,3482,3394,3451,3113]}[0m
+[0;32mI (188978) ECG: Data sent successfully[0m
+[0;32mI (189078) ECG: LDR Reading 1: 3376[0m
+[0;32mI (189088) ECG: LDR Reading 2: 3435[0m
+[0;32mI (189098) ECG: LDR Reading 3: 3472[0m
+[0;32mI (189108) ECG: LDR Reading 4: 3455[0m
+[0;32mI (189118) ECG: LDR Reading 5: 3484[0m
+[0;32mI (189128) ECG: LDR Reading 6: 3421[0m
+[0;32mI (189138) ECG: LDR Reading 7: 3536[0m
+[0;32mI (189148) ECG: LDR Reading 8: 3807[0m
+[0;32mI (189158) ECG: LDR Reading 9: 3733[0m
+[0;32mI (189168) ECG: LDR Reading 10: 3663[0m
+[0;32mI (189178) ECG: Payload: {"LDR":[3376,3435,3472,3455,3484,3421,3536,3807,3733,3663]}[0m
+[0;32mI (189598) ECG: Data sent successfully[0m
+[0;32mI (189698) ECG: LDR Reading 1: 3373[0m
+[0;32mI (189708) ECG: LDR Reading 2: 3425[0m
+[0;32mI (189718) ECG: LDR Reading 3: 3382[0m
+[0;32mI (189728) ECG: LDR Reading 4: 3379[0m
+[0;32mI (189738) ECG: LDR Reading 5: 3430[0m
+[0;32mI (189748) ECG: LDR Reading 6: 3400[0m
+[0;32mI (189758) ECG: LDR Reading 7: 3403[0m
+[0;32mI (189768) ECG: LDR Reading 8: 3439[0m
+[0;32mI (189778) ECG: LDR Reading 9: 3387[0m
+[0;32mI (189788) ECG: LDR Reading 10: 3427[0m
+[0;32mI (189798) ECG: Payload: {"LDR":[3373,3425,3382,3379,3430,3400,3403,3439,3387,3427]}[0m
+[0;32mI (190208) ECG: Data sent successfully[0m
+[0;32mI (190308) ECG: LDR Reading 1: 3515[0m
+[0;32mI (190318) ECG: LDR Reading 2: 3457[0m
+[0;32mI (190328) ECG: LDR Reading 3: 3389[0m
+[0;32mI (190338) ECG: LDR Reading 4: 3332[0m
+[0;32mI (190348) ECG: LDR Reading 5: 3373[0m
+[0;32mI (190358) ECG: LDR Reading 6: 3357[0m
+[0;32mI (190368) ECG: LDR Reading 7: 3395[0m
+[0;32mI (190378) ECG: LDR Reading 8: 3361[0m
+[0;32mI (190388) ECG: LDR Reading 9: 3390[0m
+[0;32mI (190398) ECG: LDR Reading 10: 3366[0m
+[0;32mI (190408) ECG: Payload: {"LDR":[3515,3457,3389,3332,3373,3357,3395,3361,3390,3366]}[0m
+[0;32mI (190828) ECG: Data sent successfully[0m
+[0;32mI (190928) ECG: LDR Reading 1: 3414[0m
+[0;32mI (190938) ECG: LDR Reading 2: 3402[0m
+[0;32mI (190948) ECG: LDR Reading 3: 3415[0m
+[0;32mI (190958) ECG: LDR Reading 4: 3431[0m
+[0;32mI (190968) ECG: LDR Reading 5: 3440[0m
+[0;32mI (190978) ECG: LDR Reading 6: 3471[0m
+[0;32mI (190988) ECG: LDR Reading 7: 3493[0m
+[0;32mI (190998) ECG: LDR Reading 8: 3536[0m
+[0;32mI (191008) ECG: LDR Reading 9: 3616[0m
+[0;32mI (191018) ECG: LDR Reading 10: 3696[0m
+[0;32mI (191028) ECG: Payload: {"LDR":[3414,3402,3415,3431,3440,3471,3493,3536,3616,3696]}[0m
+[0;32mI (191438) ECG: Data sent successfully[0m
+[0;32mI (191538) ECG: LDR Reading 1: 3397[0m
+[0;32mI (191548) ECG: LDR Reading 2: 3303[0m
+[0;32mI (191558) ECG: LDR Reading 3: 2966[0m
+[0;32mI (191568) ECG: LDR Reading 4: 3603[0m
+[0;32mI (191578) ECG: LDR Reading 5: 4095[0m
+[0;32mI (191588) ECG: LDR Reading 6: 4095[0m
+[0;32mI (191598) ECG: LDR Reading 7: 4095[0m
+[0;32mI (191608) ECG: LDR Reading 8: 4095[0m
+[0;32mI (191618) ECG: LDR Reading 9: 4081[0m
+[0;32mI (191628) ECG: LDR Reading 10: 3443[0m
+[0;32mI (191638) ECG: Payload: {"LDR":[3397,3303,2966,3603,4095,4095,4095,4095,4081,3443]}[0m
+[0;32mI (192048) ECG: Data sent successfully[0m
+[0;32mI (192158) ECG: LDR Reading 1: 3410[0m
+[0;32mI (192168) ECG: LDR Reading 2: 3460[0m
+[0;32mI (192178) ECG: LDR Reading 3: 3707[0m
+[0;32mI (192188) ECG: LDR Reading 4: 3726[0m
+[0;32mI (192198) ECG: LDR Reading 5: 3721[0m
+[0;32mI (192208) ECG: LDR Reading 6: 3583[0m
+[0;32mI (192218) ECG: LDR Reading 7: 3547[0m
+[0;32mI (192228) ECG: LDR Reading 8: 3501[0m
+[0;32mI (192238) ECG: LDR Reading 9: 3527[0m
+[0;32mI (192248) ECG: LDR Reading 10: 3495[0m
+[0;32mI (192258) ECG: Payload: {"LDR":[3410,3460,3707,3726,3721,3583,3547,3501,3527,3495]}[0m
+[0;32mI (192668) ECG: Data sent successfully[0m
+[0;32mI (192768) ECG: LDR Reading 1: 3407[0m
+[0;32mI (192778) ECG: LDR Reading 2: 3431[0m
+[0;32mI (192788) ECG: LDR Reading 3: 3438[0m
+[0;32mI (192798) ECG: LDR Reading 4: 3456[0m
+[0;32mI (192808) ECG: LDR Reading 5: 3422[0m
+[0;32mI (192818) ECG: LDR Reading 6: 3469[0m
+[0;32mI (192828) ECG: LDR Reading 7: 3430[0m
+[0;32mI (192838) ECG: LDR Reading 8: 3492[0m
+[0;32mI (192848) ECG: LDR Reading 9: 3457[0m
+[0;32mI (192858) ECG: LDR Reading 10: 3527[0m
+[0;32mI (192868) ECG: Payload: {"LDR":[3407,3431,3438,3456,3422,3469,3430,3492,3457,3527]}[0m
+[0;32mI (193278) ECG: Data sent successfully[0m
+[0;32mI (193378) ECG: LDR Reading 1: 3438[0m
+[0;32mI (193388) ECG: LDR Reading 2: 3410[0m
+[0;32mI (193398) ECG: LDR Reading 3: 3373[0m
+[0;32mI (193408) ECG: LDR Reading 4: 3418[0m
+[0;32mI (193418) ECG: LDR Reading 5: 3394[0m
+[0;32mI (193428) ECG: LDR Reading 6: 3406[0m
+[0;32mI (193438) ECG: LDR Reading 7: 3405[0m
+[0;32mI (193448) ECG: LDR Reading 8: 3398[0m
+[0;32mI (193458) ECG: LDR Reading 9: 3433[0m
+[0;32mI (193468) ECG: LDR Reading 10: 3408[0m
+[0;32mI (193478) ECG: Payload: {"LDR":[3438,3410,3373,3418,3394,3406,3405,3398,3433,3408]}[0m
+[0;32mI (193898) ECG: Data sent successfully[0m
+[0;32mI (193998) ECG: LDR Reading 1: 3618[0m
+[0;32mI (194008) ECG: LDR Reading 2: 3685[0m
+[0;32mI (194018) ECG: LDR Reading 3: 3760[0m
+[0;32mI (194028) ECG: LDR Reading 4: 3760[0m
+[0;32mI (194038) ECG: LDR Reading 5: 3736[0m
+[0;32mI (194048) ECG: LDR Reading 6: 3749[0m
+[0;32mI (194058) ECG: LDR Reading 7: 3633[0m
+[0;32mI (194068) ECG: LDR Reading 8: 3568[0m
+[0;32mI (194078) ECG: LDR Reading 9: 3479[0m
+[0;32mI (194088) ECG: LDR Reading 10: 3364[0m
+[0;32mI (194098) ECG: Payload: {"LDR":[3618,3685,3760,3760,3736,3749,3633,3568,3479,3364]}[0m
+[0;32mI (194508) ECG: Data sent successfully[0m
+[0;32mI (194608) ECG: LDR Reading 1: 3343[0m
+[0;32mI (194618) ECG: LDR Reading 2: 3387[0m
+[0;32mI (194628) ECG: LDR Reading 3: 3383[0m
+[0;32mI (194638) ECG: LDR Reading 4: 3411[0m
+[0;32mI (194648) ECG: LDR Reading 5: 3393[0m
+[0;32mI (194658) ECG: LDR Reading 6: 3383[0m
+[0;32mI (194668) ECG: LDR Reading 7: 3451[0m
+[0;32mI (194678) ECG: LDR Reading 8: 3476[0m
+[0;32mI (194688) ECG: LDR Reading 9: 3510[0m
+[0;32mI (194698) ECG: LDR Reading 10: 3583[0m
+[0;32mI (194708) ECG: Payload: {"LDR":[3343,3387,3383,3411,3393,3383,3451,3476,3510,3583]}[0m
+[0;32mI (195118) ECG: Data sent successfully[0m
+[0;32mI (195218) ECG: LDR Reading 1: 4095[0m
+[0;32mI (195228) ECG: LDR Reading 2: 4095[0m
+[0;32mI (195238) ECG: LDR Reading 3: 4095[0m
+[0;32mI (195248) ECG: LDR Reading 4: 4095[0m
+[0;32mI (195258) ECG: LDR Reading 5: 4095[0m
+[0;32mI (195268) ECG: LDR Reading 6: 3583[0m
+[0;32mI (195278) ECG: LDR Reading 7: 3321[0m
+[0;32mI (195288) ECG: LDR Reading 8: 3313[0m
+[0;32mI (195298) ECG: LDR Reading 9: 3328[0m
+[0;32mI (195308) ECG: LDR Reading 10: 3312[0m
+[0;32mI (195318) ECG: Payload: {"LDR":[4095,4095,4095,4095,4095,3583,3321,3313,3328,3312]}[0m
+[0;32mI (195738) ECG: Data sent successfully[0m
+[0;32mI (195838) ECG: LDR Reading 1: 3925[0m
+[0;32mI (195848) ECG: LDR Reading 2: 3984[0m
+[0;32mI (195858) ECG: LDR Reading 3: 3950[0m
+[0;32mI (195868) ECG: LDR Reading 4: 3949[0m
+[0;32mI (195878) ECG: LDR Reading 5: 3997[0m
+[0;32mI (195888) ECG: LDR Reading 6: 4003[0m
+[0;32mI (195898) ECG: LDR Reading 7: 3728[0m
+[0;32mI (195908) ECG: LDR Reading 8: 3688[0m
+[0;32mI (195918) ECG: LDR Reading 9: 4095[0m
+[0;32mI (195928) ECG: LDR Reading 10: 4095[0m
+[0;32mI (195938) ECG: Payload: {"LDR":[3925,3984,3950,3949,3997,4003,3728,3688,4095,4095]}[0m
+[0;32mI (196348) ECG: Data sent successfully[0m
+[0;32mI (196448) ECG: LDR Reading 1: 3881[0m
+[0;32mI (196458) ECG: LDR Reading 2: 3822[0m
+[0;32mI (196468) ECG: LDR Reading 3: 3768[0m
+[0;32mI (196478) ECG: LDR Reading 4: 3743[0m
+[0;32mI (196488) ECG: LDR Reading 5: 3946[0m
+[0;32mI (196498) ECG: LDR Reading 6: 4042[0m
+[0;32mI (196508) ECG: LDR Reading 7: 4022[0m
+[0;32mI (196518) ECG: LDR Reading 8: 3835[0m
+[0;32mI (196528) ECG: LDR Reading 9: 3806[0m
+[0;32mI (196538) ECG: LDR Reading 10: 3664[0m
+[0;32mI (196548) ECG: Payload: {"LDR":[3881,3822,3768,3743,3946,4042,4022,3835,3806,3664]}[0m
+[0;32mI (196968) ECG: Data sent successfully[0m
+[0;32mI (197068) ECG: LDR Reading 1: 3069[0m
+[0;32mI (197078) ECG: LDR Reading 2: 3083[0m
+[0;32mI (197088) ECG: LDR Reading 3: 3123[0m
+[0;32mI (197098) ECG: LDR Reading 4: 3104[0m
+[0;32mI (197108) ECG: LDR Reading 5: 3137[0m
+[0;32mI (197118) ECG: LDR Reading 6: 3137[0m
+[0;32mI (197128) ECG: LDR Reading 7: 3152[0m
+[0;32mI (197138) ECG: LDR Reading 8: 3110[0m
+[0;32mI (197148) ECG: LDR Reading 9: 3184[0m
+[0;32mI (197158) ECG: LDR Reading 10: 3171[0m
+[0;32mI (197168) ECG: Payload: {"LDR":[3069,3083,3123,3104,3137,3137,3152,3110,3184,3171]}[0m

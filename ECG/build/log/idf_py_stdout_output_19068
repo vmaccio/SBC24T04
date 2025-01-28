@@ -1,0 +1,1550 @@
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jan  8 2025 13:10:15[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=25c60h (154720) map[0m
+[0;32mI (158) esp_image: segment 1: paddr=00035c88 vaddr=3ffb0000 size=03f58h ( 16216) load[0m
+[0;32mI (164) esp_image: segment 2: paddr=00039be8 vaddr=40080000 size=06430h ( 25648) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a48bch (673980) map[0m
+[0;32mI (406) esp_image: segment 4: paddr=000e48e4 vaddr=40086430 size=10f1ch ( 69404) load[0m
+[0;32mI (445) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (445) boot: Disabling RNG early entropy source...[0m
+[0;32mI (457) cpu_start: Multicore app[0m
+[0;32mI (465) cpu_start: Pro cpu start user code[0m
+[0;32mI (465) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (465) app_init: Application information:[0m
+[0;32mI (468) app_init: Project name:     Hito-4[0m
+[0;32mI (473) app_init: App version:      1[0m
+[0;32mI (477) app_init: Compile time:     Jan  8 2025 13:09:44[0m
+[0;32mI (483) app_init: ELF file SHA256:  b208d01f28f82eff...[0m
+[0;32mI (489) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (494) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (499) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (504) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (509) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (516) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (522) heap_init: At 3FFB8788 len 00027878 (158 KiB): DRAM[0m
+[0;32mI (528) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (535) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (541) heap_init: At 4009734C len 00008CB4 (35 KiB): IRAM[0m
+[0;32mI (549) spi_flash: detected chip: generic[0m
+[0;32mI (552) spi_flash: flash io: dio[0m
+[0;33mW (556) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (569) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (578) main_task: Started on CPU0[0m
+[0;32mI (588) main_task: Calling app_main()[0m
+[0;32mI (588) ECG: [APP] Startup..[0m
+[0;32mI (588) ECG: [APP] Free memory: 277052 bytes[0m
+[0;32mI (588) ECG: [APP] IDF version: v5.3.1-dirty[0m
+[0;32mI (618) example_connect: Start example_connect.[0m
+[0;32mI (628) wifi:wifi driver task: 3ffc030c, prio:23, stack:6656, core=0[0m
+[0;32mI (638) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (638) wifi:wifi certification version: v7.0[0m
+[0;32mI (638) wifi:config NVS flash: enabled[0m
+[0;32mI (638) wifi:config nano formating: disabled[0m
+[0;32mI (638) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (648) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (648) wifi:Init management short buffer num: 32[0m
+[0;32mI (658) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (658) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (658) wifi:Init static rx buffer num: 10[0m
+[0;32mI (668) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (668) wifi_init: rx ba win: 6[0m
+[0;32mI (678) wifi_init: accept mbox: 6[0m
+[0;32mI (678) wifi_init: tcpip mbox: 32[0m
+[0;32mI (678) wifi_init: udp mbox: 6[0m
+[0;32mI (688) wifi_init: tcp mbox: 6[0m
+[0;32mI (688) wifi_init: tcp tx win: 5744[0m
+[0;32mI (698) wifi_init: tcp rx win: 5744[0m
+[0;32mI (698) wifi_init: tcp mss: 1440[0m
+[0;32mI (698) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (708) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (708) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;32mI (798) wifi:mode : sta (f0:24:f9:f7:96:18)[0m
+[0;32mI (798) wifi:enable tsf[0m
+[0;32mI (808) example_connect: Connecting to iPhone nacho...[0m
+[0;33mW (808) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (818) example_connect: Waiting for IP(s)[0m
+[0;32mI (3228) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (5638) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (8058) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (10468) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (12888) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (15298) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (17718) example_connect: WiFi Connect failed 7 times, stop reconnect.[0m
+
+assert failed: spinlock_acquire spinlock.h:140 (lock->count == 0)
+
+
+Backtrace: 0x40081a4a:0x3ffba650 0x400894cd:0x3ffba670 0x40091265:0x3ffba690 0x4008a25e:0x3ffba7b0 0x40089e08:0x3ffba7e0 0x400d7fd4:0x3ffba820 0x400d81c7:0x3ffba840 0x400d7aaf:0x3ffba9e0 0x400d78b6:0x3ffbaa00 0x401728eb:0x3ffbaa80 0x40089fd9:0x3ffbaab0
+
+
+
+
+ELF file SHA256: b208d01f28f82eff
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jan  8 2025 13:10:15[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=25c60h (154720) map[0m
+[0;32mI (158) esp_image: segment 1: paddr=00035c88 vaddr=3ffb0000 size=03f58h ( 16216) load[0m
+[0;32mI (164) esp_image: segment 2: paddr=00039be8 vaddr=40080000 size=06430h ( 25648) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a48bch (673980) map[0m
+[0;32mI (405) esp_image: segment 4: paddr=000e48e4 vaddr=40086430 size=10f1ch ( 69404) load[0m
+[0;32mI (445) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (445) boot: Disabling RNG early entropy source...[0m
+[0;32mI (457) cpu_start: Multicore app[0m
+[0;32mI (465) cpu_start: Pro cpu start user code[0m
+[0;32mI (465) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (465) app_init: Application information:[0m
+[0;32mI (468) app_init: Project name:     Hito-4[0m
+[0;32mI (473) app_init: App version:      1[0m
+[0;32mI (477) app_init: Compile time:     Jan  8 2025 13:09:44[0m
+[0;32mI (483) app_init: ELF file SHA256:  b208d01f28f82eff...[0m
+[0;32mI (489) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (494) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (499) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (504) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (509) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (516) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (522) heap_init: At 3FFB8788 len 00027878 (158 KiB): DRAM[0m
+[0;32mI (528) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (535) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (541) heap_init: At 4009734C len 00008CB4 (35 KiB): IRAM[0m
+[0;32mI (549) spi_flash: detected chip: generic[0m
+[0;32mI (552) spi_flash: flash io: dio[0m
+[0;33mW (556) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (569) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (578) main_task: Started on CPU0[0m
+[0;32mI (588) main_task: Calling app_main()[0m
+[0;32mI (588) ECG: [APP] Startup..[0m
+[0;32mI (588) ECG: [APP] Free memory: 277052 bytes[0m
+[0;32mI (588) ECG: [APP] IDF version: v5.3.1-dirty[0m
+[0;32mI (618) example_connect: Start example_connect.[0m
+[0;32mI (628) wifi:wifi driver task: 3ffc030c, prio:23, stack:6656, core=0[0m
+[0;32mI (638) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (638) wifi:wifi certification version: v7.0[0m
+[0;32mI (638) wifi:config NVS flash: enabled[0m
+[0;32mI (638) wifi:config nano formating: disabled[0m
+[0;32mI (638) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (648) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (648) wifi:Init management short buffer num: 32[0m
+[0;32mI (658) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (658) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (658) wifi:Init static rx buffer num: 10[0m
+[0;32mI (668) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (668) wifi_init: rx ba win: 6[0m
+[0;32mI (678) wifi_init: accept mbox: 6[0m
+[0;32mI (678) wifi_init: tcpip mbox: 32[0m
+[0;32mI (678) wifi_init: udp mbox: 6[0m
+[0;32mI (688) wifi_init: tcp mbox: 6[0m
+[0;32mI (688) wifi_init: tcp tx win: 5744[0m
+[0;32mI (698) wifi_init: tcp rx win: 5744[0m
+[0;32mI (698) wifi_init: tcp mss: 1440[0m
+[0;32mI (698) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (708) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (708) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;32mI (798) wifi:mode : sta (f0:24:f9:f7:96:18)[0m
+[0;32mI (808) wifi:enable tsf[0m
+[0;32mI (808) example_connect: Connecting to iPhone nacho...[0m
+[0;33mW (808) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (818) example_connect: Waiting for IP(s)[0m
+[0;32mI (3478) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3478) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3488) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3488) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3528) wifi:connected with iPhone nacho, aid = 1, channel 6, BW20, bssid = b2:49:1d:e4:1d:65[0m
+[0;32mI (3528) wifi:security: WPA2-PSK, phy: bgn, rssi: -48[0m
+[0;32mI (3528) wifi:pm start, type: 1[0m
+
+[0;32mI (3528) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3618) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (4548) esp_netif_handlers: example_netif_sta ip: 172.20.10.2, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (4548) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 172.20.10.2[0m
+[0;32mI (4618) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:f224:f9ff:fef7:9618, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (4618) example_common: Connected to example_netif_sta[0m
+[0;32mI (4628) example_common: - IPv4 address: 172.20.10.2,[0m
+[0;32mI (4628) example_common: - IPv6 address: fe80:0000:0000:0000:f224:f9ff:fef7:9618, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (4638) ECG: Connected to AP: iPhone nacho[0m
+[0;32mI (4648) ECG: LDR Value: 0[0m
+[0;32mI (4748) ECG: LDR Value: 0[0m
+[0;32mI (4848) ECG: LDR Value: 0[0m
+[0;32mI (4948) ECG: LDR Value: 0[0m
+[0;32mI (5048) ECG: LDR Value: 0[0m
+[0;32mI (5148) ECG: LDR Value: 0[0m
+[0;32mI (5248) ECG: LDR Value: 0[0m
+[0;32mI (5348) ECG: LDR Value: 0[0m
+[0;32mI (5448) ECG: LDR Value: 0[0m
+[0;32mI (5548) ECG: LDR Value: 0[0m
+[0;32mI (5558) wifi:<ba-add>idx:0 (ifx:0, b2:49:1d:e4:1d:65), tid:0, ssn:2, winSize:64[0m
+[0;32mI (6188) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (6188) ECG: Data sent successfully[0m
+[0;32mI (6288) ECG: LDR Value: 0[0m
+[0;32mI (6388) ECG: LDR Value: 0[0m
+[0;32mI (6488) ECG: LDR Value: 0[0m
+[0;32mI (6588) ECG: LDR Value: 0[0m
+[0;32mI (6688) ECG: LDR Value: 0[0m
+[0;32mI (6788) ECG: LDR Value: 0[0m
+[0;32mI (6888) ECG: LDR Value: 0[0m
+[0;32mI (6988) ECG: LDR Value: 0[0m
+[0;32mI (7088) ECG: LDR Value: 0[0m
+[0;32mI (7188) ECG: LDR Value: 0[0m
+[0;32mI (7618) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (7618) ECG: Data sent successfully[0m
+[0;32mI (7718) ECG: LDR Value: 0[0m
+[0;32mI (7818) ECG: LDR Value: 0[0m
+[0;32mI (7918) ECG: LDR Value: 0[0m
+[0;32mI (8018) ECG: LDR Value: 0[0m
+[0;32mI (8118) ECG: LDR Value: 0[0m
+[0;32mI (8218) ECG: LDR Value: 0[0m
+[0;32mI (8318) ECG: LDR Value: 0[0m
+[0;32mI (8418) ECG: LDR Value: 0[0m
+[0;32mI (8518) ECG: LDR Value: 0[0m
+[0;32mI (8618) ECG: LDR Value: 0[0m
+[0;32mI (9048) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (9048) ECG: Data sent successfully[0m
+[0;32mI (9148) ECG: LDR Value: 0[0m
+[0;32mI (9248) ECG: LDR Value: 0[0m
+[0;32mI (9348) ECG: LDR Value: 0[0m
+[0;32mI (9448) ECG: LDR Value: 0[0m
+[0;32mI (9548) ECG: LDR Value: 0[0m
+[0;32mI (9648) ECG: LDR Value: 0[0m
+[0;32mI (9748) ECG: LDR Value: 0[0m
+[0;32mI (9848) ECG: LDR Value: 0[0m
+[0;32mI (9948) ECG: LDR Value: 0[0m
+[0;32mI (10048) ECG: LDR Value: 0[0m
+[0;32mI (10488) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (10488) ECG: Data sent successfully[0m
+[0;32mI (10588) ECG: LDR Value: 0[0m
+[0;32mI (10688) ECG: LDR Value: 0[0m
+[0;32mI (10788) ECG: LDR Value: 0[0m
+[0;32mI (10888) ECG: LDR Value: 0[0m
+[0;32mI (10988) ECG: LDR Value: 0[0m
+[0;32mI (11088) ECG: LDR Value: 0[0m
+[0;32mI (11188) ECG: LDR Value: 0[0m
+[0;32mI (11288) ECG: LDR Value: 0[0m
+[0;32mI (11388) ECG: LDR Value: 0[0m
+[0;32mI (11488) ECG: LDR Value: 0[0m
+[0;32mI (11918) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (11918) ECG: Data sent successfully[0m
+[0;32mI (12018) ECG: LDR Value: 0[0m
+[0;32mI (12118) ECG: LDR Value: 0[0m
+[0;32mI (12218) ECG: LDR Value: 0[0m
+[0;32mI (12318) ECG: LDR Value: 0[0m
+[0;32mI (12418) ECG: LDR Value: 0[0m
+[0;32mI (12518) ECG: LDR Value: 0[0m
+[0;32mI (12618) ECG: LDR Value: 0[0m
+[0;32mI (12718) ECG: LDR Value: 0[0m
+[0;32mI (12818) ECG: LDR Value: 0[0m
+[0;32mI (12918) ECG: LDR Value: 0[0m
+[0;32mI (13348) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (13348) ECG: Data sent successfully[0m
+[0;32mI (13458) ECG: LDR Value: 0[0m
+[0;32mI (13558) ECG: LDR Value: 0[0m
+[0;32mI (13658) ECG: LDR Value: 0[0m
+[0;32mI (13758) ECG: LDR Value: 0[0m
+[0;32mI (13858) ECG: LDR Value: 0[0m
+[0;32mI (13958) ECG: LDR Value: 0[0m
+[0;32mI (14058) ECG: LDR Value: 0[0m
+[0;32mI (14158) ECG: LDR Value: 0[0m
+[0;32mI (14258) ECG: LDR Value: 0[0m
+[0;32mI (14358) ECG: LDR Value: 0[0m
+[0;32mI (14788) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (14788) ECG: Data sent successfully[0m
+[0;32mI (14888) ECG: LDR Value: 0[0m
+[0;32mI (14988) ECG: LDR Value: 0[0m
+[0;32mI (15088) ECG: LDR Value: 0[0m
+[0;32mI (15188) ECG: LDR Value: 0[0m
+[0;32mI (15288) ECG: LDR Value: 0[0m
+[0;32mI (15388) ECG: LDR Value: 0[0m
+[0;32mI (15488) ECG: LDR Value: 0[0m
+[0;32mI (15588) ECG: LDR Value: 0[0m
+[0;32mI (15688) ECG: LDR Value: 0[0m
+[0;32mI (15788) ECG: LDR Value: 0[0m
+[0;32mI (16218) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (16218) ECG: Data sent successfully[0m
+[0;32mI (16318) ECG: LDR Value: 0[0m
+[0;32mI (16418) ECG: LDR Value: 0[0m
+[0;32mI (16518) ECG: LDR Value: 0[0m
+[0;32mI (16618) ECG: LDR Value: 0[0m
+[0;32mI (16718) ECG: LDR Value: 0[0m
+[0;32mI (16818) ECG: LDR Value: 0[0m
+[0;32mI (16918) ECG: LDR Value: 0[0m
+[0;32mI (17018) ECG: LDR Value: 0[0m
+[0;32mI (17118) ECG: LDR Value: 0[0m
+[0;32mI (17218) ECG: LDR Value: 0[0m
+[0;32mI (17658) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (17658) ECG: Data sent successfully[0m
+[0;32mI (17758) ECG: LDR Value: 0[0m
+[0;32mI (17858) ECG: LDR Value: 0[0m
+[0;32mI (17958) ECG: LDR Value: 0[0m
+[0;32mI (18058) ECG: LDR Value: 0[0m
+[0;32mI (18158) ECG: LDR Value: 0[0m
+[0;32mI (18258) ECG: LDR Value: 0[0m
+[0;32mI (18358) ECG: LDR Value: 0[0m
+[0;32mI (18458) ECG: LDR Value: 0[0m
+[0;32mI (18558) ECG: LDR Value: 0[0m
+[0;32mI (18658) ECG: LDR Value: 0[0m
+[0;32mI (19088) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (19088) ECG: Data sent successfully[0m
+[0;32mI (19188) ECG: LDR Value: 0[0m
+[0;32mI (19288) ECG: LDR Value: 0[0m
+[0;32mI (19388) ECG: LDR Value: 0[0m
+[0;32mI (19488) ECG: LDR Value: 0[0m
+[0;32mI (19588) ECG: LDR Value: 0[0m
+[0;32mI (19688) ECG: LDR Value: 0[0m
+[0;32mI (19788) ECG: LDR Value: 0[0m
+[0;32mI (19888) ECG: LDR Value: 0[0m
+[0;32mI (19988) ECG: LDR Value: 0[0m
+[0;32mI (20088) ECG: LDR Value: 0[0m
+[0;32mI (20518) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (20518) ECG: Data sent successfully[0m
+[0;32mI (20618) ECG: LDR Value: 0[0m
+[0;32mI (20718) ECG: LDR Value: 0[0m
+[0;32mI (20818) ECG: LDR Value: 0[0m
+[0;32mI (20918) ECG: LDR Value: 0[0m
+[0;32mI (21018) ECG: LDR Value: 0[0m
+[0;32mI (21118) ECG: LDR Value: 0[0m
+[0;32mI (21218) ECG: LDR Value: 0[0m
+[0;32mI (21318) ECG: LDR Value: 0[0m
+[0;32mI (21418) ECG: LDR Value: 0[0m
+[0;32mI (21518) ECG: LDR Value: 0[0m
+[0;32mI (21958) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (21958) ECG: Data sent successfully[0m
+[0;32mI (22058) ECG: LDR Value: 0[0m
+[0;32mI (22158) ECG: LDR Value: 0[0m
+[0;32mI (22258) ECG: LDR Value: 0[0m
+[0;32mI (22358) ECG: LDR Value: 0[0m
+[0;32mI (22458) ECG: LDR Value: 0[0m
+[0;32mI (22558) ECG: LDR Value: 0[0m
+[0;32mI (22658) ECG: LDR Value: 0[0m
+[0;32mI (22758) ECG: LDR Value: 0[0m
+[0;32mI (22858) ECG: LDR Value: 0[0m
+[0;32mI (22958) ECG: LDR Value: 0[0m
+[0;32mI (23388) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (23388) ECG: Data sent successfully[0m
+[0;32mI (23488) ECG: LDR Value: 0[0m
+[0;32mI (23588) ECG: LDR Value: 0[0m
+[0;32mI (23688) ECG: LDR Value: 0[0m
+[0;32mI (23788) ECG: LDR Value: 0[0m
+[0;32mI (23888) ECG: LDR Value: 0[0m
+[0;32mI (23988) ECG: LDR Value: 0[0m
+[0;32mI (24088) ECG: LDR Value: 0[0m
+[0;32mI (24188) ECG: LDR Value: 0[0m
+[0;32mI (24288) ECG: LDR Value: 0[0m
+[0;32mI (24388) ECG: LDR Value: 0[0m
+[0;32mI (24818) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (24818) ECG: Data sent successfully[0m
+[0;32mI (24918) ECG: LDR Value: 0[0m
+[0;32mI (25018) ECG: LDR Value: 0[0m
+[0;32mI (25118) ECG: LDR Value: 0[0m
+[0;32mI (25218) ECG: LDR Value: 0[0m
+[0;32mI (25318) ECG: LDR Value: 0[0m
+[0;32mI (25418) ECG: LDR Value: 0[0m
+[0;32mI (25518) ECG: LDR Value: 0[0m
+[0;32mI (25618) ECG: LDR Value: 0[0m
+[0;32mI (25718) ECG: LDR Value: 0[0m
+[0;32mI (25818) ECG: LDR Value: 0[0m
+[0;32mI (26258) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (26258) ECG: Data sent successfully[0m
+[0;32mI (26358) ECG: LDR Value: 0[0m
+[0;32mI (26458) ECG: LDR Value: 0[0m
+[0;32mI (26558) ECG: LDR Value: 0[0m
+[0;32mI (26658) ECG: LDR Value: 0[0m
+[0;32mI (26758) ECG: LDR Value: 0[0m
+[0;32mI (26858) ECG: LDR Value: 0[0m
+[0;32mI (26958) ECG: LDR Value: 0[0m
+[0;32mI (27058) ECG: LDR Value: 0[0m
+[0;32mI (27158) ECG: LDR Value: 0[0m
+[0;32mI (27258) ECG: LDR Value: 0[0m
+[0;32mI (27688) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (27688) ECG: Data sent successfully[0m
+[0;32mI (27788) ECG: LDR Value: 0[0m
+[0;32mI (27888) ECG: LDR Value: 0[0m
+[0;32mI (27988) ECG: LDR Value: 0[0m
+[0;32mI (28088) ECG: LDR Value: 0[0m
+[0;32mI (28188) ECG: LDR Value: 0[0m
+[0;32mI (28288) ECG: LDR Value: 0[0m
+[0;32mI (28388) ECG: LDR Value: 0[0m
+[0;32mI (28488) ECG: LDR Value: 0[0m
+[0;32mI (28588) ECG: LDR Value: 0[0m
+[0;32mI (28688) ECG: LDR Value: 0[0m
+[0;32mI (29118) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (29118) ECG: Data sent successfully[0m
+[0;32mI (29218) ECG: LDR Value: 0[0m
+[0;32mI (29318) ECG: LDR Value: 0[0m
+[0;32mI (29418) ECG: LDR Value: 0[0m
+[0;32mI (29518) ECG: LDR Value: 0[0m
+[0;32mI (29618) ECG: LDR Value: 0[0m
+[0;32mI (29718) ECG: LDR Value: 0[0m
+[0;32mI (29818) ECG: LDR Value: 0[0m
+[0;32mI (29918) ECG: LDR Value: 0[0m
+[0;32mI (30018) ECG: LDR Value: 0[0m
+[0;32mI (30118) ECG: LDR Value: 0[0m
+[0;32mI (30558) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (30558) ECG: Data sent successfully[0m
+[0;32mI (30658) ECG: LDR Value: 0[0m
+[0;32mI (30758) ECG: LDR Value: 0[0m
+[0;32mI (30858) ECG: LDR Value: 0[0m
+[0;32mI (30958) ECG: LDR Value: 0[0m
+[0;32mI (31058) ECG: LDR Value: 0[0m
+[0;32mI (31158) ECG: LDR Value: 0[0m
+[0;32mI (31258) ECG: LDR Value: 0[0m
+[0;32mI (31358) ECG: LDR Value: 0[0m
+[0;32mI (31458) ECG: LDR Value: 0[0m
+[0;32mI (31558) ECG: LDR Value: 92[0m
+[0;32mI (31988) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (31988) ECG: Data sent successfully[0m
+[0;32mI (32088) ECG: LDR Value: 4095[0m
+[0;32mI (32188) ECG: LDR Value: 4095[0m
+[0;32mI (32288) ECG: LDR Value: 4095[0m
+[0;32mI (32388) ECG: LDR Value: 4095[0m
+[0;32mI (32488) ECG: LDR Value: 4095[0m
+[0;32mI (32588) ECG: LDR Value: 4095[0m
+[0;32mI (32688) ECG: LDR Value: 4095[0m
+[0;32mI (32788) ECG: LDR Value: 4095[0m
+[0;32mI (32888) ECG: LDR Value: 4095[0m
+[0;32mI (32988) ECG: LDR Value: 4095[0m
+[0;32mI (33428) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (33428) ECG: Data sent successfully[0m
+[0;32mI (33528) ECG: LDR Value: 2540[0m
+[0;32mI (33628) ECG: LDR Value: 0[0m
+[0;32mI (33728) ECG: LDR Value: 0[0m
+[0;32mI (33828) ECG: LDR Value: 0[0m
+[0;32mI (33928) ECG: LDR Value: 0[0m
+[0;32mI (34028) ECG: LDR Value: 0[0m
+[0;32mI (34128) ECG: LDR Value: 0[0m
+[0;32mI (34228) ECG: LDR Value: 0[0m
+[0;32mI (34328) ECG: LDR Value: 0[0m
+[0;32mI (34428) ECG: LDR Value: 0[0m
+[0;32mI (34858) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (34858) ECG: Data sent successfully[0m
+[0;32mI (34958) ECG: LDR Value: 2632[0m
+[0;32mI (35058) ECG: LDR Value: 0[0m
+[0;32mI (35158) ECG: LDR Value: 1425[0m
+[0;32mI (35258) ECG: LDR Value: 0[0m
+[0;32mI (35358) ECG: LDR Value: 0[0m
+[0;32mI (35458) ECG: LDR Value: 0[0m
+[0;32mI (35558) ECG: LDR Value: 0[0m
+[0;32mI (35658) ECG: LDR Value: 0[0m
+[0;32mI (35758) ECG: LDR Value: 0[0m
+[0;32mI (35858) ECG: LDR Value: 0[0m
+[0;32mI (36288) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (36288) ECG: Data sent successfully[0m
+[0;32mI (36388) ECG: LDR Value: 0[0m
+[0;32mI (36488) ECG: LDR Value: 0[0m
+[0;32mI (36588) ECG: LDR Value: 0[0m
+[0;32mI (36688) ECG: LDR Value: 423[0m
+[0;32mI (36788) ECG: LDR Value: 0[0m
+[0;32mI (36888) ECG: LDR Value: 0[0m
+[0;32mI (36988) ECG: LDR Value: 3575[0m
+[0;32mI (37088) ECG: LDR Value: 3536[0m
+[0;32mI (37188) ECG: LDR Value: 2539[0m
+[0;32mI (37288) ECG: LDR Value: 3535[0m
+[0;32mI (37728) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (37728) ECG: Data sent successfully[0m
+[0;32mI (37828) ECG: LDR Value: 3182[0m
+[0;32mI (37928) ECG: LDR Value: 3853[0m
+[0;32mI (38028) ECG: LDR Value: 3581[0m
+[0;32mI (38128) ECG: LDR Value: 2512[0m
+[0;32mI (38228) ECG: LDR Value: 2174[0m
+[0;32mI (38328) ECG: LDR Value: 2351[0m
+[0;32mI (38428) ECG: LDR Value: 2384[0m
+[0;32mI (38528) ECG: LDR Value: 2243[0m
+[0;32mI (38628) ECG: LDR Value: 2231[0m
+[0;32mI (38728) ECG: LDR Value: 2189[0m
+[0;32mI (39158) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (39168) ECG: Data sent successfully[0m
+[0;32mI (39268) ECG: LDR Value: 1600[0m
+[0;32mI (39368) ECG: LDR Value: 1569[0m
+[0;32mI (39468) ECG: LDR Value: 1439[0m
+[0;32mI (39568) ECG: LDR Value: 1241[0m
+[0;32mI (39668) ECG: LDR Value: 1206[0m
+[0;32mI (39768) ECG: LDR Value: 1157[0m
+[0;32mI (39868) ECG: LDR Value: 1113[0m
+[0;32mI (39968) ECG: LDR Value: 1115[0m
+[0;32mI (40068) ECG: LDR Value: 988[0m
+[0;32mI (40168) ECG: LDR Value: 939[0m
+[0;32mI (40588) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (40588) ECG: Data sent successfully[0m
+[0;32mI (40688) ECG: LDR Value: 411[0m
+[0;32mI (40788) ECG: LDR Value: 256[0m
+[0;32mI (40888) ECG: LDR Value: 354[0m
+[0;32mI (40988) ECG: LDR Value: 400[0m
+[0;32mI (41088) ECG: LDR Value: 265[0m
+[0;32mI (41188) ECG: LDR Value: 242[0m
+[0;32mI (41288) ECG: LDR Value: 206[0m
+[0;32mI (41388) ECG: LDR Value: 151[0m
+[0;32mI (41488) ECG: LDR Value: 141[0m
+[0;32mI (41588) ECG: LDR Value: 64[0m
+[0;32mI (42028) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (42028) ECG: Data sent successfully[0m
+[0;32mI (42128) ECG: LDR Value: 0[0m
+[0;32mI (42228) ECG: LDR Value: 0[0m
+[0;32mI (42328) ECG: LDR Value: 0[0m
+[0;32mI (42428) ECG: LDR Value: 0[0m
+[0;32mI (42528) ECG: LDR Value: 0[0m
+[0;32mI (42628) ECG: LDR Value: 0[0m
+[0;32mI (42728) ECG: LDR Value: 0[0m
+[0;32mI (42828) ECG: LDR Value: 0[0m
+[0;32mI (42928) ECG: LDR Value: 0[0m
+[0;32mI (43028) ECG: LDR Value: 0[0m
+[0;32mI (43458) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (43458) ECG: Data sent successfully[0m
+[0;32mI (43558) ECG: LDR Value: 4095[0m
+[0;32mI (43658) ECG: LDR Value: 4095[0m
+[0;32mI (43758) ECG: LDR Value: 4095[0m
+[0;32mI (43858) ECG: LDR Value: 4095[0m
+[0;32mI (43958) ECG: LDR Value: 4095[0m
+[0;32mI (44058) ECG: LDR Value: 4095[0m
+[0;32mI (44158) ECG: LDR Value: 4095[0m
+[0;32mI (44258) ECG: LDR Value: 4095[0m
+[0;32mI (44358) ECG: LDR Value: 4095[0m
+[0;32mI (44458) ECG: LDR Value: 4095[0m
+[0;32mI (44898) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (44898) ECG: Data sent successfully[0m
+[0;32mI (44998) ECG: LDR Value: 4095[0m
+[0;32mI (45098) ECG: LDR Value: 4095[0m
+[0;32mI (45198) ECG: LDR Value: 4095[0m
+[0;32mI (45298) ECG: LDR Value: 4095[0m
+[0;32mI (45398) ECG: LDR Value: 4095[0m
+[0;32mI (45498) ECG: LDR Value: 4095[0m
+[0;32mI (45598) ECG: LDR Value: 4095[0m
+[0;32mI (45698) ECG: LDR Value: 4095[0m
+[0;32mI (45798) ECG: LDR Value: 4095[0m
+[0;32mI (45898) ECG: LDR Value: 4095[0m
+[0;32mI (46328) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (46328) ECG: Data sent successfully[0m
+[0;32mI (46428) ECG: LDR Value: 737[0m
+[0;32mI (46528) ECG: LDR Value: 1066[0m
+[0;32mI (46628) ECG: LDR Value: 893[0m
+[0;32mI (46728) ECG: LDR Value: 897[0m
+[0;32mI (46828) ECG: LDR Value: 715[0m
+[0;32mI (46928) ECG: LDR Value: 0[0m
+[0;32mI (47028) ECG: LDR Value: 803[0m
+[0;32mI (47128) ECG: LDR Value: 637[0m
+[0;32mI (47228) ECG: LDR Value: 0[0m
+[0;32mI (47328) ECG: LDR Value: 1141[0m
+[0;32mI (47758) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (47758) ECG: Data sent successfully[0m
+[0;32mI (47858) ECG: LDR Value: 3041[0m
+[0;32mI (47958) ECG: LDR Value: 3127[0m
+[0;32mI (48058) ECG: LDR Value: 2380[0m
+[0;32mI (48158) ECG: LDR Value: 2896[0m
+[0;32mI (48258) ECG: LDR Value: 2773[0m
+[0;32mI (48358) ECG: LDR Value: 2723[0m
+[0;32mI (48458) ECG: LDR Value: 2698[0m
+[0;32mI (48558) ECG: LDR Value: 2559[0m
+[0;32mI (48658) ECG: LDR Value: 2501[0m
+[0;32mI (48758) ECG: LDR Value: 2343[0m
+[0;32mI (49198) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (49198) ECG: Data sent successfully[0m
+[0;32mI (49298) ECG: LDR Value: 0[0m
+[0;32mI (49398) ECG: LDR Value: 1648[0m
+[0;32mI (49498) ECG: LDR Value: 1683[0m
+[0;32mI (49598) ECG: LDR Value: 1621[0m
+[0;32mI (49698) ECG: LDR Value: 2113[0m
+[0;32mI (49798) ECG: LDR Value: 1968[0m
+[0;32mI (49898) ECG: LDR Value: 2975[0m
+[0;32mI (49998) ECG: LDR Value: 3441[0m
+[0;32mI (50098) ECG: LDR Value: 3165[0m
+[0;32mI (50198) ECG: LDR Value: 2559[0m
+[0;32mI (50628) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (50628) ECG: Data sent successfully[0m
+[0;32mI (50728) ECG: LDR Value: 0[0m
+[0;32mI (50828) ECG: LDR Value: 0[0m
+[0;32mI (50928) ECG: LDR Value: 0[0m
+[0;32mI (51028) ECG: LDR Value: 0[0m
+[0;32mI (51128) ECG: LDR Value: 0[0m
+[0;32mI (51228) ECG: LDR Value: 0[0m
+[0;32mI (51328) ECG: LDR Value: 0[0m
+[0;32mI (51428) ECG: LDR Value: 0[0m
+[0;32mI (51528) ECG: LDR Value: 0[0m
+[0;32mI (51628) ECG: LDR Value: 0[0m
+[0;32mI (52058) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (52058) ECG: Data sent successfully[0m
+[0;32mI (52158) ECG: LDR Value: 0[0m
+[0;32mI (52258) ECG: LDR Value: 0[0m
+[0;32mI (52358) ECG: LDR Value: 0[0m
+[0;32mI (52458) ECG: LDR Value: 0[0m
+[0;32mI (52558) ECG: LDR Value: 0[0m
+[0;32mI (52658) ECG: LDR Value: 0[0m
+[0;32mI (52758) ECG: LDR Value: 0[0m
+[0;32mI (52858) ECG: LDR Value: 0[0m
+[0;32mI (52958) ECG: LDR Value: 0[0m
+[0;32mI (53058) ECG: LDR Value: 0[0m
+[0;32mI (53488) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (53498) ECG: Data sent successfully[0m
+[0;32mI (53598) ECG: LDR Value: 0[0m
+[0;32mI (53698) ECG: LDR Value: 0[0m
+[0;32mI (53798) ECG: LDR Value: 0[0m
+[0;32mI (53898) ECG: LDR Value: 0[0m
+[0;32mI (53998) ECG: LDR Value: 0[0m
+[0;32mI (54098) ECG: LDR Value: 0[0m
+[0;32mI (54198) ECG: LDR Value: 0[0m
+[0;32mI (54298) ECG: LDR Value: 0[0m
+[0;32mI (54398) ECG: LDR Value: 0[0m
+[0;32mI (54498) ECG: LDR Value: 0[0m
+[0;32mI (54928) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (54928) ECG: Data sent successfully[0m
+[0;32mI (55028) ECG: LDR Value: 0[0m
+[0;32mI (55128) ECG: LDR Value: 0[0m
+[0;32mI (55228) ECG: LDR Value: 0[0m
+[0;32mI (55328) ECG: LDR Value: 0[0m
+[0;32mI (55428) ECG: LDR Value: 0[0m
+[0;32mI (55528) ECG: LDR Value: 0[0m
+[0;32mI (55628) ECG: LDR Value: 0[0m
+[0;32mI (55728) ECG: LDR Value: 0[0m
+[0;32mI (55828) ECG: LDR Value: 0[0m
+[0;32mI (55928) ECG: LDR Value: 0[0m
+[0;32mI (56358) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (56368) ECG: Data sent successfully[0m
+[0;32mI (56468) ECG: LDR Value: 0[0m
+[0;32mI (56568) ECG: LDR Value: 0[0m
+[0;32mI (56668) ECG: LDR Value: 0[0m
+[0;32mI (56768) ECG: LDR Value: 0[0m
+[0;32mI (56868) ECG: LDR Value: 0[0m
+[0;32mI (56968) ECG: LDR Value: 0[0m
+[0;32mI (57068) ECG: LDR Value: 0[0m
+[0;32mI (57168) ECG: LDR Value: 0[0m
+[0;32mI (57268) ECG: LDR Value: 0[0m
+[0;32mI (57368) ECG: LDR Value: 0[0m
+[0;32mI (57798) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (57798) ECG: Data sent successfully[0m
+[0;32mI (57898) ECG: LDR Value: 0[0m
+[0;32mI (57998) ECG: LDR Value: 0[0m
+[0;32mI (58098) ECG: LDR Value: 26[0m
+[0;32mI (58198) ECG: LDR Value: 137[0m
+[0;32mI (58298) ECG: LDR Value: 142[0m
+[0;32mI (58398) ECG: LDR Value: 0[0m
+[0;32mI (58498) ECG: LDR Value: 0[0m
+[0;32mI (58598) ECG: LDR Value: 0[0m
+[0;32mI (58698) ECG: LDR Value: 0[0m
+[0;32mI (58798) ECG: LDR Value: 0[0m
+[0;32mI (59228) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (59228) ECG: Data sent successfully[0m
+[0;32mI (59328) ECG: LDR Value: 0[0m
+[0;32mI (59428) ECG: LDR Value: 0[0m
+[0;32mI (59528) ECG: LDR Value: 0[0m
+[0;32mI (59628) ECG: LDR Value: 0[0m
+[0;32mI (59728) ECG: LDR Value: 0[0m
+[0;32mI (59828) ECG: LDR Value: 368[0m
+[0;32mI (59928) ECG: LDR Value: 0[0m
+[0;32mI (60028) ECG: LDR Value: 0[0m
+[0;32mI (60128) ECG: LDR Value: 0[0m
+[0;32mI (60228) ECG: LDR Value: 0[0m
+[0;32mI (60658) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (60658) ECG: Data sent successfully[0m
+[0;32mI (60758) ECG: LDR Value: 0[0m
+[0;32mI (60858) ECG: LDR Value: 0[0m
+[0;32mI (60958) ECG: LDR Value: 0[0m
+[0;32mI (61058) ECG: LDR Value: 0[0m
+[0;32mI (61158) ECG: LDR Value: 0[0m
+[0;32mI (61258) ECG: LDR Value: 0[0m
+[0;32mI (61358) ECG: LDR Value: 0[0m
+[0;32mI (61458) ECG: LDR Value: 0[0m
+[0;32mI (61558) ECG: LDR Value: 0[0m
+[0;32mI (61658) ECG: LDR Value: 0[0m
+[0;32mI (62098) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (62098) ECG: Data sent successfully[0m
+[0;32mI (62198) ECG: LDR Value: 0[0m
+[0;32mI (62298) ECG: LDR Value: 0[0m
+[0;32mI (62398) ECG: LDR Value: 0[0m
+[0;32mI (62498) ECG: LDR Value: 0[0m
+[0;32mI (62598) ECG: LDR Value: 0[0m
+[0;32mI (62698) ECG: LDR Value: 0[0m
+[0;32mI (62798) ECG: LDR Value: 0[0m
+[0;32mI (62898) ECG: LDR Value: 0[0m
+[0;32mI (62998) ECG: LDR Value: 0[0m
+[0;32mI (63098) ECG: LDR Value: 0[0m
+[0;32mI (63528) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (63528) ECG: Data sent successfully[0m
+[0;32mI (63628) ECG: LDR Value: 0[0m
+[0;32mI (63728) ECG: LDR Value: 0[0m
+[0;32mI (63828) ECG: LDR Value: 0[0m
+[0;32mI (63928) ECG: LDR Value: 0[0m
+[0;32mI (64028) ECG: LDR Value: 0[0m
+[0;32mI (64128) ECG: LDR Value: 0[0m
+[0;32mI (64228) ECG: LDR Value: 0[0m
+[0;32mI (64328) ECG: LDR Value: 908[0m
+[0;32mI (64428) ECG: LDR Value: 0[0m
+[0;32mI (64528) ECG: LDR Value: 0[0m
+[0;32mI (64958) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (64958) ECG: Data sent successfully[0m
+[0;32mI (65058) ECG: LDR Value: 0[0m
+[0;32mI (65158) ECG: LDR Value: 0[0m
+[0;32mI (65258) ECG: LDR Value: 0[0m
+[0;32mI (65358) ECG: LDR Value: 0[0m
+[0;32mI (65458) ECG: LDR Value: 0[0m
+[0;32mI (65558) ECG: LDR Value: 0[0m
+[0;32mI (65658) ECG: LDR Value: 0[0m
+[0;32mI (65758) ECG: LDR Value: 0[0m
+[0;32mI (65858) ECG: LDR Value: 0[0m
+[0;32mI (65958) ECG: LDR Value: 0[0m
+[0;32mI (66398) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (66398) ECG: Data sent successfully[0m
+[0;32mI (66498) ECG: LDR Value: 0[0m
+[0;32mI (66598) ECG: LDR Value: 0[0m
+[0;32mI (66698) ECG: LDR Value: 0[0m
+[0;32mI (66798) ECG: LDR Value: 0[0m
+[0;32mI (66898) ECG: LDR Value: 2526[0m
+[0;32mI (66998) ECG: LDR Value: 2130[0m
+[0;32mI (67098) ECG: LDR Value: 1725[0m
+[0;32mI (67198) ECG: LDR Value: 1453[0m
+[0;32mI (67298) ECG: LDR Value: 1159[0m
+[0;32mI (67398) ECG: LDR Value: 144[0m
+[0;32mI (67828) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (67828) ECG: Data sent successfully[0m
+[0;32mI (67928) ECG: LDR Value: 0[0m
+[0;32mI (68028) ECG: LDR Value: 0[0m
+[0;32mI (68128) ECG: LDR Value: 0[0m
+[0;32mI (68228) ECG: LDR Value: 0[0m
+[0;32mI (68328) ECG: LDR Value: 0[0m
+[0;32mI (68428) ECG: LDR Value: 469[0m
+[0;32mI (68528) ECG: LDR Value: 0[0m
+[0;32mI (68628) ECG: LDR Value: 0[0m
+[0;32mI (68728) ECG: LDR Value: 4095[0m
+[0;32mI (68828) ECG: LDR Value: 4095[0m
+[0;32mI (69258) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (69268) ECG: Data sent successfully[0m
+[0;32mI (69368) ECG: LDR Value: 4095[0m
+[0;32mI (69468) ECG: LDR Value: 4095[0m
+[0;32mI (69568) ECG: LDR Value: 4095[0m
+[0;32mI (69668) ECG: LDR Value: 4095[0m
+[0;32mI (69768) ECG: LDR Value: 4095[0m
+[0;32mI (69868) ECG: LDR Value: 4095[0m
+[0;32mI (69968) ECG: LDR Value: 4095[0m
+[0;32mI (70068) ECG: LDR Value: 4095[0m
+[0;32mI (70168) ECG: LDR Value: 3440[0m
+[0;32mI (70268) ECG: LDR Value: 3856[0m
+[0;32mI (70698) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (70698) ECG: Data sent successfully[0m
+[0;32mI (70798) ECG: LDR Value: 2463[0m
+[0;32mI (70898) ECG: LDR Value: 1415[0m
+[0;32mI (70998) ECG: LDR Value: 2141[0m
+[0;32mI (71098) ECG: LDR Value: 2723[0m
+[0;32mI (71198) ECG: LDR Value: 3191[0m
+[0;32mI (71298) ECG: LDR Value: 3583[0m
+[0;32mI (71398) ECG: LDR Value: 3062[0m
+[0;32mI (71498) ECG: LDR Value: 2614[0m
+[0;32mI (71598) ECG: LDR Value: 2783[0m
+[0;32mI (71698) ECG: LDR Value: 2731[0m
+[0;32mI (72128) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (72128) ECG: Data sent successfully[0m
+[0;32mI (72228) ECG: LDR Value: 3888[0m
+[0;32mI (72328) ECG: LDR Value: 2759[0m
+[0;32mI (72428) ECG: LDR Value: 3259[0m
+[0;32mI (72528) ECG: LDR Value: 3255[0m
+[0;32mI (72628) ECG: LDR Value: 3398[0m
+[0;32mI (72728) ECG: LDR Value: 3526[0m
+[0;32mI (72828) ECG: LDR Value: 3651[0m
+[0;32mI (72928) ECG: LDR Value: 3648[0m
+[0;32mI (73028) ECG: LDR Value: 4095[0m
+[0;32mI (73128) ECG: LDR Value: 3026[0m
+[0;32mI (73568) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (73568) ECG: Data sent successfully[0m
+[0;32mI (73668) ECG: LDR Value: 2935[0m
+[0;32mI (73768) ECG: LDR Value: 3719[0m
+[0;32mI (73868) ECG: LDR Value: 4095[0m
+[0;32mI (73968) ECG: LDR Value: 2351[0m
+[0;32mI (74068) ECG: LDR Value: 3156[0m
+[0;32mI (74168) ECG: LDR Value: 4095[0m
+[0;32mI (74268) ECG: LDR Value: 3605[0m
+[0;32mI (74368) ECG: LDR Value: 2970[0m
+[0;32mI (74468) ECG: LDR Value: 3120[0m
+[0;32mI (74568) ECG: LDR Value: 3306[0m
+[0;32mI (74998) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (74998) ECG: Data sent successfully[0m
+[0;32mI (75098) ECG: LDR Value: 3289[0m
+[0;32mI (75198) ECG: LDR Value: 3309[0m
+[0;32mI (75298) ECG: LDR Value: 3792[0m
+[0;32mI (75398) ECG: LDR Value: 3349[0m
+[0;32mI (75498) ECG: LDR Value: 1508[0m
+[0;32mI (75598) ECG: LDR Value: 1725[0m
+[0;32mI (75698) ECG: LDR Value: 4095[0m
+[0;32mI (75798) ECG: LDR Value: 3277[0m
+[0;32mI (75898) ECG: LDR Value: 4095[0m
+[0;32mI (75998) ECG: LDR Value: 2433[0m
+[0;32mI (76428) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (76428) ECG: Data sent successfully[0m
+[0;32mI (76528) ECG: LDR Value: 0[0m
+[0;32mI (76628) ECG: LDR Value: 0[0m
+[0;32mI (76728) ECG: LDR Value: 4095[0m
+[0;32mI (76828) ECG: LDR Value: 0[0m
+[0;32mI (76928) ECG: LDR Value: 4095[0m
+[0;32mI (77028) ECG: LDR Value: 0[0m
+[0;32mI (77128) ECG: LDR Value: 1597[0m
+[0;32mI (77228) ECG: LDR Value: 4095[0m
+[0;32mI (77328) ECG: LDR Value: 1968[0m
+[0;32mI (77428) ECG: LDR Value: 4095[0m
+[0;32mI (77868) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (77868) ECG: Data sent successfully[0m
+[0;32mI (77968) ECG: LDR Value: 4095[0m
+[0;32mI (78068) ECG: LDR Value: 3133[0m
+[0;32mI (78168) ECG: LDR Value: 4095[0m
+[0;32mI (78268) ECG: LDR Value: 3129[0m
+[0;32mI (78368) ECG: LDR Value: 4095[0m
+[0;32mI (78468) ECG: LDR Value: 2850[0m
+[0;32mI (78568) ECG: LDR Value: 4095[0m
+[0;32mI (78668) ECG: LDR Value: 3761[0m
+[0;32mI (78768) ECG: LDR Value: 4095[0m
+[0;32mI (78868) ECG: LDR Value: 3347[0m
+[0;32mI (79298) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (79298) ECG: Data sent successfully[0m
+[0;32mI (79398) ECG: LDR Value: 2689[0m
+[0;32mI (79498) ECG: LDR Value: 4095[0m
+[0;32mI (79598) ECG: LDR Value: 3136[0m
+[0;32mI (79698) ECG: LDR Value: 4095[0m
+[0;32mI (79798) ECG: LDR Value: 3769[0m
+[0;32mI (79898) ECG: LDR Value: 4095[0m
+[0;32mI (79998) ECG: LDR Value: 4095[0m
+[0;32mI (80098) ECG: LDR Value: 1875[0m
+[0;32mI (80198) ECG: LDR Value: 4095[0m
+[0;32mI (80298) ECG: LDR Value: 2864[0m
+[0;32mI (80728) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (80728) ECG: Data sent successfully[0m
+[0;32mI (80828) ECG: LDR Value: 4095[0m
+[0;32mI (80928) ECG: LDR Value: 2500[0m
+[0;32mI (81028) ECG: LDR Value: 4095[0m
+[0;32mI (81128) ECG: LDR Value: 1427[0m
+[0;32mI (81228) ECG: LDR Value: 3631[0m
+[0;32mI (81328) ECG: LDR Value: 4095[0m
+[0;32mI (81428) ECG: LDR Value: 4095[0m
+[0;32mI (81528) ECG: LDR Value: 3715[0m
+[0;32mI (81628) ECG: LDR Value: 4095[0m
+[0;32mI (81728) ECG: LDR Value: 2386[0m
+[0;32mI (82168) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (82168) ECG: Data sent successfully[0m
+[0;32mI (82268) ECG: LDR Value: 4095[0m
+[0;32mI (82368) ECG: LDR Value: 4095[0m
+[0;32mI (82468) ECG: LDR Value: 4095[0m
+[0;32mI (82568) ECG: LDR Value: 4095[0m
+[0;32mI (82668) ECG: LDR Value: 4095[0m
+[0;32mI (82768) ECG: LDR Value: 4095[0m
+[0;32mI (82868) ECG: LDR Value: 4095[0m
+[0;32mI (82968) ECG: LDR Value: 4095[0m
+[0;32mI (83068) ECG: LDR Value: 4095[0m
+[0;32mI (83168) ECG: LDR Value: 3871[0m
+[0;32mI (83598) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (83598) ECG: Data sent successfully[0m
+[0;32mI (83698) ECG: LDR Value: 3533[0m
+[0;32mI (83798) ECG: LDR Value: 4095[0m
+[0;32mI (83898) ECG: LDR Value: 1817[0m
+[0;32mI (83998) ECG: LDR Value: 0[0m
+[0;32mI (84098) ECG: LDR Value: 4095[0m
+[0;32mI (84198) ECG: LDR Value: 3063[0m
+[0;32mI (84298) ECG: LDR Value: 856[0m
+[0;32mI (84398) ECG: LDR Value: 4095[0m
+[0;32mI (84498) ECG: LDR Value: 4095[0m
+[0;32mI (84598) ECG: LDR Value: 0[0m
+[0;32mI (84958) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (84958) ECG: Data sent successfully[0m
+[0;32mI (85058) ECG: LDR Value: 0[0m
+[0;32mI (85158) ECG: LDR Value: 0[0m
+[0;32mI (85258) ECG: LDR Value: 0[0m
+[0;32mI (85358) ECG: LDR Value: 1718[0m
+[0;32mI (85458) ECG: LDR Value: 4095[0m
+[0;32mI (85558) ECG: LDR Value: 4095[0m
+[0;32mI (85658) ECG: LDR Value: 823[0m
+[0;32mI (85758) ECG: LDR Value: 2086[0m
+[0;32mI (85858) ECG: LDR Value: 4095[0m
+[0;32mI (85958) ECG: LDR Value: 4095[0m
+[0;32mI (86368) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (86368) ECG: Data sent successfully[0m
+[0;32mI (86468) ECG: LDR Value: 4095[0m
+[0;32mI (86568) ECG: LDR Value: 4095[0m
+[0;32mI (86668) ECG: LDR Value: 4095[0m
+[0;32mI (86768) ECG: LDR Value: 4095[0m
+[0;32mI (86868) ECG: LDR Value: 4095[0m
+[0;32mI (86968) ECG: LDR Value: 4095[0m
+[0;32mI (87068) ECG: LDR Value: 4095[0m
+[0;32mI (87168) ECG: LDR Value: 4095[0m
+[0;32mI (87268) ECG: LDR Value: 4095[0m
+[0;32mI (87368) ECG: LDR Value: 4095[0m
+[0;32mI (87908) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (87908) ECG: Data sent successfully[0m
+[0;32mI (88008) ECG: LDR Value: 2795[0m
+[0;32mI (88108) ECG: LDR Value: 4095[0m
+[0;32mI (88208) ECG: LDR Value: 4095[0m
+[0;32mI (88308) ECG: LDR Value: 2217[0m
+[0;32mI (88408) ECG: LDR Value: 3746[0m
+[0;32mI (88508) ECG: LDR Value: 4095[0m
+[0;32mI (88608) ECG: LDR Value: 4095[0m
+[0;32mI (88708) ECG: LDR Value: 4095[0m
+[0;32mI (88808) ECG: LDR Value: 0[0m
+[0;32mI (88908) ECG: LDR Value: 1360[0m
+[0;32mI (89338) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (89338) ECG: Data sent successfully[0m
+[0;32mI (89438) ECG: LDR Value: 4095[0m
+[0;32mI (89538) ECG: LDR Value: 4095[0m
+[0;32mI (89638) ECG: LDR Value: 4095[0m
+[0;32mI (89738) ECG: LDR Value: 0[0m
+[0;32mI (89838) ECG: LDR Value: 0[0m
+[0;32mI (89938) ECG: LDR Value: 0[0m
+[0;32mI (90038) ECG: LDR Value: 0[0m
+[0;32mI (90138) ECG: LDR Value: 0[0m
+[0;32mI (90238) ECG: LDR Value: 0[0m
+[0;32mI (90338) ECG: LDR Value: 284[0m
+[0;32mI (90778) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (90778) ECG: Data sent successfully[0m
+[0;32mI (90878) ECG: LDR Value: 2734[0m
+[0;32mI (90978) ECG: LDR Value: 2863[0m
+[0;32mI (91078) ECG: LDR Value: 3249[0m
+[0;32mI (91178) ECG: LDR Value: 3490[0m
+[0;32mI (91278) ECG: LDR Value: 3697[0m
+[0;32mI (91378) ECG: LDR Value: 3519[0m
+[0;32mI (91478) ECG: LDR Value: 4095[0m
+[0;32mI (91578) ECG: LDR Value: 0[0m
+[0;32mI (91678) ECG: LDR Value: 1354[0m
+[0;32mI (91778) ECG: LDR Value: 3183[0m
+[0;32mI (92198) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (92198) ECG: Data sent successfully[0m
+[0;32mI (92298) ECG: LDR Value: 0[0m
+[0;32mI (92398) ECG: LDR Value: 1723[0m
+[0;32mI (92498) ECG: LDR Value: 4095[0m
+[0;32mI (92598) ECG: LDR Value: 0[0m
+[0;32mI (92698) ECG: LDR Value: 0[0m
+[0;32mI (92798) ECG: LDR Value: 4095[0m
+[0;32mI (92898) ECG: LDR Value: 4095[0m
+[0;32mI (92998) ECG: LDR Value: 4095[0m
+[0;32mI (93098) ECG: LDR Value: 4095[0m
+[0;32mI (93198) ECG: LDR Value: 4095[0m
+[0;32mI (93638) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (93638) ECG: Data sent successfully[0m
+[0;32mI (93738) ECG: LDR Value: 4095[0m
+[0;32mI (93838) ECG: LDR Value: 3089[0m
+[0;32mI (93938) ECG: LDR Value: 3664[0m
+[0;32mI (94038) ECG: LDR Value: 0[0m
+[0;32mI (94138) ECG: LDR Value: 4095[0m
+[0;32mI (94238) ECG: LDR Value: 4095[0m
+[0;32mI (94338) ECG: LDR Value: 0[0m
+[0;32mI (94438) ECG: LDR Value: 4095[0m
+[0;32mI (94538) ECG: LDR Value: 0[0m
+[0;32mI (94638) ECG: LDR Value: 4095[0m
+[0;32mI (95068) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (95068) ECG: Data sent successfully[0m
+[0;32mI (95168) ECG: LDR Value: 4095[0m
+[0;32mI (95268) ECG: LDR Value: 0[0m
+[0;32mI (95368) ECG: LDR Value: 0[0m
+[0;32mI (95468) ECG: LDR Value: 4095[0m
+[0;32mI (95568) ECG: LDR Value: 3708[0m
+[0;32mI (95668) ECG: LDR Value: 3516[0m
+[0;32mI (95768) ECG: LDR Value: 4095[0m
+[0;32mI (95868) ECG: LDR Value: 3509[0m
+[0;32mI (95968) ECG: LDR Value: 4095[0m
+[0;32mI (96068) ECG: LDR Value: 3514[0m
+[0;32mI (96498) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (96508) ECG: Data sent successfully[0m
+[0;32mI (96608) ECG: LDR Value: 4095[0m
+[0;32mI (96708) ECG: LDR Value: 4095[0m
+[0;32mI (96808) ECG: LDR Value: 4095[0m
+[0;32mI (96908) ECG: LDR Value: 4095[0m
+[0;32mI (97008) ECG: LDR Value: 4095[0m
+[0;32mI (97108) ECG: LDR Value: 4095[0m
+[0;32mI (97208) ECG: LDR Value: 4095[0m
+[0;32mI (97308) ECG: LDR Value: 4095[0m
+[0;32mI (97408) ECG: LDR Value: 4095[0m
+[0;32mI (97508) ECG: LDR Value: 4095[0m
+[0;32mI (97938) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (97938) ECG: Data sent successfully[0m
+[0;32mI (98038) ECG: LDR Value: 656[0m
+[0;32mI (98138) ECG: LDR Value: 666[0m
+[0;32mI (98238) ECG: LDR Value: 549[0m
+[0;32mI (98338) ECG: LDR Value: 789[0m
+[0;32mI (98438) ECG: LDR Value: 409[0m
+[0;32mI (98538) ECG: LDR Value: 930[0m
+[0;32mI (98638) ECG: LDR Value: 807[0m
+[0;32mI (98738) ECG: LDR Value: 977[0m
+[0;32mI (98838) ECG: LDR Value: 1167[0m
+[0;32mI (98938) ECG: LDR Value: 1344[0m
+[0;32mI (99368) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (99378) ECG: Data sent successfully[0m
+[0;32mI (99478) ECG: LDR Value: 2229[0m
+[0;32mI (99578) ECG: LDR Value: 2559[0m
+[0;32mI (99678) ECG: LDR Value: 2907[0m
+[0;32mI (99778) ECG: LDR Value: 3703[0m
+[0;32mI (99878) ECG: LDR Value: 3199[0m
+[0;32mI (99978) ECG: LDR Value: 3498[0m
+[0;32mI (100078) ECG: LDR Value: 3311[0m
+[0;32mI (100178) ECG: LDR Value: 3330[0m
+[0;32mI (100278) ECG: LDR Value: 3339[0m
+[0;32mI (100378) ECG: LDR Value: 3290[0m
+[0;32mI (100808) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (100808) ECG: Data sent successfully[0m
+[0;32mI (100908) ECG: LDR Value: 3088[0m
+[0;32mI (101008) ECG: LDR Value: 3312[0m
+[0;32mI (101108) ECG: LDR Value: 3439[0m
+[0;32mI (101208) ECG: LDR Value: 3390[0m
+[0;32mI (101308) ECG: LDR Value: 4095[0m
+[0;32mI (101408) ECG: LDR Value: 3323[0m
+[0;32mI (101508) ECG: LDR Value: 3655[0m
+[0;32mI (101608) ECG: LDR Value: 3409[0m
+[0;32mI (101708) ECG: LDR Value: 3375[0m
+[0;32mI (101808) ECG: LDR Value: 3486[0m
+[0;32mI (102238) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (102238) ECG: Data sent successfully[0m
+[0;32mI (102338) ECG: LDR Value: 3219[0m
+[0;32mI (102438) ECG: LDR Value: 3179[0m
+[0;32mI (102538) ECG: LDR Value: 3140[0m
+[0;32mI (102638) ECG: LDR Value: 3104[0m
+[0;32mI (102738) ECG: LDR Value: 3170[0m
+[0;32mI (102838) ECG: LDR Value: 3963[0m
+[0;32mI (102938) ECG: LDR Value: 2960[0m
+[0;32mI (103038) ECG: LDR Value: 3363[0m
+[0;32mI (103138) ECG: LDR Value: 3035[0m
+[0;32mI (103238) ECG: LDR Value: 3175[0m
+[0;32mI (103668) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (103668) ECG: Data sent successfully[0m
+[0;32mI (103768) ECG: LDR Value: 3344[0m
+[0;32mI (103868) ECG: LDR Value: 3195[0m
+[0;32mI (103968) ECG: LDR Value: 3165[0m
+[0;32mI (104068) ECG: LDR Value: 3141[0m
+[0;32mI (104168) ECG: LDR Value: 3238[0m
+[0;32mI (104268) ECG: LDR Value: 3419[0m
+[0;32mI (104368) ECG: LDR Value: 4095[0m
+[0;32mI (104468) ECG: LDR Value: 3303[0m
+[0;32mI (104568) ECG: LDR Value: 3723[0m
+[0;32mI (104668) ECG: LDR Value: 3395[0m
+[0;32mI (105108) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (105108) ECG: Data sent successfully[0m
+[0;32mI (105208) ECG: LDR Value: 3538[0m
+[0;32mI (105308) ECG: LDR Value: 3930[0m
+[0;32mI (105408) ECG: LDR Value: 3454[0m
+[0;32mI (105508) ECG: LDR Value: 3504[0m
+[0;32mI (105608) ECG: LDR Value: 3583[0m
+[0;32mI (105708) ECG: LDR Value: 3635[0m
+[0;32mI (105808) ECG: LDR Value: 3120[0m
+[0;32mI (105908) ECG: LDR Value: 3319[0m
+[0;32mI (106008) ECG: LDR Value: 3429[0m
+[0;32mI (106108) ECG: LDR Value: 3453[0m
+[0;32mI (106538) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (106548) ECG: Data sent successfully[0m
+[0;32mI (106648) ECG: LDR Value: 3267[0m
+[0;32mI (106748) ECG: LDR Value: 3794[0m
+[0;32mI (106848) ECG: LDR Value: 3787[0m
+[0;32mI (106948) ECG: LDR Value: 3482[0m
+[0;32mI (107048) ECG: LDR Value: 3444[0m
+[0;32mI (107148) ECG: LDR Value: 3202[0m
+[0;32mI (107248) ECG: LDR Value: 3216[0m
+[0;32mI (107348) ECG: LDR Value: 4095[0m
+[0;32mI (107448) ECG: LDR Value: 2841[0m
+[0;32mI (107548) ECG: LDR Value: 3803[0m
+[0;32mI (108078) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (108078) ECG: Data sent successfully[0m
+[0;32mI (108178) ECG: LDR Value: 3387[0m
+[0;32mI (108278) ECG: LDR Value: 3002[0m
+[0;32mI (108378) ECG: LDR Value: 2541[0m
+[0;32mI (108478) ECG: LDR Value: 2934[0m
+[0;32mI (108578) ECG: LDR Value: 2834[0m
+[0;32mI (108678) ECG: LDR Value: 2832[0m
+[0;32mI (108778) ECG: LDR Value: 3837[0m
+[0;32mI (108878) ECG: LDR Value: 2481[0m
+[0;32mI (108978) ECG: LDR Value: 3069[0m
+[0;32mI (109078) ECG: LDR Value: 2559[0m
+[0;32mI (109508) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (109508) ECG: Data sent successfully[0m
+[0;32mI (109608) ECG: LDR Value: 3569[0m
+[0;32mI (109708) ECG: LDR Value: 3568[0m
+[0;32mI (109808) ECG: LDR Value: 3350[0m
+[0;32mI (109908) ECG: LDR Value: 3136[0m
+[0;32mI (110008) ECG: LDR Value: 3311[0m
+[0;32mI (110108) ECG: LDR Value: 3300[0m
+[0;32mI (110208) ECG: LDR Value: 3166[0m
+[0;32mI (110308) ECG: LDR Value: 3399[0m
+[0;32mI (110408) ECG: LDR Value: 3477[0m
+[0;32mI (110508) ECG: LDR Value: 3331[0m
+[0;32mI (110938) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (110938) ECG: Data sent successfully[0m
+[0;32mI (111038) ECG: LDR Value: 3568[0m
+[0;32mI (111138) ECG: LDR Value: 3313[0m
+[0;32mI (111238) ECG: LDR Value: 3454[0m
+[0;32mI (111338) ECG: LDR Value: 3485[0m
+[0;32mI (111438) ECG: LDR Value: 3611[0m
+[0;32mI (111538) ECG: LDR Value: 4095[0m
+[0;32mI (111638) ECG: LDR Value: 3419[0m
+[0;32mI (111738) ECG: LDR Value: 3776[0m
+[0;32mI (111838) ECG: LDR Value: 3469[0m
+[0;32mI (111938) ECG: LDR Value: 3519[0m
+[0;32mI (112378) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (112378) ECG: Data sent successfully[0m
+[0;32mI (112478) ECG: LDR Value: 3345[0m
+[0;32mI (112578) ECG: LDR Value: 3459[0m
+[0;32mI (112678) ECG: LDR Value: 3509[0m
+[0;32mI (112778) ECG: LDR Value: 3669[0m
+[0;32mI (112878) ECG: LDR Value: 3744[0m
+[0;32mI (112978) ECG: LDR Value: 4095[0m
+[0;32mI (113078) ECG: LDR Value: 3375[0m
+[0;32mI (113178) ECG: LDR Value: 3680[0m
+[0;32mI (113278) ECG: LDR Value: 3330[0m
+[0;32mI (113378) ECG: LDR Value: 3355[0m
+[0;32mI (113808) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (113808) ECG: Data sent successfully[0m
+[0;32mI (113908) ECG: LDR Value: 3206[0m
+[0;32mI (114008) ECG: LDR Value: 3197[0m
+[0;32mI (114108) ECG: LDR Value: 2981[0m
+[0;32mI (114208) ECG: LDR Value: 2971[0m
+[0;32mI (114308) ECG: LDR Value: 2730[0m
+[0;32mI (114408) ECG: LDR Value: 2774[0m
+[0;32mI (114508) ECG: LDR Value: 2544[0m
+[0;32mI (114608) ECG: LDR Value: 2150[0m
+[0;32mI (114708) ECG: LDR Value: 2069[0m
+[0;32mI (114808) ECG: LDR Value: 2353[0m
+[0;32mI (115238) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (115238) ECG: Data sent successfully[0m
+[0;32mI (115338) ECG: LDR Value: 3071[0m
+[0;32mI (115438) ECG: LDR Value: 3031[0m
+[0;32mI (115538) ECG: LDR Value: 3358[0m
+[0;32mI (115638) ECG: LDR Value: 3621[0m
+[0;32mI (115738) ECG: LDR Value: 3689[0m
+[0;32mI (115838) ECG: LDR Value: 3651[0m
+[0;32mI (115938) ECG: LDR Value: 3257[0m
+[0;32mI (116038) ECG: LDR Value: 2823[0m
+[0;32mI (116138) ECG: LDR Value: 1767[0m
+[0;32mI (116238) ECG: LDR Value: 1104[0m
+[0;32mI (116678) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (116678) ECG: Data sent successfully[0m
+[0;32mI (116778) ECG: LDR Value: 1853[0m
+[0;32mI (116878) ECG: LDR Value: 2499[0m
+[0;32mI (116978) ECG: LDR Value: 4095[0m
+[0;32mI (117078) ECG: LDR Value: 3506[0m
+[0;32mI (117178) ECG: LDR Value: 4095[0m
+[0;32mI (117278) ECG: LDR Value: 3987[0m
+[0;32mI (117378) ECG: LDR Value: 3920[0m
+[0;32mI (117478) ECG: LDR Value: 3539[0m
+[0;32mI (117578) ECG: LDR Value: 3979[0m
+[0;32mI (117678) ECG: LDR Value: 3978[0m
+[0;32mI (118108) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (118108) ECG: Data sent successfully[0m
+[0;32mI (118208) ECG: LDR Value: 3786[0m
+[0;32mI (118308) ECG: LDR Value: 4026[0m
+[0;32mI (118408) ECG: LDR Value: 3938[0m
+[0;32mI (118508) ECG: LDR Value: 3632[0m
+[0;32mI (118608) ECG: LDR Value: 3473[0m
+[0;32mI (118708) ECG: LDR Value: 3962[0m
+[0;32mI (118808) ECG: LDR Value: 3851[0m
+[0;32mI (118908) ECG: LDR Value: 3727[0m
+[0;32mI (119008) ECG: LDR Value: 3654[0m
+[0;32mI (119108) ECG: LDR Value: 3567[0m
+[0;32mI (119548) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (119548) ECG: Data sent successfully[0m
+[0;32mI (119648) ECG: LDR Value: 3178[0m
+[0;32mI (119748) ECG: LDR Value: 3267[0m
+[0;32mI (119848) ECG: LDR Value: 3392[0m
+[0;32mI (119948) ECG: LDR Value: 3583[0m
+[0;32mI (120048) ECG: LDR Value: 3314[0m
+[0;32mI (120148) ECG: LDR Value: 3256[0m
+[0;32mI (120248) ECG: LDR Value: 3435[0m
+[0;32mI (120348) ECG: LDR Value: 3490[0m
+[0;32mI (120448) ECG: LDR Value: 3323[0m
+[0;32mI (120548) ECG: LDR Value: 3363[0m
+[0;32mI (120978) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (120978) ECG: Data sent successfully[0m
+[0;32mI (121078) ECG: LDR Value: 3527[0m
+[0;32mI (121178) ECG: LDR Value: 3175[0m
+[0;32mI (121278) ECG: LDR Value: 3344[0m
+[0;32mI (121378) ECG: LDR Value: 3507[0m
+[0;32mI (121478) ECG: LDR Value: 3814[0m
+[0;32mI (121578) ECG: LDR Value: 3525[0m
+[0;32mI (121678) ECG: LDR Value: 3181[0m
+[0;32mI (121778) ECG: LDR Value: 3163[0m
+[0;32mI (121878) ECG: LDR Value: 3511[0m
+[0;32mI (121978) ECG: LDR Value: 3229[0m
+[0;32mI (122408) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (122408) ECG: Data sent successfully[0m
+[0;32mI (122508) ECG: LDR Value: 3014[0m
+[0;32mI (122608) ECG: LDR Value: 3504[0m
+[0;32mI (122708) ECG: LDR Value: 3056[0m
+[0;32mI (122808) ECG: LDR Value: 3329[0m
+[0;32mI (122908) ECG: LDR Value: 3397[0m
+[0;32mI (123008) ECG: LDR Value: 3523[0m
+[0;32mI (123108) ECG: LDR Value: 3262[0m
+[0;32mI (123208) ECG: LDR Value: 3331[0m
+[0;32mI (123308) ECG: LDR Value: 3568[0m
+[0;32mI (123408) ECG: LDR Value: 3491[0m
+[0;32mI (123838) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (123848) ECG: Data sent successfully[0m
+[0;32mI (123948) ECG: LDR Value: 3219[0m
+[0;32mI (124048) ECG: LDR Value: 3467[0m
+[0;32mI (124148) ECG: LDR Value: 3498[0m
+[0;32mI (124248) ECG: LDR Value: 3392[0m
+[0;32mI (124348) ECG: LDR Value: 3458[0m
+[0;32mI (124448) ECG: LDR Value: 3498[0m
+[0;32mI (124548) ECG: LDR Value: 3509[0m
+[0;32mI (124648) ECG: LDR Value: 4095[0m
+[0;32mI (124748) ECG: LDR Value: 3158[0m
+[0;32mI (124848) ECG: LDR Value: 3567[0m
+[0;32mI (125278) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (125278) ECG: Data sent successfully[0m
+[0;32mI (125378) ECG: LDR Value: 3207[0m
+[0;32mI (125478) ECG: LDR Value: 3115[0m
+[0;32mI (125578) ECG: LDR Value: 3253[0m
+[0;32mI (125678) ECG: LDR Value: 3215[0m
+[0;32mI (125778) ECG: LDR Value: 3043[0m
+[0;32mI (125878) ECG: LDR Value: 3141[0m
+[0;32mI (125978) ECG: LDR Value: 3253[0m
+[0;32mI (126078) ECG: LDR Value: 3263[0m
+[0;32mI (126178) ECG: LDR Value: 4075[0m
+[0;32mI (126278) ECG: LDR Value: 3071[0m
+[0;32mI (126708) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (126708) ECG: Data sent successfully[0m
+[0;32mI (126808) ECG: LDR Value: 471[0m
+[0;32mI (126908) ECG: LDR Value: 586[0m
+[0;32mI (127008) ECG: LDR Value: 679[0m
+[0;32mI (127108) ECG: LDR Value: 689[0m
+[0;32mI (127208) ECG: LDR Value: 685[0m
+[0;32mI (127308) ECG: LDR Value: 682[0m
+[0;32mI (127408) ECG: LDR Value: 690[0m
+[0;32mI (127508) ECG: LDR Value: 695[0m
+[0;32mI (127608) ECG: LDR Value: 670[0m
+[0;32mI (127708) ECG: LDR Value: 675[0m
+[0;32mI (128148) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (128148) ECG: Data sent successfully[0m
+[0;32mI (128248) ECG: LDR Value: 445[0m
+[0;32mI (128348) ECG: LDR Value: 386[0m
+[0;32mI (128448) ECG: LDR Value: 576[0m
+[0;32mI (128548) ECG: LDR Value: 581[0m
+[0;32mI (128648) ECG: LDR Value: 656[0m
+[0;32mI (128748) ECG: LDR Value: 678[0m
+[0;32mI (128848) ECG: LDR Value: 678[0m
+[0;32mI (128948) ECG: LDR Value: 672[0m
+[0;32mI (129048) ECG: LDR Value: 674[0m
+[0;32mI (129148) ECG: LDR Value: 681[0m
+[0;32mI (129588) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (129588) ECG: Data sent successfully[0m
+[0;32mI (129688) ECG: LDR Value: 496[0m
+[0;32mI (129788) ECG: LDR Value: 467[0m
+[0;32mI (129888) ECG: LDR Value: 471[0m
+[0;32mI (129988) ECG: LDR Value: 457[0m
+[0;32mI (130088) ECG: LDR Value: 472[0m
+[0;32mI (130188) ECG: LDR Value: 553[0m
+[0;32mI (130288) ECG: LDR Value: 597[0m
+[0;32mI (130388) ECG: LDR Value: 660[0m
+[0;32mI (130488) ECG: LDR Value: 681[0m
+[0;32mI (130588) ECG: LDR Value: 667[0m
+[0;32mI (131018) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (131018) ECG: Data sent successfully[0m
+[0;32mI (131118) ECG: LDR Value: 467[0m
+[0;32mI (131218) ECG: LDR Value: 468[0m
+[0;32mI (131318) ECG: LDR Value: 467[0m
+[0;32mI (131418) ECG: LDR Value: 585[0m
+[0;32mI (131518) ECG: LDR Value: 579[0m
+[0;32mI (131618) ECG: LDR Value: 627[0m
+[0;32mI (131718) ECG: LDR Value: 686[0m
+[0;32mI (131818) ECG: LDR Value: 683[0m
+[0;32mI (131918) ECG: LDR Value: 675[0m
+[0;32mI (132018) ECG: LDR Value: 683[0m
+[0;32mI (132448) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (132448) ECG: Data sent successfully[0m
+[0;32mI (132548) ECG: LDR Value: 433[0m
+[0;32mI (132648) ECG: LDR Value: 432[0m
+[0;32mI (132748) ECG: LDR Value: 547[0m
+[0;32mI (132848) ECG: LDR Value: 603[0m
+[0;32mI (132948) ECG: LDR Value: 663[0m
+[0;32mI (133048) ECG: LDR Value: 678[0m
+[0;32mI (133148) ECG: LDR Value: 678[0m
+[0;32mI (133248) ECG: LDR Value: 685[0m
+[0;32mI (133348) ECG: LDR Value: 672[0m
+[0;32mI (133448) ECG: LDR Value: 678[0m
+[0;32mI (133878) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (133878) ECG: Data sent successfully[0m
+[0;32mI (133978) ECG: LDR Value: 3041[0m
+[0;32mI (134078) ECG: LDR Value: 3411[0m
+[0;32mI (134178) ECG: LDR Value: 3359[0m
+[0;32mI (134278) ECG: LDR Value: 3654[0m
+[0;32mI (134378) ECG: LDR Value: 3745[0m
+[0;32mI (134478) ECG: LDR Value: 3717[0m
+[0;32mI (134578) ECG: LDR Value: 3733[0m
+[0;32mI (134678) ECG: LDR Value: 4095[0m
+[0;32mI (134778) ECG: LDR Value: 3612[0m
+[0;32mI (134878) ECG: LDR Value: 4095[0m
+[0;32mI (135308) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (135308) ECG: Data sent successfully[0m
+[0;32mI (135408) ECG: LDR Value: 4095[0m
+[0;32mI (135508) ECG: LDR Value: 2906[0m
+[0;32mI (135608) ECG: LDR Value: 3387[0m
+[0;32mI (135708) ECG: LDR Value: 2687[0m
+[0;32mI (135808) ECG: LDR Value: 2847[0m
+[0;32mI (135908) ECG: LDR Value: 2994[0m
+[0;32mI (136008) ECG: LDR Value: 3175[0m
+[0;32mI (136108) ECG: LDR Value: 4095[0m
+[0;32mI (136208) ECG: LDR Value: 2958[0m
+[0;32mI (136308) ECG: LDR Value: 3359[0m
+[0;32mI (136748) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (136748) ECG: Data sent successfully[0m
+[0;32mI (136848) ECG: LDR Value: 4095[0m
+[0;32mI (136948) ECG: LDR Value: 3243[0m
+[0;32mI (137048) ECG: LDR Value: 3920[0m
+[0;32mI (137148) ECG: LDR Value: 3599[0m
+[0;32mI (137248) ECG: LDR Value: 3683[0m
+[0;32mI (137348) ECG: LDR Value: 3712[0m
+[0;32mI (137448) ECG: LDR Value: 3412[0m
+[0;32mI (137548) ECG: LDR Value: 4095[0m
+[0;32mI (137648) ECG: LDR Value: 2939[0m
+[0;32mI (137748) ECG: LDR Value: 3446[0m
+[0;32mI (138178) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (138178) ECG: Data sent successfully[0m
+[0;32mI (138278) ECG: LDR Value: 4095[0m
+[0;32mI (138378) ECG: LDR Value: 3011[0m
+[0;32mI (138478) ECG: LDR Value: 3601[0m
+[0;32mI (138578) ECG: LDR Value: 3577[0m
+[0;32mI (138678) ECG: LDR Value: 3618[0m
+[0;32mI (138778) ECG: LDR Value: 3562[0m
+[0;32mI (138878) ECG: LDR Value: 3651[0m
+[0;32mI (138978) ECG: LDR Value: 3418[0m
+[0;32mI (139078) ECG: LDR Value: 3214[0m
+[0;32mI (139178) ECG: LDR Value: 3537[0m
+[0;32mI (139628) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (139628) ECG: Data sent successfully[0m
+[0;32mI (139728) ECG: LDR Value: 3091[0m
+[0;32mI (139828) ECG: LDR Value: 4095[0m
+[0;32mI (139928) ECG: LDR Value: 2482[0m
+[0;32mI (140028) ECG: LDR Value: 3071[0m
+[0;32mI (140128) ECG: LDR Value: 2860[0m
+[0;32mI (140228) ECG: LDR Value: 2774[0m
+[0;32mI (140328) ECG: LDR Value: 2862[0m
+[0;32mI (140428) ECG: LDR Value: 3026[0m
+[0;32mI (140528) ECG: LDR Value: 2711[0m
+[0;32mI (140628) ECG: LDR Value: 2387[0m
+[0;32mI (141048) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (141048) ECG: Data sent successfully[0m
+[0;32mI (141148) ECG: LDR Value: 1695[0m
+[0;32mI (141248) ECG: LDR Value: 1616[0m
+[0;32mI (141348) ECG: LDR Value: 2451[0m
+[0;32mI (141448) ECG: LDR Value: 1175[0m
+[0;32mI (141548) ECG: LDR Value: 1425[0m
+[0;32mI (141648) ECG: LDR Value: 1500[0m
+[0;32mI (141748) ECG: LDR Value: 1266[0m
+[0;32mI (141848) ECG: LDR Value: 1772[0m
+[0;32mI (141948) ECG: LDR Value: 2987[0m
+[0;32mI (142048) ECG: LDR Value: 3232[0m
+[0;32mI (142478) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (142478) ECG: Data sent successfully[0m
+[0;32mI (142578) ECG: LDR Value: 4095[0m
+[0;32mI (142678) ECG: LDR Value: 4095[0m
+[0;32mI (142778) ECG: LDR Value: 4095[0m
+[0;32mI (142878) ECG: LDR Value: 4095[0m
+[0;32mI (142978) ECG: LDR Value: 4095[0m
+[0;32mI (143078) ECG: LDR Value: 4095[0m
+[0;32mI (143178) ECG: LDR Value: 3990[0m
+[0;32mI (143278) ECG: LDR Value: 3932[0m
+[0;32mI (143378) ECG: LDR Value: 3990[0m
+[0;32mI (143478) ECG: LDR Value: 3345[0m
+[0;32mI (143908) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (143908) ECG: Data sent successfully[0m
+[0;32mI (144018) ECG: LDR Value: 3164[0m
+[0;32mI (144118) ECG: LDR Value: 3407[0m
+[0;32mI (144218) ECG: LDR Value: 4095[0m
+[0;32mI (144318) ECG: LDR Value: 2874[0m
+[0;32mI (144418) ECG: LDR Value: 2899[0m
+[0;32mI (144518) ECG: LDR Value: 2337[0m
+[0;32mI (144618) ECG: LDR Value: 2485[0m
+[0;32mI (144718) ECG: LDR Value: 2752[0m
+[0;32mI (144818) ECG: LDR Value: 2608[0m
+[0;32mI (144918) ECG: LDR Value: 3070[0m
+[0;32mI (145348) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (145348) ECG: Data sent successfully[0m
+[0;32mI (145448) ECG: LDR Value: 4013[0m
+[0;32mI (145548) ECG: LDR Value: 3562[0m
+[0;32mI (145648) ECG: LDR Value: 3063[0m
+[0;32mI (145748) ECG: LDR Value: 3939[0m
+[0;32mI (145848) ECG: LDR Value: 4095[0m
+[0;32mI (145948) ECG: LDR Value: 4095[0m
+[0;32mI (146048) ECG: LDR Value: 4095[0m
+[0;32mI (146148) ECG: LDR Value: 3643[0m
+[0;32mI (146248) ECG: LDR Value: 3116[0m
+[0;32mI (146348) ECG: LDR Value: 3565[0m
+[0;32mI (146788) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (146788) ECG: Data sent successfully[0m
+[0;32mI (146888) ECG: LDR Value: 4095[0m
+[0;32mI (146988) ECG: LDR Value: 2363[0m
+[0;32mI (147088) ECG: LDR Value: 2880[0m
+[0;32mI (147188) ECG: LDR Value: 2781[0m
+[0;32mI (147288) ECG: LDR Value: 2937[0m
+[0;32mI (147388) ECG: LDR Value: 3047[0m
+[0;32mI (147488) ECG: LDR Value: 3344[0m
+[0;32mI (147588) ECG: LDR Value: 4095[0m
+[0;32mI (147688) ECG: LDR Value: 2725[0m
+[0;32mI (147788) ECG: LDR Value: 3253[0m
+[0;32mI (148218) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (148218) ECG: Data sent successfully[0m
+[0;32mI (148318) ECG: LDR Value: 4095[0m
+[0;32mI (148418) ECG: LDR Value: 2977[0m
+[0;32mI (148518) ECG: LDR Value: 4095[0m
+[0;32mI (148618) ECG: LDR Value: 3664[0m
+[0;32mI (148718) ECG: LDR Value: 3670[0m
+[0;32mI (148818) ECG: LDR Value: 3537[0m
+[0;32mI (148918) ECG: LDR Value: 3558[0m
+[0;32mI (149018) ECG: LDR Value: 4095[0m
+[0;32mI (149118) ECG: LDR Value: 847[0m
+[0;32mI (149218) ECG: LDR Value: 1692[0m
+[0;32mI (149648) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (149648) ECG: Data sent successfully[0m
+[0;32mI (149748) ECG: LDR Value: 3990[0m
+[0;32mI (149848) ECG: LDR Value: 3295[0m
+[0;32mI (149948) ECG: LDR Value: 3377[0m
+[0;32mI (150048) ECG: LDR Value: 4011[0m
+[0;32mI (150148) ECG: LDR Value: 2708[0m
+[0;32mI (150248) ECG: LDR Value: 3163[0m
+[0;32mI (150348) ECG: LDR Value: 3583[0m
+[0;32mI (150448) ECG: LDR Value: 4095[0m
+[0;32mI (150548) ECG: LDR Value: 4095[0m
+[0;32mI (150648) ECG: LDR Value: 2606[0m
+[0;32mI (151098) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (151098) ECG: Data sent successfully[0m
+[0;32mI (151198) ECG: LDR Value: 3479[0m
+[0;32mI (151298) ECG: LDR Value: 3607[0m
+[0;32mI (151398) ECG: LDR Value: 2282[0m
+[0;32mI (151498) ECG: LDR Value: 2800[0m
+[0;32mI (151598) ECG: LDR Value: 4062[0m
+[0;32mI (151698) ECG: LDR Value: 3997[0m
+[0;32mI (151798) ECG: LDR Value: 4095[0m
+[0;32mI (151898) ECG: LDR Value: 3854[0m
+[0;32mI (151998) ECG: LDR Value: 3792[0m
+[0;32mI (152098) ECG: LDR Value: 3841[0m
+[0;32mI (152518) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (152518) ECG: Data sent successfully[0m
+[0;32mI (152618) ECG: LDR Value: 3744[0m
+[0;32mI (152718) ECG: LDR Value: 3677[0m
+[0;32mI (152818) ECG: LDR Value: 3529[0m
+[0;32mI (152918) ECG: LDR Value: 4095[0m
+[0;32mI (153018) ECG: LDR Value: 2320[0m
+[0;32mI (153118) ECG: LDR Value: 3090[0m
+[0;32mI (153218) ECG: LDR Value: 3151[0m
+[0;32mI (153318) ECG: LDR Value: 3227[0m
+[0;32mI (153418) ECG: LDR Value: 3419[0m
+[0;32mI (153518) ECG: LDR Value: 3567[0m
+[0;32mI (153958) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (153958) ECG: Data sent successfully[0m
+[0;32mI (154058) ECG: LDR Value: 3666[0m
+[0;32mI (154158) ECG: LDR Value: 4095[0m
+[0;32mI (154258) ECG: LDR Value: 4095[0m
+[0;32mI (154358) ECG: LDR Value: 4095[0m
+[0;32mI (154458) ECG: LDR Value: 4095[0m
+[0;32mI (154558) ECG: LDR Value: 3023[0m
+[0;32mI (154658) ECG: LDR Value: 3787[0m
+[0;32mI (154758) ECG: LDR Value: 3563[0m
+[0;32mI (154858) ECG: LDR Value: 3518[0m
+[0;32mI (154958) ECG: LDR Value: 3705[0m
+[0;32mI (155378) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (155378) ECG: Data sent successfully[0m
+[0;32mI (155478) ECG: LDR Value: 3245[0m
+[0;32mI (155578) ECG: LDR Value: 3287[0m
+[0;32mI (155678) ECG: LDR Value: 3507[0m
+[0;32mI (155778) ECG: LDR Value: 3664[0m
+[0;32mI (155878) ECG: LDR Value: 4001[0m
+[0;32mI (155978) ECG: LDR Value: 3759[0m
+[0;32mI (156078) ECG: LDR Value: 3298[0m
+[0;32mI (156178) ECG: LDR Value: 3323[0m
+[0;32mI (156278) ECG: LDR Value: 3682[0m
+[0;32mI (156378) ECG: LDR Value: 3199[0m
+[0;32mI (156818) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (156818) ECG: Data sent successfully[0m
+[0;32mI (156918) ECG: LDR Value: 2832[0m
+[0;32mI (157018) ECG: LDR Value: 3461[0m
+[0;32mI (157118) ECG: LDR Value: 3344[0m
+[0;32mI (157218) ECG: LDR Value: 3437[0m
+[0;32mI (157318) ECG: LDR Value: 3575[0m
+[0;32mI (157418) ECG: LDR Value: 3507[0m
+[0;32mI (157518) ECG: LDR Value: 4095[0m
+[0;32mI (157618) ECG: LDR Value: 2543[0m
+[0;32mI (157718) ECG: LDR Value: 3003[0m
+[0;32mI (157818) ECG: LDR Value: 2854[0m
+[0;32mI (158258) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (158258) ECG: Data sent successfully[0m
+[0;32mI (158358) ECG: LDR Value: 3119[0m
+[0;32mI (158458) ECG: LDR Value: 3600[0m
+[0;32mI (158558) ECG: LDR Value: 3840[0m
+[0;32mI (158658) ECG: LDR Value: 3830[0m
+[0;32mI (158758) ECG: LDR Value: 3856[0m
+[0;32mI (158858) ECG: LDR Value: 3463[0m
+[0;32mI (158958) ECG: LDR Value: 3366[0m
+[0;32mI (159058) ECG: LDR Value: 4095[0m
+[0;32mI (159158) ECG: LDR Value: 2448[0m
+[0;32mI (159258) ECG: LDR Value: 3275[0m
+[0;32mI (159788) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (159788) ECG: Data sent successfully[0m
+[0;32mI (159888) ECG: LDR Value: 2654[0m
+[0;32mI (159988) ECG: LDR Value: 2913[0m
+[0;32mI (160088) ECG: LDR Value: 3335[0m
+[0;32mI (160188) ECG: LDR Value: 3317[0m
+[0;32mI (160288) ECG: LDR Value: 3267[0m
+[0;32mI (160388) ECG: LDR Value: 3215[0m
+[0;32mI (160488) ECG: LDR Value: 3360[0m
+[0;32mI (160588) ECG: LDR Value: 3719[0m
+[0;32mI (160688) ECG: LDR Value: 2637[0m
+[0;32mI (160788) ECG: LDR Value: 3101[0m
+[0;32mI (161218) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (161218) ECG: Data sent successfully[0m
+[0;32mI (161318) ECG: LDR Value: 3311[0m
+[0;32mI (161418) ECG: LDR Value: 2559[0m
+[0;32mI (161518) ECG: LDR Value: 2704[0m
+[0;32mI (161618) ECG: LDR Value: 3632[0m
+[0;32mI (161718) ECG: LDR Value: 3808[0m
+[0;32mI (161818) ECG: LDR Value: 4071[0m
+[0;32mI (161918) ECG: LDR Value: 4095[0m
+[0;32mI (162018) ECG: LDR Value: 4095[0m
+[0;32mI (162118) ECG: LDR Value: 4095[0m
+[0;32mI (162218) ECG: LDR Value: 3069[0m
+[0;32mI (162648) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (162648) ECG: Data sent successfully[0m
+[0;32mI (162748) ECG: LDR Value: 3664[0m
+[0;32mI (162848) ECG: LDR Value: 3346[0m
+[0;32mI (162948) ECG: LDR Value: 2498[0m
+[0;32mI (163048) ECG: LDR Value: 2889[0m
+[0;32mI (163148) ECG: LDR Value: 3131[0m
+[0;32mI (163248) ECG: LDR Value: 2847[0m
+[0;32mI (163348) ECG: LDR Value: 2830[0m
+[0;32mI (163448) ECG: LDR Value: 2925[0m
+[0;32mI (163548) ECG: LDR Value: 2976[0m
+[0;32mI (163648) ECG: LDR Value: 4095[0m
+[0;32mI (164088) ECG: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (164088) ECG: Data sent successfully[0m

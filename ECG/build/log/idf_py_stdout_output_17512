@@ -1,0 +1,1877 @@
+0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: �ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jan  8 2025 13:10:15[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=25104h (151812) map[0m
+[0;32mI (157) esp_image: segment 1: paddr=0003512c vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (157) esp_image: segment 2: paddr=00035138 vaddr=3ffb0000 size=03ef0h ( 16112) load[0m
+[0;32mI (169) esp_image: segment 3: paddr=00039030 vaddr=40080000 size=06fe8h ( 28648) load[0m
+[0;32mI (182) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a3cech (670956) map[0m
+[0;32mI (413) esp_image: segment 5: paddr=000e3d14 vaddr=40086fe8 size=10364h ( 66404) load[0m
+[0;32mI (450) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (451) boot: Disabling RNG early entropy source...[0m
+[0;32mI (463) cpu_start: Multicore app[0m
+[0;32mI (471) cpu_start: Pro cpu start user code[0m
+[0;32mI (471) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (471) app_init: Application information:[0m
+[0;32mI (474) app_init: Project name:     Hito-4[0m
+[0;32mI (479) app_init: App version:      1[0m
+[0;32mI (483) app_init: Compile time:     Jan  8 2025 13:09:44[0m
+[0;32mI (489) app_init: ELF file SHA256:  77c3be0636d24955...[0m
+[0;32mI (495) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (500) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (505) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (510) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (515) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (522) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (528) heap_init: At 3FFB8720 len 000278E0 (158 KiB): DRAM[0m
+[0;32mI (534) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (541) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (547) heap_init: At 4009734C len 00008CB4 (35 KiB): IRAM[0m
+[0;32mI (555) spi_flash: detected chip: generic[0m
+[0;32mI (558) spi_flash: flash io: dio[0m
+[0;33mW (562) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (576) main_task: Started on CPU0[0m
+[0;32mI (586) main_task: Calling app_main()[0m
+[0;32mI (606) ECG: ESP_WIFI_MODE_STA[0m
+[0;32mI (616) wifi:wifi driver task: 3ffc06ac, prio:23, stack:6656, core=0[0m
+[0;32mI (626) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (626) wifi:wifi certification version: v7.0[0m
+[0;32mI (626) wifi:config NVS flash: enabled[0m
+[0;32mI (626) wifi:config nano formating: disabled[0m
+[0;32mI (626) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (636) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (636) wifi:Init management short buffer num: 32[0m
+[0;32mI (646) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (646) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (656) wifi:Init static rx buffer num: 10[0m
+[0;32mI (656) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (656) wifi_init: rx ba win: 6[0m
+[0;32mI (666) wifi_init: accept mbox: 6[0m
+[0;32mI (666) wifi_init: tcpip mbox: 32[0m
+[0;32mI (666) wifi_init: udp mbox: 6[0m
+[0;32mI (676) wifi_init: tcp mbox: 6[0m
+[0;32mI (676) wifi_init: tcp tx win: 5744[0m
+[0;32mI (686) wifi_init: tcp rx win: 5744[0m
+[0;32mI (686) wifi_init: tcp mss: 1440[0m
+[0;32mI (686) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (696) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (696) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (706) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;32mI (796) wifi:mode : sta (f0:24:f9:f7:96:18)[0m
+[0;32mI (796) wifi:enable tsf[0m
+[0;32mI (806) ECG: WiFi init finished.[0m
+[0;32mI (806) ECG: Starting ECG task...[0m
+[0;32mI (806) main_task: Returned from app_main()[0m
+[0;32mI (806) ECG: ECG Value: 4095[0m
+[0;32mI (1116) ECG: Payload: {"ts":564,"values":{"ECG":4095,"BPM":0}}[0m
+[0;31mE (1116) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1116) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1126) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (1136) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (1236) ECG: ECG Value: 4095[0m
+[0;32mI (1236) ECG: Payload: {"ts":684,"values":{"ECG":4095,"BPM":0}}[0m
+[0;31mE (1236) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1236) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1246) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (1256) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (1356) ECG: ECG Value: 943[0m
+[0;32mI (1356) ECG: Payload: {"ts":804,"values":{"ECG":943,"BPM":0}}[0m
+[0;31mE (1356) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1356) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1366) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (1376) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (1476) ECG: ECG Value: 0[0m
+[0;32mI (1476) ECG: Payload: {"ts":924,"values":{"ECG":0,"BPM":0}}[0m
+[0;31mE (1476) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1476) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1486) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (1496) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (1596) ECG: ECG Value: 0[0m
+[0;32mI (1596) ECG: Payload: {"ts":1044,"values":{"ECG":0,"BPM":0}}[0m
+[0;31mE (1596) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1596) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1606) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (1616) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (1716) ECG: ECG Value: 667[0m
+[0;32mI (1716) ECG: Payload: {"ts":1164,"values":{"ECG":667,"BPM":0}}[0m
+[0;31mE (1716) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1716) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1726) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (1736) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (1836) ECG: ECG Value: 1862[0m
+[0;32mI (1836) ECG: Payload: {"ts":1284,"values":{"ECG":1862,"BPM":0}}[0m
+[0;31mE (1836) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1836) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1846) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (1856) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (1956) ECG: ECG Value: 3106[0m
+[0;32mI (1956) ECG: Payload: {"ts":1404,"values":{"ECG":3106,"BPM":0}}[0m
+[0;31mE (1956) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1956) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1966) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (1976) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (2076) ECG: ECG Value: 3515[0m
+[0;32mI (2076) ECG: Payload: {"ts":1524,"values":{"ECG":3515,"BPM":0}}[0m
+[0;31mE (2076) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2076) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2086) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (2096) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (2196) ECG: ECG Value: 4095[0m
+[0;32mI (2196) ECG: Detected BPM: 43[0m
+[0;32mI (2496) ECG: Payload: {"ts":1943,"values":{"ECG":4095,"BPM":43}}[0m
+[0;31mE (2496) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2496) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2506) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (2506) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (2616) ECG: ECG Value: 4095[0m
+[0;32mI (2616) ECG: Payload: {"ts":2064,"values":{"ECG":4095,"BPM":43}}[0m
+[0;31mE (2616) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2626) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2626) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (2636) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (2736) ECG: ECG Value: 4095[0m
+[0;32mI (2736) ECG: Payload: {"ts":2184,"values":{"ECG":4095,"BPM":43}}[0m
+[0;31mE (2736) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2746) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2746) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (2756) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (2856) ECG: ECG Value: 274[0m
+[0;32mI (2856) ECG: Payload: {"ts":2304,"values":{"ECG":274,"BPM":43}}[0m
+[0;31mE (2856) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2856) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2866) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (2876) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (2976) ECG: ECG Value: 0[0m
+[0;32mI (2976) ECG: Payload: {"ts":2424,"values":{"ECG":0,"BPM":43}}[0m
+[0;31mE (2976) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2976) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2986) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (2996) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (3096) ECG: ECG Value: 194[0m
+[0;32mI (3096) ECG: Payload: {"ts":2544,"values":{"ECG":194,"BPM":43}}[0m
+[0;31mE (3096) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3096) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3106) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (3116) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (3216) ECG: ECG Value: 1397[0m
+[0;32mI (3216) ECG: Payload: {"ts":2664,"values":{"ECG":1397,"BPM":43}}[0m
+[0;31mE (3216) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3226) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3226) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (3236) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (3336) ECG: ECG Value: 2196[0m
+[0;32mI (3336) ECG: Payload: {"ts":2784,"values":{"ECG":2196,"BPM":43}}[0m
+[0;31mE (3336) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3346) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3346) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (3356) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (3456) ECG: ECG Value: 3263[0m
+[0;32mI (3456) ECG: Payload: {"ts":2904,"values":{"ECG":3263,"BPM":43}}[0m
+[0;31mE (3456) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3466) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3466) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (3476) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (3576) ECG: ECG Value: 4039[0m
+[0;32mI (3576) ECG: Detected BPM: 43[0m
+[0;32mI (3876) ECG: Payload: {"ts":3323,"values":{"ECG":4039,"BPM":43}}[0m
+[0;31mE (3876) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3876) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3886) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (3886) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (3996) ECG: ECG Value: 4095[0m
+[0;32mI (3996) ECG: Detected BPM: 142[0m
+[0;32mI (4296) ECG: Payload: {"ts":3743,"values":{"ECG":4095,"BPM":142}}[0m
+[0;31mE (4296) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (4296) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (4306) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (4306) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (4416) ECG: ECG Value: 640[0m
+[0;32mI (4416) ECG: Payload: {"ts":3864,"values":{"ECG":640,"BPM":142}}[0m
+[0;31mE (4416) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (4416) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (4426) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (4436) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (4536) ECG: ECG Value: 1504[0m
+[0;32mI (4536) ECG: Payload: {"ts":3984,"values":{"ECG":1504,"BPM":142}}[0m
+[0;31mE (4536) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (4546) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (4546) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (4556) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (4656) ECG: ECG Value: 2247[0m
+[0;32mI (4656) ECG: Payload: {"ts":4104,"values":{"ECG":2247,"BPM":142}}[0m
+[0;31mE (4656) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (4666) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (4666) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (4676) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (4776) ECG: ECG Value: 3067[0m
+[0;32mI (4776) ECG: Payload: {"ts":4224,"values":{"ECG":3067,"BPM":142}}[0m
+[0;31mE (4776) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (4786) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (4786) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (4796) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (4896) ECG: ECG Value: 3939[0m
+[0;32mI (4896) ECG: Payload: {"ts":4344,"values":{"ECG":3939,"BPM":142}}[0m
+[0;31mE (4896) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (4906) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (4906) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (4916) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (5016) ECG: ECG Value: 4095[0m
+[0;32mI (5016) ECG: Detected BPM: 58[0m
+[0;32mI (5316) ECG: Payload: {"ts":4763,"values":{"ECG":4095,"BPM":58}}[0m
+[0;31mE (5316) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (5316) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (5326) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (5326) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (5436) ECG: ECG Value: 3897[0m
+[0;32mI (5436) ECG: Payload: {"ts":4884,"values":{"ECG":3897,"BPM":58}}[0m
+[0;31mE (5436) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (5446) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (5446) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (5456) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (5556) ECG: ECG Value: 414[0m
+[0;32mI (5556) ECG: Payload: {"ts":5004,"values":{"ECG":414,"BPM":58}}[0m
+[0;31mE (5556) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (5556) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (5566) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (5576) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (5676) ECG: ECG Value: 0[0m
+[0;32mI (5676) ECG: Payload: {"ts":5124,"values":{"ECG":0,"BPM":58}}[0m
+[0;31mE (5676) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (5676) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (5686) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (5696) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (5796) ECG: ECG Value: 1357[0m
+[0;32mI (5796) ECG: Payload: {"ts":5244,"values":{"ECG":1357,"BPM":58}}[0m
+[0;31mE (5796) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (5806) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (5806) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (5816) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (5916) ECG: ECG Value: 1691[0m
+[0;32mI (5916) ECG: Payload: {"ts":5364,"values":{"ECG":1691,"BPM":58}}[0m
+[0;31mE (5916) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (5926) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (5926) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (5936) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (6036) ECG: ECG Value: 3120[0m
+[0;32mI (6036) ECG: Payload: {"ts":5484,"values":{"ECG":3120,"BPM":58}}[0m
+[0;31mE (6036) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (6046) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (6046) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (6056) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (6156) ECG: ECG Value: 3136[0m
+[0;32mI (6156) ECG: Payload: {"ts":5604,"values":{"ECG":3136,"BPM":58}}[0m
+[0;31mE (6156) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (6166) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (6166) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (6176) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (6276) ECG: ECG Value: 3686[0m
+[0;32mI (6276) ECG: Payload: {"ts":5724,"values":{"ECG":3686,"BPM":58}}[0m
+[0;31mE (6276) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (6286) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (6286) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (6296) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (6396) ECG: ECG Value: 4095[0m
+[0;32mI (6396) ECG: Detected BPM: 43[0m
+[0;32mI (6696) ECG: Payload: {"ts":6143,"values":{"ECG":4095,"BPM":43}}[0m
+[0;31mE (6696) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (6696) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (6706) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (6706) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (6816) ECG: ECG Value: 4095[0m
+[0;32mI (6816) ECG: Payload: {"ts":6264,"values":{"ECG":4095,"BPM":43}}[0m
+[0;31mE (6816) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (6826) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (6826) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (6836) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (6936) ECG: ECG Value: 973[0m
+[0;32mI (6936) ECG: Payload: {"ts":6384,"values":{"ECG":973,"BPM":43}}[0m
+[0;31mE (6936) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (6936) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (6946) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (6956) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (7056) ECG: ECG Value: 0[0m
+[0;32mI (7056) ECG: Payload: {"ts":6504,"values":{"ECG":0,"BPM":43}}[0m
+[0;31mE (7056) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (7056) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (7066) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (7076) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (7176) ECG: ECG Value: 0[0m
+[0;32mI (7176) ECG: Payload: {"ts":6624,"values":{"ECG":0,"BPM":43}}[0m
+[0;31mE (7176) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (7176) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (7186) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (7196) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (7296) ECG: ECG Value: 720[0m
+[0;32mI (7296) ECG: Payload: {"ts":6744,"values":{"ECG":720,"BPM":43}}[0m
+[0;31mE (7296) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (7296) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (7306) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (7316) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (7416) ECG: ECG Value: 1808[0m
+[0;32mI (7416) ECG: Payload: {"ts":6864,"values":{"ECG":1808,"BPM":43}}[0m
+[0;31mE (7416) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (7426) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (7426) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (7436) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (7536) ECG: ECG Value: 2998[0m
+[0;32mI (7536) ECG: Payload: {"ts":6984,"values":{"ECG":2998,"BPM":43}}[0m
+[0;31mE (7536) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (7546) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (7546) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (7556) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (7656) ECG: ECG Value: 3389[0m
+[0;32mI (7656) ECG: Payload: {"ts":7104,"values":{"ECG":3389,"BPM":43}}[0m
+[0;31mE (7656) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (7666) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (7666) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (7676) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (7776) ECG: ECG Value: 3830[0m
+[0;32mI (7776) ECG: Payload: {"ts":7224,"values":{"ECG":3830,"BPM":43}}[0m
+[0;31mE (7776) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (7786) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (7786) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (7796) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (7896) ECG: ECG Value: 4095[0m
+[0;32mI (7896) ECG: Detected BPM: 40[0m
+[0;32mI (8196) ECG: Payload: {"ts":7643,"values":{"ECG":4095,"BPM":40}}[0m
+[0;31mE (8196) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (8196) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (8206) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (8206) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (8316) ECG: ECG Value: 4095[0m
+[0;32mI (8316) ECG: Payload: {"ts":7764,"values":{"ECG":4095,"BPM":40}}[0m
+[0;31mE (8316) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (8326) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (8326) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (8336) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (8436) ECG: ECG Value: 1892[0m
+[0;32mI (8436) ECG: Payload: {"ts":7884,"values":{"ECG":1892,"BPM":40}}[0m
+[0;31mE (8436) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (8446) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (8446) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (8456) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (8556) ECG: ECG Value: 0[0m
+[0;32mI (8556) ECG: Payload: {"ts":8004,"values":{"ECG":0,"BPM":40}}[0m
+[0;31mE (8556) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (8556) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (8566) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (8576) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (8676) ECG: ECG Value: 0[0m
+[0;32mI (8676) ECG: Payload: {"ts":8124,"values":{"ECG":0,"BPM":40}}[0m
+[0;31mE (8676) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (8676) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (8686) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (8696) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (8796) ECG: ECG Value: 707[0m
+[0;32mI (8796) ECG: Payload: {"ts":8244,"values":{"ECG":707,"BPM":40}}[0m
+[0;31mE (8796) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (8796) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (8806) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (8816) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (8916) ECG: ECG Value: 1799[0m
+[0;32mI (8916) ECG: Payload: {"ts":8364,"values":{"ECG":1799,"BPM":40}}[0m
+[0;31mE (8916) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (8926) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (8926) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (8936) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (9036) ECG: ECG Value: 2903[0m
+[0;32mI (9036) ECG: Payload: {"ts":8484,"values":{"ECG":2903,"BPM":40}}[0m
+[0;31mE (9036) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (9046) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (9046) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (9056) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (9156) ECG: ECG Value: 3978[0m
+[0;32mI (9156) ECG: Payload: {"ts":8604,"values":{"ECG":3978,"BPM":40}}[0m
+[0;31mE (9156) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (9166) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (9166) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (9176) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (9276) ECG: ECG Value: 3898[0m
+[0;32mI (9276) ECG: Payload: {"ts":8724,"values":{"ECG":3898,"BPM":40}}[0m
+[0;31mE (9276) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (9286) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (9286) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (9296) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (9396) ECG: ECG Value: 4095[0m
+[0;32mI (9396) ECG: Detected BPM: 40[0m
+[0;32mI (9696) ECG: Payload: {"ts":9143,"values":{"ECG":4095,"BPM":40}}[0m
+[0;31mE (9696) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (9696) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (9706) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (9706) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (9816) ECG: ECG Value: 4095[0m
+[0;32mI (9816) ECG: Payload: {"ts":9264,"values":{"ECG":4095,"BPM":40}}[0m
+[0;31mE (9816) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (9826) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (9826) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (9836) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (9936) ECG: ECG Value: 457[0m
+[0;32mI (9936) ECG: Payload: {"ts":9384,"values":{"ECG":457,"BPM":40}}[0m
+[0;31mE (9936) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (9936) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (9946) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (9956) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (10056) ECG: ECG Value: 0[0m
+[0;32mI (10056) ECG: Payload: {"ts":9504,"values":{"ECG":0,"BPM":40}}[0m
+[0;31mE (10056) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (10056) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (10066) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (10076) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (10176) ECG: ECG Value: 432[0m
+[0;32mI (10176) ECG: Payload: {"ts":9624,"values":{"ECG":432,"BPM":40}}[0m
+[0;31mE (10176) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (10186) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (10186) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (10196) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (10296) ECG: ECG Value: 1415[0m
+[0;32mI (10296) ECG: Payload: {"ts":9744,"values":{"ECG":1415,"BPM":40}}[0m
+[0;31mE (10296) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (10306) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (10306) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (10316) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (10416) ECG: ECG Value: 2470[0m
+[0;32mI (10416) ECG: Payload: {"ts":9864,"values":{"ECG":2470,"BPM":40}}[0m
+[0;31mE (10416) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (10426) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (10426) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (10436) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (10536) ECG: ECG Value: 3025[0m
+[0;32mI (10536) ECG: Payload: {"ts":9984,"values":{"ECG":3025,"BPM":40}}[0m
+[0;31mE (10536) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (10546) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (10546) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (10556) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (10656) ECG: ECG Value: 4095[0m
+[0;32mI (10656) ECG: Detected BPM: 47[0m
+[0;32mI (10956) ECG: Payload: {"ts":10403,"values":{"ECG":4095,"BPM":47}}[0m
+[0;31mE (10956) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (10956) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (10966) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (10976) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (11076) ECG: ECG Value: 4095[0m
+[0;32mI (11076) ECG: Payload: {"ts":10524,"values":{"ECG":4095,"BPM":47}}[0m
+[0;31mE (11076) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (11086) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (11086) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (11096) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (11196) ECG: ECG Value: 4095[0m
+[0;32mI (11196) ECG: Payload: {"ts":10644,"values":{"ECG":4095,"BPM":47}}[0m
+[0;31mE (11196) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (11206) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (11206) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (11216) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (11316) ECG: ECG Value: 684[0m
+[0;32mI (11316) ECG: Payload: {"ts":10764,"values":{"ECG":684,"BPM":47}}[0m
+[0;31mE (11316) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (11326) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (11326) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (11336) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (11436) ECG: ECG Value: 335[0m
+[0;32mI (11436) ECG: Payload: {"ts":10884,"values":{"ECG":335,"BPM":47}}[0m
+[0;31mE (11436) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (11446) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (11446) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (11456) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (11556) ECG: ECG Value: 489[0m
+[0;32mI (11556) ECG: Payload: {"ts":11004,"values":{"ECG":489,"BPM":47}}[0m
+[0;31mE (11556) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (11566) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (11566) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (11576) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (11676) ECG: ECG Value: 1353[0m
+[0;32mI (11676) ECG: Payload: {"ts":11124,"values":{"ECG":1353,"BPM":47}}[0m
+[0;31mE (11676) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (11686) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (11686) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (11696) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (11796) ECG: ECG Value: 2305[0m
+[0;32mI (11796) ECG: Payload: {"ts":11244,"values":{"ECG":2305,"BPM":47}}[0m
+[0;31mE (11796) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (11806) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (11806) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (11816) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (11916) ECG: ECG Value: 3264[0m
+[0;32mI (11916) ECG: Payload: {"ts":11364,"values":{"ECG":3264,"BPM":47}}[0m
+[0;31mE (11916) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (11926) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (11926) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (11936) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (12036) ECG: ECG Value: 3770[0m
+[0;32mI (12036) ECG: Payload: {"ts":11484,"values":{"ECG":3770,"BPM":47}}[0m
+[0;31mE (12036) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (12046) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (12046) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (12056) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (12156) ECG: ECG Value: 4095[0m
+[0;32mI (12156) ECG: Detected BPM: 40[0m
+[0;32mI (12456) ECG: Payload: {"ts":11903,"values":{"ECG":4095,"BPM":40}}[0m
+[0;31mE (12456) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (12456) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (12466) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (12476) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (12576) ECG: ECG Value: 1955[0m
+[0;32mI (12576) ECG: Payload: {"ts":12024,"values":{"ECG":1955,"BPM":40}}[0m
+[0;31mE (12576) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (12586) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (12586) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (12596) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (12696) ECG: ECG Value: 560[0m
+[0;32mI (12696) ECG: Payload: {"ts":12144,"values":{"ECG":560,"BPM":40}}[0m
+[0;31mE (12696) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (12706) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (12706) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (12716) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (12816) ECG: ECG Value: 581[0m
+[0;32mI (12816) ECG: Payload: {"ts":12264,"values":{"ECG":581,"BPM":40}}[0m
+[0;31mE (12816) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (12826) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (12826) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (12836) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (12936) ECG: ECG Value: 1393[0m
+[0;32mI (12936) ECG: Payload: {"ts":12384,"values":{"ECG":1393,"BPM":40}}[0m
+[0;31mE (12936) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (12946) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (12946) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (12956) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (13056) ECG: ECG Value: 2835[0m
+[0;32mI (13056) ECG: Payload: {"ts":12504,"values":{"ECG":2835,"BPM":40}}[0m
+[0;31mE (13056) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (13066) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (13066) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (13076) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (13176) ECG: ECG Value: 3034[0m
+[0;32mI (13176) ECG: Payload: {"ts":12624,"values":{"ECG":3034,"BPM":40}}[0m
+[0;31mE (13176) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (13186) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (13186) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (13196) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (13296) ECG: ECG Value: 3701[0m
+[0;32mI (13296) ECG: Payload: {"ts":12744,"values":{"ECG":3701,"BPM":40}}[0m
+[0;31mE (13296) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (13306) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (13306) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (13316) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (13416) ECG: ECG Value: 4095[0m
+[0;32mI (13416) ECG: Detected BPM: 47[0m
+[0;32mI (13716) ECG: Payload: {"ts":13163,"values":{"ECG":4095,"BPM":47}}[0m
+[0;31mE (13716) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (13716) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (13726) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (13736) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (13836) ECG: ECG Value: 4095[0m
+[0;32mI (13836) ECG: Payload: {"ts":13284,"values":{"ECG":4095,"BPM":47}}[0m
+[0;31mE (13836) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (13846) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (13846) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (13856) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (13956) ECG: ECG Value: 1701[0m
+[0;32mI (13956) ECG: Payload: {"ts":13404,"values":{"ECG":1701,"BPM":47}}[0m
+[0;31mE (13956) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (13966) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (13966) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (13976) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (14076) ECG: ECG Value: 0[0m
+[0;32mI (14076) ECG: Payload: {"ts":13524,"values":{"ECG":0,"BPM":47}}[0m
+[0;31mE (14076) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (14076) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (14086) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (14096) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (14196) ECG: ECG Value: 202[0m
+[0;32mI (14196) ECG: Payload: {"ts":13644,"values":{"ECG":202,"BPM":47}}[0m
+[0;31mE (14196) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (14206) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (14206) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (14216) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (14316) ECG: ECG Value: 705[0m
+[0;32mI (14316) ECG: Payload: {"ts":13764,"values":{"ECG":705,"BPM":47}}[0m
+[0;31mE (14316) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (14326) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (14326) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (14336) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (14436) ECG: ECG Value: 1801[0m
+[0;32mI (14436) ECG: Payload: {"ts":13884,"values":{"ECG":1801,"BPM":47}}[0m
+[0;31mE (14436) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (14446) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (14446) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (14456) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (14556) ECG: ECG Value: 3108[0m
+[0;32mI (14556) ECG: Payload: {"ts":14004,"values":{"ECG":3108,"BPM":47}}[0m
+[0;31mE (14556) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (14566) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (14566) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (14576) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (14676) ECG: ECG Value: 3760[0m
+[0;32mI (14676) ECG: Payload: {"ts":14124,"values":{"ECG":3760,"BPM":47}}[0m
+[0;31mE (14676) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (14686) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (14686) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (14696) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (14796) ECG: ECG Value: 4095[0m
+[0;32mI (14796) ECG: Detected BPM: 43[0m
+[0;32mI (15096) ECG: Payload: {"ts":14543,"values":{"ECG":4095,"BPM":43}}[0m
+[0;31mE (15096) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (15096) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (15106) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (15116) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (15216) ECG: ECG Value: 4095[0m
+[0;32mI (15216) ECG: Payload: {"ts":14664,"values":{"ECG":4095,"BPM":43}}[0m
+[0;31mE (15216) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (15226) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (15226) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (15236) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (15336) ECG: ECG Value: 653[0m
+[0;32mI (15336) ECG: Payload: {"ts":14784,"values":{"ECG":653,"BPM":43}}[0m
+[0;31mE (15336) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (15346) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (15346) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (15356) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (15456) ECG: ECG Value: 147[0m
+[0;32mI (15456) ECG: Payload: {"ts":14904,"values":{"ECG":147,"BPM":43}}[0m
+[0;31mE (15456) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (15466) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (15466) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (15476) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (15576) ECG: ECG Value: 927[0m
+[0;32mI (15576) ECG: Payload: {"ts":15024,"values":{"ECG":927,"BPM":43}}[0m
+[0;31mE (15576) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (15586) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (15586) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (15596) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (15696) ECG: ECG Value: 1728[0m
+[0;32mI (15696) ECG: Payload: {"ts":15144,"values":{"ECG":1728,"BPM":43}}[0m
+[0;31mE (15696) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (15706) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (15706) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (15716) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (15816) ECG: ECG Value: 2361[0m
+[0;32mI (15816) ECG: Payload: {"ts":15264,"values":{"ECG":2361,"BPM":43}}[0m
+[0;31mE (15816) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (15826) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (15826) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (15836) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (15936) ECG: ECG Value: 3281[0m
+[0;32mI (15936) ECG: Payload: {"ts":15384,"values":{"ECG":3281,"BPM":43}}[0m
+[0;31mE (15936) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (15946) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (15946) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (15956) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (16056) ECG: ECG Value: 3842[0m
+[0;32mI (16056) ECG: Payload: {"ts":15504,"values":{"ECG":3842,"BPM":43}}[0m
+[0;31mE (16056) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (16066) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (16066) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (16076) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (16176) ECG: ECG Value: 4095[0m
+[0;32mI (16176) ECG: Detected BPM: 43[0m
+[0;32mI (16476) ECG: Payload: {"ts":15923,"values":{"ECG":4095,"BPM":43}}[0m
+[0;31mE (16476) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (16476) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (16486) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (16496) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (16596) ECG: ECG Value: 3897[0m
+[0;32mI (16596) ECG: Payload: {"ts":16044,"values":{"ECG":3897,"BPM":43}}[0m
+[0;31mE (16596) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (16606) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (16606) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (16616) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (16716) ECG: ECG Value: 477[0m
+[0;32mI (16716) ECG: Payload: {"ts":16164,"values":{"ECG":477,"BPM":43}}[0m
+[0;31mE (16716) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (16726) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (16726) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (16736) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (16836) ECG: ECG Value: 304[0m
+[0;32mI (16836) ECG: Payload: {"ts":16284,"values":{"ECG":304,"BPM":43}}[0m
+[0;31mE (16836) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (16846) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (16846) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (16856) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (16956) ECG: ECG Value: 624[0m
+[0;32mI (16956) ECG: Payload: {"ts":16404,"values":{"ECG":624,"BPM":43}}[0m
+[0;31mE (16956) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (16966) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (16966) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (16976) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (17076) ECG: ECG Value: 1520[0m
+[0;32mI (17076) ECG: Payload: {"ts":16524,"values":{"ECG":1520,"BPM":43}}[0m
+[0;31mE (17076) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (17086) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (17086) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (17096) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (17196) ECG: ECG Value: 2947[0m
+[0;32mI (17196) ECG: Payload: {"ts":16644,"values":{"ECG":2947,"BPM":43}}[0m
+[0;31mE (17196) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (17206) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (17206) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (17216) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (17316) ECG: ECG Value: 3203[0m
+[0;32mI (17316) ECG: Payload: {"ts":16764,"values":{"ECG":3203,"BPM":43}}[0m
+[0;31mE (17316) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (17326) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (17326) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (17336) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (17436) ECG: ECG Value: 3664[0m
+[0;32mI (17436) ECG: Payload: {"ts":16884,"values":{"ECG":3664,"BPM":43}}[0m
+[0;31mE (17436) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (17446) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (17446) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (17456) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (17556) ECG: ECG Value: 4095[0m
+[0;32mI (17556) ECG: Detected BPM: 43[0m
+[0;32mI (17856) ECG: Payload: {"ts":17303,"values":{"ECG":4095,"BPM":43}}[0m
+[0;31mE (17856) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (17856) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (17866) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (17876) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (17976) ECG: ECG Value: 4095[0m
+[0;32mI (17976) ECG: Payload: {"ts":17424,"values":{"ECG":4095,"BPM":43}}[0m
+[0;31mE (17976) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (17986) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (17986) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (17996) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (18096) ECG: ECG Value: 4095[0m
+[0;32mI (18096) ECG: Payload: {"ts":17544,"values":{"ECG":4095,"BPM":43}}[0m
+[0;31mE (18096) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (18106) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (18106) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (18116) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (18216) ECG: ECG Value: 165[0m
+[0;32mI (18216) ECG: Payload: {"ts":17664,"values":{"ECG":165,"BPM":43}}[0m
+[0;31mE (18216) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (18226) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (18226) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (18236) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (18336) ECG: ECG Value: 0[0m
+[0;32mI (18336) ECG: Payload: {"ts":17784,"values":{"ECG":0,"BPM":43}}[0m
+[0;31mE (18336) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (18336) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (18346) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (18356) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (18456) ECG: ECG Value: 795[0m
+[0;32mI (18456) ECG: Payload: {"ts":17904,"values":{"ECG":795,"BPM":43}}[0m
+[0;31mE (18456) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (18466) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (18466) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (18476) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (18576) ECG: ECG Value: 1719[0m
+[0;32mI (18576) ECG: Payload: {"ts":18024,"values":{"ECG":1719,"BPM":43}}[0m
+[0;31mE (18576) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (18586) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (18586) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (18596) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (18696) ECG: ECG Value: 2800[0m
+[0;32mI (18696) ECG: Payload: {"ts":18144,"values":{"ECG":2800,"BPM":43}}[0m
+[0;31mE (18696) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (18706) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (18706) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (18716) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (18816) ECG: ECG Value: 3638[0m
+[0;32mI (18816) ECG: Payload: {"ts":18264,"values":{"ECG":3638,"BPM":43}}[0m
+[0;31mE (18816) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (18826) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (18826) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (18836) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (18936) ECG: ECG Value: 4095[0m
+[0;32mI (18936) ECG: Detected BPM: 43[0m
+[0;32mI (19236) ECG: Payload: {"ts":18683,"values":{"ECG":4095,"BPM":43}}[0m
+[0;31mE (19236) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (19236) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (19246) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (19256) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (19356) ECG: ECG Value: 4095[0m
+[0;32mI (19356) ECG: Payload: {"ts":18804,"values":{"ECG":4095,"BPM":43}}[0m
+[0;31mE (19356) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (19366) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (19366) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (19376) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (19476) ECG: ECG Value: 3216[0m
+[0;32mI (19476) ECG: Payload: {"ts":18924,"values":{"ECG":3216,"BPM":43}}[0m
+[0;31mE (19476) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (19486) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (19486) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (19496) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (19596) ECG: ECG Value: 701[0m
+[0;32mI (19596) ECG: Payload: {"ts":19044,"values":{"ECG":701,"BPM":43}}[0m
+[0;31mE (19596) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (19606) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (19606) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (19616) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (19716) ECG: ECG Value: 281[0m
+[0;32mI (19716) ECG: Payload: {"ts":19164,"values":{"ECG":281,"BPM":43}}[0m
+[0;31mE (19716) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (19726) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (19726) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (19736) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (19836) ECG: ECG Value: 629[0m
+[0;32mI (19836) ECG: Payload: {"ts":19284,"values":{"ECG":629,"BPM":43}}[0m
+[0;31mE (19836) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (19846) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (19846) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (19856) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (19956) ECG: ECG Value: 1757[0m
+[0;32mI (19956) ECG: Payload: {"ts":19404,"values":{"ECG":1757,"BPM":43}}[0m
+[0;31mE (19956) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (19966) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (19966) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (19976) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (20076) ECG: ECG Value: 2895[0m
+[0;32mI (20076) ECG: Payload: {"ts":19524,"values":{"ECG":2895,"BPM":43}}[0m
+[0;31mE (20076) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (20086) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (20086) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (20096) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (20196) ECG: ECG Value: 3299[0m
+[0;32mI (20196) ECG: Payload: {"ts":19644,"values":{"ECG":3299,"BPM":43}}[0m
+[0;31mE (20196) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (20206) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (20206) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (20216) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (20316) ECG: ECG Value: 4095[0m
+[0;32mI (20316) ECG: Detected BPM: 43[0m
+[0;32mI (20616) ECG: Payload: {"ts":20063,"values":{"ECG":4095,"BPM":43}}[0m
+[0;31mE (20616) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (20616) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (20626) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (20636) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (20736) ECG: ECG Value: 4095[0m
+[0;32mI (20736) ECG: Payload: {"ts":20184,"values":{"ECG":4095,"BPM":43}}[0m
+[0;31mE (20736) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (20746) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (20746) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (20756) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (20856) ECG: ECG Value: 779[0m
+[0;32mI (20856) ECG: Payload: {"ts":20304,"values":{"ECG":779,"BPM":43}}[0m
+[0;31mE (20856) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (20866) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (20866) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (20876) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (20976) ECG: ECG Value: 269[0m
+[0;32mI (20976) ECG: Payload: {"ts":20424,"values":{"ECG":269,"BPM":43}}[0m
+[0;31mE (20976) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (20986) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (20986) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (20996) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (21096) ECG: ECG Value: 2496[0m
+[0;32mI (21096) ECG: Payload: {"ts":20544,"values":{"ECG":2496,"BPM":43}}[0m
+[0;31mE (21096) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (21106) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (21106) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (21116) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (21216) ECG: ECG Value: 1527[0m
+[0;32mI (21216) ECG: Payload: {"ts":20664,"values":{"ECG":1527,"BPM":43}}[0m
+[0;31mE (21216) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (21226) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (21226) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (21236) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (21336) ECG: ECG Value: 3119[0m
+[0;32mI (21336) ECG: Payload: {"ts":20784,"values":{"ECG":3119,"BPM":43}}[0m
+[0;31mE (21336) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (21346) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (21346) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (21356) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (21456) ECG: ECG Value: 2946[0m
+[0;32mI (21456) ECG: Payload: {"ts":20904,"values":{"ECG":2946,"BPM":43}}[0m
+[0;31mE (21456) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (21466) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (21466) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (21476) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (21576) ECG: ECG Value: 3583[0m
+[0;32mI (21576) ECG: Payload: {"ts":21024,"values":{"ECG":3583,"BPM":43}}[0m
+[0;31mE (21576) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (21586) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (21586) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (21596) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (21696) ECG: ECG Value: 4095[0m
+[0;32mI (21696) ECG: Detected BPM: 43[0m
+[0;32mI (21996) ECG: Payload: {"ts":21443,"values":{"ECG":4095,"BPM":43}}[0m
+[0;31mE (21996) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (21996) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (22006) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (22016) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (22116) ECG: ECG Value: 4095[0m
+[0;32mI (22116) ECG: Payload: {"ts":21564,"values":{"ECG":4095,"BPM":43}}[0m
+[0;31mE (22116) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (22126) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (22126) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (22136) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (22236) ECG: ECG Value: 2993[0m
+[0;32mI (22236) ECG: Payload: {"ts":21684,"values":{"ECG":2993,"BPM":43}}[0m
+[0;31mE (22236) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (22246) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (22246) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (22256) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (22356) ECG: ECG Value: 0[0m
+[0;32mI (22356) ECG: Payload: {"ts":21804,"values":{"ECG":0,"BPM":43}}[0m
+[0;31mE (22356) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (22356) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (22366) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (22376) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (22476) ECG: ECG Value: 0[0m
+[0;32mI (22476) ECG: Payload: {"ts":21924,"values":{"ECG":0,"BPM":43}}[0m
+[0;31mE (22476) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (22476) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (22486) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (22496) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (22596) ECG: ECG Value: 588[0m
+[0;32mI (22596) ECG: Payload: {"ts":22044,"values":{"ECG":588,"BPM":43}}[0m
+[0;31mE (22596) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (22606) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (22606) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (22616) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (22716) ECG: ECG Value: 1783[0m
+[0;32mI (22716) ECG: Payload: {"ts":22164,"values":{"ECG":1783,"BPM":43}}[0m
+[0;31mE (22716) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (22726) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (22726) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (22736) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (22836) ECG: ECG Value: 2625[0m
+[0;32mI (22836) ECG: Payload: {"ts":22284,"values":{"ECG":2625,"BPM":43}}[0m
+[0;31mE (22836) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (22846) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (22846) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (22856) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (22956) ECG: ECG Value: 4031[0m
+[0;32mI (22956) ECG: Detected BPM: 47[0m
+[0;32mI (23256) ECG: Payload: {"ts":22703,"values":{"ECG":4031,"BPM":47}}[0m
+[0;31mE (23256) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (23256) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (23266) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (23276) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (23376) ECG: ECG Value: 4095[0m
+[0;32mI (23376) ECG: Detected BPM: 142[0m
+[0;32mI (23676) ECG: Payload: {"ts":23123,"values":{"ECG":4095,"BPM":142}}[0m
+[0;31mE (23676) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (23676) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (23686) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (23696) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (23796) ECG: ECG Value: 528[0m
+[0;32mI (23796) ECG: Payload: {"ts":23244,"values":{"ECG":528,"BPM":142}}[0m
+[0;31mE (23796) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (23806) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (23806) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (23816) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (23916) ECG: ECG Value: 0[0m
+[0;32mI (23916) ECG: Payload: {"ts":23364,"values":{"ECG":0,"BPM":142}}[0m
+[0;31mE (23916) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (23916) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (23926) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (23936) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (24036) ECG: ECG Value: 901[0m
+[0;32mI (24036) ECG: Payload: {"ts":23484,"values":{"ECG":901,"BPM":142}}[0m
+[0;31mE (24036) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (24046) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (24046) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (24056) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (24156) ECG: ECG Value: 1965[0m
+[0;32mI (24156) ECG: Payload: {"ts":23604,"values":{"ECG":1965,"BPM":142}}[0m
+[0;31mE (24156) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (24166) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (24166) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (24176) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (24276) ECG: ECG Value: 2832[0m
+[0;32mI (24276) ECG: Payload: {"ts":23724,"values":{"ECG":2832,"BPM":142}}[0m
+[0;31mE (24276) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (24286) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (24286) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (24296) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (24396) ECG: ECG Value: 4095[0m
+[0;32mI (24396) ECG: Detected BPM: 58[0m
+[0;32mI (24696) ECG: Payload: {"ts":24143,"values":{"ECG":4095,"BPM":58}}[0m
+[0;31mE (24696) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (24696) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (24706) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (24716) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (24816) ECG: ECG Value: 4095[0m
+[0;32mI (24816) ECG: Payload: {"ts":24264,"values":{"ECG":4095,"BPM":58}}[0m
+[0;31mE (24816) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (24826) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (24826) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (24836) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (24936) ECG: ECG Value: 3927[0m
+[0;32mI (24936) ECG: Payload: {"ts":24384,"values":{"ECG":3927,"BPM":58}}[0m
+[0;31mE (24936) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (24946) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (24946) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (24956) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (25056) ECG: ECG Value: 781[0m
+[0;32mI (25056) ECG: Payload: {"ts":24504,"values":{"ECG":781,"BPM":58}}[0m
+[0;31mE (25056) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (25066) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (25066) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (25076) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (25176) ECG: ECG Value: 0[0m
+[0;32mI (25176) ECG: Payload: {"ts":24624,"values":{"ECG":0,"BPM":58}}[0m
+[0;31mE (25176) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (25176) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (25186) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (25196) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (25296) ECG: ECG Value: 663[0m
+[0;32mI (25296) ECG: Payload: {"ts":24744,"values":{"ECG":663,"BPM":58}}[0m
+[0;31mE (25296) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (25306) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (25306) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (25316) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (25416) ECG: ECG Value: 1705[0m
+[0;32mI (25416) ECG: Payload: {"ts":24864,"values":{"ECG":1705,"BPM":58}}[0m
+[0;31mE (25416) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (25426) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (25426) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (25436) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (25536) ECG: ECG Value: 2455[0m
+[0;32mI (25536) ECG: Payload: {"ts":24984,"values":{"ECG":2455,"BPM":58}}[0m
+[0;31mE (25536) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (25546) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (25546) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (25556) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (25656) ECG: ECG Value: 3056[0m
+[0;32mI (25656) ECG: Payload: {"ts":25104,"values":{"ECG":3056,"BPM":58}}[0m
+[0;31mE (25656) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (25666) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (25666) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (25676) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (25776) ECG: ECG Value: 3712[0m
+[0;32mI (25776) ECG: Payload: {"ts":25224,"values":{"ECG":3712,"BPM":58}}[0m
+[0;31mE (25776) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (25786) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (25786) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (25796) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (25896) ECG: ECG Value: 4095[0m
+[0;32mI (25896) ECG: Detected BPM: 40[0m
+[0;32mI (26196) ECG: Payload: {"ts":25643,"values":{"ECG":4095,"BPM":40}}[0m
+[0;31mE (26196) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (26196) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (26206) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (26216) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (26316) ECG: ECG Value: 4095[0m
+[0;32mI (26316) ECG: Payload: {"ts":25764,"values":{"ECG":4095,"BPM":40}}[0m
+[0;31mE (26316) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (26326) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (26326) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (26336) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (26436) ECG: ECG Value: 1937[0m
+[0;32mI (26436) ECG: Payload: {"ts":25884,"values":{"ECG":1937,"BPM":40}}[0m
+[0;31mE (26436) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (26446) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (26446) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (26456) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (26556) ECG: ECG Value: 0[0m
+[0;32mI (26556) ECG: Payload: {"ts":26004,"values":{"ECG":0,"BPM":40}}[0m
+[0;31mE (26556) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (26556) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (26566) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (26576) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (26676) ECG: ECG Value: 0[0m
+[0;32mI (26676) ECG: Payload: {"ts":26124,"values":{"ECG":0,"BPM":40}}[0m
+[0;31mE (26676) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (26676) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (26686) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (26696) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (26796) ECG: ECG Value: 591[0m
+[0;32mI (26796) ECG: Payload: {"ts":26244,"values":{"ECG":591,"BPM":40}}[0m
+[0;31mE (26796) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (26806) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (26806) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (26816) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (26916) ECG: ECG Value: 3499[0m
+[0;32mI (26916) ECG: Payload: {"ts":26364,"values":{"ECG":3499,"BPM":40}}[0m
+[0;31mE (26916) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (26926) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (26926) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (26936) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (27036) ECG: ECG Value: 2803[0m
+[0;32mI (27036) ECG: Payload: {"ts":26484,"values":{"ECG":2803,"BPM":40}}[0m
+[0;31mE (27036) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (27046) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (27046) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (27056) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (27156) ECG: ECG Value: 4095[0m
+[0;32mI (27156) ECG: Detected BPM: 47[0m
+[0;32mI (27456) ECG: Payload: {"ts":26903,"values":{"ECG":4095,"BPM":47}}[0m
+[0;31mE (27456) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (27456) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (27466) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (27476) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (27576) ECG: ECG Value: 4095[0m
+[0;32mI (27576) ECG: Payload: {"ts":27024,"values":{"ECG":4095,"BPM":47}}[0m
+[0;31mE (27576) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (27586) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (27586) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (27596) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (27696) ECG: ECG Value: 4095[0m
+[0;32mI (27696) ECG: Payload: {"ts":27144,"values":{"ECG":4095,"BPM":47}}[0m
+[0;31mE (27696) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (27706) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (27706) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (27716) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (27816) ECG: ECG Value: 4095[0m
+[0;32mI (27816) ECG: Payload: {"ts":27264,"values":{"ECG":4095,"BPM":47}}[0m
+[0;31mE (27816) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (27826) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (27826) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (27836) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (27936) ECG: ECG Value: 4095[0m
+[0;32mI (27936) ECG: Payload: {"ts":27384,"values":{"ECG":4095,"BPM":47}}[0m
+[0;31mE (27936) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (27946) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (27946) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (27956) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (28056) ECG: ECG Value: 2197[0m
+[0;32mI (28056) ECG: Payload: {"ts":27504,"values":{"ECG":2197,"BPM":47}}[0m
+[0;31mE (28056) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (28066) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (28066) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (28076) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (28176) ECG: ECG Value: 1479[0m
+[0;32mI (28176) ECG: Payload: {"ts":27624,"values":{"ECG":1479,"BPM":47}}[0m
+[0;31mE (28176) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (28186) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (28186) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (28196) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (28296) ECG: ECG Value: 1727[0m
+[0;32mI (28296) ECG: Payload: {"ts":27744,"values":{"ECG":1727,"BPM":47}}[0m
+[0;31mE (28296) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (28306) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (28306) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (28316) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (28416) ECG: ECG Value: 2410[0m
+[0;32mI (28416) ECG: Payload: {"ts":27864,"values":{"ECG":2410,"BPM":47}}[0m
+[0;31mE (28416) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (28426) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (28426) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (28436) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (28536) ECG: ECG Value: 2832[0m
+[0;32mI (28536) ECG: Payload: {"ts":27984,"values":{"ECG":2832,"BPM":47}}[0m
+[0;31mE (28536) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (28546) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (28546) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (28556) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (28656) ECG: ECG Value: 4095[0m
+[0;32mI (28656) ECG: Detected BPM: 40[0m
+[0;32mI (28956) ECG: Payload: {"ts":28403,"values":{"ECG":4095,"BPM":40}}[0m
+[0;31mE (28956) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (28956) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (28966) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (28976) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (29076) ECG: ECG Value: 4095[0m
+[0;32mI (29076) ECG: Payload: {"ts":28524,"values":{"ECG":4095,"BPM":40}}[0m
+[0;31mE (29076) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (29086) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (29086) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (29096) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (29196) ECG: ECG Value: 4095[0m
+[0;32mI (29196) ECG: Payload: {"ts":28644,"values":{"ECG":4095,"BPM":40}}[0m
+[0;31mE (29196) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (29206) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (29206) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (29216) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (29316) ECG: ECG Value: 2109[0m
+[0;32mI (29316) ECG: Payload: {"ts":28764,"values":{"ECG":2109,"BPM":40}}[0m
+[0;31mE (29316) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (29326) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (29326) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (29336) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (29436) ECG: ECG Value: 940[0m
+[0;32mI (29436) ECG: Payload: {"ts":28884,"values":{"ECG":940,"BPM":40}}[0m
+[0;31mE (29436) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (29446) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (29446) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (29456) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (29556) ECG: ECG Value: 1188[0m
+[0;32mI (29556) ECG: Payload: {"ts":29004,"values":{"ECG":1188,"BPM":40}}[0m
+[0;31mE (29556) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (29566) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (29566) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (29576) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (29676) ECG: ECG Value: 1953[0m
+[0;32mI (29676) ECG: Payload: {"ts":29124,"values":{"ECG":1953,"BPM":40}}[0m
+[0;31mE (29676) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (29686) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (29686) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (29696) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (29796) ECG: ECG Value: 2673[0m
+[0;32mI (29796) ECG: Payload: {"ts":29244,"values":{"ECG":2673,"BPM":40}}[0m
+[0;31mE (29796) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (29806) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (29806) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (29816) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (29916) ECG: ECG Value: 3050[0m
+[0;32mI (29916) ECG: Payload: {"ts":29364,"values":{"ECG":3050,"BPM":40}}[0m
+[0;31mE (29916) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (29926) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (29926) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (29936) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (30036) ECG: ECG Value: 3600[0m
+[0;32mI (30036) ECG: Payload: {"ts":29484,"values":{"ECG":3600,"BPM":40}}[0m
+[0;31mE (30036) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (30046) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (30046) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (30056) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (30156) ECG: ECG Value: 4095[0m
+[0;32mI (30156) ECG: Detected BPM: 40[0m
+[0;32mI (30456) ECG: Payload: {"ts":29903,"values":{"ECG":4095,"BPM":40}}[0m
+[0;31mE (30456) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (30456) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (30466) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (30476) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (30576) ECG: ECG Value: 4095[0m
+[0;32mI (30576) ECG: Payload: {"ts":30024,"values":{"ECG":4095,"BPM":40}}[0m
+[0;31mE (30576) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (30586) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (30586) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (30596) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (30696) ECG: ECG Value: 2243[0m
+[0;32mI (30696) ECG: Payload: {"ts":30144,"values":{"ECG":2243,"BPM":40}}[0m
+[0;31mE (30696) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (30706) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (30706) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (30716) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (30816) ECG: ECG Value: 0[0m
+[0;32mI (30816) ECG: Payload: {"ts":30264,"values":{"ECG":0,"BPM":40}}[0m
+[0;31mE (30816) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (30816) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (30826) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (30836) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (30936) ECG: ECG Value: 0[0m
+[0;32mI (30936) ECG: Payload: {"ts":30384,"values":{"ECG":0,"BPM":40}}[0m
+[0;31mE (30936) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (30936) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (30946) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (30956) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (31056) ECG: ECG Value: 733[0m
+[0;32mI (31056) ECG: Payload: {"ts":30504,"values":{"ECG":733,"BPM":40}}[0m
+[0;31mE (31056) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (31066) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (31066) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (31076) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (31176) ECG: ECG Value: 1765[0m
+[0;32mI (31176) ECG: Payload: {"ts":30624,"values":{"ECG":1765,"BPM":40}}[0m
+[0;31mE (31176) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (31186) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (31186) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (31196) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (31296) ECG: ECG Value: 2643[0m
+[0;32mI (31296) ECG: Payload: {"ts":30744,"values":{"ECG":2643,"BPM":40}}[0m
+[0;31mE (31296) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (31306) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (31306) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (31316) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (31416) ECG: ECG Value: 3872[0m
+[0;32mI (31416) ECG: Payload: {"ts":30864,"values":{"ECG":3872,"BPM":40}}[0m
+[0;31mE (31416) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (31426) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (31426) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (31436) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (31536) ECG: ECG Value: 3833[0m
+[0;32mI (31536) ECG: Payload: {"ts":30984,"values":{"ECG":3833,"BPM":40}}[0m
+[0;31mE (31536) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (31546) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (31546) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (31556) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (31656) ECG: ECG Value: 4064[0m
+[0;32mI (31656) ECG: Detected BPM: 40[0m
+[0;32mI (31956) ECG: Payload: {"ts":31403,"values":{"ECG":4064,"BPM":40}}[0m
+[0;31mE (31956) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (31956) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (31966) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (31976) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (32076) ECG: ECG Value: 4095[0m
+[0;32mI (32076) ECG: Detected BPM: 142[0m
+[0;32mI (32376) ECG: Payload: {"ts":31823,"values":{"ECG":4095,"BPM":142}}[0m
+[0;31mE (32376) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (32376) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (32386) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (32396) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (32496) ECG: ECG Value: 0[0m
+[0;32mI (32496) ECG: Payload: {"ts":31944,"values":{"ECG":0,"BPM":142}}[0m
+[0;31mE (32496) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (32496) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (32506) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (32516) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (32616) ECG: ECG Value: 283[0m
+[0;32mI (32616) ECG: Payload: {"ts":32064,"values":{"ECG":283,"BPM":142}}[0m
+[0;31mE (32616) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (32626) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (32626) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (32636) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (32736) ECG: ECG Value: 1443[0m
+[0;32mI (32736) ECG: Payload: {"ts":32184,"values":{"ECG":1443,"BPM":142}}[0m
+[0;31mE (32736) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (32746) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (32746) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (32756) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (32856) ECG: ECG Value: 2797[0m
+[0;32mI (32856) ECG: Payload: {"ts":32304,"values":{"ECG":2797,"BPM":142}}[0m
+[0;31mE (32856) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (32866) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (32866) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (32876) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (32976) ECG: ECG Value: 3439[0m
+[0;32mI (32976) ECG: Payload: {"ts":32424,"values":{"ECG":3439,"BPM":142}}[0m
+[0;31mE (32976) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (32986) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (32986) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (32996) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (33096) ECG: ECG Value: 4095[0m
+[0;32mI (33096) ECG: Detected BPM: 58[0m
+[0;32mI (33396) ECG: Payload: {"ts":32843,"values":{"ECG":4095,"BPM":58}}[0m
+[0;31mE (33396) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (33396) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (33406) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (33416) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (33516) ECG: ECG Value: 4095[0m
+[0;32mI (33516) ECG: Payload: {"ts":32964,"values":{"ECG":4095,"BPM":58}}[0m
+[0;31mE (33516) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (33526) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (33526) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (33536) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (33636) ECG: ECG Value: 2143[0m
+[0;32mI (33636) ECG: Payload: {"ts":33084,"values":{"ECG":2143,"BPM":58}}[0m
+[0;31mE (33636) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (33646) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (33646) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (33656) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (33756) ECG: ECG Value: 594[0m
+[0;32mI (33756) ECG: Payload: {"ts":33204,"values":{"ECG":594,"BPM":58}}[0m
+[0;31mE (33756) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (33766) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (33766) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (33776) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (33876) ECG: ECG Value: 650[0m
+[0;32mI (33876) ECG: Payload: {"ts":33324,"values":{"ECG":650,"BPM":58}}[0m
+[0;31mE (33876) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (33886) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (33886) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (33896) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (33996) ECG: ECG Value: 1601[0m
+[0;32mI (33996) ECG: Payload: {"ts":33444,"values":{"ECG":1601,"BPM":58}}[0m
+[0;31mE (33996) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (34006) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (34006) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (34016) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (34116) ECG: ECG Value: 2096[0m
+[0;32mI (34116) ECG: Payload: {"ts":33564,"values":{"ECG":2096,"BPM":58}}[0m
+[0;31mE (34116) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (34126) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (34126) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (34136) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (34236) ECG: ECG Value: 2590[0m
+[0;32mI (34236) ECG: Payload: {"ts":33684,"values":{"ECG":2590,"BPM":58}}[0m
+[0;31mE (34236) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (34246) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (34246) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (34256) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (34356) ECG: ECG Value: 3378[0m
+[0;32mI (34356) ECG: Payload: {"ts":33804,"values":{"ECG":3378,"BPM":58}}[0m
+[0;31mE (34356) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (34366) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (34366) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (34376) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (34476) ECG: ECG Value: 4095[0m
+[0;32mI (34476) ECG: Detected BPM: 43[0m
+[0;32mI (34776) ECG: Payload: {"ts":34223,"values":{"ECG":4095,"BPM":43}}[0m
+[0;31mE (34776) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (34776) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (34786) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (34796) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (34896) ECG: ECG Value: 4095[0m
+[0;32mI (34896) ECG: Payload: {"ts":34344,"values":{"ECG":4095,"BPM":43}}[0m
+[0;31mE (34896) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (34906) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (34906) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (34916) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (35016) ECG: ECG Value: 2640[0m
+[0;32mI (35016) ECG: Payload: {"ts":34464,"values":{"ECG":2640,"BPM":43}}[0m
+[0;31mE (35016) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (35026) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (35026) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (35036) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (35136) ECG: ECG Value: 272[0m
+[0;32mI (35136) ECG: Payload: {"ts":34584,"values":{"ECG":272,"BPM":43}}[0m
+[0;31mE (35136) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (35146) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (35146) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (35156) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (35256) ECG: ECG Value: 219[0m
+[0;32mI (35256) ECG: Payload: {"ts":34704,"values":{"ECG":219,"BPM":43}}[0m
+[0;31mE (35256) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (35266) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (35266) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (35276) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (35376) ECG: ECG Value: 566[0m
+[0;32mI (35376) ECG: Payload: {"ts":34824,"values":{"ECG":566,"BPM":43}}[0m
+[0;31mE (35376) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (35386) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (35386) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (35396) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (35496) ECG: ECG Value: 1691[0m
+[0;32mI (35496) ECG: Payload: {"ts":34944,"values":{"ECG":1691,"BPM":43}}[0m
+[0;31mE (35496) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (35506) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (35506) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (35516) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (35616) ECG: ECG Value: 2444[0m
+[0;32mI (35616) ECG: Payload: {"ts":35064,"values":{"ECG":2444,"BPM":43}}[0m
+[0;31mE (35616) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (35626) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (35626) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (35636) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (35736) ECG: ECG Value: 2538[0m
+[0;32mI (35736) ECG: Payload: {"ts":35184,"values":{"ECG":2538,"BPM":43}}[0m
+[0;31mE (35736) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (35746) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (35746) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (35756) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (35856) ECG: ECG Value: 2272[0m
+[0;32mI (35856) ECG: Payload: {"ts":35304,"values":{"ECG":2272,"BPM":43}}[0m
+[0;31mE (35856) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (35866) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (35866) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (35876) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (35976) ECG: ECG Value: 2666[0m
+[0;32mI (35976) ECG: Payload: {"ts":35424,"values":{"ECG":2666,"BPM":43}}[0m
+[0;31mE (35976) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (35986) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (35986) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (35996) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (36096) ECG: ECG Value: 2885[0m
+[0;32mI (36096) ECG: Payload: {"ts":35544,"values":{"ECG":2885,"BPM":43}}[0m
+[0;31mE (36096) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (36106) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (36106) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (36116) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (36216) ECG: ECG Value: 3316[0m
+[0;32mI (36216) ECG: Payload: {"ts":35664,"values":{"ECG":3316,"BPM":43}}[0m
+[0;31mE (36216) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (36226) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (36226) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (36236) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (36336) ECG: ECG Value: 4095[0m
+[0;32mI (36336) ECG: Detected BPM: 32[0m
+[0;32mI (36636) ECG: Payload: {"ts":36083,"values":{"ECG":4095,"BPM":32}}[0m
+[0;31mE (36636) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (36636) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (36646) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (36656) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (36756) ECG: ECG Value: 4095[0m
+[0;32mI (36756) ECG: Payload: {"ts":36204,"values":{"ECG":4095,"BPM":32}}[0m
+[0;31mE (36756) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (36766) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (36766) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (36776) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (36876) ECG: ECG Value: 3809[0m
+[0;32mI (36876) ECG: Payload: {"ts":36324,"values":{"ECG":3809,"BPM":32}}[0m
+[0;31mE (36876) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (36886) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (36886) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (36896) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (36996) ECG: ECG Value: 2393[0m
+[0;32mI (36996) ECG: Payload: {"ts":36444,"values":{"ECG":2393,"BPM":32}}[0m
+[0;31mE (36996) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (37006) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (37006) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (37016) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (37116) ECG: ECG Value: 2156[0m
+[0;32mI (37116) ECG: Payload: {"ts":36564,"values":{"ECG":2156,"BPM":32}}[0m
+[0;31mE (37116) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (37126) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (37126) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (37136) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (37236) ECG: ECG Value: 2455[0m
+[0;32mI (37236) ECG: Payload: {"ts":36684,"values":{"ECG":2455,"BPM":32}}[0m
+[0;31mE (37236) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (37246) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (37246) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (37256) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (37356) ECG: ECG Value: 3280[0m
+[0;32mI (37356) ECG: Payload: {"ts":36804,"values":{"ECG":3280,"BPM":32}}[0m
+[0;31mE (37356) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (37366) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (37366) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (37376) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (37476) ECG: ECG Value: 3104[0m
+[0;32mI (37476) ECG: Payload: {"ts":36924,"values":{"ECG":3104,"BPM":32}}[0m
+[0;31mE (37476) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (37486) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (37486) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (37496) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (37596) ECG: ECG Value: 3279[0m
+[0;32mI (37596) ECG: Payload: {"ts":37044,"values":{"ECG":3279,"BPM":32}}[0m
+[0;31mE (37596) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (37606) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (37606) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (37616) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (37716) ECG: ECG Value: 3381[0m
+[0;32mI (37716) ECG: Payload: {"ts":37164,"values":{"ECG":3381,"BPM":32}}[0m
+[0;31mE (37716) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (37726) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (37726) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (37736) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (37836) ECG: ECG Value: 3522[0m
+[0;32mI (37836) ECG: Payload: {"ts":37284,"values":{"ECG":3522,"BPM":32}}[0m
+[0;31mE (37836) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (37846) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (37846) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (37856) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (37956) ECG: ECG Value: 4095[0m
+[0;32mI (37956) ECG: Detected BPM: 37[0m
+[0;32mI (38256) ECG: Payload: {"ts":37703,"values":{"ECG":4095,"BPM":37}}[0m
+[0;31mE (38256) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (38256) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (38266) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (38276) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (38376) ECG: ECG Value: 4095[0m
+[0;32mI (38376) ECG: Payload: {"ts":37824,"values":{"ECG":4095,"BPM":37}}[0m
+[0;31mE (38376) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (38386) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (38386) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (38396) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (38496) ECG: ECG Value: 1081[0m
+[0;32mI (38496) ECG: Payload: {"ts":37944,"values":{"ECG":1081,"BPM":37}}[0m
+[0;31mE (38496) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (38506) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (38506) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (38516) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (38616) ECG: ECG Value: 522[0m
+[0;32mI (38616) ECG: Payload: {"ts":38064,"values":{"ECG":522,"BPM":37}}[0m
+[0;31mE (38616) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (38626) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (38626) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (38636) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (38736) ECG: ECG Value: 717[0m
+[0;32mI (38736) ECG: Payload: {"ts":38184,"values":{"ECG":717,"BPM":37}}[0m
+[0;31mE (38736) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (38746) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (38746) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (38756) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (38856) ECG: ECG Value: 1525[0m
+[0;32mI (38856) ECG: Payload: {"ts":38304,"values":{"ECG":1525,"BPM":37}}[0m
+[0;31mE (38856) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (38866) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (38866) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (38876) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (38976) ECG: ECG Value: 2724[0m
+[0;32mI (38976) ECG: Payload: {"ts":38424,"values":{"ECG":2724,"BPM":37}}[0m
+[0;31mE (38976) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (38986) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (38986) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (38996) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (39096) ECG: ECG Value: 3142[0m
+[0;32mI (39096) ECG: Payload: {"ts":38544,"values":{"ECG":3142,"BPM":37}}[0m
+[0;31mE (39096) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (39106) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (39106) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (39116) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (39216) ECG: ECG Value: 3476[0m
+[0;32mI (39216) ECG: Payload: {"ts":38664,"values":{"ECG":3476,"BPM":37}}[0m
+[0;31mE (39216) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (39226) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (39226) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (39236) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (39336) ECG: ECG Value: 4095[0m
+[0;32mI (39336) ECG: Detected BPM: 43[0m
+[0;32mI (39636) ECG: Payload: {"ts":39083,"values":{"ECG":4095,"BPM":43}}[0m
+[0;31mE (39636) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (39636) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (39646) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (39656) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (39756) ECG: ECG Value: 4095[0m
+[0;32mI (39756) ECG: Payload: {"ts":39204,"values":{"ECG":4095,"BPM":43}}[0m
+[0;31mE (39756) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (39766) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (39766) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (39776) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (39876) ECG: ECG Value: 3575[0m
+[0;32mI (39876) ECG: Payload: {"ts":39324,"values":{"ECG":3575,"BPM":43}}[0m
+[0;31mE (39876) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (39886) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (39886) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (39896) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (39996) ECG: ECG Value: 570[0m
+[0;32mI (39996) ECG: Payload: {"ts":39444,"values":{"ECG":570,"BPM":43}}[0m
+[0;31mE (39996) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (40006) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (40006) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (40016) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (40116) ECG: ECG Value: 0[0m
+[0;32mI (40116) ECG: Payload: {"ts":39564,"values":{"ECG":0,"BPM":43}}[0m
+[0;31mE (40116) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (40116) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (40126) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (40136) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (40236) ECG: ECG Value: 677[0m
+[0;32mI (40236) ECG: Payload: {"ts":39684,"values":{"ECG":677,"BPM":43}}[0m
+[0;31mE (40236) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (40246) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (40246) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (40256) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (40356) ECG: ECG Value: 1655[0m
+[0;32mI (40356) ECG: Payload: {"ts":39804,"values":{"ECG":1655,"BPM":43}}[0m
+[0;31mE (40356) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (40366) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (40366) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (40376) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (40476) ECG: ECG Value: 2186[0m
+[0;32mI (40476) ECG: Payload: {"ts":39924,"values":{"ECG":2186,"BPM":43}}[0m
+[0;31mE (40476) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (40486) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (40486) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (40496) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (40596) ECG: ECG Value: 2969[0m
+[0;32mI (40596) ECG: Payload: {"ts":40044,"values":{"ECG":2969,"BPM":43}}[0m
+[0;31mE (40596) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (40606) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (40606) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (40616) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (40716) ECG: ECG Value: 3634[0m
+[0;32mI (40716) ECG: Payload: {"ts":40164,"values":{"ECG":3634,"BPM":43}}[0m
+[0;31mE (40716) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (40726) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (40726) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (40736) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (40836) ECG: ECG Value: 4048[0m
+[0;32mI (40836) ECG: Detected BPM: 40[0m
+[0;32mI (41136) ECG: Payload: {"ts":40583,"values":{"ECG":4048,"BPM":40}}[0m
+[0;31mE (41136) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (41136) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (41146) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (41156) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (41256) ECG: ECG Value: 4095[0m
+[0;32mI (41256) ECG: Detected BPM: 142[0m
+[0;32mI (41556) ECG: Payload: {"ts":41003,"values":{"ECG":4095,"BPM":142}}[0m
+[0;31mE (41556) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (41556) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (41566) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (41576) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (41676) ECG: ECG Value: 4095[0m
+[0;32mI (41676) ECG: Payload: {"ts":41124,"values":{"ECG":4095,"BPM":142}}[0m
+[0;31mE (41676) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (41686) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (41686) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (41696) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (41796) ECG: ECG Value: 662[0m
+[0;32mI (41796) ECG: Payload: {"ts":41244,"values":{"ECG":662,"BPM":142}}[0m
+[0;31mE (41796) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (41806) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (41806) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (41816) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (41916) ECG: ECG Value: 70[0m
+[0;32mI (41916) ECG: Payload: {"ts":41364,"values":{"ECG":70,"BPM":142}}[0m
+[0;31mE (41916) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (41926) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (41926) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (41936) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (42036) ECG: ECG Value: 627[0m
+[0;32mI (42036) ECG: Payload: {"ts":41484,"values":{"ECG":627,"BPM":142}}[0m
+[0;31mE (42036) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (42046) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (42046) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (42056) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (42156) ECG: ECG Value: 1424[0m
+[0;32mI (42156) ECG: Payload: {"ts":41604,"values":{"ECG":1424,"BPM":142}}[0m
+[0;31mE (42156) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (42166) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (42166) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (42176) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (42276) ECG: ECG Value: 2477[0m
+[0;32mI (42276) ECG: Payload: {"ts":41724,"values":{"ECG":2477,"BPM":142}}[0m
+[0;31mE (42276) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (42286) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (42286) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (42296) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (42396) ECG: ECG Value: 3706[0m
+[0;32mI (42396) ECG: Payload: {"ts":41844,"values":{"ECG":3706,"BPM":142}}[0m
+[0;31mE (42396) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (42406) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (42406) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (42416) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (42516) ECG: ECG Value: 4082[0m
+[0;32mI (42516) ECG: Detected BPM: 47[0m
+[0;32mI (42816) ECG: Payload: {"ts":42263,"values":{"ECG":4082,"BPM":47}}[0m
+[0;31mE (42816) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (42816) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (42826) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (42836) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (42936) ECG: ECG Value: 4095[0m
+[0;32mI (42936) ECG: Detected BPM: 142[0m
+[0;32mI (43236) ECG: Payload: {"ts":42683,"values":{"ECG":4095,"BPM":142}}[0m
+[0;31mE (43236) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (43236) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (43246) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (43256) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (43356) ECG: ECG Value: 764[0m
+[0;32mI (43356) ECG: Payload: {"ts":42804,"values":{"ECG":764,"BPM":142}}[0m
+[0;31mE (43356) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (43366) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (43366) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (43376) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (43476) ECG: ECG Value: 1123[0m
+[0;32mI (43476) ECG: Payload: {"ts":42924,"values":{"ECG":1123,"BPM":142}}[0m
+[0;31mE (43476) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (43486) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (43486) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (43496) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (43596) ECG: ECG Value: 1819[0m
+[0;32mI (43596) ECG: Payload: {"ts":43044,"values":{"ECG":1819,"BPM":142}}[0m
+[0;31mE (43596) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (43606) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (43606) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (43616) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (43716) ECG: ECG Value: 2501[0m
+[0;32mI (43716) ECG: Payload: {"ts":43164,"values":{"ECG":2501,"BPM":142}}[0m
+[0;31mE (43716) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (43726) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (43726) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (43736) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (43836) ECG: ECG Value: 4095[0m
+[0;32mI (43836) ECG: Detected BPM: 66[0m
+[0;32mI (44136) ECG: Payload: {"ts":43583,"values":{"ECG":4095,"BPM":66}}[0m
+[0;31mE (44136) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (44136) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (44146) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (44156) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (44256) ECG: ECG Value: 4095[0m
+[0;32mI (44256) ECG: Payload: {"ts":43704,"values":{"ECG":4095,"BPM":66}}[0m
+[0;31mE (44256) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (44266) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (44266) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (44276) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (44376) ECG: ECG Value: 4095[0m
+[0;32mI (44376) ECG: Payload: {"ts":43824,"values":{"ECG":4095,"BPM":66}}[0m
+[0;31mE (44376) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (44386) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (44386) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (44396) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (44496) ECG: ECG Value: 2710[0m
+[0;32mI (44496) ECG: Payload: {"ts":43944,"values":{"ECG":2710,"BPM":66}}[0m
+[0;31mE (44496) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (44506) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (44506) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (44516) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (44616) ECG: ECG Value: 303[0m
+[0;32mI (44616) ECG: Payload: {"ts":44064,"values":{"ECG":303,"BPM":66}}[0m
+[0;31mE (44616) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (44626) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (44626) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (44636) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (44736) ECG: ECG Value: 16[0m
+[0;32mI (44736) ECG: Payload: {"ts":44184,"values":{"ECG":16,"BPM":66}}[0m
+[0;31mE (44736) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (44746) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (44746) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (44756) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (44856) ECG: ECG Value: 1043[0m
+[0;32mI (44856) ECG: Payload: {"ts":44304,"values":{"ECG":1043,"BPM":66}}[0m
+[0;31mE (44856) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (44866) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (44866) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (44876) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (44976) ECG: ECG Value: 1255[0m
+[0;32mI (44976) ECG: Payload: {"ts":44424,"values":{"ECG":1255,"BPM":66}}[0m
+[0;31mE (44976) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (44986) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (44986) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (44996) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (45096) ECG: ECG Value: 2287[0m
+[0;32mI (45096) ECG: Payload: {"ts":44544,"values":{"ECG":2287,"BPM":66}}[0m
+[0;31mE (45096) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (45106) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (45106) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (45116) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (45216) ECG: ECG Value: 3121[0m
+[0;32mI (45216) ECG: Payload: {"ts":44664,"values":{"ECG":3121,"BPM":66}}[0m
+[0;31mE (45216) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (45226) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (45226) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (45236) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (45336) ECG: ECG Value: 4095[0m
+[0;32mI (45336) ECG: Detected BPM: 40[0m
+[0;32mI (45636) ECG: Payload: {"ts":45083,"values":{"ECG":4095,"BPM":40}}[0m
+[0;31mE (45636) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (45636) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (45646) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (45656) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (45756) ECG: ECG Value: 4095[0m
+[0;32mI (45756) ECG: Payload: {"ts":45204,"values":{"ECG":4095,"BPM":40}}[0m
+[0;31mE (45756) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (45766) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (45766) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (45776) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (45876) ECG: ECG Value: 3915[0m
+[0;32mI (45876) ECG: Payload: {"ts":45324,"values":{"ECG":3915,"BPM":40}}[0m
+[0;31mE (45876) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (45886) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (45886) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (45896) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (45996) ECG: ECG Value: 272[0m
+[0;32mI (45996) ECG: Payload: {"ts":45444,"values":{"ECG":272,"BPM":40}}[0m
+[0;31mE (45996) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (46006) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (46006) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (46016) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (46116) ECG: ECG Value: 0[0m
+[0;32mI (46116) ECG: Payload: {"ts":45564,"values":{"ECG":0,"BPM":40}}[0m
+[0;31mE (46116) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (46116) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (46126) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (46136) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (46236) ECG: ECG Value: 635[0m
+[0;32mI (46236) ECG: Payload: {"ts":45684,"values":{"ECG":635,"BPM":40}}[0m
+[0;31mE (46236) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (46246) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (46246) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (46256) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (46356) ECG: ECG Value: 1466[0m
+[0;32mI (46356) ECG: Payload: {"ts":45804,"values":{"ECG":1466,"BPM":40}}[0m
+[0;31mE (46356) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (46366) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (46366) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (46376) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (46476) ECG: ECG Value: 2395[0m
+[0;32mI (46476) ECG: Payload: {"ts":45924,"values":{"ECG":2395,"BPM":40}}[0m
+[0;31mE (46476) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (46486) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (46486) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (46496) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (46596) ECG: ECG Value: 3443[0m
+[0;32mI (46596) ECG: Payload: {"ts":46044,"values":{"ECG":3443,"BPM":40}}[0m
+[0;31mE (46596) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (46606) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (46606) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (46616) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (46716) ECG: ECG Value: 4095[0m
+[0;32mI (46716) ECG: Detected BPM: 43[0m
+[0;32mI (47016) ECG: Payload: {"ts":46463,"values":{"ECG":4095,"BPM":43}}[0m
+[0;31mE (47016) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (47016) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (47026) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (47036) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (47136) ECG: ECG Value: 219[0m
+[0;32mI (47136) ECG: Payload: {"ts":46584,"values":{"ECG":219,"BPM":43}}[0m
+[0;31mE (47136) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (47146) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (47146) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (47156) ECG: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m

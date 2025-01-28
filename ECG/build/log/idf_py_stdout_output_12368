@@ -1,0 +1,459 @@
+ets Jul 29 2019 12:21:46
+ets Jul 29 2019 12:21:46
+ets Jul 29 2019 12:21:46
+ets Jul 29 2019 12:21:46
+ets Jul 29 2019 12:21:46
+ets Jul 29 2019 12:21:46
+ets Jul 29 2019 12:21:46
+ets Jul 29 2019 12:21:46
+ets Jul 29 2019 12:21:46
+ets Jul 29 2019 12:21:46
+ets Jul 29 2019 12:21:46
+ets Jul 29 2019 12:21:46
+ets Jul 29 2019 12:21:46
+ets Jul 29 2019 12:21:46
+ets Jul 29 2019 12:21:46
+ets Jul 29 2019 12:21:46
+ets Jul 29 2019 12:21:46
+ets Jul 29 2019 12:21:46
+ets Jul 29 2019 12:21:46
+ets Jul 29 2019 12:21:46
+ets Jul 29 2019 12:21:46
+ets Jul 29 2019 12:21:46
+ets Jul 29 2019 12:21:46
+ets Jul 29 2019 12:21:46
+ets Jul 29 2019 12:21:46
+ets Jul 29 2019 12:21:46
+ets Jul 29 2019 12:21:46
+ets Jul 29 2019 12:21:46
+ets Jul 29 2019 12:21:46
+ets Jul 29 2019 12:21:46
+ets Jul 29 2019 12:21:46
+ets Jul 29 2019 12:21:46
+ets Jul 29 2019 12:21:46
+ets Jul 29 2019 12:21:46
+ets Jul 29 2WERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jan  8 2025 13:10:15[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=25994h (154004) map[0m
+[0;32mI (158) esp_image: segment 1: paddr=000359bc vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=000359c8 vaddr=3ffb0000 size=03f10h ( 16144) load[0m
+[0;32mI (169) esp_image: segment 3: paddr=000398e0 vaddr=40080000 size=06738h ( 26424) load[0m
+[0;32mI (182) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a489ch (673948) map[0m
+[0;32mI (413) esp_image: segment 5: paddr=000e48c4 vaddr=40086738 size=10c14h ( 68628) load[0m
+[0;32mI (452) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (452) boot: Disabling RNG early entropy source...[0m
+[0;32mI (464) cpu_start: Multicore app[0m
+[0;32mI (473) cpu_start: Pro cpu start user code[0m
+[0;32mI (473) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (473) app_init: Application information:[0m
+[0;32mI (476) app_init: Project name:     Hito-4[0m
+[0;32mI (480) app_init: App version:      1[0m
+[0;32mI (485) app_init: Compile time:     Jan  8 2025 13:09:44[0m
+[0;32mI (491) app_init: ELF file SHA256:  18fe59f1d554c6e4...[0m
+[0;32mI (497) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (502) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (507) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (512) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (517) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (524) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (530) heap_init: At 3FFB8750 len 000278B0 (158 KiB): DRAM[0m
+[0;32mI (536) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (542) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (549) heap_init: At 4009734C len 00008CB4 (35 KiB): IRAM[0m
+[0;32mI (557) spi_flash: detected chip: generic[0m
+[0;32mI (560) spi_flash: flash io: dio[0m
+[0;33mW (564) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (578) main_task: Started on CPU0[0m
+[0;32mI (588) main_task: Calling app_main()[0m
+[0;32mI (608) example_connect: Start example_connect.[0m
+[0;32mI (618) wifi:wifi driver task: 3ffc0388, prio:23, stack:6656, core=0[0m
+[0;32mI (628) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (628) wifi:wifi certification version: v7.0[0m
+[0;32mI (628) wifi:config NVS flash: enabled[0m
+[0;32mI (628) wifi:config nano formating: disabled[0m
+[0;32mI (628) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (638) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (638) wifi:Init management short buffer num: 32[0m
+[0;32mI (648) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (648) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (658) wifi:Init static rx buffer num: 10[0m
+[0;32mI (658) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (658) wifi_init: rx ba win: 6[0m
+[0;32mI (668) wifi_init: accept mbox: 6[0m
+[0;32mI (668) wifi_init: tcpip mbox: 32[0m
+[0;32mI (668) wifi_init: udp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp tx win: 5744[0m
+[0;32mI (688) wifi_init: tcp rx win: 5744[0m
+[0;32mI (688) wifi_init: tcp mss: 1440[0m
+[0;32mI (688) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (698) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (708) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;32mI (788) wifi:mode : sta (f0:24:f9:f7:96:18)[0m
+[0;32mI (788) wifi:enable tsf[0m
+[0;32mI (798) example_connect: Connecting to iPhone nacho...[0m
+[0;33mW (798) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (808) example_connect: Waiting for IP(s)[0m
+[0;32mI (3218) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (5628) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (8048) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (10458) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (12868) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (15288) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (17698) example_connect: WiFi Connect failed 7 times, stop reconnect.[0m
+
+assert failed: spinlock_acquire spinlock.h:140 (lock->count == 0)
+
+
+Backtrace: 0x40081a4a:0x3ffba660 0x400894cd:0x3ffba680 0x40091265:0x3ffba6a0 0x4008a25e:0x3ffba7c0 0x40089e08:0x3ffba7f0 0x400d7f38:0x3ffba830 0x400d812b:0x3ffba850 0x400d7a13:0x3ffba9f0 0x400d77af:0x3ffbaa10 0x401728cf:0x3ffbaa50 0x40089fd9:0x3ffbaa80
+
+
+
+
+ELF file SHA256: 18fe59f1d554c6e4
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jan  8 2025 13:10:15[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=25994h (154004) map[0m
+[0;32mI (158) esp_image: segment 1: paddr=000359bc vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=000359c8 vaddr=3ffb0000 size=03f10h ( 16144) load[0m
+[0;32mI (169) esp_image: segment 3: paddr=000398e0 vaddr=40080000 size=06738h ( 26424) load[0m
+[0;32mI (182) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a489ch (673948) map[0m
+[0;32mI (413) esp_image: segment 5: paddr=000e48c4 vaddr=40086738 size=10c14h ( 68628) load[0m
+[0;32mI (452) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (452) boot: Disabling RNG early entropy source...[0m
+[0;32mI (464) cpu_start: Multicore app[0m
+[0;32mI (473) cpu_start: Pro cpu start user code[0m
+[0;32mI (473) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (473) app_init: Application information:[0m
+[0;32mI (476) app_init: Project name:     Hito-4[0m
+[0;32mI (480) app_init: App version:      1[0m
+[0;32mI (485) app_init: Compile time:     Jan  8 2025 13:09:44[0m
+[0;32mI (491) app_init: ELF file SHA256:  18fe59f1d554c6e4...[0m
+[0;32mI (497) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (502) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (507) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (512) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (517) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (524) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (530) heap_init: At 3FFB8750 len 000278B0 (158 KiB): DRAM[0m
+[0;32mI (536) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (542) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (549) heap_init: At 4009734C len 00008CB4 (35 KiB): IRAM[0m
+[0;32mI (557) spi_flash: detected chip: generic[0m
+[0;32mI (560) spi_flash: flash io: dio[0m
+[0;33mW (563) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (578) main_task: Started on CPU0[0m
+[0;32mI (588) main_task: Calling app_main()[0m
+[0;32mI (608) example_connect: Start example_connect.[0m
+[0;32mI (618) wifi:wifi driver task: 3ffc0388, prio:23, stack:6656, core=0[0m
+[0;32mI (628) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (628) wifi:wifi certification version: v7.0[0m
+[0;32mI (628) wifi:config NVS flash: enabled[0m
+[0;32mI (628) wifi:config nano formating: disabled[0m
+[0;32mI (628) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (638) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (638) wifi:Init management short buffer num: 32[0m
+[0;32mI (648) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (648) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (658) wifi:Init static rx buffer num: 10[0m
+[0;32mI (658) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (658) wifi_init: rx ba win: 6[0m
+[0;32mI (668) wifi_init: accept mbox: 6[0m
+[0;32mI (668) wifi_init: tcpip mbox: 32[0m
+[0;32mI (668) wifi_init: udp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp tx win: 5744[0m
+[0;32mI (688) wifi_init: tcp rx win: 5744[0m
+[0;32mI (688) wifi_init: tcp mss: 1440[0m
+[0;32mI (688) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (698) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (708) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;32mI (798) wifi:mode : sta (f0:24:f9:f7:96:18)[0m
+[0;32mI (798) wifi:enable tsf[0m
+[0;32mI (798) example_connect: Connecting to iPhone nacho...[0m
+[0;33mW (798) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (808) example_connect: Waiting for IP(s)[0m
+[0;32mI (3218) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (5628) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (8298) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (8298) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (9298) wifi:state: auth -> init (0x200)[0m
+[0;32mI (9298) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (9298) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (11718) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (11728) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (11748) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (11808) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (11848) wifi:connected with iPhone nacho, aid = 1, channel 6, BW20, bssid = 8a:e6:8a:57:54:38[0m
+[0;32mI (11848) wifi:security: WPA2-PSK, phy: bgn, rssi: -48[0m
+[0;32mI (11858) wifi:pm start, type: 1[0m
+
+[0;32mI (11858) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (11898) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (12868) esp_netif_handlers: example_netif_sta ip: 172.20.10.3, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (12868) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 172.20.10.3[0m
+[0;32mI (13608) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:f224:f9ff:fef7:9618, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (13608) example_common: Connected to example_netif_sta[0m
+[0;32mI (13618) example_common: - IPv4 address: 172.20.10.3,[0m
+[0;32mI (13618) example_common: - IPv6 address: fe80:0000:0000:0000:f224:f9ff:fef7:9618, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (13638) ECG: [APP] Startup..[0m
+[0;32mI (13638) ECG: [APP] Free memory: 229540 bytes[0m
+[0;32mI (13638) ECG: [APP] IDF version: v5.3.1-dirty[0m
+[0;32mI (13648) ECG: LDR Reading: 689[0m
+[0;32mI (13648) ECG: Payload: {"ts":13099,"values":{"LDR":689}}[0m
+[0;32mI (13668) wifi:<ba-add>idx:0 (ifx:0, 8a:e6:8a:57:54:38), tid:0, ssn:2, winSize:64[0m
+[0;32mI (14368) ECG: Data sent successfully[0m
+[0;32mI (14378) ECG: LDR Reading: 204[0m
+[0;32mI (14378) ECG: Payload: {"ts":13823,"values":{"LDR":204}}[0m
+[0;32mI (14878) ECG: Data sent successfully[0m
+[0;32mI (14898) ECG: LDR Reading: 197[0m
+[0;32mI (14898) ECG: Payload: {"ts":14343,"values":{"LDR":197}}[0m
+[0;32mI (15288) ECG: Data sent successfully[0m
+[0;32mI (15298) ECG: LDR Reading: 205[0m
+[0;32mI (15298) ECG: Payload: {"ts":14743,"values":{"LDR":205}}[0m
+[0;32mI (15638) ECG: Data sent successfully[0m
+[0;32mI (15648) ECG: LDR Reading: 198[0m
+[0;32mI (15648) ECG: Payload: {"ts":15093,"values":{"LDR":198}}[0m
+[0;32mI (16108) ECG: Data sent successfully[0m
+[0;32mI (16128) ECG: LDR Reading: 206[0m
+[0;32mI (16128) ECG: Payload: {"ts":15573,"values":{"LDR":206}}[0m
+[0;32mI (16518) ECG: Data sent successfully[0m
+[0;32mI (16528) ECG: LDR Reading: 208[0m
+[0;32mI (16528) ECG: Payload: {"ts":15973,"values":{"LDR":208}}[0m
+[0;32mI (16928) ECG: Data sent successfully[0m
+[0;32mI (16938) ECG: LDR Reading: 206[0m
+[0;32mI (16938) ECG: Payload: {"ts":16383,"values":{"LDR":206}}[0m
+[0;32mI (17338) ECG: Data sent successfully[0m
+[0;32mI (17358) ECG: LDR Reading: 208[0m
+[0;32mI (17358) ECG: Payload: {"ts":16803,"values":{"LDR":208}}[0m
+[0;32mI (17848) ECG: Data sent successfully[0m
+[0;32mI (17858) ECG: LDR Reading: 203[0m
+[0;32mI (17858) ECG: Payload: {"ts":17303,"values":{"LDR":203}}[0m
+[0;32mI (18258) ECG: Data sent successfully[0m
+[0;32mI (18278) ECG: LDR Reading: 205[0m
+[0;32mI (18278) ECG: Payload: {"ts":17723,"values":{"LDR":205}}[0m
+[0;32mI (18668) ECG: Data sent successfully[0m
+[0;32mI (18678) ECG: LDR Reading: 189[0m
+[0;32mI (18678) ECG: Payload: {"ts":18123,"values":{"LDR":189}}[0m
+[0;32mI (19078) ECG: Data sent successfully[0m
+[0;32mI (19088) ECG: LDR Reading: 206[0m
+[0;32mI (19088) ECG: Payload: {"ts":18533,"values":{"LDR":206}}[0m
+[0;32mI (19488) ECG: Data sent successfully[0m
+[0;32mI (19498) ECG: LDR Reading: 202[0m
+[0;32mI (19498) ECG: Payload: {"ts":18943,"values":{"LDR":202}}[0m
+[0;32mI (19898) ECG: Data sent successfully[0m
+[0;32mI (19908) ECG: LDR Reading: 208[0m
+[0;32mI (19908) ECG: Payload: {"ts":19355,"values":{"LDR":208}}[0m
+[0;32mI (20328) ECG: Data sent successfully[0m
+[0;32mI (20338) ECG: LDR Reading: 203[0m
+[0;32mI (20338) ECG: Payload: {"ts":19783,"values":{"LDR":203}}[0m
+[0;32mI (20718) ECG: Data sent successfully[0m
+[0;32mI (20728) ECG: LDR Reading: 204[0m
+[0;32mI (20728) ECG: Payload: {"ts":20173,"values":{"LDR":204}}[0m
+[0;32mI (21128) ECG: Data sent successfully[0m
+[0;32mI (21138) ECG: LDR Reading: 204[0m
+[0;32mI (21138) ECG: Payload: {"ts":20583,"values":{"LDR":204}}[0m
+[0;32mI (21538) ECG: Data sent successfully[0m
+[0;32mI (21548) ECG: LDR Reading: 208[0m
+[0;32mI (21548) ECG: Payload: {"ts":20993,"values":{"LDR":208}}[0m
+[0;32mI (21948) ECG: Data sent successfully[0m
+[0;32mI (21958) ECG: LDR Reading: 204[0m
+[0;32mI (21958) ECG: Payload: {"ts":21403,"values":{"LDR":204}}[0m
+[0;32mI (22458) ECG: Data sent successfully[0m
+[0;32mI (22468) ECG: LDR Reading: 198[0m
+[0;32mI (22468) ECG: Payload: {"ts":21913,"values":{"LDR":198}}[0m
+[0;32mI (22868) ECG: Data sent successfully[0m
+[0;32mI (22878) ECG: LDR Reading: 203[0m
+[0;32mI (22878) ECG: Payload: {"ts":22323,"values":{"LDR":203}}[0m
+[0;32mI (23278) ECG: Data sent successfully[0m
+[0;32mI (23288) ECG: LDR Reading: 194[0m
+[0;32mI (23288) ECG: Payload: {"ts":22733,"values":{"LDR":194}}[0m
+[0;32mI (23698) ECG: Data sent successfully[0m
+[0;32mI (23708) ECG: LDR Reading: 188[0m
+[0;32mI (23708) ECG: Payload: {"ts":23153,"values":{"LDR":188}}[0m
+[0;32mI (24218) ECG: Data sent successfully[0m
+[0;32mI (24228) ECG: LDR Reading: 196[0m
+[0;32mI (24228) ECG: Payload: {"ts":23673,"values":{"LDR":196}}[0m
+[0;32mI (24608) ECG: Data sent successfully[0m
+[0;32mI (24618) ECG: LDR Reading: 195[0m
+[0;32mI (24618) ECG: Payload: {"ts":24063,"values":{"LDR":195}}[0m
+[0;32mI (25018) ECG: Data sent successfully[0m
+[0;32mI (25028) ECG: LDR Reading: 198[0m
+[0;32mI (25028) ECG: Payload: {"ts":24473,"values":{"LDR":198}}[0m
+[0;32mI (25428) ECG: Data sent successfully[0m
+[0;32mI (25438) ECG: LDR Reading: 204[0m
+[0;32mI (25438) ECG: Payload: {"ts":24883,"values":{"LDR":204}}[0m
+[0;32mI (25838) ECG: Data sent successfully[0m
+[0;32mI (25848) ECG: LDR Reading: 189[0m
+[0;32mI (25848) ECG: Payload: {"ts":25293,"values":{"LDR":189}}[0m
+[0;32mI (26248) ECG: Data sent successfully[0m
+[0;32mI (26258) ECG: LDR Reading: 192[0m
+[0;32mI (26258) ECG: Payload: {"ts":25703,"values":{"LDR":192}}[0m
+[0;32mI (26658) ECG: Data sent successfully[0m
+[0;32mI (26668) ECG: LDR Reading: 190[0m
+[0;32mI (26668) ECG: Payload: {"ts":26113,"values":{"LDR":190}}[0m
+[0;32mI (27058) ECG: Data sent successfully[0m
+[0;32mI (27078) ECG: LDR Reading: 199[0m
+[0;32mI (27078) ECG: Payload: {"ts":26523,"values":{"LDR":199}}[0m
+[0;32mI (27468) ECG: Data sent successfully[0m
+[0;32mI (27488) ECG: LDR Reading: 186[0m
+[0;32mI (27488) ECG: Payload: {"ts":26933,"values":{"LDR":186}}[0m
+[0;32mI (27878) ECG: Data sent successfully[0m
+[0;32mI (27888) ECG: LDR Reading: 4095[0m
+[0;32mI (27888) ECG: Payload: {"ts":27333,"values":{"LDR":4095}}[0m
+[0;32mI (28298) ECG: Data sent successfully[0m
+[0;32mI (28308) ECG: LDR Reading: 4095[0m
+[0;32mI (28308) ECG: Payload: {"ts":27753,"values":{"LDR":4095}}[0m
+[0;32mI (28808) ECG: Data sent successfully[0m
+[0;32mI (28818) ECG: LDR Reading: 790[0m
+[0;32mI (28818) ECG: Payload: {"ts":28263,"values":{"LDR":790}}[0m
+[0;32mI (29218) ECG: Data sent successfully[0m
+[0;32mI (29228) ECG: LDR Reading: 2466[0m
+[0;32mI (29228) ECG: Payload: {"ts":28673,"values":{"LDR":2466}}[0m
+[0;32mI (29628) ECG: Data sent successfully[0m
+[0;32mI (29638) ECG: LDR Reading: 4095[0m
+[0;32mI (29638) ECG: Payload: {"ts":29083,"values":{"LDR":4095}}[0m
+[0;32mI (30038) ECG: Data sent successfully[0m
+[0;32mI (30048) ECG: LDR Reading: 3909[0m
+[0;32mI (30048) ECG: Payload: {"ts":29493,"values":{"LDR":3909}}[0m
+[0;32mI (30438) ECG: Data sent successfully[0m
+[0;32mI (30448) ECG: LDR Reading: 3984[0m
+[0;32mI (30448) ECG: Payload: {"ts":29893,"values":{"LDR":3984}}[0m
+[0;32mI (30848) ECG: Data sent successfully[0m
+[0;32mI (30858) ECG: LDR Reading: 3467[0m
+[0;32mI (30858) ECG: Payload: {"ts":30303,"values":{"LDR":3467}}[0m
+[0;32mI (31258) ECG: Data sent successfully[0m
+[0;32mI (31268) ECG: LDR Reading: 4095[0m
+[0;32mI (31268) ECG: Payload: {"ts":30713,"values":{"LDR":4095}}[0m
+[0;32mI (31668) ECG: Data sent successfully[0m
+[0;32mI (31678) ECG: LDR Reading: 3071[0m
+[0;32mI (31678) ECG: Payload: {"ts":31123,"values":{"LDR":3071}}[0m
+[0;32mI (32118) ECG: Data sent successfully[0m
+[0;32mI (32128) ECG: LDR Reading: 3691[0m
+[0;32mI (32128) ECG: Payload: {"ts":31573,"values":{"LDR":3691}}[0m
+[0;32mI (32598) ECG: Data sent successfully[0m
+[0;32mI (32608) ECG: LDR Reading: 3033[0m
+[0;32mI (32608) ECG: Payload: {"ts":32053,"values":{"LDR":3033}}[0m
+[0;32mI (33018) ECG: Data sent successfully[0m
+[0;32mI (33028) ECG: LDR Reading: 1444[0m
+[0;32mI (33028) ECG: Payload: {"ts":32473,"values":{"LDR":1444}}[0m
+[0;32mI (33408) ECG: Data sent successfully[0m
+[0;32mI (33418) ECG: LDR Reading: 3126[0m
+[0;32mI (33418) ECG: Payload: {"ts":32863,"values":{"LDR":3126}}[0m
+[0;32mI (33818) ECG: Data sent successfully[0m
+[0;32mI (33838) ECG: LDR Reading: 3443[0m
+[0;32mI (33838) ECG: Payload: {"ts":33283,"values":{"LDR":3443}}[0m
+[0;32mI (34228) ECG: Data sent successfully[0m
+[0;32mI (34238) ECG: LDR Reading: 3290[0m
+[0;32mI (34238) ECG: Payload: {"ts":33683,"values":{"LDR":3290}}[0m
+[0;32mI (34638) ECG: Data sent successfully[0m
+[0;32mI (34648) ECG: LDR Reading: 4095[0m
+[0;32mI (34648) ECG: Payload: {"ts":34093,"values":{"LDR":4095}}[0m
+[0;32mI (35088) ECG: Data sent successfully[0m
+[0;32mI (35098) ECG: LDR Reading: 3049[0m
+[0;32mI (35098) ECG: Payload: {"ts":34543,"values":{"LDR":3049}}[0m
+[0;32mI (35558) ECG: Data sent successfully[0m
+[0;32mI (35578) ECG: LDR Reading: 3095[0m
+[0;32mI (35578) ECG: Payload: {"ts":35023,"values":{"LDR":3095}}[0m
+[0;32mI (35968) ECG: Data sent successfully[0m
+[0;32mI (35978) ECG: LDR Reading: 3462[0m
+[0;32mI (35978) ECG: Payload: {"ts":35423,"values":{"LDR":3462}}[0m

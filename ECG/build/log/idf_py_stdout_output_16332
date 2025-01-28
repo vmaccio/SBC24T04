@@ -1,0 +1,847 @@
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jan  8 2025 13:10:15[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=25468h (152680) map[0m
+[0;32mI (157) esp_image: segment 1: paddr=00035490 vaddr=3ffb0000 size=03f00h ( 16128) load[0m
+[0;32mI (163) esp_image: segment 2: paddr=00039398 vaddr=40080000 size=06c80h ( 27776) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9d9a4h (645540) map[0m
+[0;32mI (396) esp_image: segment 4: paddr=000dd9cc vaddr=40086c80 size=106cch ( 67276) load[0m
+[0;32mI (434) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (434) boot: Disabling RNG early entropy source...[0m
+[0;32mI (446) cpu_start: Multicore app[0m
+[0;32mI (455) cpu_start: Pro cpu start user code[0m
+[0;32mI (455) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (455) app_init: Application information:[0m
+[0;32mI (458) app_init: Project name:     Hito-4[0m
+[0;32mI (462) app_init: App version:      1[0m
+[0;32mI (467) app_init: Compile time:     Jan  8 2025 13:09:44[0m
+[0;32mI (473) app_init: ELF file SHA256:  c49b43ae916bbecb...[0m
+[0;32mI (479) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (484) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (489) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (494) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (499) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (506) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (512) heap_init: At 3FFB8730 len 000278D0 (158 KiB): DRAM[0m
+[0;32mI (518) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (524) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (531) heap_init: At 4009734C len 00008CB4 (35 KiB): IRAM[0m
+[0;32mI (539) spi_flash: detected chip: generic[0m
+[0;32mI (542) spi_flash: flash io: dio[0m
+[0;33mW (545) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (559) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (568) main_task: Started on CPU0[0m
+[0;32mI (578) main_task: Calling app_main()[0m
+[0;32mI (598) example_connect: Start example_connect.[0m
+[0;32mI (608) wifi:wifi driver task: 3ffc03ec, prio:23, stack:6656, core=0[0m
+[0;32mI (618) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (618) wifi:wifi certification version: v7.0[0m
+[0;32mI (618) wifi:config NVS flash: enabled[0m
+[0;32mI (618) wifi:config nano formating: disabled[0m
+[0;32mI (618) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (628) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (628) wifi:Init management short buffer num: 32[0m
+[0;32mI (638) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (638) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (648) wifi:Init static rx buffer num: 10[0m
+[0;32mI (648) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (648) wifi_init: rx ba win: 6[0m
+[0;32mI (658) wifi_init: accept mbox: 6[0m
+[0;32mI (658) wifi_init: tcpip mbox: 32[0m
+[0;32mI (668) wifi_init: udp mbox: 6[0m
+[0;32mI (668) wifi_init: tcp mbox: 6[0m
+[0;32mI (668) wifi_init: tcp tx win: 5744[0m
+[0;32mI (678) wifi_init: tcp rx win: 5744[0m
+[0;32mI (678) wifi_init: tcp mss: 1440[0m
+[0;32mI (678) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (688) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (698) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;33mW (778) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;32mI (808) wifi:mode : sta (f0:24:f9:f7:96:18)[0m
+[0;32mI (808) wifi:enable tsf[0m
+[0;32mI (818) example_connect: Connecting to iPhone nacho...[0m
+[0;33mW (818) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (818) example_connect: Waiting for IP(s)[0m
+[0;32mI (3238) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (5648) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (8068) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (10478) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (12898) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (15318) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (17728) example_connect: WiFi Connect failed 7 times, stop reconnect.[0m
+
+assert failed: spinlock_acquire spinlock.h:140 (lock->count == 0)
+
+
+Backtrace: 0x40081a4a:0x3ffba650 0x400894cd:0x3ffba670 0x40091265:0x3ffba690 0x4008a25e:0x3ffba7b0 0x40089e08:0x3ffba7e0 0x400d7ebc:0x3ffba820 0x400d80af:0x3ffba840 0x400d7997:0x3ffba9e0 0x400d775f:0x3ffbaa00 0x4016b9d3:0x3ffbaa30 0x40089fd9:0x3ffbaa60
+
+
+
+
+ELF file SHA256: c49b43ae916bbecb
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jan  8 2025 13:10:15[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=25468h (152680) map[0m
+[0;32mI (157) esp_image: segment 1: paddr=00035490 vaddr=3ffb0000 size=03f00h ( 16128) load[0m
+[0;32mI (163) esp_image: segment 2: paddr=00039398 vaddr=40080000 size=06c80h ( 27776) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9d9a4h (645540) map[0m
+[0;32mI (396) esp_image: segment 4: paddr=000dd9cc vaddr=40086c80 size=106cch ( 67276) load[0m
+[0;32mI (434) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (434) boot: Disabling RNG early entropy source...[0m
+[0;32mI (446) cpu_start: Multicore app[0m
+[0;32mI (455) cpu_start: Pro cpu start user code[0m
+[0;32mI (455) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (455) app_init: Application information:[0m
+[0;32mI (458) app_init: Project name:     Hito-4[0m
+[0;32mI (462) app_init: App version:      1[0m
+[0;32mI (467) app_init: Compile time:     Jan  8 2025 13:09:44[0m
+[0;32mI (473) app_init: ELF file SHA256:  c49b43ae916bbecb...[0m
+[0;32mI (479) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (484) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (489) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (494) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (499) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (506) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (512) heap_init: At 3FFB8730 len 000278D0 (158 KiB): DRAM[0m
+[0;32mI (518) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (524) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (531) heap_init: At 4009734C len 00008CB4 (35 KiB): IRAM[0m
+[0;32mI (538) spi_flash: detected chip: generic[0m
+[0;32mI (541) spi_flash: flash io: dio[0m
+[0;33mW (545) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (559) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (568) main_task: Started on CPU0[0m
+[0;32mI (578) main_task: Calling app_main()[0m
+[0;32mI (598) example_connect: Start example_connect.[0m
+[0;32mI (608) wifi:wifi driver task: 3ffc03ec, prio:23, stack:6656, core=0[0m
+[0;32mI (618) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (618) wifi:wifi certification version: v7.0[0m
+[0;32mI (618) wifi:config NVS flash: enabled[0m
+[0;32mI (618) wifi:config nano formating: disabled[0m
+[0;32mI (618) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (628) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (628) wifi:Init management short buffer num: 32[0m
+[0;32mI (638) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (638) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (648) wifi:Init static rx buffer num: 10[0m
+[0;32mI (648) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (648) wifi_init: rx ba win: 6[0m
+[0;32mI (658) wifi_init: accept mbox: 6[0m
+[0;32mI (658) wifi_init: tcpip mbox: 32[0m
+[0;32mI (668) wifi_init: udp mbox: 6[0m
+[0;32mI (668) wifi_init: tcp mbox: 6[0m
+[0;32mI (668) wifi_init: tcp tx win: 5744[0m
+[0;32mI (678) wifi_init: tcp rx win: 5744[0m
+[0;32mI (678) wifi_init: tcp mss: 1440[0m
+[0;32mI (678) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (688) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (698) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;32mI (788) wifi:mode : sta (f0:24:f9:f7:96:18)[0m
+[0;32mI (788) wifi:enable tsf[0m
+[0;32mI (788) example_connect: Connecting to iPhone nacho...[0m
+[0;33mW (788) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (798) example_connect: Waiting for IP(s)[0m
+[0;32mI (3208) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (5628) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (8038) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (10458) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (12868) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (15538) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (15538) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (15548) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (15558) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (15658) wifi:connected with iPhone nacho, aid = 1, channel 6, BW20, bssid = 52:98:b0:90:19:d5[0m
+[0;32mI (15658) wifi:security: WPA2-PSK, phy: bgn, rssi: -40[0m
+[0;32mI (15658) wifi:pm start, type: 1[0m
+
+[0;32mI (15668) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (15698) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (16678) esp_netif_handlers: example_netif_sta ip: 172.20.10.3, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (16678) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 172.20.10.3[0m
+[0;32mI (17598) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:f224:f9ff:fef7:9618, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (17598) example_common: Connected to example_netif_sta[0m
+[0;32mI (17608) example_common: - IPv4 address: 172.20.10.3,[0m
+[0;32mI (17608) example_common: - IPv6 address: fe80:0000:0000:0000:f224:f9ff:fef7:9618, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (17618) ECG: [APP] Startup..[0m
+[0;32mI (17628) ECG: [APP] Free memory: 229640 bytes[0m
+[0;32mI (17628) ECG: [APP] IDF version: v5.3.1-dirty[0m
+[0;31mE (17638) ADC: adc1_config_channel_atten(277): invalid channel[0m
+[0;32mI (17648) main_task: Returned from app_main()[0m
+[0;32mI (17648) ECG: ECG Value: 2170[0m
+[0;32mI (17658) ECG: ECG Value: 2104[0m
+[0;32mI (17668) ECG: ECG Value: 2229[0m
+[0;32mI (17678) ECG: ECG Value: 2260[0m
+[0;32mI (17688) ECG: ECG Value: 2257[0m
+[0;32mI (17698) ECG: ECG Value: 2397[0m
+[0;32mI (17708) ECG: ECG Value: 2433[0m
+[0;32mI (17718) ECG: ECG Value: 2294[0m
+[0;32mI (17728) ECG: ECG Value: 2122[0m
+[0;32mI (17738) ECG: ECG Value: 2240[0m
+[0;32mI (17748) ECG: ECG Value: 2324[0m
+[0;32mI (17758) ECG: ECG Value: 2408[0m
+[0;32mI (17768) ECG: ECG Value: 2203[0m
+[0;32mI (17778) ECG: ECG Value: 2272[0m
+[0;32mI (17788) ECG: ECG Value: 2251[0m
+[0;32mI (17798) ECG: ECG Value: 2248[0m
+[0;32mI (17808) ECG: ECG Value: 2329[0m
+[0;32mI (17818) ECG: ECG Value: 2209[0m
+[0;32mI (17828) ECG: ECG Value: 2310[0m
+[0;32mI (17838) ECG: ECG Value: 2293[0m
+[0;32mI (17848) ECG: ECG Value: 2246[0m
+[0;32mI (17858) ECG: ECG Value: 2351[0m
+[0;32mI (17868) ECG: ECG Value: 2282[0m
+[0;32mI (17878) ECG: ECG Value: 2223[0m
+[0;32mI (17888) ECG: ECG Value: 2352[0m
+[0;32mI (17898) ECG: ECG Value: 2286[0m
+[0;32mI (17908) ECG: ECG Value: 2163[0m
+[0;32mI (17918) ECG: ECG Value: 2262[0m
+[0;32mI (17928) ECG: ECG Value: 2433[0m
+[0;32mI (17938) ECG: ECG Value: 2031[0m
+[0;32mI (17948) ECG: ECG Value: 2296[0m
+[0;32mI (17958) ECG: ECG Value: 2332[0m
+[0;32mI (17968) ECG: ECG Value: 2132[0m
+[0;32mI (17978) ECG: ECG Value: 2112[0m
+[0;32mI (17988) ECG: ECG Value: 2143[0m
+[0;32mI (17998) ECG: ECG Value: 2133[0m
+[0;32mI (18008) ECG: ECG Value: 2121[0m
+[0;32mI (18018) ECG: ECG Value: 2095[0m
+[0;32mI (18028) ECG: ECG Value: 2120[0m
+[0;32mI (18038) ECG: ECG Value: 2207[0m
+[0;32mI (18048) ECG: ECG Value: 2233[0m
+[0;32mI (18058) ECG: ECG Value: 2114[0m
+[0;32mI (18068) ECG: ECG Value: 2286[0m
+[0;32mI (18078) ECG: ECG Value: 2243[0m
+[0;32mI (18088) ECG: ECG Value: 2131[0m
+[0;32mI (18098) ECG: ECG Value: 2176[0m
+[0;32mI (18108) ECG: ECG Value: 2145[0m
+[0;32mI (18118) ECG: ECG Value: 2204[0m
+[0;32mI (18128) ECG: ECG Value: 2192[0m
+[0;32mI (18138) ECG: ECG Value: 2240[0m
+[0;32mI (18148) ECG: ECG Value: 2111[0m
+[0;32mI (18158) ECG: ECG Value: 1600[0m
+[0;32mI (18168) ECG: ECG Value: 1425[0m
+[0;32mI (18178) ECG: ECG Value: 1680[0m
+[0;32mI (18188) ECG: ECG Value: 2030[0m
+[0;32mI (18198) ECG: ECG Value: 2191[0m
+[0;32mI (18208) ECG: ECG Value: 2160[0m
+[0;32mI (18218) ECG: ECG Value: 2161[0m
+[0;32mI (18228) ECG: ECG Value: 2193[0m
+[0;32mI (18238) ECG: ECG Value: 2191[0m
+[0;32mI (18248) ECG: ECG Value: 2275[0m
+[0;32mI (18258) ECG: ECG Value: 2134[0m
+[0;32mI (18268) ECG: ECG Value: 2160[0m
+[0;32mI (18278) ECG: ECG Value: 2172[0m
+[0;32mI (18288) ECG: ECG Value: 2173[0m
+[0;32mI (18298) ECG: ECG Value: 2141[0m
+[0;32mI (18308) ECG: ECG Value: 2120[0m
+[0;32mI (18318) ECG: ECG Value: 2119[0m
+[0;32mI (18328) ECG: ECG Value: 2143[0m
+[0;32mI (18338) ECG: ECG Value: 2202[0m
+[0;32mI (18348) ECG: ECG Value: 2050[0m
+[0;32mI (18358) ECG: ECG Value: 2060[0m
+[0;32mI (18368) ECG: ECG Value: 1968[0m
+[0;32mI (18378) ECG: ECG Value: 2038[0m
+[0;32mI (18388) ECG: ECG Value: 1928[0m
+[0;32mI (18398) ECG: ECG Value: 2148[0m
+[0;32mI (18408) ECG: ECG Value: 2057[0m
+[0;32mI (18418) ECG: ECG Value: 2122[0m
+[0;32mI (18428) ECG: ECG Value: 2141[0m
+[0;32mI (18438) ECG: ECG Value: 2266[0m
+[0;32mI (18448) ECG: ECG Value: 2278[0m
+[0;32mI (18458) ECG: ECG Value: 2229[0m
+[0;32mI (18468) ECG: ECG Value: 2222[0m
+[0;32mI (18478) ECG: ECG Value: 2304[0m
+[0;32mI (18488) ECG: ECG Value: 2282[0m
+[0;32mI (18498) ECG: ECG Value: 2350[0m
+[0;32mI (18508) ECG: ECG Value: 2213[0m
+[0;32mI (18518) ECG: ECG Value: 2270[0m
+[0;32mI (18528) ECG: ECG Value: 2349[0m
+[0;32mI (18538) ECG: ECG Value: 2224[0m
+[0;32mI (18548) ECG: ECG Value: 2430[0m
+[0;32mI (18558) ECG: ECG Value: 2316[0m
+[0;32mI (18568) ECG: ECG Value: 2287[0m
+[0;32mI (18578) ECG: ECG Value: 2191[0m
+[0;32mI (18588) ECG: ECG Value: 2223[0m
+[0;32mI (18598) ECG: ECG Value: 2325[0m
+[0;32mI (18608) ECG: ECG Value: 2310[0m
+[0;32mI (18618) ECG: ECG Value: 2277[0m
+[0;32mI (18628) ECG: ECG Value: 2221[0m
+[0;32mI (18638) ECG: ECG Value: 2253[0m
+[0;32mI (18648) ECG: ECG Value: 2333[0m
+[0;32mI (18658) ECG: ECG Value: 2274[0m
+[0;32mI (18668) ECG: ECG Value: 2330[0m
+[0;32mI (18678) ECG: ECG Value: 2211[0m
+[0;32mI (18688) ECG: ECG Value: 2298[0m
+[0;32mI (18698) ECG: ECG Value: 2374[0m
+[0;32mI (18708) ECG: ECG Value: 2361[0m
+[0;32mI (18718) ECG: ECG Value: 2433[0m
+[0;32mI (18728) ECG: ECG Value: 2304[0m
+[0;32mI (18738) ECG: ECG Value: 2314[0m
+[0;32mI (18748) ECG: ECG Value: 2346[0m
+[0;32mI (18758) ECG: ECG Value: 2187[0m
+[0;32mI (18768) ECG: ECG Value: 2316[0m
+[0;32mI (18778) ECG: ECG Value: 2191[0m
+[0;32mI (18788) ECG: ECG Value: 2246[0m
+[0;32mI (18798) ECG: ECG Value: 2174[0m
+[0;32mI (18808) ECG: ECG Value: 2346[0m
+[0;32mI (18818) ECG: ECG Value: 2168[0m
+[0;32mI (18828) ECG: ECG Value: 2244[0m
+[0;32mI (18838) ECG: ECG Value: 2266[0m
+[0;32mI (18848) ECG: ECG Value: 2227[0m
+[0;32mI (18858) ECG: ECG Value: 2388[0m
+[0;32mI (18868) ECG: ECG Value: 2288[0m
+[0;32mI (18878) ECG: ECG Value: 2276[0m
+[0;32mI (18888) ECG: ECG Value: 2374[0m
+[0;32mI (18898) ECG: ECG Value: 2212[0m
+[0;32mI (18908) ECG: ECG Value: 2377[0m
+[0;32mI (18918) ECG: ECG Value: 2345[0m
+[0;32mI (18928) ECG: ECG Value: 2212[0m
+[0;32mI (18938) ECG: ECG Value: 1974[0m
+[0;32mI (18948) ECG: ECG Value: 1431[0m
+[0;32mI (18958) ECG: ECG Value: 1784[0m
+[0;32mI (18968) ECG: ECG Value: 2149[0m
+[0;32mI (18978) ECG: ECG Value: 2383[0m
+[0;32mI (18988) ECG: ECG Value: 2205[0m
+[0;32mI (18998) ECG: ECG Value: 2355[0m
+[0;32mI (19008) ECG: ECG Value: 2316[0m
+[0;32mI (19018) ECG: ECG Value: 2362[0m
+[0;32mI (19028) ECG: ECG Value: 2360[0m
+[0;32mI (19038) ECG: ECG Value: 2269[0m
+[0;32mI (19048) ECG: ECG Value: 2297[0m
+[0;32mI (19058) ECG: ECG Value: 2298[0m
+[0;32mI (19068) ECG: ECG Value: 2254[0m
+[0;32mI (19078) ECG: ECG Value: 2217[0m
+[0;32mI (19088) ECG: ECG Value: 2270[0m
+[0;32mI (19098) ECG: ECG Value: 2254[0m
+[0;32mI (19108) ECG: ECG Value: 2338[0m
+[0;32mI (19118) ECG: ECG Value: 2215[0m
+[0;32mI (19128) ECG: ECG Value: 2057[0m
+[0;32mI (19138) ECG: ECG Value: 2079[0m
+[0;32mI (19148) ECG: ECG Value: 2036[0m
+[0;32mI (19158) ECG: ECG Value: 1919[0m
+[0;32mI (19168) ECG: ECG Value: 2084[0m
+[0;32mI (19178) ECG: ECG Value: 1967[0m
+[0;32mI (19188) ECG: ECG Value: 1980[0m
+[0;32mI (19198) ECG: ECG Value: 2154[0m
+[0;32mI (19208) ECG: ECG Value: 2204[0m
+[0;32mI (19218) ECG: ECG Value: 2304[0m
+[0;32mI (19228) ECG: ECG Value: 2134[0m
+[0;32mI (19238) ECG: ECG Value: 2241[0m
+[0;32mI (19248) ECG: ECG Value: 2194[0m
+[0;32mI (19258) ECG: ECG Value: 2305[0m
+[0;32mI (19268) ECG: ECG Value: 2104[0m
+[0;32mI (19278) ECG: ECG Value: 2272[0m
+[0;32mI (19288) ECG: ECG Value: 2266[0m
+[0;32mI (19298) ECG: ECG Value: 2177[0m
+[0;32mI (19308) ECG: ECG Value: 2234[0m
+[0;32mI (19318) ECG: ECG Value: 2142[0m
+[0;32mI (19328) ECG: ECG Value: 2160[0m
+[0;32mI (19338) ECG: ECG Value: 2154[0m
+[0;32mI (19348) ECG: ECG Value: 2080[0m
+[0;32mI (19358) ECG: ECG Value: 2188[0m
+[0;32mI (19368) ECG: ECG Value: 2159[0m
+[0;32mI (19378) ECG: ECG Value: 2109[0m
+[0;32mI (19388) ECG: ECG Value: 2100[0m
+[0;32mI (19398) ECG: ECG Value: 1999[0m
+[0;32mI (19408) ECG: ECG Value: 2048[0m
+[0;32mI (19418) ECG: ECG Value: 2127[0m
+[0;32mI (19428) ECG: ECG Value: 2081[0m
+[0;32mI (19438) ECG: ECG Value: 2032[0m
+[0;32mI (19448) ECG: ECG Value: 2110[0m
+[0;32mI (19458) ECG: ECG Value: 2095[0m
+[0;32mI (19468) ECG: ECG Value: 1988[0m
+[0;32mI (19478) ECG: ECG Value: 2049[0m
+[0;32mI (19488) ECG: ECG Value: 1999[0m
+[0;32mI (19498) ECG: ECG Value: 2074[0m
+[0;32mI (19508) ECG: ECG Value: 2061[0m
+[0;32mI (19518) ECG: ECG Value: 2004[0m
+[0;32mI (19528) ECG: ECG Value: 2110[0m
+[0;32mI (19538) ECG: ECG Value: 1965[0m
+[0;32mI (19548) ECG: ECG Value: 1984[0m
+[0;32mI (19558) ECG: ECG Value: 1854[0m
+[0;32mI (19568) ECG: ECG Value: 1894[0m
+[0;32mI (19578) ECG: ECG Value: 1828[0m
+[0;32mI (19588) ECG: ECG Value: 1997[0m
+[0;32mI (19598) ECG: ECG Value: 1974[0m
+[0;32mI (19608) ECG: ECG Value: 1919[0m
+[0;32mI (19618) ECG: ECG Value: 1992[0m
+[0;32mI (19628) ECG: ECG Value: 2037[0m
+[0;32mI (19638) ECG: ECG Value: 2003[0m
+[0;32mI (19648) ECG: ECG Value: 2063[0m
+[0;32mI (19658) ECG: ECG Value: 1940[0m
+[0;32mI (19668) ECG: ECG Value: 1986[0m
+[0;32mI (19678) ECG: ECG Value: 2010[0m
+[0;32mI (19688) ECG: ECG Value: 1989[0m
+[0;32mI (19698) ECG: ECG Value: 2040[0m
+[0;32mI (19708) ECG: ECG Value: 2025[0m
+[0;32mI (19718) ECG: ECG Value: 1853[0m
+[0;32mI (19728) ECG: ECG Value: 1197[0m
+[0;32mI (19738) ECG: ECG Value: 1188[0m
+[0;32mI (19748) ECG: ECG Value: 1836[0m
+[0;32mI (19758) ECG: ECG Value: 2008[0m
+[0;32mI (19768) ECG: ECG Value: 1874[0m
+[0;32mI (19778) ECG: ECG Value: 1970[0m
+[0;32mI (19788) ECG: ECG Value: 2136[0m
+[0;32mI (19798) ECG: ECG Value: 2034[0m
+[0;32mI (19808) ECG: ECG Value: 2095[0m
+[0;32mI (19818) ECG: ECG Value: 1979[0m
+[0;32mI (19828) ECG: ECG Value: 1963[0m
+[0;32mI (19838) ECG: ECG Value: 2036[0m
+[0;32mI (19848) ECG: ECG Value: 2092[0m
+[0;32mI (19858) ECG: ECG Value: 1920[0m
+[0;32mI (19868) ECG: ECG Value: 1967[0m
+[0;32mI (19878) ECG: ECG Value: 1978[0m
+[0;32mI (19888) ECG: ECG Value: 1937[0m
+[0;32mI (19898) ECG: ECG Value: 1994[0m
+[0;32mI (19908) ECG: ECG Value: 2127[0m
+[0;32mI (19918) ECG: ECG Value: 2260[0m
+[0;32mI (19928) ECG: ECG Value: 2393[0m
+[0;32mI (19938) ECG: ECG Value: 3174[0m
+[0;32mI (19948) ECG: ECG Value: 4030[0m
+[0;32mI (19958) ECG: ECG Value: 4095[0m
+[0;32mI (19958) ECG: Detected BPM: 6000[0m
+[0;32mI (20008) wifi:<ba-add>idx:0 (ifx:0, 52:98:b0:90:19:d5), tid:0, ssn:2, winSize:64[0m
+[0;32mI (20628) ECG: Heart rate sent successfully[0m
+[0;32mI (20638) ECG: ECG Value: 4095[0m
+[0;32mI (20648) ECG: ECG Value: 4095[0m
+[0;32mI (20658) ECG: ECG Value: 4095[0m
+[0;32mI (20668) ECG: ECG Value: 4095[0m
+[0;32mI (20678) ECG: ECG Value: 4095[0m
+[0;32mI (20688) ECG: ECG Value: 4095[0m
+[0;32mI (20698) ECG: ECG Value: 4095[0m
+[0;32mI (20708) ECG: ECG Value: 3437[0m
+[0;32mI (20718) ECG: ECG Value: 869[0m
+[0;32mI (20728) ECG: ECG Value: 0[0m
+[0;32mI (20738) ECG: ECG Value: 0[0m
+[0;32mI (20748) ECG: ECG Value: 0[0m
+[0;32mI (20758) ECG: ECG Value: 0[0m
+[0;32mI (20768) ECG: ECG Value: 0[0m
+[0;32mI (20778) ECG: ECG Value: 0[0m
+[0;32mI (20788) ECG: ECG Value: 0[0m
+[0;32mI (20798) ECG: ECG Value: 0[0m
+[0;32mI (20808) ECG: ECG Value: 0[0m
+[0;32mI (20818) ECG: ECG Value: 0[0m
+[0;32mI (20828) ECG: ECG Value: 0[0m
+[0;32mI (20838) ECG: ECG Value: 0[0m
+[0;32mI (20848) ECG: ECG Value: 0[0m
+[0;32mI (20858) ECG: ECG Value: 0[0m
+[0;32mI (20868) ECG: ECG Value: 0[0m
+[0;32mI (20878) ECG: ECG Value: 0[0m
+[0;32mI (20888) ECG: ECG Value: 0[0m
+[0;32mI (20898) ECG: ECG Value: 0[0m
+[0;32mI (20908) ECG: ECG Value: 0[0m
+[0;32mI (20918) ECG: ECG Value: 0[0m
+[0;32mI (20928) ECG: ECG Value: 0[0m
+[0;32mI (20938) ECG: ECG Value: 0[0m
+[0;32mI (20948) ECG: ECG Value: 0[0m
+[0;32mI (20958) ECG: ECG Value: 0[0m
+[0;32mI (20968) ECG: ECG Value: 0[0m
+[0;32mI (20978) ECG: ECG Value: 0[0m
+[0;32mI (20988) ECG: ECG Value: 0[0m
+[0;32mI (20998) ECG: ECG Value: 0[0m
+[0;32mI (21008) ECG: ECG Value: 0[0m
+[0;32mI (21018) ECG: ECG Value: 0[0m
+[0;32mI (21028) ECG: ECG Value: 0[0m
+[0;32mI (21038) ECG: ECG Value: 0[0m
+[0;32mI (21048) ECG: ECG Value: 0[0m
+[0;32mI (21058) ECG: ECG Value: 0[0m
+[0;32mI (21068) ECG: ECG Value: 0[0m
+[0;32mI (21078) ECG: ECG Value: 0[0m
+[0;32mI (21088) ECG: ECG Value: 0[0m
+[0;32mI (21098) ECG: ECG Value: 0[0m
+[0;32mI (21108) ECG: ECG Value: 0[0m
+[0;32mI (21118) ECG: ECG Value: 0[0m
+[0;32mI (21128) ECG: ECG Value: 0[0m
+[0;32mI (21138) ECG: ECG Value: 0[0m
+[0;32mI (21148) ECG: ECG Value: 0[0m
+[0;32mI (21158) ECG: ECG Value: 0[0m
+[0;32mI (21168) ECG: ECG Value: 0[0m
+[0;32mI (21178) ECG: ECG Value: 0[0m
+[0;32mI (21188) ECG: ECG Value: 0[0m
+[0;32mI (21198) ECG: ECG Value: 0[0m
+[0;32mI (21208) ECG: ECG Value: 0[0m
+[0;32mI (21218) ECG: ECG Value: 0[0m
+[0;32mI (21228) ECG: ECG Value: 0[0m
+[0;32mI (21238) ECG: ECG Value: 0[0m
+[0;32mI (21248) ECG: ECG Value: 0[0m
+[0;32mI (21258) ECG: ECG Value: 0[0m
+[0;32mI (21268) ECG: ECG Value: 0[0m
+[0;32mI (21278) ECG: ECG Value: 0[0m
+[0;32mI (21288) ECG: ECG Value: 0[0m
+[0;32mI (21298) ECG: ECG Value: 0[0m
+[0;32mI (21308) ECG: ECG Value: 0[0m
+[0;32mI (21318) ECG: ECG Value: 0[0m
+[0;32mI (21328) ECG: ECG Value: 0[0m
+[0;32mI (21338) ECG: ECG Value: 0[0m
+[0;32mI (21348) ECG: ECG Value: 0[0m
+[0;32mI (21358) ECG: ECG Value: 0[0m
+[0;32mI (21368) ECG: ECG Value: 0[0m
+[0;32mI (21378) ECG: ECG Value: 0[0m
+[0;32mI (21388) ECG: ECG Value: 0[0m
+[0;32mI (21398) ECG: ECG Value: 0[0m
+[0;32mI (21408) ECG: ECG Value: 0[0m
+[0;32mI (21418) ECG: ECG Value: 0[0m
+[0;32mI (21428) ECG: ECG Value: 0[0m
+[0;32mI (21438) ECG: ECG Value: 0[0m
+[0;32mI (21448) ECG: ECG Value: 0[0m
+[0;32mI (21458) ECG: ECG Value: 0[0m
+[0;32mI (21468) ECG: ECG Value: 0[0m
+[0;32mI (21478) ECG: ECG Value: 0[0m
+[0;32mI (21488) ECG: ECG Value: 0[0m
+[0;32mI (21498) ECG: ECG Value: 0[0m
+[0;32mI (21508) ECG: ECG Value: 0[0m
+[0;32mI (21518) ECG: ECG Value: 0[0m
+[0;32mI (21528) ECG: ECG Value: 0[0m
+[0;32mI (21538) ECG: ECG Value: 0[0m
+[0;32mI (21548) ECG: ECG Value: 0[0m
+[0;32mI (21558) ECG: ECG Value: 0[0m
+[0;32mI (21568) ECG: ECG Value: 0[0m
+[0;32mI (21578) ECG: ECG Value: 0[0m
+[0;32mI (21588) ECG: ECG Value: 0[0m
+[0;32mI (21598) ECG: ECG Value: 0[0m
+[0;32mI (21608) ECG: ECG Value: 0[0m
+[0;32mI (21618) ECG: ECG Value: 0[0m
+[0;32mI (21628) ECG: ECG Value: 78[0m
+[0;32mI (21638) ECG: ECG Value: 673[0m
+[0;32mI (21648) ECG: ECG Value: 880[0m
+[0;32mI (21658) ECG: ECG Value: 1060[0m
+[0;32mI (21668) ECG: ECG Value: 1176[0m
+[0;32mI (21678) ECG: ECG Value: 1298[0m
+[0;32mI (21688) ECG: ECG Value: 1391[0m
+[0;32mI (21698) ECG: ECG Value: 1418[0m
+[0;32mI (21708) ECG: ECG Value: 1608[0m
+[0;32mI (21718) ECG: ECG Value: 1785[0m
+[0;32mI (21728) ECG: ECG Value: 1926[0m
+[0;32mI (21738) ECG: ECG Value: 1985[0m
+[0;32mI (21748) ECG: ECG Value: 1937[0m
+[0;32mI (21758) ECG: ECG Value: 2002[0m
+[0;32mI (21768) ECG: ECG Value: 2106[0m
+[0;32mI (21778) ECG: ECG Value: 2337[0m
+[0;32mI (21788) ECG: ECG Value: 2276[0m
+[0;32mI (21798) ECG: ECG Value: 2521[0m
+[0;32mI (21808) ECG: ECG Value: 2690[0m
+[0;32mI (21818) ECG: ECG Value: 2642[0m
+[0;32mI (21828) ECG: ECG Value: 2602[0m
+[0;32mI (21838) ECG: ECG Value: 2876[0m
+[0;32mI (21848) ECG: ECG Value: 2830[0m
+[0;32mI (21858) ECG: ECG Value: 2911[0m
+[0;32mI (21868) ECG: ECG Value: 2904[0m
+[0;32mI (21878) ECG: ECG Value: 2923[0m
+[0;32mI (21888) ECG: ECG Value: 2956[0m
+[0;32mI (21898) ECG: ECG Value: 2931[0m
+[0;32mI (21908) ECG: ECG Value: 2990[0m
+[0;32mI (21918) ECG: ECG Value: 2840[0m
+[0;32mI (21928) ECG: ECG Value: 2842[0m
+[0;32mI (21938) ECG: ECG Value: 2789[0m
+[0;32mI (21948) ECG: ECG Value: 2799[0m
+[0;32mI (21958) ECG: ECG Value: 2878[0m
+[0;32mI (21968) ECG: ECG Value: 2974[0m
+[0;32mI (21978) ECG: ECG Value: 2927[0m
+[0;32mI (21988) ECG: ECG Value: 2934[0m
+[0;32mI (21998) ECG: ECG Value: 2780[0m
+[0;32mI (22008) ECG: ECG Value: 2910[0m
+[0;32mI (22018) ECG: ECG Value: 2929[0m
+[0;32mI (22028) ECG: ECG Value: 2818[0m
+[0;32mI (22038) ECG: ECG Value: 2891[0m
+[0;32mI (22048) ECG: ECG Value: 2982[0m
+[0;32mI (22058) ECG: ECG Value: 2794[0m
+[0;32mI (22068) ECG: ECG Value: 2800[0m
+[0;32mI (22078) ECG: ECG Value: 2741[0m
+[0;32mI (22088) ECG: ECG Value: 2337[0m
+[0;32mI (22098) ECG: ECG Value: 1999[0m
+[0;32mI (22108) ECG: ECG Value: 2289[0m
+[0;32mI (22118) ECG: ECG Value: 2562[0m
+[0;32mI (22128) ECG: ECG Value: 2831[0m
+[0;32mI (22138) ECG: ECG Value: 2860[0m
+[0;32mI (22148) ECG: ECG Value: 2801[0m
+[0;32mI (22158) ECG: ECG Value: 2898[0m
+[0;32mI (22168) ECG: ECG Value: 2890[0m
+[0;32mI (22178) ECG: ECG Value: 2752[0m
+[0;32mI (22188) ECG: ECG Value: 2921[0m
+[0;32mI (22198) ECG: ECG Value: 2784[0m
+[0;32mI (22208) ECG: ECG Value: 2810[0m
+[0;32mI (22218) ECG: ECG Value: 2898[0m
+[0;32mI (22228) ECG: ECG Value: 2684[0m
+[0;32mI (22238) ECG: ECG Value: 2706[0m
+[0;32mI (22248) ECG: ECG Value: 2720[0m
+[0;32mI (22258) ECG: ECG Value: 2732[0m
+[0;32mI (22268) ECG: ECG Value: 2942[0m
+[0;32mI (22278) ECG: ECG Value: 3167[0m
+[0;32mI (22288) ECG: ECG Value: 3695[0m
+[0;32mI (22298) ECG: ECG Value: 3754[0m
+[0;32mI (22308) ECG: ECG Value: 4064[0m
+[0;32mI (22308) ECG: Detected BPM: 25[0m
+[0;32mI (22778) ECG: Heart rate sent successfully[0m
+[0;32mI (22788) ECG: ECG Value: 3492[0m
+[0;32mI (22798) ECG: ECG Value: 3427[0m
+[0;32mI (22808) ECG: ECG Value: 3402[0m
+[0;32mI (22818) ECG: ECG Value: 3432[0m
+[0;32mI (22828) ECG: ECG Value: 3408[0m
+[0;32mI (22838) ECG: ECG Value: 3314[0m
+[0;32mI (22848) ECG: ECG Value: 2924[0m
+[0;32mI (22858) ECG: ECG Value: 2408[0m
+[0;32mI (22868) ECG: ECG Value: 2799[0m
+[0;32mI (22878) ECG: ECG Value: 3132[0m
+[0;32mI (22888) ECG: ECG Value: 3211[0m
+[0;32mI (22898) ECG: ECG Value: 3166[0m
+[0;32mI (22908) ECG: ECG Value: 3142[0m
+[0;32mI (22918) ECG: ECG Value: 3148[0m
+[0;32mI (22928) ECG: ECG Value: 3041[0m
+[0;32mI (22938) ECG: ECG Value: 3065[0m
+[0;32mI (22948) ECG: ECG Value: 3124[0m
+[0;32mI (22958) ECG: ECG Value: 2987[0m
+[0;32mI (22968) ECG: ECG Value: 2782[0m
+[0;32mI (22978) ECG: ECG Value: 2959[0m
+[0;32mI (22988) ECG: ECG Value: 2485[0m
+[0;32mI (22998) ECG: ECG Value: 2163[0m
+[0;32mI (23008) ECG: ECG Value: 2473[0m
+[0;32mI (23018) ECG: ECG Value: 2250[0m
+[0;32mI (23028) ECG: ECG Value: 1910[0m
+[0;32mI (23038) ECG: ECG Value: 1652[0m
+[0;32mI (23048) ECG: ECG Value: 1332[0m
+[0;32mI (23058) ECG: ECG Value: 255[0m
+[0;32mI (23068) ECG: ECG Value: 0[0m
+[0;32mI (23078) ECG: ECG Value: 0[0m
+[0;32mI (23088) ECG: ECG Value: 0[0m
+[0;32mI (23098) ECG: ECG Value: 0[0m
+[0;32mI (23108) ECG: ECG Value: 0[0m
+[0;32mI (23118) ECG: ECG Value: 0[0m
+[0;32mI (23128) ECG: ECG Value: 0[0m
+[0;32mI (23138) ECG: ECG Value: 0[0m
+[0;32mI (23148) ECG: ECG Value: 0[0m
+[0;32mI (23158) ECG: ECG Value: 0[0m
+[0;32mI (23168) ECG: ECG Value: 0[0m
+[0;32mI (23178) ECG: ECG Value: 0[0m
+[0;32mI (23188) ECG: ECG Value: 0[0m
+[0;32mI (23198) ECG: ECG Value: 0[0m
+[0;32mI (23208) ECG: ECG Value: 0[0m
+[0;32mI (23218) ECG: ECG Value: 0[0m
+[0;32mI (23228) ECG: ECG Value: 0[0m
+[0;32mI (23238) ECG: ECG Value: 0[0m
+[0;32mI (23248) ECG: ECG Value: 0[0m
+[0;32mI (23258) ECG: ECG Value: 0[0m
+[0;32mI (23268) ECG: ECG Value: 560[0m
+[0;32mI (23278) ECG: ECG Value: 751[0m
+[0;32mI (23288) ECG: ECG Value: 852[0m
+[0;32mI (23298) ECG: ECG Value: 789[0m
+[0;32mI (23308) ECG: ECG Value: 1196[0m
+[0;32mI (23318) ECG: ECG Value: 1244[0m
+[0;32mI (23328) ECG: ECG Value: 1279[0m
+[0;32mI (23338) ECG: ECG Value: 1664[0m
+[0;32mI (23348) ECG: ECG Value: 1616[0m
+[0;32mI (23358) ECG: ECG Value: 1643[0m
+[0;32mI (23368) ECG: ECG Value: 1737[0m
+[0;32mI (23378) ECG: ECG Value: 1743[0m
+[0;32mI (23388) ECG: ECG Value: 1910[0m
+[0;32mI (23398) ECG: ECG Value: 1900[0m
+[0;32mI (23408) ECG: ECG Value: 1775[0m
+[0;32mI (23418) ECG: ECG Value: 1998[0m
+[0;32mI (23428) ECG: ECG Value: 1656[0m
+[0;32mI (23438) ECG: ECG Value: 1816[0m
+[0;32mI (23448) ECG: ECG Value: 1905[0m
+[0;32mI (23458) ECG: ECG Value: 2223[0m
+[0;32mI (23468) ECG: ECG Value: 1801[0m
+[0;32mI (23478) ECG: ECG Value: 2130[0m
+[0;32mI (23488) ECG: ECG Value: 1965[0m
+[0;32mI (23498) ECG: ECG Value: 2159[0m
+[0;32mI (23508) ECG: ECG Value: 2064[0m
+[0;32mI (23518) ECG: ECG Value: 2254[0m
+[0;32mI (23528) ECG: ECG Value: 2144[0m
+[0;32mI (23538) ECG: ECG Value: 2184[0m
+[0;32mI (23548) ECG: ECG Value: 2092[0m
+[0;32mI (23558) ECG: ECG Value: 2195[0m
+[0;32mI (23568) ECG: ECG Value: 2160[0m
+[0;32mI (23578) ECG: ECG Value: 2020[0m
+[0;32mI (23588) ECG: ECG Value: 1314[0m
+[0;32mI (23598) ECG: ECG Value: 1460[0m
+[0;32mI (23608) ECG: ECG Value: 1806[0m
+[0;32mI (23618) ECG: ECG Value: 2015[0m
+[0;32mI (23628) ECG: ECG Value: 2048[0m
+[0;32mI (23638) ECG: ECG Value: 2042[0m
+[0;32mI (23648) ECG: ECG Value: 2175[0m
+[0;32mI (23658) ECG: ECG Value: 1993[0m
+[0;32mI (23668) ECG: ECG Value: 2063[0m
+[0;32mI (23678) ECG: ECG Value: 2145[0m
+[0;32mI (23688) ECG: ECG Value: 1930[0m
+[0;32mI (23698) ECG: ECG Value: 1616[0m
+[0;32mI (23708) ECG: ECG Value: 2132[0m
+[0;32mI (23718) ECG: ECG Value: 1474[0m
+[0;32mI (23728) ECG: ECG Value: 1759[0m
+[0;32mI (23738) ECG: ECG Value: 1743[0m
+[0;32mI (23748) ECG: ECG Value: 1791[0m
+[0;32mI (23758) ECG: ECG Value: 1601[0m
+[0;32mI (23768) ECG: ECG Value: 1513[0m
+[0;32mI (23778) ECG: ECG Value: 1578[0m
+[0;32mI (23788) ECG: ECG Value: 1446[0m
+[0;32mI (23798) ECG: ECG Value: 1349[0m
+[0;32mI (23808) ECG: ECG Value: 1390[0m
+[0;32mI (23818) ECG: ECG Value: 1561[0m
+[0;32mI (23828) ECG: ECG Value: 1366[0m
+[0;32mI (23838) ECG: ECG Value: 1370[0m
+[0;32mI (23848) ECG: ECG Value: 1260[0m
+[0;32mI (23858) ECG: ECG Value: 1425[0m
+[0;32mI (23868) ECG: ECG Value: 1394[0m
+[0;32mI (23878) ECG: ECG Value: 1377[0m
+[0;32mI (23888) ECG: ECG Value: 1163[0m
+[0;32mI (23898) ECG: ECG Value: 1341[0m
+[0;32mI (23908) ECG: ECG Value: 1339[0m
+[0;32mI (23918) ECG: ECG Value: 1513[0m
+[0;32mI (23928) ECG: ECG Value: 1077[0m
+[0;32mI (23938) ECG: ECG Value: 943[0m
+[0;32mI (23948) ECG: ECG Value: 1242[0m
+[0;32mI (23958) ECG: ECG Value: 623[0m
+[0;32mI (23968) ECG: ECG Value: 1148[0m
+[0;32mI (23978) ECG: ECG Value: 542[0m
+[0;32mI (23988) ECG: ECG Value: 648[0m
+[0;32mI (23998) ECG: ECG Value: 401[0m
+[0;32mI (24008) ECG: ECG Value: 441[0m
+[0;32mI (24018) ECG: ECG Value: 528[0m
+[0;32mI (24028) ECG: ECG Value: 372[0m
+[0;32mI (24038) ECG: ECG Value: 267[0m
+[0;32mI (24048) ECG: ECG Value: 399[0m
+[0;32mI (24058) ECG: ECG Value: 236[0m
+[0;32mI (24068) ECG: ECG Value: 0[0m
+[0;32mI (24078) ECG: ECG Value: 0[0m
+[0;32mI (24088) ECG: ECG Value: 0[0m
+[0;32mI (24098) ECG: ECG Value: 0[0m
+[0;32mI (24108) ECG: ECG Value: 0[0m
+[0;32mI (24118) ECG: ECG Value: 0[0m
+[0;32mI (24128) ECG: ECG Value: 0[0m
+[0;32mI (24138) ECG: ECG Value: 0[0m
+[0;32mI (24148) ECG: ECG Value: 0[0m
+[0;32mI (24158) ECG: ECG Value: 0[0m
+[0;32mI (24168) ECG: ECG Value: 0[0m
+[0;32mI (24178) ECG: ECG Value: 0[0m
+[0;32mI (24188) ECG: ECG Value: 0[0m
+[0;32mI (24198) ECG: ECG Value: 0[0m
+[0;32mI (24208) ECG: ECG Value: 0[0m
+[0;32mI (24218) ECG: ECG Value: 0[0m
+[0;32mI (24228) ECG: ECG Value: 0[0m
+[0;32mI (24238) ECG: ECG Value: 0[0m
+[0;32mI (24248) ECG: ECG Value: 0[0m
+[0;32mI (24258) ECG: ECG Value: 0[0m
+[0;32mI (24268) ECG: ECG Value: 0[0m
+[0;32mI (24278) ECG: ECG Value: 0[0m
+[0;32mI (24288) ECG: ECG Value: 0[0m
+[0;32mI (24298) ECG: ECG Value: 0[0m
+[0;32mI (24308) ECG: ECG Value: 0[0m
+[0;32mI (24318) ECG: ECG Value: 0[0m
+[0;32mI (24328) ECG: ECG Value: 0[0m
+[0;32mI (24338) ECG: ECG Value: 79[0m
+[0;32mI (24348) ECG: ECG Value: 316[0m
+[0;32mI (24358) ECG: ECG Value: 623[0m
+[0;32mI (24368) ECG: ECG Value: 652[0m
+[0;32mI (24378) ECG: ECG Value: 528[0m
+[0;32mI (24388) ECG: ECG Value: 843[0m
+[0;32mI (24398) ECG: ECG Value: 433[0m
+[0;32mI (24408) ECG: ECG Value: 95[0m
+[0;32mI (24418) ECG: ECG Value: 278[0m
+[0;32mI (24428) ECG: ECG Value: 609[0m
+[0;32mI (24438) ECG: ECG Value: 296[0m
+[0;32mI (24448) ECG: ECG Value: 534[0m
+[0;32mI (24458) ECG: ECG Value: 463[0m
+[0;32mI (24468) ECG: ECG Value: 672[0m
+[0;32mI (24478) ECG: ECG Value: 584[0m
+[0;32mI (24488) ECG: ECG Value: 616[0m
+[0;32mI (24498) ECG: ECG Value: 965[0m
+[0;32mI (24508) ECG: ECG Value: 1026[0m
+[0;32mI (24518) ECG: ECG Value: 1278[0m
+[0;32mI (24528) ECG: ECG Value: 1300[0m
+[0;32mI (24538) ECG: ECG Value: 1446[0m
+[0;32mI (24548) ECG: ECG Value: 1629[0m
+[0;32mI (24558) ECG: ECG Value: 1906[0m
+[0;32mI (24568) ECG: ECG Value: 1636[0m
+[0;32mI (24578) ECG: ECG Value: 2001[0m
+[0;32mI (24588) ECG: ECG Value: 1686[0m
+[0;32mI (24598) ECG: ECG Value: 2207[0m
+[0;32mI (24608) ECG: ECG Value: 2012[0m
+[0;32mI (24618) ECG: ECG Value: 1840[0m
+[0;32mI (24628) ECG: ECG Value: 1822[0m
+[0;32mI (24638) ECG: ECG Value: 2068[0m
+[0;32mI (24648) ECG: ECG Value: 2061[0m
+[0;32mI (24658) ECG: ECG Value: 1919[0m
+[0;32mI (24668) ECG: ECG Value: 1972[0m
+[0;32mI (24678) ECG: ECG Value: 1794[0m
+[0;32mI (24688) ECG: ECG Value: 1824[0m
+[0;32mI (24698) ECG: ECG Value: 1832[0m
+[0;32mI (24708) ECG: ECG Value: 1811[0m
+[0;32mI (24718) ECG: ECG Value: 1894[0m
+[0;32mI (24728) ECG: ECG Value: 1813[0m
+[0;32mI (24738) ECG: ECG Value: 1884[0m
+[0;32mI (24748) ECG: ECG Value: 2088[0m
+[0;32mI (24758) ECG: ECG Value: 2116[0m
+[0;32mI (24768) ECG: ECG Value: 2132[0m
+[0;32mI (24778) ECG: ECG Value: 1986[0m
+[0;32mI (24788) ECG: ECG Value: 2479[0m
+[0;32mI (24798) ECG: ECG Value: 2149[0m
+[0;32mI (24808) ECG: ECG Value: 2365[0m
+[0;32mI (24818) ECG: ECG Value: 2662[0m
+[0;32mI (24828) ECG: ECG Value: 2447[0m
+[0;32mI (24838) ECG: ECG Value: 2634[0m
+[0;32mI (24848) ECG: ECG Value: 2650[0m
+[0;32mI (24858) ECG: ECG Value: 2753[0m
+[0;32mI (24868) ECG: ECG Value: 2642[0m
+[0;32mI (24878) ECG: ECG Value: 2709[0m
+[0;32mI (24888) ECG: ECG Value: 2973[0m
+[0;32mI (24898) ECG: ECG Value: 2984[0m
+[0;32mI (24908) ECG: ECG Value: 3125[0m
+[0;32mI (24918) ECG: ECG Value: 3391[0m
+[0;32mI (24928) ECG: ECG Value: 3181[0m
+[0;32mI (24938) ECG: ECG Value: 3040[0m
+[0;32mI (24948) ECG: ECG Value: 2680[0m
+[0;32mI (24958) ECG: ECG Value: 3441[0m
+[0;32mI (24968) ECG: ECG Value: 3724[0m
+[0;32mI (24978) ECG: ECG Value: 4080[0m
+[0;32mI (24978) ECG: Detected BPM: 22[0m

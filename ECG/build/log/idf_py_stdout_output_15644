@@ -1,0 +1,98 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D "C:\Users\34635\workspace\Hito-4 mqtt\build\bootloader\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 "C:/Users/34635/workspace/Hito-4 mqtt/build/bootloader/bootloader.bin""
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj
+In file included from C:/Users/34635/workspace/Hito-4 mqtt/main/app_main.c:27:
+C:/Espressif/frameworks/esp-idf-v5.3.1/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+C:/Users/34635/workspace/Hito-4 mqtt/main/app_main.c: In function 'app_main':
+C:/Users/34635/workspace/Hito-4 mqtt/main/app_main.c:108:5: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+  108 |     adc1_config_channel_atten(ADC1_CHANNEL_5, ADC_ATTEN_DB_11);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Espressif/frameworks/esp-idf-v5.3.1/components/driver/deprecated/driver/adc_types_legacy.h:8,
+                 from C:/Espressif/frameworks/esp-idf-v5.3.1/components/driver/deprecated/driver/adc.h:15:
+C:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable Hito-4.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated C:/Users/34635/workspace/Hito-4 mqtt/build/Hito-4.bin
+[7/8] cmd.exe /C "cd /D "C:\Users\34635\workspace\Hito-4 mqtt\build\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "C:/Users/34635/workspace/Hito-4 mqtt/build/partition_table/partition-table.bin" "C:/Users/34635/workspace/Hito-4 mqtt/build/Hito-4.bin""
+Hito-4.bin binary size 0xe5830 bytes. Smallest app partition is 0x100000 bytes. 0x1a7d0 bytes (10%) free.
+[7/8] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.3.1\components\esptool_py && C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.3.1 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.3_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.3.1/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D "WORKING_DIRECTORY=C:/Users/34635/workspace/Hito-4 mqtt/besptool.py --chip esp32 -p COM4 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 Hito-4.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port COM4
+Connecting.........
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: f0:24:f9:f7:96:18
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000f5fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26752 bytes to 16361...
+Writing at 0x00001000... (100 %)
+Wrote 26752 bytes (16361 compressed) at 0x00001000 in 0.8 seconds (effective 273.6 kbit/s)...
+Hash of data verified.
+Compressed 940080 bytes to 591627...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001ce84... (5 %)
+Writing at 0x000261fa... (8 %)
+Writing at 0x0002b055... (10 %)
+Writing at 0x000341d3... (13 %)
+Writing at 0x0003d0ff... (16 %)
+Writing at 0x00042c29... (18 %)
+Writing at 0x0004874f... (21 %)
+Writing at 0x0004e6f4... (24 %)
+Writing at 0x000542e8... (27 %)
+Writing at 0x0005a234... (29 %)
+Writing at 0x0005fdbc... (32 %)
+Writing at 0x0006654d... (35 %)
+Writing at 0x0006b5c2... (37 %)
+Writing at 0x00070a77... (40 %)
+Writing at 0x00075f68... (43 %)
+Writing at 0x0007b38c... (45 %)
+Writing at 0x00080a57... (48 %)
+Writing at 0x00086323... (51 %)
+Writing at 0x0008c2aa... (54 %)
+Writing at 0x00091c3b... (56 %)
+Writing at 0x00097883... (59 %)
+Writing at 0x0009d4ac... (62 %)
+Writing at 0x000a2f4c... (64 %)
+Writing at 0x000a8915... (67 %)
+Writing at 0x000ae6c1... (70 %)
+Writing at 0x000b4be2... (72 %)
+Writing at 0x000ba6d8... (75 %)
+Writing at 0x000c020c... (78 %)
+Writing at 0x000c5d9f... (81 %)
+Writing at 0x000cb381... (83 %)
+Writing at 0x000d4917... (86 %)
+Writing at 0x000ddbf7... (89 %)
+Writing at 0x000e3a60... (91 %)
+Writing at 0x000e98ae... (94 %)
+Writing at 0x000ef734... (97 %)
+Writing at 0x000f4b2d... (100 %)
+Wrote 940080 bytes (591627 compressed) at 0x00010000 in 14.8 seconds (effective 506.6 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 346.1 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+uild" -P C:/Espressif/frameworks/esp-idf-v5.3.1/components/esptool_py/run_serial_tool.cmake"
